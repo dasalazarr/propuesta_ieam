@@ -36,4 +36,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local_path: './dist'
           remote_path: ${{ secrets.FTP_REMOTE_ROOT || '/' }}
-          sftp_args: '-o ConnectTimeout=5' 
+          sftpArgs: '-o ConnectTimeout=5' 
