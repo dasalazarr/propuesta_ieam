@@ -1,90 +1,72 @@
 import { motion } from 'framer-motion';
-import { Users, FileText, Globe, Award } from 'lucide-react';
+import { Users, BookOpen, Megaphone } from 'lucide-react';
 
 export default function ImpactMetrics() {
-  const metrics = [
-    {
-      icon: FileText,
-      value: '250+',
-      label: 'Research Publications',
-      description: 'Evidence-based studies and reports'
-    },
+  const methodologies = [
     {
       icon: Users,
-      value: '50K+',
-      label: 'Stakeholders Reached',
-      description: 'Policymakers and practitioners'
+      title: 'Diálogo Estratégico',
+      description: 'Fomentamos el intercambio de alto nivel entre actores clave para construir consensos duraderos.'
     },
     {
-      icon: Globe,
-      value: '35',
-      label: 'Countries Covered',
-      description: 'Across Africa and Europe'
+      icon: BookOpen,
+      title: 'Investigación',
+      description: 'Generamos conocimiento riguroso y análisis profundo para comprender la complejidad migratoria.'
     },
     {
-      icon: Award,
-      value: '15+',
-      label: 'Policy Changes',
-      description: 'Influenced by our research'
+      icon: Megaphone,
+      title: 'Incidencia',
+      description: 'Influimos en la agenda pública y política con propuestas concretas y soluciones viables.'
     }
   ];
 
   return (
-    <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 py-16 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} />
-      </div>
-
-      <div className="container mx-auto px-4 relative">
+    <section className="bg-white py-24 border-b border-slate-100">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="space-y-12"
+          className="space-y-16"
         >
           {/* Header */}
-          <div className="text-center space-y-3">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-white">
-              Our Impact
+          <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">
+              Nuestra Estrategia
             </h2>
-            <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-              Driving evidence-based migration policy through rigorous research and data analysis
+            <div className="w-24 h-1 bg-[#0A2540] mx-auto" />
+            <p className="text-xl text-slate-600 font-serif italic pt-4">
+              "Un enfoque integral para transformar la narrativa y la gestión migratoria en Europa."
             </p>
           </div>
 
-          {/* Metrics Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {metrics.map((metric, index) => {
-              const Icon = metric.icon;
+          {/* Methodology Grid */}
+          <div className="grid md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-slate-200 border border-slate-200 bg-white shadow-sm max-w-6xl mx-auto">
+            {methodologies.map((item, index) => {
+              const Icon = item.icon;
               return (
                 <motion.div
-                  key={metric.label}
+                  key={item.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="text-center space-y-4"
+                  className="p-12 text-center space-y-6 group hover:bg-slate-50 transition-colors duration-500"
                 >
                   {/* Icon */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 text-[#0A2540] mb-2 group-hover:scale-110 transition-transform duration-500">
+                    <Icon className="w-8 h-8 stroke-[1.5]" />
                   </div>
 
-                  {/* Value */}
-                  <div className="space-y-1">
-                    <div className="text-4xl lg:text-5xl font-bold text-white">
-                      {metric.value}
-                    </div>
-                    <div className="text-lg font-semibold text-blue-100">
-                      {metric.label}
-                    </div>
-                    <div className="text-sm text-blue-200">
-                      {metric.description}
-                    </div>
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-serif font-bold text-slate-900">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-600 leading-relaxed font-light text-sm">
+                      {item.description}
+                    </p>
                   </div>
                 </motion.div>
               );

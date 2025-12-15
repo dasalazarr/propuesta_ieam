@@ -24,10 +24,10 @@ export default function ExpertProfiles({ experts = [] }: ExpertProfilesProps) {
           {/* Section Header */}
           <div className="text-center space-y-3">
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-slate-900">
-              Our Research Team
+              Nuestro Equipo de Investigación
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Meet the experts driving migration research and policy innovation
+              Conoce a los expertos que impulsan la investigación migratoria y la innovación política
             </p>
           </div>
 

@@ -25,10 +25,10 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
 
   const filteredListings = listings.filter((listing) => {
     const matchesSearch = listing.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         listing.description.toLowerCase().includes(searchQuery.toLowerCase());
+      listing.description.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesType = selectedType === 'all' || listing.type === selectedType;
     const matchesRegion = selectedRegion === 'all' || listing.region.includes(selectedRegion);
-    
+
     return matchesSearch && matchesType && matchesRegion;
   });
 
@@ -40,6 +40,16 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
       'analysis': 'bg-orange-100 text-orange-700 border-orange-200',
     };
     return colors[type as keyof typeof colors] || 'bg-slate-100 text-slate-700 border-slate-200';
+  };
+
+  const getTypeLabel = (type: string) => {
+    const labels: Record<string, string> = {
+      'policy-paper': 'Documento de Política',
+      'research': 'Investigación',
+      'report': 'Informe',
+      'analysis': 'Análisis',
+    };
+    return labels[type] || type;
   };
 
   return (
@@ -58,7 +68,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
               Explora la Evidencia
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Discover our comprehensive collection of migration research, policy analysis, and data-driven insights
+              Descubre nuestra colección completa de investigación migratoria, análisis de políticas y conocimientos basados en datos
             </p>
           </div>
 
@@ -69,7 +79,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
               <div className="md:col-span-2 relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                 <Input
-                  placeholder="Search research..."
+                  placeholder="Buscar investigación..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10"
@@ -79,29 +89,29 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
               {/* Type Filter */}
               <Select value={selectedType} onValueChange={setSelectedType}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Publication Type" />
+                  <SelectValue placeholder="Tipo de Publicación" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Types</SelectItem>
-                  <SelectItem value="policy-paper">Policy Papers</SelectItem>
-                  <SelectItem value="research">Research</SelectItem>
-                  <SelectItem value="report">Reports</SelectItem>
-                  <SelectItem value="analysis">Analysis</SelectItem>
+                  <SelectItem value="all">Todos los Tipos</SelectItem>
+                  <SelectItem value="policy-paper">Documentos de Política</SelectItem>
+                  <SelectItem value="research">Investigación</SelectItem>
+                  <SelectItem value="report">Informes</SelectItem>
+                  <SelectItem value="analysis">Análisis</SelectItem>
                 </SelectContent>
               </Select>
 
               {/* Region Filter */}
               <Select value={selectedRegion} onValueChange={setSelectedRegion}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Region" />
+                  <SelectValue placeholder="Región" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Regions</SelectItem>
-                  <SelectItem value="West Africa">West Africa</SelectItem>
-                  <SelectItem value="Europe">Europe</SelectItem>
-                  <SelectItem value="Mediterranean">Mediterranean</SelectItem>
+                  <SelectItem value="all">Todas las Regiones</SelectItem>
+                  <SelectItem value="West Africa">África Occidental</SelectItem>
+                  <SelectItem value="Europe">Europa</SelectItem>
+                  <SelectItem value="Mediterranean">Mediterráneo</SelectItem>
                   <SelectItem value="Sahel">Sahel</SelectItem>
-                  <SelectItem value="North Africa">North Africa</SelectItem>
+                  <SelectItem value="North Africa">África del Norte</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -110,22 +120,22 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
             {(searchQuery || selectedType !== 'all' || selectedRegion !== 'all') && (
               <div className="flex items-center gap-2 mt-4 pt-4 border-t border-slate-200">
                 <Filter className="w-4 h-4 text-slate-500" />
-                <span className="text-sm text-slate-600">Active filters:</span>
+                <span className="text-sm text-slate-600">Filtros activos:</span>
                 {searchQuery && (
                   <Badge variant="secondary" className="gap-1">
-                    Search: {searchQuery}
+                    Búsqueda: {searchQuery}
                     <button onClick={() => setSearchQuery('')} className="ml-1 hover:text-slate-900">×</button>
                   </Badge>
                 )}
                 {selectedType !== 'all' && (
                   <Badge variant="secondary" className="gap-1">
-                    Type: {selectedType}
+                    Tipo: {getTypeLabel(selectedType)}
                     <button onClick={() => setSelectedType('all')} className="ml-1 hover:text-slate-900">×</button>
                   </Badge>
                 )}
                 {selectedRegion !== 'all' && (
                   <Badge variant="secondary" className="gap-1">
-                    Region: {selectedRegion}
+                    Región: {selectedRegion}
                     <button onClick={() => setSelectedRegion('all')} className="ml-1 hover:text-slate-900">×</button>
                   </Badge>
                 )}
@@ -135,7 +145,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
 
           {/* Results Count */}
           <div className="text-sm text-slate-600">
-            Showing <span className="font-semibold text-slate-900">{filteredListings.length}</span> research {filteredListings.length === 1 ? 'item' : 'items'}
+            Mostrando <span className="font-semibold text-slate-900">{filteredListings.length}</span> {filteredListings.length === 1 ? 'elemento' : 'elementos'} de investigación
           </div>
 
           {/* Listings Grid */}
@@ -158,11 +168,11 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                      
+
                       {/* Type Badge */}
                       <div className="absolute top-3 right-3">
                         <Badge className={`${getTypeColor(listing.type)} border`}>
-                          {listing.type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                          {getTypeLabel(listing.type)}
                         </Badge>
                       </div>
                     </div>
@@ -186,7 +196,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
                       <div className="flex flex-wrap gap-3 text-xs text-slate-500 pt-2">
                         <div className="flex items-center gap-1">
                           <Calendar className="w-3 h-3" />
-                          {new Date(listing.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                          {new Date(listing.date).toLocaleDateString('es-ES', { month: 'short', year: 'numeric' })}
                         </div>
                         <div className="flex items-center gap-1">
                           <MapPin className="w-3 h-3" />
@@ -211,7 +221,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
 
                       {/* CTA */}
                       <Button variant="ghost" className="w-full mt-4 group-hover:bg-blue-50 group-hover:text-blue-600">
-                        Read More →
+                        Leer Más →
                       </Button>
                     </div>
                   </CardContent>
@@ -224,7 +234,7 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
           {filteredListings.length > 0 && (
             <div className="text-center pt-8">
               <Button variant="outline" size="lg" className="gap-2">
-                Load More Research
+                Cargar Más Investigación
                 <motion.span
                   animate={{ y: [0, 2, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity }}
@@ -241,8 +251,8 @@ export default function ResearchListings({ listings = [] }: ResearchListingsProp
               <div className="text-slate-400 mb-4">
                 <Search className="w-16 h-16 mx-auto" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">No results found</h3>
-              <p className="text-slate-600">Try adjusting your filters or search query</p>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">No se encontraron resultados</h3>
+              <p className="text-slate-600">Intenta ajustar tus filtros o término de búsqueda</p>
             </div>
           )}
         </motion.div>

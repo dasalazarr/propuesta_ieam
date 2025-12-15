@@ -42,13 +42,13 @@ export interface Expert {
 
 export const featuredContent: ContentPackage = {
   id: '1',
-  title: 'Mali-Europe Mobility Corridors',
-  subtitle: 'Understanding Migration Patterns and Policy Implications',
-  description: 'An in-depth analysis of migration flows between Mali and Europe, examining policy frameworks, socioeconomic drivers, and recommendations for sustainable mobility governance.',
+  title: 'Repensar la Movilidad entre Malí y Europa',
+  subtitle: 'Un análisis profundo de los patrones migratorios y sus implicaciones políticas',
+  description: 'Este informe examina las dinámicas actuales de movilidad, proponiendo un nuevo marco de cooperación que beneficie tanto a las comunidades de origen como a los países de destino.',
   image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&q=80',
-  tags: ['Migration Policy', 'West Africa', 'EU Relations'],
-  date: '2024-01-15',
-  type: 'policy-paper',
+  tags: ['Política Migratoria', 'África Occidental', 'UE'],
+  date: '2025-12-01',
+  type: 'report',
   region: ['West Africa', 'Europe'],
   theme: ['Migration Governance', 'Policy Analysis']
 };
@@ -56,46 +56,46 @@ export const featuredContent: ContentPackage = {
 export const dashboardWidgets: DashboardWidget[] = [
   {
     id: '1',
-    title: 'Active Research Projects',
+    title: 'Proyectos de Investigación Activos',
     value: '24',
-    change: '+3 this month',
+    change: '+3 este mes',
     trend: 'up',
-    description: 'Ongoing migration research initiatives'
+    description: 'Iniciativas de investigación en curso'
   },
   {
     id: '2',
-    title: 'Policy Recommendations',
+    title: 'Recomendaciones de Política',
     value: '156',
-    change: '+12 this quarter',
+    change: '+12 este trimestre',
     trend: 'up',
-    description: 'Evidence-based policy suggestions'
+    description: 'Sugerencias basadas en evidencia'
   },
   {
     id: '3',
-    title: 'Data Points Analyzed',
+    title: 'Puntos de Datos Analizados',
     value: '2.4M',
-    change: '+340K this year',
+    change: '+340K este año',
     trend: 'up',
-    description: 'Migration data entries processed'
+    description: 'Entradas de datos procesadas'
   },
   {
     id: '4',
-    title: 'Partner Organizations',
+    title: 'Organizaciones Asociadas',
     value: '48',
-    change: '+5 new partners',
+    change: '+5 nuevos socios',
     trend: 'up',
-    description: 'Collaborative research networks'
+    description: 'Redes de investigación colaborativa'
   }
 ];
 
 export const researchListings: ContentPackage[] = [
   {
     id: '2',
-    title: 'Mediterranean Migration Trends 2024',
-    subtitle: 'Annual Report on Cross-Mediterranean Mobility',
-    description: 'Comprehensive analysis of migration patterns across the Mediterranean, including route analysis, demographic data, and policy recommendations.',
+    title: 'Tendencias Migratorias en el Mediterráneo 2024',
+    subtitle: 'Informe Anual sobre Movilidad Transmediterránea',
+    description: 'Análisis exhaustivo de los patrones migratorios a través del Mediterráneo, incluyendo análisis de rutas, datos demográficos y recomendaciones de política.',
     image: 'https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&q=80',
-    tags: ['Mediterranean', 'Annual Report', 'Data Analysis'],
+    tags: ['Mediterráneo', 'Informe Anual', 'Análisis de Datos'],
     date: '2024-01-10',
     type: 'report',
     region: ['Mediterranean', 'North Africa'],
@@ -103,11 +103,11 @@ export const researchListings: ContentPackage[] = [
   },
   {
     id: '3',
-    title: 'Climate-Induced Migration in the Sahel',
-    subtitle: 'Environmental Drivers of Human Mobility',
-    description: 'Examining the relationship between climate change, environmental degradation, and migration patterns in the Sahel region.',
+    title: 'Migración Inducida por el Clima en el Sahel',
+    subtitle: 'Impulsores Ambientales de la Movilidad Humana',
+    description: 'Examinando la relación entre el cambio climático, la degradación ambiental y los patrones migratorios en la región del Sahel.',
     image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80',
-    tags: ['Climate Migration', 'Sahel', 'Environmental Policy'],
+    tags: ['Migración Climática', 'Sahel', 'Política Ambiental'],
     date: '2023-12-20',
     type: 'research',
     region: ['Sahel', 'West Africa'],
@@ -115,11 +115,11 @@ export const researchListings: ContentPackage[] = [
   },
   {
     id: '4',
-    title: 'Labor Migration and Economic Development',
-    subtitle: 'Impact Assessment of Remittances in Origin Countries',
-    description: 'Analysis of how labor migration and remittances contribute to economic development in countries of origin.',
+    title: 'Migración Laboral y Desarrollo Económico',
+    subtitle: 'Evaluación del Impacto de las Remesas en Países de Origen',
+    description: 'Análisis de cómo la migración laboral y las remesas contribuyen al desarrollo económico en los países de origen.',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
-    tags: ['Labor Migration', 'Economic Impact', 'Remittances'],
+    tags: ['Migración Laboral', 'Impacto Económico', 'Remesas'],
     date: '2023-12-05',
     type: 'analysis',
     region: ['Global', 'Africa'],
@@ -127,11 +127,11 @@ export const researchListings: ContentPackage[] = [
   },
   {
     id: '5',
-    title: 'Youth Migration Aspirations in West Africa',
-    subtitle: 'Understanding the Drivers of Youth Mobility',
-    description: 'Survey-based research on migration aspirations among young people in West African countries.',
+    title: 'Aspiraciones Migratorias de los Jóvenes en África Occidental',
+    subtitle: 'Entendiendo los Impulsores de la Movilidad Juvenil',
+    description: 'Investigación basada en encuestas sobre las aspiraciones migratorias entre los jóvenes en países de África Occidental.',
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
-    tags: ['Youth Migration', 'Survey Research', 'West Africa'],
+    tags: ['Migración Juvenil', 'Investigación por Encuesta', 'África Occidental'],
     date: '2023-11-28',
     type: 'research',
     region: ['West Africa'],
@@ -139,11 +139,11 @@ export const researchListings: ContentPackage[] = [
   },
   {
     id: '6',
-    title: 'Border Management and Human Rights',
-    subtitle: 'Balancing Security and Protection',
-    description: 'Policy analysis on border management practices and their impact on migrant rights and protection.',
+    title: 'Gestión Fronteriza y Derechos Humanos',
+    subtitle: 'Equilibrando Seguridad y Protección',
+    description: 'Análisis de políticas sobre prácticas de gestión fronteriza y su impacto en los derechos y la protección de los migrantes.',
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
-    tags: ['Border Management', 'Human Rights', 'Policy'],
+    tags: ['Gestión Fronteriza', 'Derechos Humanos', 'Política'],
     date: '2023-11-15',
     type: 'policy-paper',
     region: ['Europe', 'Africa'],
@@ -154,69 +154,69 @@ export const researchListings: ContentPackage[] = [
 export const upcomingEvents: Event[] = [
   {
     id: '1',
-    title: 'Migration Policy Forum 2024',
+    title: 'Foro de Política Migratoria 2024',
     date: '2024-03-15',
     type: 'conference',
-    location: 'Brussels, Belgium',
-    description: 'Annual gathering of policymakers, researchers, and practitioners to discuss migration governance.'
+    location: 'Bruselas, Bélgica',
+    description: 'Reunión anual de responsables políticos, investigadores y profesionales para discutir la gobernanza migratoria.'
   },
   {
     id: '2',
-    title: 'Data-Driven Migration Research Workshop',
+    title: 'Taller de Investigación Migratoria Basada en Datos',
     date: '2024-02-28',
     type: 'workshop',
-    location: 'Online',
-    description: 'Hands-on workshop on using data analytics for migration research.'
+    location: 'En línea',
+    description: 'Taller práctico sobre el uso de análisis de datos para la investigación migratoria.'
   },
   {
     id: '3',
-    title: 'Climate Migration Webinar Series',
+    title: 'Serie de Seminarios Web sobre Migración Climática',
     date: '2024-02-20',
     type: 'webinar',
-    location: 'Online',
-    description: 'Monthly webinar series exploring the intersection of climate change and human mobility.'
+    location: 'En línea',
+    description: 'Serie mensual de seminarios web explorando la intersección del cambio climático y la movilidad humana.'
   },
   {
     id: '4',
-    title: 'Mediterranean Dialogue Summit',
+    title: 'Cumbre de Diálogo del Mediterráneo',
     date: '2024-04-10',
     type: 'conference',
-    location: 'Barcelona, Spain',
-    description: 'High-level dialogue on Mediterranean migration and cooperation.'
+    location: 'Barcelona, España',
+    description: 'Diálogo de alto nivel sobre migración y cooperación en el Mediterráneo.'
   }
 ];
 
 export const experts: Expert[] = [
   {
     id: '1',
-    name: 'Dr. Amina Diallo',
-    role: 'Senior Research Fellow',
-    expertise: ['Migration Policy', 'West Africa', 'Gender & Migration'],
+    name: 'Dra. Amina Diallo',
+    role: 'Investigadora Principal',
+    expertise: ['Política Migratoria', 'África Occidental', 'Género y Migración'],
     image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Amina',
-    bio: 'Leading expert on West African migration patterns with 15+ years of field research experience.'
+    bio: 'Experta líder en patrones migratorios de África Occidental con más de 15 años de experiencia en investigación de campo.'
   },
   {
     id: '2',
     name: 'Prof. Marco Rossi',
-    role: 'Director of Mediterranean Studies',
-    expertise: ['Mediterranean Migration', 'EU Policy', 'Border Management'],
+    role: 'Director de Estudios Mediterráneos',
+    expertise: ['Migración Mediterránea', 'Política UE', 'Gestión Fronteriza'],
     image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Marco',
-    bio: 'Specialist in EU migration policy and Mediterranean mobility governance.'
+    bio: 'Especialista en política migratoria de la UE y gobernanza de la movilidad en el Mediterráneo.'
   },
   {
     id: '3',
-    name: 'Dr. Fatima Hassan',
-    role: 'Climate Migration Researcher',
-    expertise: ['Climate Change', 'Environmental Migration', 'Sahel Region'],
+    name: 'Dra. Fatima Hassan',
+    role: 'Investigadora de Migración Climática',
+    expertise: ['Cambio Climático', 'Migración Ambiental', 'Región del Sahel'],
     image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Fatima',
-    bio: 'Expert on climate-induced migration and environmental displacement in the Sahel.'
+    bio: 'Experta en migración inducida por el clima y desplazamiento ambiental en el Sahel.'
   },
   {
     id: '4',
     name: 'Dr. Jean-Pierre Dubois',
-    role: 'Data Analytics Lead',
-    expertise: ['Data Science', 'Migration Statistics', 'Predictive Modeling'],
+    role: 'Líder de Análisis de Datos',
+    expertise: ['Ciencia de Datos', 'Estadísticas Migratorias', 'Modelado Predictivo'],
     image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Jean',
-    bio: 'Pioneering the use of advanced analytics in migration research and forecasting.'
+    bio: 'Pionero en el uso de análisis avanzados en investigación y previsión migratoria.'
   }
 ];

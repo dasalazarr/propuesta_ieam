@@ -1,82 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
+@layer base {
+  :root {
+    /* Palette */
+    --color-navy-900: #0A2540;
+    --color-navy-700: #1A3A5C;
+    --color-mediterranean: #006994;
+    --color-accent-red: #D4212A;
+    --color-accent-terracotta: #C45831;
+    --color-paper: #FAFAF8;
+    --color-paper-warm: #F5F3EF;
+    --color-white: #FFFFFF;
+    --color-cream: #f8f5f0;
+    --color-surface-soft: #F8FAFC;
+    --color-text-primary: #0A2540;
+    --color-text-secondary: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-border: #E2E8F0;
+    --color-border-subtle: #F1F5F9;
 
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+    --leading-tight: 1.2;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
+    /* Spacing */
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+    --section-padding-y: var(--space-24);
+    --section-padding-y-lg: var(--space-32);
+    --container-max: 1280px;
+    --container-reading: 680px;
 
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
+    /* Effects */
+    --shadow-editorial: 0 25px 50px -12px rgba(10, 37, 64, 0.25);
+    --transition-fast: 150ms ease;
+    --transition-base: 200ms ease;
+    --transition-slow: 300ms ease;
 
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Tailwind variable mapping */
+    --background: 60 17% 97.7%;
+    --foreground: 210 73% 14.5%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 73% 14.5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 73% 14.5%;
+    --primary: 356.98 73.06% 48.04%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.08%;
+    --secondary-foreground: 210 73% 14.5%;
+    --muted: 210 40% 96.08%;
+    --muted-foreground: 215 20.22% 65.1%;
+    --accent: 197.43 100% 29.02%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 356.98 73.06% 48.04%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214.29 31.82% 91.37%;
+    --input: 214.29 31.82% 91.37%;
+    --ring: 197.43 100% 29.02%;
+    --radius: 0.125rem;
+  }
 
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
+  body {
+    @apply text-foreground;
+    background: var(--color-paper);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    line-height: var(--leading-relaxed);
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+  }
 
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    color: var(--color-text-primary);
+    letter-spacing: var(--tracking-tight);
+  }
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
+  .font-serif {
+    font-family: var(--font-serif);
+  }
 
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 222.2 84% 4.9%;
+  .font-sans {
+    font-family: var(--font-sans);
+  }
 
-      --radius: 0.5rem;
-    }
+  p {
+    line-height: var(--leading-relaxed);
+  }
 
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
+  a {
+    color: var(--color-mediterranean);
+    transition: color var(--transition-base);
+  }
 
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
+  :focus-visible {
+    outline: 2px solid var(--color-mediterranean);
+    outline-offset: 3px;
+  }
 
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
+  * {
+    @apply border-border;
+  }
+}
 
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
+@layer components {
+  .page-shell {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
 
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
+  @media (min-width: 1024px) {
+    .page-shell {
+      padding: 0 2rem;
     }
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-      font-family: 'Inter', sans-serif;
-    }
-    .font-serif {
-      font-family: 'Playfair Display', serif;
-    }
+  .section-shell {
+    padding: var(--section-padding-y) 0;
   }
+
+  .section-shell-lg {
+    padding: var(--section-padding-y-lg) 0;
+  }
+
+  .reading-width {
+    max-width: var(--container-reading);
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--color-accent-red);
+    border-radius: 9999px;
+  }
+
+  .hairline {
+    border-color: var(--color-border);
+  }
+}

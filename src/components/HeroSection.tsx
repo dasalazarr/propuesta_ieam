@@ -1,138 +1,96 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Share2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { ContentPackage } from '@/data/mockData';
+import React from 'react';
+import { ArrowRight, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-interface HeroSectionProps {
-  content?: ContentPackage;
-}
-
-export default function HeroSection({ content }: HeroSectionProps) {
-  if (!content) return null;
-
+const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} />
-      </div>
+    <section className="relative min-h-screen flex items-center bg-white border-b hairline">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#F7F9FC] via-white to-white pointer-events-none" aria-hidden="true" />
 
-      <div className="container mx-auto px-4 py-16 lg:py-24 relative">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="space-y-6"
-          >
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-              Latest Research
+      <div className="relative page-shell w-full">
+        <div className="grid lg:grid-cols-12 gap-8 items-center py-12 lg:py-16">
+
+          <div className="lg:col-span-5 space-y-8">
+            <div className="eyebrow text-[var(--color-text-primary)]">
+              <span className="text-[11px] uppercase tracking-[0.18em] text-slate-500 ml-2">Think Tank independiente · Europa · África</span>
             </div>
 
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-slate-900 leading-tight">
-              {content.title}
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-[-0.02em]">
+              Centro independiente de <span className="italic text-[var(--color-accent-red)]">investigación y reflexión</span> sobre migraciones
             </h1>
 
-            <p className="text-xl text-slate-600 font-light leading-relaxed">
-              {content.subtitle}
+            <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
+              Investigación de rigor. Datos accionables. Construyendo puentes estratégicos entre Europa, África y el Mediterráneo.
             </p>
 
-            <p className="text-base text-slate-500 leading-relaxed">
-              {content.description}
-            </p>
-
-            {/* Tags */}
-            <div className="flex flex-wrap gap-2">
-              {content.tags.map((tag) => (
-                <Badge key={tag} variant="secondary" className="px-3 py-1">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow">
-                Explore Full Report
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="gap-2">
-                <Download className="w-4 h-4" />
-                Download PDF
-              </Button>
-              <Button size="lg" variant="ghost" className="gap-2">
-                <Share2 className="w-4 h-4" />
-                Share
-              </Button>
-            </div>
-
-            {/* Meta Info */}
-            <div className="flex items-center gap-6 pt-4 text-sm text-slate-500">
+            <div className="flex flex-wrap gap-4 text-sm text-slate-500">
               <div className="flex items-center gap-2">
-                <span className="font-medium text-slate-700">Published:</span>
-                {new Date(content.date).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
+                <span className="h-1.5 w-6 bg-[var(--color-mediterranean)] rounded-full" />
+                Evidencia aplicada
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-medium text-slate-700">Type:</span>
-                {content.type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                <span className="h-1.5 w-6 bg-[#A55400] rounded-full" />
+                Puentes diplomáticos
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="h-1.5 w-6 bg-[var(--color-accent-red)] rounded-full" />
+                Narrativas responsables
               </div>
             </div>
-          </motion.div>
 
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={content.image}
-                alt={content.title}
-                className="w-full h-[400px] lg:h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              
-              {/* Floating Stats */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg"
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link
+                to="/investigacion"
+                className="inline-flex items-center justify-center px-7 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white bg-[var(--color-navy-900)] hover:bg-[var(--color-mediterranean)] transition-colors shadow-sm rounded-none"
               >
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold text-slate-900">24</div>
-                    <div className="text-xs text-slate-600">Data Sources</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-slate-900">156</div>
-                    <div className="text-xs text-slate-600">Key Findings</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-slate-900">12</div>
-                    <div className="text-xs text-slate-600">Recommendations</div>
-                  </div>
-                </div>
-              </motion.div>
+                Explorar análisis
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+              <Link
+                to="/eventos-y-actualidad"
+                className="inline-flex items-center justify-center px-7 py-3 text-[11px] font-bold uppercase tracking-[0.18em] border border-slate-300 text-[var(--color-text-primary)] bg-white hover:bg-slate-50 transition-colors"
+              >
+                Ver próximos eventos
+              </Link>
             </div>
+          </div>
 
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-200 rounded-full blur-3xl opacity-50" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-50" />
-          </motion.div>
+          <div className="lg:col-span-7 relative mt-8 lg:mt-0">
+            <div className="relative rounded-sm overflow-hidden border hairline group h-[300px] md:h-[400px] lg:h-[450px]">
+              <Link to="/analisis/movilidad-africa-europa" className="absolute inset-0 z-10" aria-label="Leer informe destacado"></Link>
+              <img
+                src="mali-europa-map.png"
+                alt="Global Migration Map"
+                className="w-full h-[420px] lg:h-[520px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A2540]/90 to-transparent p-8 pt-24">
+                <div className="inline-flex items-center px-3 py-1 bg-white/90 text-[#0A3D62] text-[11px] font-bold uppercase tracking-wider mb-3 border border-[#B6D7FF] rounded-full">
+                  Informe Destacado
+                </div>
+                <h3 className="text-2xl font-serif font-bold text-white mb-2">
+                  Repensar la Movilidad entre Malí y Europa
+                </h3>
+                <p className="text-slate-200 text-sm mb-4 max-w-xl">
+                  Un nuevo marco de cooperación para una gestión migratoria sostenible y humana.
+                </p>
+                <div className="flex items-center text-xs text-slate-300 font-medium uppercase tracking-wide">
+                  <span className="flex items-center mr-4">
+                    <Calendar className="w-3 h-3 mr-1" />
+                    Diciembre 2025
+                  </span>
+                  <span>Lectura: 12 min</span>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -z-10 top-12 -right-12 w-64 h-64 bg-slate-50 rounded-full blur-3xl opacity-60"></div>
+          </div>
+
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;
