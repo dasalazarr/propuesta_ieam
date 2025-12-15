@@ -70,11 +70,7 @@ const Footer = () => {
               <div className="space-y-2 text-sm text-slate-300">
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-[#006994]" />
-                  <span>contacto@ieam.es</span>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="w-4 h-4 mr-2 text-[#006994]" />
-                  <span>+34 91 123 45 67</span>
+                  <span>info@ieam.es</span>
                 </div>
               </div>
             </div>
@@ -87,7 +83,7 @@ const Footer = () => {
             <Link to="/privacy" className="hover:text-white transition-colors">Privacidad</Link>
             <Link to="/cookies" className="hover:text-white transition-colors">Cookies</Link>
             <Link to="/legal" className="hover:text-white transition-colors">Aviso Legal</Link>
-            <a href="mailto:info@fundacionfortius.org" className="hover:text-white transition-colors">Contacto</a>
+            <a href="mailto:info@ieam.es" className="hover:text-white transition-colors">Contacto</a>
           </div>
         </div>
       </div>

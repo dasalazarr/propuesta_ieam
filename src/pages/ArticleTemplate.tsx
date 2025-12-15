@@ -93,7 +93,7 @@ const ArticleTemplate = () => {
               La gestión migratoria en el eje África–Europa ha estado marcada por respuestas de emergencia que, aunque necesarias en el corto plazo, generan efectos secundarios: rutas más peligrosas, dependencia de actores informales y altos costes humanos. Este informe propone pasar de la reacción a la arquitectura: crear canales seguros, mecanismos de retorno con reintegración y una gobernanza compartida basada en datos.
             </p>
             <p>
-              La evidencia recogida en talleres con actores de Malí, Mauritania, Senegal, Marruecos y España muestra que la movilidad ordenada reduce la presión en fronteras, facilita la inserción laboral y mejora la cooperación diplomática. Se recomienda establecer programas piloto de visados laborales circulares y reforzar los sistemas de información temprana para anticipar picos de desplazamiento.
+              La evidencia recogida en talleres con actores de Mali, Mauritania, Senegal, Marruecos y España muestra que la movilidad ordenada reduce la presión en fronteras, facilita la inserción laboral y mejora la cooperación diplomática. Se recomienda establecer programas piloto de visados laborales circulares y reforzar los sistemas de información temprana para anticipar picos de desplazamiento.
             </p>
 
             <div className="border-l-4 border-[var(--color-accent-red)] bg-[var(--color-paper-warm)] px-6 py-4 text-lg font-serif italic text-[var(--color-text-primary)]">

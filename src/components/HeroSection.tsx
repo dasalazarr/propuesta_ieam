@@ -22,23 +22,8 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
-              Investigación de rigor. Datos accionables. Construyendo puentes estratégicos entre Europa, África y el Mediterráneo.
+              Construyendo puentes estratégicos entre Europa, África y el Mediterráneo.
             </p>
-
-            <div className="flex flex-wrap gap-4 text-sm text-slate-500">
-              <div className="flex items-center gap-2">
-                <span className="h-1.5 w-6 bg-[var(--color-mediterranean)] rounded-full" />
-                Evidencia aplicada
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="h-1.5 w-6 bg-[#A55400] rounded-full" />
-                Puentes diplomáticos
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="h-1.5 w-6 bg-[var(--color-accent-red)] rounded-full" />
-                Narrativas responsables
-              </div>
-            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
@@ -70,7 +55,7 @@ const HeroSection = () => {
                   Informe Destacado
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                  Repensar la Movilidad entre Malí y Europa
+                  Repensar la Movilidad entre Mali y Europa
                 </h3>
                 <p className="text-slate-200 text-sm mb-4 max-w-xl">
                   Un nuevo marco de cooperación para una gestión migratoria sostenible y humana.
@@ -78,7 +63,7 @@ const HeroSection = () => {
                 <div className="flex items-center text-xs text-slate-300 font-medium uppercase tracking-wide">
                   <span className="flex items-center mr-4">
                     <Calendar className="w-3 h-3 mr-1" />
-                    Diciembre 2025
+                    Noviembre 2024
                   </span>
                   <span>Lectura: 12 min</span>
                 </div>

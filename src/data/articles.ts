@@ -45,18 +45,18 @@ export const articles: Article[] = [
         type: 'Informe',
         contentKind: 'policy',
         category: 'Migración · Mediterráneo',
-        title: 'Repensar la movilidad entre Malí y Europa',
+        title: 'Repensar la movilidad entre Mali y Europa',
         subtitle: 'Un marco para ordenar la movilidad, reducir los costes humanos y crear beneficios compartidos para países de origen, tránsito y destino.',
         heroImage: '/mali-europa-map.png',
         mainImage: '/mali-europa-map.png',
         mainImageCaption: 'Trayectos de movilidad regulada entre Bamako, Dakar y Madrid.',
-        publishDate: '12 Dic 2025',
+        publishDate: '14 Nov 2024',
         readTime: '12 min',
         author: {
             name: 'Beatriz de León',
-            role: 'Directora General',
+            role: 'Directora Ejecutiva',
             image: '/team/member-2.jpg',
-            bio: 'Directora General del IEAM. Especialista en movilidad África–Europa y negociación de marcos bilaterales de talento. Lidera talleres de inteligencia colectiva en Bamako, Dakar y Rabat.'
+            bio: 'Directora Ejecutiva del IEAM. Especialista en movilidad África–Europa y negociación de marcos bilaterales de talento. Lidera talleres de inteligencia colectiva en Bamako, Dakar y Rabat.'
         },
         pullQuote: 'La movilidad es inevitable; la diferencia está entre gestionarla con reglas claras o asumir sus costes en la irregularidad.',
         materials: [
@@ -123,42 +123,9 @@ export const articles: Article[] = [
         ]
     },
     {
-        slug: 'seguridad-sahel-2025',
-        type: 'Reseña de evento',
-        contentKind: 'reseña-evento',
-        category: 'Sahel · Canarias',
-        title: 'El Sahel y su impacto en los flujos migratorios hacia Canarias',
-        subtitle: 'Webinar organizada por el Gobierno de Canarias e IRLab sobre dinámica geopolítica y rutas hacia el archipiélago.',
-        heroImage: '/images/evento-sahelmain.png',
-        mainImage: '/images/evento-sahelmain.png',
-        mainImageCaption: 'Cartel oficial de la jornada distribuido por el Gobierno de Canarias.',
-        publishDate: '03 Sep 2025',
-        readTime: '7 min',
-        author: {
-            name: 'Equipo IEAM',
-            role: 'Reseña de eventos',
-            image: '/team/member-4.jpg',
-            bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
-        },
-        pullQuote: 'La presión a Mauritania y Senegal desplaza las salidas hacia zonas menos vigiladas, con mayor riesgo para los viajeros.',
-        content: `
-      <p>Innovación para la gestión migratoria (IRLab) convocó una jornada para analizar los movimientos geopolíticos en el Sahel y sus repercusiones en los flujos hacia Canarias. El Gobierno de Canarias organizó una webinar abierta el 3 de septiembre.</p>
-      <p>Participaron la politóloga Beatriz Mesa, la directora del IEAM Beatriz de León Cobo y el periodista José Naranjo. Presentaron Octavio Caraballo (viceconsejero del Gabinete del Presidente) y Claudia Pérez (IRLab).</p>
-      <p>Se abordaron el deterioro político y de seguridad en el Sahel, el impacto en las salidas de embarcaciones hacia Canarias y la necesidad de políticas de cooperación europeas.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Rutas y riesgos</h3>
-      <p>El cierre de fronteras en Mauritania y Senegal ha desplazado los puntos de salida hacia Guinea Bissau y Guinea Conakry, incrementando las distancias (más de 2.200 km a El Hierro) y el riesgo para los viajeros.</p>
-      <p>El 60% de la población del Sahel tiene menos de 25 años; en 2050 podrían ser 500 millones. Sin oportunidades, la presión migratoria persistirá.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
-      <p>La migración no ha cesado: las rutas se adaptan al control. Se requiere cooperación UE-África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
-    `,
-        relatedArticles: [
-            { id: 'cumbre-hungria-crisis-migratoria-2025', title: 'Hungría acoge una cumbre internacional sobre la crisis migratoria europea', image: '/images/evento-hungria.webp', badge: 'Cumbre', metadata: { date: '24-25 Sep 2025', readTime: '—' } }
-        ]
-    },
-    {
         slug: 'comparativa-llegadas-espana-2025',
-        type: 'Análisis',
-        contentKind: 'analisis',
+        type: 'Infografía',
+        contentKind: 'infografia',
         category: 'Flujos · España',
         title: 'Comparativa de llegadas migratorias a España por vía terrestre y marítima (2024-2025)',
         subtitle: 'El flujo migratorio hacia España desciende 31% interanual, con fuertes diferencias territoriales entre rutas marítimas y terrestres.',
@@ -188,7 +155,7 @@ export const articles: Article[] = [
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Factores que explican el descenso</h3>
       <ul class="list-disc ml-6 space-y-1 text-slate-700">
         <li>Patrullas mixtas Mauritania-España refuerzan vigilancia atlántica.</li>
-        <li>Controles más estrictos en Mauritania y aumento de detenciones/expulsiones hacia Malí y Senegal.</li>
+        <li>Controles más estrictos en Mauritania y aumento de detenciones/expulsiones hacia Mali y Senegal.</li>
         <li>Cooperación con Senegal y Mauritania para contener rutas.</li>
       </ul>
       <p>Aun así, aumentan salidas desde Guinea Conakry y Guinea-Bissau, lo que sugiere que el descenso puede ser coyuntural.</p>
@@ -196,6 +163,84 @@ export const articles: Article[] = [
       <p>El balance provisional 2025 muestra menor flujo por mar, pero la presión continúa y las rutas se adaptan. El seguimiento constante es clave para anticipar repuntes y diseñar políticas eficaces y sostenibles.</p>
     `,
         relatedArticles: []
+    },
+    {
+        slug: 'comparativa-partidos-politicos-2024',
+        type: 'Infografía',
+        contentKind: 'infografia',
+        category: 'Política · UE',
+        title: 'Comparativa de partidos políticos ante el Pacto Migratorio',
+        subtitle: 'Posicionamiento de los grupos parlamentarios europeos frente a la reforma del asilo.',
+        heroImage: "https://images.unsplash.com/photo-1541872703-74c5963631df?q=80&w=2070&auto=format&fit=crop",
+        mainImage: "https://images.unsplash.com/photo-1541872703-74c5963631df?q=80&w=2070&auto=format&fit=crop",
+        mainImageCaption: 'Parlamento Europeo en Estrasburgo.',
+        publishDate: '10 Nov 2024',
+        readTime: '6 min',
+        author: {
+            name: 'Equipo IEAM',
+            role: 'Investigación',
+            image: '/team/member-4.jpg',
+            bio: 'Unidad de investigación IEAM.'
+        },
+        pullQuote: 'El consenso político se fractura en los detalles de implementación del Pacto.',
+        content: '<p>Análisis detallado de las posturas de los principales partidos europeos respecto al nuevo Pacto de Migración y Asilo.</p>',
+        relatedArticles: []
+    },
+    {
+        slug: 'comparativa-frontex-2024',
+        type: 'Infografía',
+        contentKind: 'infografia',
+        category: 'Seguridad · Fronteras',
+        title: 'Comparativa: La evolución del mandato de Frontex',
+        subtitle: 'Cómo ha cambiado la agencia de fronteras europea en la última década.',
+        heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+        mainImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+        mainImageCaption: 'Operación conjunta en el Mediterráneo.',
+        publishDate: '05 Nov 2024',
+        readTime: '8 min',
+        author: {
+            name: 'Equipo IEAM',
+            role: 'Investigación',
+            image: '/team/member-4.jpg',
+            bio: 'Unidad de investigación IEAM.'
+        },
+        pullQuote: 'Frontex asume más competencias en retorno, pero enfrenta mayores exigencias de derechos fundamentales.',
+        content: '<p>Estudio comparativo sobre los recursos, presupuesto y mandato jurídico de Frontex entre 2015 y 2024.</p>',
+        relatedArticles: []
+    },
+    {
+        slug: 'seguridad-sahel-2025',
+        type: 'Reseña de evento',
+        contentKind: 'reseña-evento',
+        category: 'Sahel · Canarias',
+        title: 'El Sahel y su impacto en los flujos migratorios hacia Canarias',
+        subtitle: 'Webinar organizada por el Gobierno de Canarias e IRLab sobre dinámica geopolítica y rutas hacia el archipiélago.',
+        heroImage: '/images/evento-sahelmain.png',
+        mainImage: '/images/evento-sahelmain.png',
+        mainImageCaption: 'Cartel oficial de la jornada distribuido por el Gobierno de Canarias.',
+        publishDate: '03 Sep 2025',
+        readTime: '7 min',
+        author: {
+            name: 'Equipo IEAM',
+            role: 'Reseña de eventos',
+            image: '/team/member-4.jpg',
+            bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
+        },
+        pullQuote: 'La presión a Mauritania y Senegal desplaza las salidas hacia zonas menos vigiladas, con mayor riesgo para los viajeros.',
+        content: `
+      <p>Innovación para la gestión migratoria (IRLab) convocó una jornada para analizar los movimientos geopolíticos en el Sahel y sus repercusiones en los flujos hacia Canarias. El Gobierno de Canarias organizó una webinar abierta el 3 de septiembre.</p>
+      <p>Participaron la politóloga Beatriz Mesa, la directora del IEAM Beatriz de León Cobo y el periodista José Naranjo. Presentaron Octavio Caraballo (viceconsejero del Gabinete del Presidente) y Claudia Pérez (IRLab).</p>
+      <p>Se abordaron el deterioro político y de seguridad en el Sahel, el impacto en las salidas de embarcaciones hacia Canarias y la necesidad de políticas de cooperación europeas.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Rutas y riesgos</h3>
+      <p>El cierre de fronteras en Mauritania y Senegal ha desplazado los puntos de salida hacia Guinea Bissau y Guinea Conakry, incrementando las distancias (más de 2.200 km a El Hierro) y el riesgo para los viajeros.</p>
+      <p>El 60% de la población del Sahel tiene menos de 25 años; en 2050 podrían ser 500 millones. Sin oportunidades, la presión migratoria persistirá.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
+      <p>La migración no ha cesado: las rutas se adaptan al control. Se requiere cooperación UE-África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
+      <p class="mt-6 text-sm text-slate-600">Este análisis también fue relevante para entender las conexiones con Mali.</p>
+    `,
+        relatedArticles: [
+            { id: 'cumbre-hungria-crisis-migratoria-2025', title: 'Hungría acoge una cumbre internacional sobre la crisis migratoria europea', image: '/images/evento-hungria.webp', badge: 'Cumbre', metadata: { date: '24-25 Sep 2025', readTime: '—' } }
+        ]
     },
     {
         slug: 'entrevista-beatriz-mauritania-canarias',

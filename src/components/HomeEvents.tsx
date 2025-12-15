@@ -8,26 +8,15 @@ const HomeEvents = () => {
     const events = eventsData.slice(0, 3);
 
     return (
-        <section className="section-shell bg-[var(--color-paper-warm)] border-b hairline relative overflow-hidden">
+        <section className="section-shell bg-[var(--color-paper-warm)] border-b hairline relative overflow-hidden py-16">
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#F4F6F9] to-white opacity-70 pointer-events-none" aria-hidden="true" />
             <div className="page-shell">
-                <div className="grid lg:grid-cols-12 gap-12">
+                <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
                     <div className="lg:col-span-4 relative">
-                        <span className="eyebrow mb-3">Agenda IEAM</span>
                         <h2 className="text-3xl font-serif font-bold text-[var(--color-text-primary)] mb-6">
-                            Próximos Eventos
+                            Agenda IEAM
                         </h2>
-                        <p className="text-slate-600 mb-8 leading-relaxed">
-                            Espacios de encuentro para el debate constructivo. Conectamos expertos, decisores y sociedad civil.
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-6">
-                            {['Conferencia', 'Webinar', 'Taller'].map((tag) => (
-                                <span key={tag} className="text-[11px] font-semibold text-slate-700 bg-white border border-slate-200 px-3 py-1 rounded-full">
-                                    {tag}
-                                </span>
-                            ))}
-                        </div>
                         <Link
                             to="/eventos-y-actualidad"
                             className="inline-flex items-center px-6 py-3 border border-[var(--color-text-primary)] text-sm font-bold text-[var(--color-text-primary)] hover:bg-[var(--color-text-primary)] hover:text-white transition-colors"

@@ -8,7 +8,7 @@ const StrategySection = () => {
             icon: MessageSquare,
             title: "Diálogo Estratégico",
             tags: ["Talleres", "Foros", "Diplomacia"],
-            description: "Talleres de inteligencia colectiva, foros multilaterales (Madrid, Bruselas, Marruecos, Túnez) y cocreación con contrapartes africanas y europeas para validar políticas y programas.",
+            description: "Talleres de inteligencia colectiva, foros multilaterales (Madrid, Bruselas, Marruecos, Túnez, Bamako, Dakar) y cocreación con contrapartes africanas y europeas para validar políticas y programas.",
             link: "https://mediterraneandialogue.org/",
             toneBg: "#E9F2FF",
             toneText: "#0A3D62"
@@ -37,11 +37,7 @@ const StrategySection = () => {
         <section className="section-shell bg-[var(--color-paper-warm)] border-b hairline">
             <div className="page-shell">
                 <div className="text-center max-w-3xl mx-auto mb-12">
-                    <span className="eyebrow justify-center mb-3">Agenda estratégica</span>
-                    <h2 className="text-4xl font-serif font-bold text-[var(--color-text-primary)] mb-4">Nuestra Estrategia</h2>
-                    <p className="text-slate-600 text-lg leading-relaxed">
-                        Un enfoque integral para abordar los desafíos migratorios desde la evidencia, el diálogo y la acción.
-                    </p>
+                    <h2 className="text-4xl font-serif font-bold text-[var(--color-text-primary)] mb-4">Nuestra Metodología</h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">

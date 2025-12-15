@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Target, Eye, ArrowRight, Linkedin, Plus, X } from 'lucide-react';
+import { Target, Eye, ArrowRight, Linkedin, Plus, X, Shield, Users, Globe, Lightbulb } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 import NewsletterCTA from '@/components/NewsletterCTA';
 
 interface TeamMember {
@@ -13,9 +14,10 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-    { img: "/team/member-2.jpg", name: "Beatriz de León", role: "Directora General", linkedin: "#" },
+    { img: "/team/member-2.jpg", name: "Beatriz de León", role: "Directora Ejecutiva", linkedin: "https://www.linkedin.com/in/beatrizdeleoncobo/" },
     { img: "/team/member-1.jpg", name: "Tasnim Idriss", role: "Coordinadora para el Norte de África", linkedin: "#" },
     { img: "/team/member-4.jpg", name: "Iván López", role: "Asistente de Investigación", linkedin: "#" },
+    { img: "/team/aimara_pujadas.jpg", name: "Aimara Pujadas", role: "Investigadora", linkedin: "#" },
 ];
 
 const researchFellows: TeamMember[] = [
@@ -80,16 +82,12 @@ const AboutPage = () => {
                 <div className="relative z-10 page-shell">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <div className="inline-flex items-center space-x-2 text-xs font-bold tracking-widest uppercase text-[#D4212A] mb-4">
-                                <span className="w-2 h-2 bg-[#D4212A] rounded-full"></span>
-                                <span>Sobre el IEAM</span>
-                            </div>
                             <div className="border-l-4 border-[#D4212A] pl-6">
                                 <h1 className="text-5xl lg:text-6xl font-serif font-bold mb-4 leading-tight text-[#f8f5f0]">
                                     Quiénes somos
                                 </h1>
                                 <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
-                                    Análisis riguroso e impacto real para transformar la política migratoria.
+                                    Transformamos la complejidad migratoria en soluciones. Creemos en la cooperación, el análisis basado en datos y el diálogo constructivo para diseñar un futuro donde la movilidad humana sea una oportunidad para ambas regiones.
                                 </p>
                             </div>
                         </div>
@@ -131,10 +129,48 @@ const AboutPage = () => {
                                 Visión
                             </h2>
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Una Europa conectada con África mediante canales ordenados de movilidad, donde la fuerza de las personas en movimiento impulse el desarrollo compartido.
+                                Una Europa conectada con África mediante canales ordenados de movilidad que impulsen el desarrollo compartido de ambas regiones.
                             </p>
                         </div>
 
+                    </div>
+
+                    {/* Principios Section */}
+                    <div className="mt-20 pt-16 border-t border-slate-200">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-serif font-bold text-[#0A2540] mb-4">Principios</h2>
+                            <p className="text-lg text-slate-600 max-w-2xl mx-auto">Los valores que guían nuestra investigación y acción</p>
+                        </div>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div className="text-center p-6">
+                                <div className="inline-flex items-center justify-center w-14 h-14 bg-slate-100 rounded-full mb-4 text-[#006994]">
+                                    <Shield className="w-7 h-7" />
+                                </div>
+                                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Independencia</h3>
+                                <p className="text-sm text-slate-600">Análisis objetivo libre de influencias políticas o económicas.</p>
+                            </div>
+                            <div className="text-center p-6">
+                                <div className="inline-flex items-center justify-center w-14 h-14 bg-slate-100 rounded-full mb-4 text-[#006994]">
+                                    <Lightbulb className="w-7 h-7" />
+                                </div>
+                                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Rigor</h3>
+                                <p className="text-sm text-slate-600">Metodología basada en evidencia y datos contrastados.</p>
+                            </div>
+                            <div className="text-center p-6">
+                                <div className="inline-flex items-center justify-center w-14 h-14 bg-slate-100 rounded-full mb-4 text-[#006994]">
+                                    <Users className="w-7 h-7" />
+                                </div>
+                                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Cooperación</h3>
+                                <p className="text-sm text-slate-600">Diálogo constructivo entre todas las partes implicadas.</p>
+                            </div>
+                            <div className="text-center p-6">
+                                <div className="inline-flex items-center justify-center w-14 h-14 bg-slate-100 rounded-full mb-4 text-[#006994]">
+                                    <Globe className="w-7 h-7" />
+                                </div>
+                                <h3 className="text-lg font-bold text-[#0A2540] mb-2">Impacto</h3>
+                                <p className="text-sm text-slate-600">Orientación práctica hacia políticas públicas efectivas.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,7 +181,7 @@ const AboutPage = () => {
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center space-x-2 text-xs font-bold tracking-widest uppercase text-[#D4212A] mb-4">
                             <span className="w-2 h-2 bg-[#D4212A] rounded-full"></span>
-                            <span>Personas</span>
+                            <span>Nuestro Equipo</span>
                         </div>
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0A2540]">
                             Nuestro Equipo
@@ -225,22 +261,70 @@ const AboutPage = () => {
                     <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">
                         No somos un centro de estudios convencional. En el IEAM buscamos mentes analíticas y espíritus prácticos dispuestos a convertir sus ideas en políticas reales.
                     </p>
-                    <button className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-[#0A2540] transition-all duration-300 rounded-sm">
-                        Únete al IEAM
+                    <Link to="/#contacto" className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-[#0A2540] transition-all duration-300 rounded-sm">
+                        Contáctanos
                         <ArrowRight className="ml-2 w-5 h-5" />
-                    </button>
+                    </Link>
                 </div>
             </div>
 
             {/* Partners Section */}
             <div className="py-20 bg-slate-50 border-t border-slate-200">
-                <div className="page-shell text-center">
-                    <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-12">
-                        Colaboramos con
-                    </h3>
-                    <div className="flex justify-center gap-16 items-center">
-                        <img src="/colaboration/unav.png" alt="Universidad de Navarra" className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
-                        <img src="/colaboration/uir.png" alt="Universidad Internacional de la Rioja" className="h-20 w-auto object-contain hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async" />
+                <div className="page-shell">
+                    <div className="text-center mb-12">
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6">
+                            Colaboramos con
+                        </h3>
+                        <p className="text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                            Las colaboraciones académicas son una pieza clave para reforzar la base investigadora del IEAM, trabajar de la mano de expertos en materia migratoria y apoyar la aplicación de sus propuestas en materia de política pública.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col gap-8 max-w-4xl mx-auto">
+                        {/* UNV */}
+                        <div className="bg-white p-8 rounded-sm border border-slate-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6">
+                            <div className="w-32 flex-shrink-0 flex items-center justify-center">
+                                <img src="/colaboration/unav.png" alt="Universidad de Navarra" className="w-full h-auto object-contain" loading="lazy" decoding="async" />
+                            </div>
+                            <div>
+                                <h4 className="text-xl font-serif font-bold text-[#0A2540] mb-2">Universidad de Navarra</h4>
+                                <p className="text-slate-600 text-sm leading-relaxed">
+                                    En el marco del convenio con la Universidad de Navarra, se elaboró el informe "Migraciones y migrantes: las rutas migratorias irregulares hacia Europa. España, un estudio de caso", que aporta un análisis técnico sobre las rutas irregulares hacia Europa con especial foco en España. Publicación prevista para diciembre 2025.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* UIR */}
+                        <div className="bg-white p-8 rounded-sm border border-slate-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6">
+                            <div className="w-32 flex-shrink-0 flex items-center justify-center">
+                                <img src="/colaboration/uir.png" alt="Universidad Internacional de Rabat" className="w-full h-auto object-contain" loading="lazy" decoding="async" />
+                            </div>
+                            <div>
+                                <h4 className="text-xl font-serif font-bold text-[#0A2540] mb-2">Universidad Internacional de Rabat (UIR)</h4>
+                                <p className="text-slate-600 text-sm leading-relaxed">
+                                    El convenio con la UIR refuerza la perspectiva euromediterránea y africana del IEAM, contribuyendo a profundizar el análisis de dinámicas regionales de movilidad entre el Magreb, África Occidental y Europa.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Other Partners */}
+                        <div className="bg-white p-8 rounded-sm border border-slate-200">
+                            <h4 className="text-lg font-bold text-[#0A2540] mb-6 border-b border-slate-100 pb-2">Otras entidades colaboradoras</h4>
+                            <ul className="grid md:grid-cols-2 gap-4">
+                                <li className="flex items-center text-slate-700 font-medium">
+                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
+                                    Fundación Ciudadanía y Valores (FUNCIVA)
+                                </li>
+                                <li className="flex items-center text-slate-700 font-medium">
+                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
+                                    Fundación Fortius
+                                </li>
+                                <li className="flex items-center text-slate-700 font-medium">
+                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
+                                    Universidad Camilo José Cela
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
