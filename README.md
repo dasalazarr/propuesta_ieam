@@ -1,4 +1,4 @@
-IEAM · Premium Editorial Design System.
+IEAM · Premium Editorial Design System
 ======================================
 
 Visión
