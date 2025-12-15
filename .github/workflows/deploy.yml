@@ -28,13 +28,12 @@ jobs:
       - name: List dist contents (Verification)
         run: ls -la dist/
 
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_HOST }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_REMOTE_ROOT }}/
-          local-dir: ./dist/
-          protocol: sftp
-          port: 22 
+          local_path: './dist'
+          remote_path: ${{ secrets.FTP_REMOTE_ROOT || '/' }}
+          sftp_args: '-o ConnectTimeout=5' 
