@@ -5,15 +5,17 @@ import Footer from '@/components/Footer';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import { Card } from '@/components/ui/UnifiedCard';
 import { articles, Article } from '@/data/articles';
+import { useTranslation } from 'react-i18next';
 
 const ResearchPage = () => {
+    const { t, i18n } = useTranslation();
     const [activeTab, setActiveTab] = useState<'Informes' | 'Infografías' | 'Reseña de eventos' | 'Entrevistas y prensa'>('Informes');
 
     const categories = [
-        { id: 'Informes', label: 'Informes' },
-        { id: 'Infografías', label: 'Infografías' },
-        { id: 'Reseña de eventos', label: 'Reseña de eventos' },
-        { id: 'Entrevistas y prensa', label: 'Entrevistas y prensa' },
+        { id: 'Informes', label: t('research.categories.reports') },
+        { id: 'Infografías', label: t('research.categories.infographics') },
+        { id: 'Reseña de eventos', label: t('research.categories.events_review') },
+        { id: 'Entrevistas y prensa', label: t('research.categories.press') },
     ] as const;
 
     const filteredArticles = useMemo(() => {
@@ -33,27 +35,65 @@ const ResearchPage = () => {
         });
     }, [activeTab]);
 
+    const getLocalizedArticle = (article: Article) => {
+        const isEn = i18n.language === 'en';
+        return {
+            title: (isEn && article.title_en) ? article.title_en : article.title,
+            subtitle: (isEn && article.subtitle_en) ? article.subtitle_en : article.subtitle,
+            type: isEn ? getLocalizedType(article.type) : article.type
+        };
+    };
+
+    const getLocalizedType = (type: string) => {
+        switch (type) {
+            case 'Informe': return t('research.categories.reports'); // Approximate mapping, or specific if needed
+            case 'Policy Brief': return t('research.categories.policy_brief');
+            case 'Análisis': return t('research.categories.analysis');
+            case 'Infografía': return t('research.categories.infographics');
+            case 'Reseña de evento': return t('research.categories.events_review');
+            case 'Entrevista': return 'Interview';
+            case 'Nota de prensa': return 'Press Release';
+            default: return type;
+        }
+    };
+
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
 
             {/* Hero Section */}
-            <div className="relative bg-[#0A2540] text-[var(--color-cream)] py-20 lg:py-24 overflow-hidden">
+            <div className="relative bg-[#0A2540] text-white py-16 lg:py-24 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+                        src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=2070&auto=format&fit=crop"
                         alt="Research background"
-                        className="w-full h-full object-cover opacity-25"
+                        className="w-full h-full object-cover opacity-20"
+                        loading="eager"
+                        decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-[#0A2540] via-[#0A2540]/90 to-transparent"></div>
                 </div>
+
                 <div className="relative z-10 page-shell">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4 leading-tight text-[var(--color-cream)]">
-                        Investigación
-                    </h1>
-                    <p className="text-xl leading-relaxed text-[var(--color-cream)]/85 max-w-2xl">
-                        Análisis riguroso y basado en evidencia para informar políticas públicas.
-                    </p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div className="border-l-4 border-[#D4212A] pl-6">
+                                <h1 className="text-5xl lg:text-6xl font-serif font-bold mb-4 leading-tight text-[#f8f5f0]">
+                                    {t('research.hero.title')}
+                                </h1>
+                                <p className="text-xl text-slate-300 leading-relaxed max-w-lg">
+                                    {t('research.hero.subtitle')}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Floating Content Box */}
+                        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-sm">
+                            <p className="text-lg font-serif italic text-white leading-relaxed">
+                                {t('research.hero.quote')}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -65,10 +105,10 @@ const ResearchPage = () => {
                     {categories.map((category) => (
                         <button
                             key={category.id}
-                            onClick={() => setActiveTab(category.id)}
+                            onClick={() => setActiveTab(category.id as any)}
                             className={`px-6 py-3 text-sm font-bold uppercase tracking-wider border-b-2 transition-colors ${activeTab === category.id
-                                    ? 'border-[#D4212A] text-[#0A2540]'
-                                    : 'border-transparent text-slate-500 hover:text-[#0A2540] hover:border-slate-300'
+                                ? 'border-[#D4212A] text-[#0A2540]'
+                                : 'border-transparent text-slate-500 hover:text-[#0A2540] hover:border-slate-300'
                                 }`}
                         >
                             {category.label}
@@ -80,46 +120,55 @@ const ResearchPage = () => {
                 {filteredArticles.length > 0 ? (
                     <div className="space-y-10">
                         {/* Featured Article (First one) */}
-                        <Card
-                            variant="featured"
-                            title={filteredArticles[0].title}
-                            summary={filteredArticles[0].subtitle}
-                            image={filteredArticles[0].heroImage}
-                            badge={filteredArticles[0].type}
-                            metadata={{ date: filteredArticles[0].publishDate, author: filteredArticles[0].author.name }}
-                            ctaLink={`/analisis/${filteredArticles[0].slug}`}
-                            className="w-full"
-                        />
+                        {(() => {
+                            const featured = filteredArticles[0];
+                            const locFeatured = getLocalizedArticle(featured);
+                            return (
+                                <Card
+                                    variant="featured"
+                                    title={locFeatured.title}
+                                    summary={locFeatured.subtitle}
+                                    image={featured.heroImage}
+                                    badge={locFeatured.type}
+                                    metadata={{ date: featured.publishDate, author: featured.author.name }}
+                                    ctaLink={`/analisis/${featured.slug}`}
+                                    className="w-full"
+                                />
+                            );
+                        })()}
 
                         {/* Rest of articles */}
                         {filteredArticles.length > 1 && (
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {filteredArticles.slice(1).map((pub) => (
-                                    <Card
-                                        key={pub.slug}
-                                        variant="standard"
-                                        title={pub.title}
-                                        summary={pub.subtitle}
-                                        image={pub.heroImage}
-                                        badge={pub.type}
-                                        metadata={{ date: pub.publishDate, author: pub.author.name }}
-                                        ctaLink={`/analisis/${pub.slug}`}
-                                        className="h-full"
-                                    />
-                                ))}
+                                {filteredArticles.slice(1).map((pub) => {
+                                    const locPub = getLocalizedArticle(pub);
+                                    return (
+                                        <Card
+                                            key={pub.slug}
+                                            variant="standard"
+                                            title={locPub.title}
+                                            summary={locPub.subtitle}
+                                            image={pub.heroImage}
+                                            badge={locPub.type}
+                                            metadata={{ date: pub.publishDate, author: pub.author.name }}
+                                            ctaLink={`/analisis/${pub.slug}`}
+                                            className="h-full"
+                                        />
+                                    );
+                                })}
                             </div>
                         )}
 
                         <div className="mt-12 text-center">
                             <button className="inline-flex items-center px-8 py-3 border border-slate-300 text-sm font-bold text-[#0B263F] hover:bg-[#0B263F] hover:text-white transition-colors">
-                                Cargar más publicaciones
+                                {t('research.load_more')}
                                 <ArrowRight className="ml-2 w-4 h-4" />
                             </button>
                         </div>
                     </div>
                 ) : (
                     <div className="text-center py-20 bg-slate-50 rounded-sm">
-                        <p className="text-slate-500 text-lg">No hay publicaciones en esta categoría por el momento.</p>
+                        <p className="text-slate-500 text-lg">{t('research.no_results')}</p>
                     </div>
                 )}
             </div>

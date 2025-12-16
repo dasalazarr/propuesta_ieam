@@ -131,9 +131,7 @@ const ArticleTemplate = () => {
             <div>
               <div className="text-xs uppercase tracking-[0.18em] text-slate-500 font-bold mb-2">Autor</div>
               <h3 className="text-xl font-serif font-bold text-[var(--color-text-primary)] mb-1">María L. Crespo</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Directora de análisis en IEAM. Especialista en movilidad África–Europa y negociaciones bilaterales de talento. Ha coordinado talleres de inteligencia colectiva en Bamako, Dakar y Rabat.
-              </p>
+              <p className="text-slate-600 text-sm">Directora de análisis</p>
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@
  */
 
 export type DonationMode = 'payment_links' | 'checkout_session';
+export type DonationFrequency = 'one-time' | 'monthly';
 
 export interface DonationTier {
     id: string;
@@ -15,7 +16,10 @@ export interface DonationTier {
     description: string;
     impact: string;
     featured?: boolean;
-    paymentLink?: string;
+    links: {
+        oneTime: string;
+        monthly: string;
+    };
 }
 
 // ============================================
@@ -36,10 +40,18 @@ export const DONATION_CONFIG = {
      * Replace with your actual links
      */
     paymentLinks: {
-        basic: 'https://buy.stripe.com/test_basic', // €20
-        solidarity: 'https://buy.stripe.com/test_solidarity', // €50
-        institutional: 'https://buy.stripe.com/test_institutional', // €200
-        custom: 'https://buy.stripe.com/test_custom', // Variable amount
+        basic: {
+            oneTime: 'https://buy.stripe.com/aFa6oH6sp5sHbEXeoHgfu00',
+            monthly: 'https://buy.stripe.com/eVqdR9aIFbR57oHfsLgfu01'
+        },
+        solidarity: {
+            oneTime: 'https://buy.stripe.com/9B628rbMJf3hdN5a8rgfu02',
+            monthly: 'https://buy.stripe.com/9B66oH9EBbR5bEX3K3gfu03'
+        },
+        institutional: {
+            oneTime: 'https://buy.stripe.com/28EbJ1eYV5sH7oH80jgfu04',
+            monthly: 'https://buy.stripe.com/fZu9ATaIF6wL5gz4O7gfu05'
+        },
     },
 
     /**
@@ -67,7 +79,7 @@ export const donationTiers: DonationTier[] = [
         amount: 20,
         description: 'Colaboración puntual para apoyar nuestra labor',
         impact: 'Contribuye a la publicación de un artículo de análisis',
-        paymentLink: DONATION_CONFIG.paymentLinks.basic,
+        links: DONATION_CONFIG.paymentLinks.basic,
     },
     {
         id: 'solidarity',
@@ -76,7 +88,7 @@ export const donationTiers: DonationTier[] = [
         description: 'Impulsa la investigación independiente',
         impact: 'Financia la creación de una infografía de datos',
         featured: true,
-        paymentLink: DONATION_CONFIG.paymentLinks.solidarity,
+        links: DONATION_CONFIG.paymentLinks.solidarity,
     },
     {
         id: 'institutional',
@@ -84,7 +96,7 @@ export const donationTiers: DonationTier[] = [
         amount: 200,
         description: 'Respaldo significativo a nuestra misión',
         impact: 'Patrocina un policy brief completo',
-        paymentLink: DONATION_CONFIG.paymentLinks.institutional,
+        links: DONATION_CONFIG.paymentLinks.institutional,
     },
 ];
 
@@ -95,11 +107,12 @@ export const donationTiers: DonationTier[] = [
 /**
  * Get donation URL based on current mode
  */
-export function getDonationUrl(tierId: string): string {
+export function getDonationUrl(tierId: string, frequency: DonationFrequency = 'one-time'): string {
     const tier = donationTiers.find((t) => t.id === tierId);
 
     if (DONATION_CONFIG.mode === 'payment_links') {
-        return tier?.paymentLink || DONATION_CONFIG.paymentLinks.custom;
+        if (!tier) return '#';
+        return frequency === 'monthly' ? tier.links.monthly : tier.links.oneTime;
     }
 
     // Future: Checkout Session mode
@@ -111,7 +124,8 @@ export function getDonationUrl(tierId: string): string {
 /**
  * Format amount for display
  */
-export function formatAmount(amount: number | 'custom'): string {
+export function formatAmount(amount: number | 'custom', frequency: DonationFrequency = 'one-time'): string {
     if (amount === 'custom') return 'Libre';
-    return `€${amount}`;
+    const suffix = frequency === 'monthly' ? '/mes' : '';
+    return `€${amount}${suffix}`;
 }

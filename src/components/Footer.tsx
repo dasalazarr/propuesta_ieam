@@ -1,47 +1,30 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[#0A2540] text-white pt-16 pb-8">
       <div className="page-shell">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
-          {/* Column 1: Explore */}
+          {/* Column 1: Explore & Navigation */}
           <div>
-            <h3 className="text-lg font-serif font-bold mb-6 text-[#006994]">Explorar</h3>
+            <h3 className="text-lg font-serif font-bold mb-6 text-[#006994]">{t('footer.sections.explore')}</h3>
             <ul className="space-y-3">
-              <li><Link to="/" className="text-slate-300 hover:text-white transition-colors">Inicio</Link></li>
-              <li><Link to="/eventos-y-actualidad" className="text-slate-300 hover:text-white transition-colors">Eventos y Actualidad</Link></li>
-              <li><Link to="/investigacion" className="text-slate-300 hover:text-white transition-colors">Investigación</Link></li>
-              <li><a href="https://mediterraneandialogue.org/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white transition-colors">Diálogo Mediterráneo</a></li>
+              <li><Link to="/" className="text-slate-300 hover:text-white transition-colors">{t('navigation.home')}</Link></li>
+              <li><Link to="/nosotros" className="text-slate-300 hover:text-white transition-colors">{t('navigation.about')}</Link></li>
+              <li><Link to="/eventos-y-actualidad" className="text-slate-300 hover:text-white transition-colors">{t('navigation.events')}</Link></li>
+              <li><Link to="/investigacion" className="text-slate-300 hover:text-white transition-colors">{t('navigation.research')}</Link></li>
+              <li><a href="https://mediterraneandialogue.org/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white transition-colors">{t('navigation.dialogue')}</a></li>
             </ul>
           </div>
 
-          {/* Column 2: The Institute */}
-          <div>
-            <h3 className="text-lg font-serif font-bold mb-6 text-[#006994]">El Instituto</h3>
-            <ul className="space-y-3">
-              <li><Link to="/nosotros" className="text-slate-300 hover:text-white transition-colors">Quiénes somos</Link></li>
-              <li><Link to="/nosotros#equipo" className="text-slate-300 hover:text-white transition-colors">Equipo</Link></li>
-              <li><Link to="/nosotros#colabora" className="text-slate-300 hover:text-white transition-colors">Colabora</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 3: Resources */}
-          <div>
-            <h3 className="text-lg font-serif font-bold mb-6 text-[#006994]">Recursos</h3>
-            <ul className="space-y-3">
-              <li><Link to="/investigacion" className="text-slate-300 hover:text-white transition-colors">Artículos</Link></li>
-              <li><Link to="/analisis/reseña-presentacion-informe-mediterraneo-2024" className="text-slate-300 hover:text-white transition-colors">Informes</Link></li>
-              <li><Link to="/analisis/entrevista-beatriz-mauritania-canarias" className="text-slate-300 hover:text-white transition-colors">Entrevistas</Link></li>
-              <li><Link to="/analisis/comparativa-llegadas-espana-2025" className="text-slate-300 hover:text-white transition-colors">Infografías</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 4: Connect */}
-          <div>
+          {/* Column 2: Connect */}
+          <div className="md:col-span-1 lg:col-start-3 lg:col-span-2">
             <div className="mb-6">
               <img
                 src="/ieam-logo-new.png"
@@ -49,7 +32,7 @@ const Footer = () => {
                 className="h-32 w-auto mb-6 brightness-0 invert opacity-90"
               />
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                Centro independiente de investigación y reflexión sobre migraciones. Construyendo puentes entre Europa, África y el Mediterráneo.
+                {t('footer.contact_info')}
               </p>
             </div>
 
@@ -65,25 +48,26 @@ const Footer = () => {
               </a>
             </div>
 
+            {/* Contact Info */}
             <div className="pt-6 border-t border-[#1e4976]">
-              <h4 className="text-sm font-bold mb-2">Contacto</h4>
-              <div className="space-y-2 text-sm text-slate-300">
-                <div className="flex items-center">
-                  <Mail className="w-4 h-4 mr-2 text-[#006994]" />
-                  <span>info@ieam.es</span>
-                </div>
-              </div>
+              <h4 className="text-sm font-bold mb-2">{t('footer.sections.contact')}</h4>
+              <p className="text-sm text-slate-400 mb-2">
+                <Link to="/contacto" className="hover:text-white transition-colors">{t('navigation.contact')}</Link>
+              </p>
+              <p className="text-sm text-slate-400">
+                {t('footer.location')}
+              </p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-[#1e4976] pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
-          <p>&copy; {new Date().getFullYear()} IEAM. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} IEAM. {t('footer.rights')}</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacidad</Link>
-            <Link to="/cookies" className="hover:text-white transition-colors">Cookies</Link>
-            <Link to="/legal" className="hover:text-white transition-colors">Aviso Legal</Link>
-            <a href="mailto:info@ieam.es" className="hover:text-white transition-colors">Contacto</a>
+            <Link to="/privacy" className="hover:text-white transition-colors">{t('footer.legal.privacy')}</Link>
+            <Link to="/cookies" className="hover:text-white transition-colors">{t('footer.legal.cookies')}</Link>
+            <Link to="/legal" className="hover:text-white transition-colors">{t('footer.legal.legal_notice')}</Link>
+            <a href="mailto:info@ieam.es" className="hover:text-white transition-colors">{t('navigation.contact')}</a>
           </div>
         </div>
       </div>

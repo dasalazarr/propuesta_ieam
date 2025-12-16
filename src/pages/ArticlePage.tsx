@@ -5,21 +5,33 @@ import Footer from '@/components/Footer';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import { Card } from '@/components/ui/UnifiedCard';
 import { articles, getArticleBySlug } from '@/data/articles';
+import { useTranslation } from 'react-i18next';
 
 const ArticlePage = () => {
     const { slug } = useParams<{ slug: string }>();
-    // Default to the first article if no slug provided (for direct /articulo-ejemplo access pattern if strictly needed, though routing handles slug)
-    // Or handle 404
-
+    const { t, i18n } = useTranslation();
     const article = getArticleBySlug(slug || '');
 
-    if (!article) {
+    // Localization helper
+    const localizedArticle = article ? {
+        title: (i18n.language === 'en' && article.title_en) ? article.title_en : article.title,
+        subtitle: (i18n.language === 'en' && article.subtitle_en) ? article.subtitle_en : article.subtitle,
+        content: (i18n.language === 'en' && article.content_en) ? article.content_en : article.content,
+        category: article.category,
+        type: article.type,
+    } : null;
+
+    if (!article || !localizedArticle) {
         return (
             <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
-                <h1 className="text-4xl font-serif font-bold text-[#0A2540] mb-4">Artículo no encontrado / 404</h1>
-                <p className="text-slate-600 mb-8">Lo sentimos, el análisis que buscas no está disponible.</p>
+                <h1 className="text-4xl font-serif font-bold text-[#0A2540] mb-4">
+                    {i18n.language === 'en' ? 'Article not found / 404' : 'Artículo no encontrado / 404'}
+                </h1>
+                <p className="text-slate-600 mb-8">
+                    {i18n.language === 'en' ? 'Sorry, the analysis you are looking for is not available.' : 'Lo sentimos, el análisis que buscas no está disponible.'}
+                </p>
                 <a href="/" className="px-6 py-3 bg-[#D4212A] text-white font-bold uppercase tracking-wider rounded-sm hover:bg-[#b01b22] transition-colors">
-                    Volver al Inicio
+                    {i18n.language === 'en' ? 'Back to Home' : 'Volver al Inicio'}
                 </a>
             </div>
         );
@@ -46,20 +58,20 @@ const ArticlePage = () => {
                         <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-[#F2D4D6] mb-4">
                             <span className="inline-flex items-center gap-2">
                                 <span className="w-2 h-2 bg-[var(--color-accent-red)] rounded-full" />
-                                {article.type}
+                                {localizedArticle.type}
                             </span>
-                            <span className="text-white/70">{article.category}</span>
+                            <span className="text-white/70">{localizedArticle.category}</span>
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-tight mb-6 text-white">
-                            {article.title}
+                            {localizedArticle.title}
                         </h1>
                         <p className="text-xl text-slate-200 leading-relaxed max-w-3xl mb-6">
-                            {article.subtitle}
+                            {localizedArticle.subtitle}
                         </p>
                         <div className="flex flex-wrap gap-4 text-xs uppercase tracking-[0.12em] text-slate-300">
                             <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> {article.publishDate}</span>
-                            <span className="flex items-center gap-2"><User className="w-4 h-4" /> Equipo IEAM</span>
-                            <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {article.readTime} lectura</span>
+                            <span className="flex items-center gap-2"><User className="w-4 h-4" /> {i18n.language === 'en' ? 'IEAM Team' : 'Equipo IEAM'}</span>
+                            <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {article.readTime} {i18n.language === 'en' ? 'read' : 'lectura'}</span>
                         </div>
                         {article.materials && article.materials.length > 0 && (
                             <div className="mt-6 flex flex-wrap gap-3">
@@ -103,7 +115,7 @@ const ArticlePage = () => {
                     <div className="mx-auto reading-width space-y-8 text-slate-700 leading-relaxed">
 
                         {/* Dynamic Content Rendering */}
-                        <div dangerouslySetInnerHTML={{ __html: article.content }} className="space-y-6 [&_p]:mb-6" />
+                        <div dangerouslySetInnerHTML={{ __html: localizedArticle.content }} className="space-y-6 [&_p]:mb-6" />
 
                         {/* Pull Quote */}
                         {article.pullQuote && (
@@ -116,23 +128,29 @@ const ArticlePage = () => {
                 </div>
             </section>
 
-            {/* Author */}
+            {/* Author(s) */}
             <section className="section-shell bg-[var(--color-paper-warm)] border-y hairline">
                 <div className="page-shell">
-                    <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-6 items-center">
-                        <img
-                            src={article.author.image}
-                            alt={article.author.name}
-                            className="w-24 h-24 rounded-full object-cover border hairline"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                        <div>
-                            <div className="text-xs uppercase tracking-[0.18em] text-slate-500 font-bold mb-2">Autor</div>
-                            <h3 className="text-xl font-serif font-bold text-[var(--color-text-primary)] mb-1">{article.author.name}</h3>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                                {article.author.bio}
-                            </p>
+                    <div className="max-w-3xl mx-auto">
+                        <div className="text-xs uppercase tracking-[0.18em] text-slate-500 font-bold mb-4 text-center sm:text-left">
+                            {i18n.language === 'en' ? (article.authors && article.authors.length > 1 ? 'Authors' : 'Author') : (article.authors && article.authors.length > 1 ? 'Autores' : 'Autor')}
+                        </div>
+                        <div className={`flex flex-col sm:flex-row gap-8 ${article.authors && article.authors.length > 1 ? 'justify-center' : 'items-center'}`}>
+                            {(article.authors || [article.author]).map((auth, idx) => (
+                                <div key={idx} className="flex flex-col sm:flex-row gap-4 items-center">
+                                    <img
+                                        src={auth.image}
+                                        alt={auth.name}
+                                        className="w-20 h-20 rounded-full object-cover border hairline"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                    <div className="text-center sm:text-left">
+                                        <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-1">{auth.name}</h3>
+                                        <p className="text-slate-600 text-sm">{auth.role}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -144,26 +162,36 @@ const ArticlePage = () => {
                     <div className="page-shell">
                         <div className="flex items-center justify-between mb-8">
                             <div>
-                                <span className="eyebrow mb-2">Artículos relacionados</span>
-                                <h2 className="text-3xl font-serif font-bold text-[var(--color-text-primary)]">Sigue explorando</h2>
+                                <span className="eyebrow mb-2">
+                                    {i18n.language === 'en' ? 'Related Articles' : 'Artículos relacionados'}
+                                </span>
+                                <h2 className="text-3xl font-serif font-bold text-[var(--color-text-primary)]">
+                                    {i18n.language === 'en' ? 'Keep exploring' : 'Sigue explorando'}
+                                </h2>
                             </div>
                         </div>
                         <div className="grid md:grid-cols-3 gap-8">
                             {articles
                                 .filter((a) => a.slug !== article.slug)
                                 .slice(0, 3)
-                                .map((rel) => (
-                                    <Card
-                                        key={rel.slug}
-                                        variant="standard"
-                                        title={rel.title}
-                                        summary={rel.subtitle}
-                                        image={rel.heroImage}
-                                        badge={rel.type}
-                                        metadata={{ date: rel.publishDate, author: rel.author.name }}
-                                        ctaLink={`/analisis/${rel.slug}`}
-                                    />
-                                ))}
+                                .map((rel) => {
+                                    const localizedRel = {
+                                        title: (i18n.language === 'en' && rel.title_en) ? rel.title_en : rel.title,
+                                        subtitle: (i18n.language === 'en' && rel.subtitle_en) ? rel.subtitle_en : rel.subtitle,
+                                    };
+                                    return (
+                                        <Card
+                                            key={rel.slug}
+                                            variant="standard"
+                                            title={localizedRel.title}
+                                            summary={localizedRel.subtitle}
+                                            image={rel.heroImage}
+                                            badge={rel.type}
+                                            metadata={{ date: rel.publishDate, author: rel.author.name }}
+                                            ctaLink={`/analisis/${rel.slug}`}
+                                        />
+                                    );
+                                })}
                         </div>
                     </div>
                 </section>

@@ -24,14 +24,18 @@ export interface Article {
     contentKind: 'analisis' | 'policy' | 'infografia' | 'reseña-evento' | 'entrevista' | 'nota-prensa';
     category: string;
     title: string;
+    title_en?: string;
     subtitle: string;
+    subtitle_en?: string;
     heroImage: string;
     mainImage: string;
     mainImageCaption: string;
     publishDate: string;
     readTime: string;
     author: Author;
+    authors?: Author[]; // Optional array for multiple authors
     content: string; // HTML string for simplicity and portability
+    content_en?: string; // Optional English content
     pullQuote?: string; // Optional highlighted quote
     materialUrl?: string; // Optional downloadable material
     materialLabel?: string;
@@ -46,7 +50,9 @@ export const articles: Article[] = [
         contentKind: 'policy',
         category: 'Migración · Mediterráneo',
         title: 'Repensar la movilidad entre Mali y Europa',
+        title_en: 'Rethinking mobility between Mali and Europe',
         subtitle: 'Un marco para ordenar la movilidad, reducir los costes humanos y crear beneficios compartidos para países de origen, tránsito y destino.',
+        subtitle_en: 'A framework to organize mobility, reduce human costs and create shared benefits for countries of origin, transit, and destination.',
         heroImage: '/mali-europa-map.png',
         mainImage: '/mali-europa-map.png',
         mainImageCaption: 'Trayectos de movilidad regulada entre Bamako, Dakar y Madrid.',
@@ -56,8 +62,22 @@ export const articles: Article[] = [
             name: 'Beatriz de León',
             role: 'Directora Ejecutiva',
             image: '/team/member-2.jpg',
-            bio: 'Directora Ejecutiva del IEAM. Especialista en movilidad África–Europa y negociación de marcos bilaterales de talento. Lidera talleres de inteligencia colectiva en Bamako, Dakar y Rabat.'
+            bio: 'Directora Ejecutiva del IEAM.'
         },
+        authors: [
+            {
+                name: 'Beatriz de León',
+                role: 'Directora Ejecutiva',
+                image: '/team/member-2.jpg',
+                bio: 'Directora Ejecutiva del IEAM.'
+            },
+            {
+                name: 'Bréma Ely Dicko',
+                role: 'Investigador asociado',
+                image: '/team/member-3.jpg',
+                bio: 'Investigador asociado del IEAM.'
+            }
+        ],
         pullQuote: 'La movilidad es inevitable; la diferencia está entre gestionarla con reglas claras o asumir sus costes en la irregularidad.',
         materials: [
             {
@@ -70,32 +90,30 @@ export const articles: Article[] = [
             }
         ],
         content: `
-      <p>La dinámica reciente en la ruta atlántica, donde los ciudadanos malienses figuran entre las nacionalidades más presentes en las llegadas a Canarias, envía un mensaje claro: la gestión de emergencias ya no es suficiente. Es hora de construir soluciones estructurales basadas en la evidencia.</p>
-      <p>En el Instituto Español de Análisis Migratorio (IEAM), hemos trasladado el debate al terreno. Este análisis es el resultado de un taller de inteligencia colectiva celebrado en Bamako, donde reunimos a expertos, autoridades y sociedad civil bajo la regla de Chatham House para diagnosticar la realidad sin filtros.</p>
-      <p>El resultado es un hoja de ruta pragmática que desafía las políticas actuales de retorno y cooperación. A continuación, desglosamos los tres pilares fundamentales para transformar la movilidad humana en una oportunidad real.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">La Movilidad Legal y Circular</h3>
-      <p>Mali está dispuesto a colaborar en programas estructurados, pero la falta de voluntad política en los países de destino y la gestión institucional dispersa han frenado iniciativas anteriores. Sin embargo, la evidencia demuestra que la circularidad funciona cuando se dan las condiciones adecuadas.</p>
-      <p>El programa piloto «Before You Go» con Italia es la prueba de concepto necesaria: 88 beneficiarios formados en origen en sectores clave (agroecología, construcción, salud) y certificados para el mercado laboral italiano.</p>
-      <p>Para escalar este modelo, proponemos:</p>
-      <ul class="list-disc ml-6 space-y-1 text-slate-700">
-        <li><strong>Demanda real:</strong> alinear los programas con las necesidades explícitas de los empleadores europeos.</li>
-        <li><strong>Predictibilidad:</strong> trámites de visado claros y flexibles para eliminar el incentivo de las redes de tráfico.</li>
-        <li><strong>Ciclo completo:</strong> seguridad desde la preparación previa a la salida hasta el retorno planificado.</li>
+      <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">RESUMEN EJECUTIVO</h2>
+      <p>El objetivo de este policy paper es proponer un marco de acciones concretas para la movilidad legal y circular, la reintegración de las personas que retornan y la gobernanza regional de las rutas migratorias entre Mali, su subregión y Europa. El documento forma parte de una serie de trabajos del Instituto Español de Análisis Migratorio (IEAM) y es el resultado de un taller de inteligencia colectiva celebrado en Bamako con actores institucionales, académicos e investigadores especializados en migraciones, asociaciones, técnicos y economistas, orientado a identificar prioridades comunes y proponer mecanismos operativos.</p>
+      <p>Para España y, en general, para Europa, la dinámica reciente en la ruta atlántica —donde los malienses se encuentran entre las nacionalidades más presentes en la ruta hacia Canarias— invita a ir más allá de la gestión de emergencias para construir soluciones estructurales.</p>
+      
+      <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">MENSAJES ESTRATÉGICOS</h2>
+      
+      <ul class="list-disc ml-6 space-y-4 text-slate-700">
+        <li><strong>Es esencial contar con un compromiso colectivo y un enfoque multiactor:</strong> los Estados, las entidades locales, la diáspora y los socios internacionales deben construir conjuntamente los dispositivos, poner en común la financiación y definir indicadores comunes.</li>
+        
+        <li><strong>Una reintegración satisfactoria pasa por el arraigo comunitario, la inclusión económica y el seguimiento local,</strong> favoreciendo los enfoques colectivos y la financiación mixta.</li>
+        
+        <li><strong>La movilidad legal y circular debe tratarse como una prioridad estratégica,</strong> con acuerdos multilaterales bien estructurados y procedimientos claros y flexibles.</li>
+        
+        <li><strong>La consolidación de los mecanismos regionales (CEDEAO, UA, AES, bilaterales) es indispensable</strong> y debe ser más pragmática y garantizar una mejor protección de las personas con estatus migratorios cambiantes.</li>
+        
+        <li><strong>La coordinación interestatal y la gestión local de los flujos deben evolucionar hacia comités e indicadores comunes,</strong> arraigados en el terreno.</li>
+        
+        <li><strong>La protección de las mujeres y los niños debe convertirse en un eje transversal importante,</strong> con dispositivos adaptados y respaldados por la recopilación de indicadores cualitativos (seguridad, salud, acceso a los derechos). Se invita a los donantes y diplomáticos a dar prioridad a este aspecto para cubrir el vacío existente en las respuestas operativas.</li>
+        
+        <li><strong>La sostenibilidad y la mutualización de la financiación:</strong> es urgente integrar los recursos locales, la inversión de la diáspora y un enfoque de cofinanciación inicial para superar el modelo dependiente de los donantes y asegurar la continuidad.</li>
+        
+        <li><strong>El seguimiento, la transparencia y la adaptación continua son la clave del éxito:</strong> cada acción, cada programa debe ser objeto de seguimiento, documentación y evaluación para poder corregirlo, ampliarlo o detenerlo en función de los resultados medidos.</li>
       </ul>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Reintegración: superar la visión individualista</h3>
-      <p>El enfoque actual de reintegración está fallando. Entregar una ayuda individual a quien ha invertido millones en su viaje no compensa la pérdida de capital ni el «pasivo social» frente a su comunidad. Además, estas ayudas individuales pueden generar tensiones y celos locales si no se gestionan adecuadamente.</p>
-      <p>Nuestra propuesta es un cambio de paradigma hacia el arraigo comunitario:</p>
-      <ul class="list-disc ml-6 space-y-1 text-slate-700">
-        <li><strong>Inversión colectiva:</strong> financiar proyectos que beneficien al municipio, no solo al individuo.</li>
-        <li><strong>Seguimiento local:</strong> comités de seguimiento con diáspora y sector privado.</li>
-        <li><strong>Financiación por tramos:</strong> ayudas condicionadas a hitos verificables.</li>
-      </ul>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">El “Punto Ciego”: Mujeres y Niños</h3>
-      <p>Existe un vacío alarmante en la documentación y protección de los perfiles más vulnerables. La literatura actual está fragmentada y carece de datos desagregados, lo que impide diseñar respuestas proporcionales a los riesgos reales que enfrentan mujeres y niños en la ruta.</p>
-      <p>Es imperativo documentar y combatir riesgos específicos como la violencia de género, la explotación sexual y los matrimonios forzados. Las políticas públicas deben incorporar indicadores cualitativos y no solo cifras de flujos.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Hacia una Nueva Gobernanza Regional</h3>
-      <p>La retirada de Mali de la CEDEAO y la creación de la Alianza de Estados del Sahel (AES) plantean incertidumbres sobre la libre circulación en la región. Es urgente actualizar los acuerdos bilaterales (especialmente con Mauritania y Argelia) para incluir cláusulas operativas de seguridad y gestión de fronteras.</p>
-      <p>La conclusión es clara: la resiliencia del Sahel y la seguridad de las fronteras europeas dependen de abandonar el enfoque de “crisis” y adoptar una estrategia de movilidad legal, circular y mutuamente beneficiosa.</p>
+      
       <p class="mt-6 text-sm text-slate-600">Basado en el Policy Paper «Repensar la movilidad entre Mali y Europa», elaborado por Beatriz de León Cobo y el Pr. Bréma Ely Dicko.</p>
     `,
         relatedArticles: [
@@ -128,7 +146,9 @@ export const articles: Article[] = [
         contentKind: 'infografia',
         category: 'Flujos · España',
         title: 'Comparativa de llegadas migratorias a España por vía terrestre y marítima (2024-2025)',
+        title_en: 'Comparison of migratory arrivals to Spain by land and sea (2024-2025)',
         subtitle: 'El flujo migratorio hacia España desciende 31% interanual, con fuertes diferencias territoriales entre rutas marítimas y terrestres.',
+        subtitle_en: 'Migratory flow to Spain drops 31% year-on-year, with strong territorial differences between maritime and land routes.',
         heroImage: '/images/boat-atlantic.jpg',
         mainImage: '/images/boat-atlantic.jpg',
         mainImageCaption: 'Patrulla marítima en la ruta atlántica hacia Canarias (2024-2025).',
@@ -137,7 +157,7 @@ export const articles: Article[] = [
         author: {
             name: 'Equipo IEAM',
             role: 'Análisis de datos',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de datos y análisis territorial del IEAM.'
         },
         pullQuote: 'La presión migratoria persiste y las rutas se adaptan al control fronterizo y a la cooperación internacional.',
@@ -168,22 +188,37 @@ export const articles: Article[] = [
         slug: 'comparativa-partidos-politicos-2024',
         type: 'Infografía',
         contentKind: 'infografia',
-        category: 'Política · UE',
+        category: 'Política · España',
         title: 'Comparativa de partidos políticos ante el Pacto Migratorio',
-        subtitle: 'Posicionamiento de los grupos parlamentarios europeos frente a la reforma del asilo.',
-        heroImage: "https://images.unsplash.com/photo-1541872703-74c5963631df?q=80&w=2070&auto=format&fit=crop",
-        mainImage: "https://images.unsplash.com/photo-1541872703-74c5963631df?q=80&w=2070&auto=format&fit=crop",
-        mainImageCaption: 'Parlamento Europeo en Estrasburgo.',
+        title_en: 'Comparison of political parties on the Migration Pact',
+        subtitle: 'Síntesis comparada de las propuestas en materia de inmigración de los principales partidos políticos en España (2025).',
+        subtitle_en: 'Comparative overview of immigration proposals from Spain\'s main political parties (2025).',
+        heroImage: "/images/politics.png",
+        mainImage: "/images/politics.png",
+        mainImageCaption: 'Comparativa de propuestas migratorias de partidos políticos en España.',
         publishDate: '10 Nov 2024',
         readTime: '6 min',
         author: {
             name: 'Equipo IEAM',
             role: 'Investigación',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de investigación IEAM.'
         },
         pullQuote: 'El consenso político se fractura en los detalles de implementación del Pacto.',
-        content: '<p>Análisis detallado de las posturas de los principales partidos europeos respecto al nuevo Pacto de Migración y Asilo.</p>',
+        materials: [
+            {
+                label: 'Descargar infografía (PDF)',
+                url: '/docs/infografia-partidospoliticos.pdf'
+            }
+        ],
+        content: `
+      <p>En IEAM Instituto Español de Análisis Migratorio presentamos una síntesis comparada de las propuestas en materia de inmigración incluidas en los programas nacionales de los principales partidos políticos en España (2025).</p>
+      <p>La infografía resume las diferencias clave en modelos, prioridades y enfoques regulatorios que marcarán el debate migratorio en España.</p>
+    `,
+        content_en: `
+      <p>At IEAM Instituto Español de Análisis Migratorio, we present a comparative overview of the immigration proposals included in the 2025 national programmes of Spain's main political parties.</p>
+      <p>The infographic highlights differing models, priorities and regulatory visions shaping Spain's migration debate.</p>
+    `,
         relatedArticles: []
     },
     {
@@ -192,7 +227,9 @@ export const articles: Article[] = [
         contentKind: 'infografia',
         category: 'Seguridad · Fronteras',
         title: 'Comparativa: La evolución del mandato de Frontex',
+        title_en: 'Comparison: The evolution of the Frontex mandate',
         subtitle: 'Cómo ha cambiado la agencia de fronteras europea en la última década.',
+        subtitle_en: 'How the European border agency has changed over the last decade.',
         heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
         mainImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
         mainImageCaption: 'Operación conjunta en el Mediterráneo.',
@@ -201,11 +238,32 @@ export const articles: Article[] = [
         author: {
             name: 'Equipo IEAM',
             role: 'Investigación',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de investigación IEAM.'
         },
-        pullQuote: 'Frontex asume más competencias en retorno, pero enfrenta mayores exigencias de derechos fundamentales.',
-        content: '<p>Estudio comparativo sobre los recursos, presupuesto y mandato jurídico de Frontex entre 2015 y 2024.</p>',
+        materials: [
+            {
+                label: 'Infografía (ES)',
+                url: '/docs/frontex1.jpg'
+            },
+            {
+                label: 'Infographic (EN)',
+                url: '/docs/frontex2.jpg'
+            }
+        ],
+        pullQuote: 'Un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.',
+        content: `
+      <p>Desde IEAM Instituto Español de Análisis Migratorio, destacamos la reciente reunión organizada por Frontex los días 5 y 6 de noviembre de 2025 en Varsovia, centrada en el desarrollo de un sistema integrado de monitoreo de retornos en la UE.</p>
+      <p>El encuentro reunió a representantes de la Oficina de Derechos Fundamentales (FRO) de Frontex para debatir cómo fortalecer un sistema de retorno humano, seguro y respetuoso con los derechos fundamentales.</p>
+      <p>El monitoreo de retornos es una herramienta esencial para garantizar que toda operación respete la legalidad y la dignidad de las personas retornadas, mediante criterios objetivos y transparentes que favorezcan la coherencia, la rendición de cuentas y la identificación de buenas prácticas.</p>
+      <p>Durante las sesiones, los participantes subrayaron la necesidad de una cooperación estructurada entre los niveles europeo y nacional, y coincidieron en que un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.</p>
+    `,
+        content_en: `
+      <p>From IEAM Instituto Español de Análisis Migratorio, we highlight the recent meeting held by Frontex on 5–6 November 2025 in Warsaw, dedicated to advancing an EU integrated monitoring system of returns.</p>
+      <p>The event brought together forced-return monitors and members of Frontex's Fundamental Rights Office (FRO) to discuss how to strengthen a return system that is humane, safe and respectful of fundamental rights.</p>
+      <p>Return monitoring is a key mechanism ensuring that all operations uphold legality, dignity and accountability, based on objective and transparent criteria that promote fairness and best practices across Member States.</p>
+      <p>Participants stressed the need for structured cooperation between EU and national levels, reaffirming that a credible return system must rest on trust, transparency and a shared commitment to human rights.</p>
+    `,
         relatedArticles: []
     },
     {
@@ -223,7 +281,7 @@ export const articles: Article[] = [
         author: {
             name: 'Equipo IEAM',
             role: 'Reseña de eventos',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
         },
         pullQuote: 'La presión a Mauritania y Senegal desplaza las salidas hacia zonas menos vigiladas, con mayor riesgo para los viajeros.',
@@ -293,7 +351,7 @@ export const articles: Article[] = [
         author: {
             name: 'Equipo IEAM',
             role: 'Reseña de eventos',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
         },
         pullQuote: 'La migración no es una crisis puntual: requiere cooperación a largo plazo y vías legales que acompañen la seguridad y el desarrollo.',
@@ -326,7 +384,7 @@ export const articles: Article[] = [
         author: {
             name: 'Equipo IEAM',
             role: 'Reseña de eventos',
-            image: '/team/member-4.jpg',
+            image: '/favicon-new.png',
             bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
         },
         pullQuote: 'La migración no es una crisis; es un fenómeno estructural que exige cooperación y políticas adaptadas a cada orilla.',

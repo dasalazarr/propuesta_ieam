@@ -1,32 +1,35 @@
 import React from 'react';
 import { MessageSquare, Search, Megaphone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const StrategySection = () => {
+    const { t } = useTranslation();
+
     const strategies = [
         {
             icon: MessageSquare,
-            title: "Diálogo Estratégico",
-            tags: ["Talleres", "Foros", "Diplomacia"],
-            description: "Talleres de inteligencia colectiva, foros multilaterales (Madrid, Bruselas, Marruecos, Túnez, Bamako, Dakar) y cocreación con contrapartes africanas y europeas para validar políticas y programas.",
+            title: t('strategy.items.0.title'),
+            tags: t('strategy.items.0.tags', { returnObjects: true }) as string[],
+            description: t('strategy.items.0.description'),
             link: "https://mediterraneandialogue.org/",
             toneBg: "#E9F2FF",
             toneText: "#0A3D62"
         },
         {
             icon: Search,
-            title: "Investigación",
-            tags: ["Informes", "Datos", "Análisis"],
-            description: "Revisión de marcos normativos, literatura académica y fuentes abiertas. Publicaciones con datos secundarios, encuestas y entrevistas en España, Europa y terreno.",
+            title: t('strategy.items.1.title'),
+            tags: t('strategy.items.1.tags', { returnObjects: true }) as string[],
+            description: t('strategy.items.1.description'),
             link: "/investigacion",
             toneBg: "#FFF4E5",
             toneText: "#A55400"
         },
         {
             icon: Megaphone,
-            title: "Divulgación y Advocacy",
-            tags: ["Policy Briefs", "Medios", "Advocacy"],
-            description: "Policy briefs en ES/EN/FR/AR con recomendaciones prácticas; campañas multicanal y rondas de incidencia ante UE, parlamentos y gobiernos, apoyadas en evidencia y testimonios.",
+            title: t('strategy.items.2.title'),
+            tags: t('strategy.items.2.tags', { returnObjects: true }) as string[],
+            description: t('strategy.items.2.description'),
             link: "/investigacion",
             toneBg: "#EAF7F1",
             toneText: "#1B6B43"
@@ -37,7 +40,7 @@ const StrategySection = () => {
         <section className="section-shell bg-[var(--color-paper-warm)] border-b hairline">
             <div className="page-shell">
                 <div className="text-center max-w-3xl mx-auto mb-12">
-                    <h2 className="text-4xl font-serif font-bold text-[var(--color-text-primary)] mb-4">Nuestra Metodología</h2>
+                    <h2 className="text-4xl font-serif font-bold text-[var(--color-text-primary)] mb-4">{t('strategy.title')}</h2>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -70,7 +73,7 @@ const StrategySection = () => {
                                 to={item.link}
                                 className="inline-flex items-center text-sm font-bold text-[var(--color-mediterranean)] hover:text-[var(--color-text-primary)] transition-colors"
                             >
-                                Saber más
+                                {t('strategy.cta')}
                                 <ArrowRight className="w-4 h-4 ml-1" />
                             </Link>
                         </div>

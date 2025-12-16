@@ -11,6 +11,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import CollaboratePage from './pages/CollaboratePage';
 import DonationSuccess from './pages/DonationSuccess';
 import DonationCancel from './pages/DonationCancel';
+import ContactPage from './pages/ContactPage';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/nosotros" element={<AboutPage />} />
+      <Route path="/contacto" element={<ContactPage />} />
       <Route path="/eventos-y-actualidad" element={<EventsPage />} />
       <Route path="/investigacion" element={<ResearchPage />} />
       <Route path="/analisis/:slug" element={<ArticlePage />} />

@@ -1,7 +1,10 @@
 import React from 'react';
 import { ArrowRight, Mail, Twitter, Linkedin, Youtube } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const NewsletterCTA = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="bg-[var(--color-navy-900)] section-shell border-t hairline relative">
             <div className="page-shell">
@@ -11,13 +14,13 @@ const NewsletterCTA = () => {
                         <div>
                             <div className="inline-flex items-center space-x-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[#9FC5E5] mb-2">
                                 <span className="w-2 h-2 bg-[#9FC5E5] rounded-full" />
-                                <span>Contacto</span>
+                                <span>{t('newsletter.label')}</span>
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-white mb-2">
-                                Ponte en contacto con nosotros
+                                {t('newsletter.title')}
                             </h2>
                             <p className="text-slate-300 text-lg leading-relaxed">
-                                ¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte y colaborar en proyectos relacionados con migraciones y políticas públicas.
+                                {t('newsletter.subtitle')}
                             </p>
                         </div>
 
@@ -25,11 +28,11 @@ const NewsletterCTA = () => {
                             <div className="flex gap-2">
                                 <input
                                     type="email"
-                                    placeholder="Tu correo electrónico"
+                                    placeholder={t('newsletter.placeholder')}
                                     className="flex-grow bg-white text-[#0A2540] placeholder:text-slate-400 px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#006994] rounded-sm"
                                 />
                                 <button className="bg-[var(--color-mediterranean)] hover:bg-[#005a80] text-white px-6 py-3 text-sm font-bold uppercase tracking-wider transition-colors flex items-center justify-center rounded-sm">
-                                    Enviar
+                                    {t('newsletter.button')}
                                     <ArrowRight className="ml-2 w-4 h-4" />
                                 </button>
                             </div>
@@ -40,7 +43,7 @@ const NewsletterCTA = () => {
                                     className="mt-1 w-4 h-4 text-[#006994] border-slate-500 rounded focus:ring-[#006994] bg-[#0A2540]"
                                 />
                                 <label htmlFor="privacy" className="ml-2 text-xs text-slate-300 leading-snug">
-                                    Acepto la <a href="/privacy" className="text-white hover:underline">política de privacidad</a>.
+                                    {t('newsletter.privacy_text')} <a href="/privacy" className="text-white hover:underline">{t('newsletter.privacy_link')}</a>.
                                 </label>
                             </div>
                         </form>
@@ -48,7 +51,7 @@ const NewsletterCTA = () => {
 
                     <div className="lg:pl-12 lg:border-l border-[#1e4976]">
                         <h3 className="text-2xl font-serif font-bold text-white mb-6">
-                            Síguenos en redes
+                            {t('newsletter.social_title')}
                         </h3>
                         <div className="flex gap-4 mb-4">
                             <a href="#" className="bg-[#1e4976] hover:bg-[var(--color-mediterranean)] text-white p-4 rounded-full transition-all duration-300 group">
@@ -62,7 +65,7 @@ const NewsletterCTA = () => {
                             </a>
                         </div>
                         <p className="text-slate-300 text-sm max-w-md">
-                            Conversaciones abiertas con la comunidad IEAM: actualizaciones, directos y convocatorias.
+                            {t('newsletter.social_text')}
                         </p>
                     </div>
 

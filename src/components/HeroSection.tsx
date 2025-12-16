@@ -2,27 +2,30 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center bg-white border-b hairline">
       <div className="absolute inset-0 bg-gradient-to-b from-[#F7F9FC] via-white to-white pointer-events-none" aria-hidden="true" />
 
       <div className="relative page-shell w-full">
-        <div className="grid lg:grid-cols-12 gap-8 items-center py-12 lg:py-16">
+        <div className="grid lg:grid-cols-12 gap-8 items-center py-8 lg:py-12">
 
           <div className="lg:col-span-5 space-y-8">
             <div className="eyebrow text-[var(--color-text-primary)]">
-              <span className="text-[11px] uppercase tracking-[0.18em] text-slate-500 ml-2">Think Tank independiente · Europa · África</span>
+              <span className="text-[11px] uppercase tracking-[0.18em] text-slate-500 ml-2">{t('hero.eyebrow')}</span>
             </div>
 
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-[-0.02em]">
-              Centro independiente de <span className="italic text-[var(--color-accent-red)]">investigación y reflexión</span> sobre migraciones
+              {t('hero.title_start')} <span className="italic text-[var(--color-accent-red)]">{t('hero.title_highlight')}</span> {t('hero.title_end')}
             </h1>
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-xl">
-              Construyendo puentes estratégicos entre Europa, África y el Mediterráneo.
+              {t('hero.subtitle')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -30,14 +33,14 @@ const HeroSection = () => {
                 to="/investigacion"
                 className="inline-flex items-center justify-center px-7 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white bg-[var(--color-navy-900)] hover:bg-[var(--color-mediterranean)] transition-colors shadow-sm rounded-none"
               >
-                Explorar análisis
+                {t('hero.cta_explore')}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
               <Link
                 to="/eventos-y-actualidad"
                 className="inline-flex items-center justify-center px-7 py-3 text-[11px] font-bold uppercase tracking-[0.18em] border border-slate-300 text-[var(--color-text-primary)] bg-white hover:bg-slate-50 transition-colors"
               >
-                Ver próximos eventos
+                {t('hero.cta_events')}
               </Link>
             </div>
           </div>
@@ -52,20 +55,20 @@ const HeroSection = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A2540]/90 to-transparent p-8 pt-24">
                 <div className="inline-flex items-center px-3 py-1 bg-white/90 text-[#0A3D62] text-[11px] font-bold uppercase tracking-wider mb-3 border border-[#B6D7FF] rounded-full">
-                  Informe Destacado
+                  {t('hero.featured.label')}
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                  Repensar la Movilidad entre Mali y Europa
+                  {t('hero.featured.title')}
                 </h3>
                 <p className="text-slate-200 text-sm mb-4 max-w-xl">
-                  Un nuevo marco de cooperación para una gestión migratoria sostenible y humana.
+                  {t('hero.featured.subtitle')}
                 </p>
                 <div className="flex items-center text-xs text-slate-300 font-medium uppercase tracking-wide">
                   <span className="flex items-center mr-4">
                     <Calendar className="w-3 h-3 mr-1" />
-                    Noviembre 2024
+                    {t('hero.featured.date_nov')}
                   </span>
-                  <span>Lectura: 12 min</span>
+                  <span>{t('hero.featured.reading_time')}</span>
                 </div>
               </div>
             </div>
