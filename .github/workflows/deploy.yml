@@ -36,6 +36,8 @@ jobs:
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" sftp://${{ secrets.FTP_HOST }} <<EOF
           set sftp:auto-confirm yes
           set ssl:verify-certificate no
-          mirror -R --verbose --delete --include-glob=.htaccess dist/ ${{ secrets.FTP_REMOTE_ROOT || '/' }}
+          # Mirror all files from dist/ to remote root.
+          # WARNING: Do NOT use --include-glob unless you want to EXCLUDE everything else.
+          mirror -R --verbose --delete dist/ ${{ secrets.FTP_REMOTE_ROOT || '/' }}
           bye
           EOF
