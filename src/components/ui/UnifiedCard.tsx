@@ -10,12 +10,12 @@ function classNames(...classes: (string | undefined | null | false)[]) {
 const getBadgeTheme = (badge?: string) => {
   if (!badge) return { bg: 'bg-slate-100', text: 'text-[#0A2540]', border: 'border-slate-200' };
   const tone = badge.toLowerCase();
-  if (tone.includes('informe')) return { bg: 'bg-[#E9F2FF]', text: 'text-[#0A3D62]', border: 'border-[#B6D7FF]' };
-  if (tone.includes('análisis') || tone.includes('analisis')) return { bg: 'bg-[#FFF4E5]', text: 'text-[#A55400]', border: 'border-[#FFD9A6]' };
-  if (tone.includes('actualidad')) return { bg: 'bg-[#F6E8FF]', text: 'text-[#6B21A8]', border: 'border-[#E4C7FF]' };
+  if (tone.includes('informe') || tone.includes('report')) return { bg: 'bg-[#E9F2FF]', text: 'text-[#0A3D62]', border: 'border-[#B6D7FF]' };
+  if (tone.includes('análisis') || tone.includes('analisis') || tone.includes('analysis')) return { bg: 'bg-[#FFF4E5]', text: 'text-[#A55400]', border: 'border-[#FFD9A6]' };
+  if (tone.includes('actualidad') || tone.includes('news')) return { bg: 'bg-[#F6E8FF]', text: 'text-[#6B21A8]', border: 'border-[#E4C7FF]' };
   if (tone.includes('opinión') || tone.includes('opinion')) return { bg: 'bg-[#EAF7F1]', text: 'text-[#1B6B43]', border: 'border-[#B9E4CD]' };
-  if (tone.includes('entrevista')) return { bg: 'bg-[#FFECEE]', text: 'text-[#B42318]', border: 'border-[#FFC2C7]' };
-  if (tone.includes('evento') || tone.includes('conferencia') || tone.includes('webinar')) return { bg: 'bg-[#E5F7FF]', text: 'text-[#0A527B]', border: 'border-[#B3E5FF]' };
+  if (tone.includes('entrevista') || tone.includes('interview')) return { bg: 'bg-[#FFECEE]', text: 'text-[#B42318]', border: 'border-[#FFC2C7]' };
+  if (tone.includes('evento') || tone.includes('conferencia') || tone.includes('webinar') || tone.includes('event')) return { bg: 'bg-[#E5F7FF]', text: 'text-[#0A527B]', border: 'border-[#B3E5FF]' };
   return { bg: 'bg-slate-100', text: 'text-[#0A2540]', border: 'border-slate-200' };
 };
 
@@ -64,7 +64,7 @@ export const Card: React.FC<CardProps> = ({
     const lower = badge.toLowerCase();
     if (lower.includes('video')) return <Video className="w-3 h-3 mr-1" />;
     if (lower.includes('podcast')) return <Mic className="w-3 h-3 mr-1" />;
-    if (lower.includes('informe')) return <FileText className="w-3 h-3 mr-1" />;
+    if (lower.includes('informe') || lower.includes('report')) return <FileText className="w-3 h-3 mr-1" />;
     return null;
   };
 
@@ -195,7 +195,7 @@ export const Card: React.FC<CardProps> = ({
             )}
             {metadata?.author && (
               <span className="text-slate-700 normal-case">
-                By {metadata.author}
+                por {metadata.author}
               </span>
             )}
           </div>

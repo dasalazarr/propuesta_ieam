@@ -26,7 +26,11 @@ const LatestAnalysis = () => {
                     <h2 className="text-4xl font-serif font-bold text-[var(--color-text-primary)]">
                         {t('analysis.section_title')}
                     </h2>
-                    <Link to="/investigacion" className="hidden sm:flex items-center text-sm font-bold text-[var(--color-accent-red)] hover:text-[var(--color-text-primary)] transition-colors">
+                    <Link 
+                        to="/investigacion" 
+                        className="hidden sm:flex items-center text-sm font-bold text-[var(--color-accent-red)] hover:text-[var(--color-text-primary)] transition-colors"
+                        onClick={() => window.scrollTo(0, 0)}
+                    >
                         {t('analysis.view_archive')}
                         <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
@@ -64,7 +68,11 @@ const LatestAnalysis = () => {
                 </div>
 
                 <div className="mt-8 text-center sm:hidden">
-                    <Link to="/investigacion" className="inline-flex items-center text-sm font-bold text-[var(--color-mediterranean)]">
+                    <Link 
+                        to="/investigacion" 
+                        className="inline-flex items-center text-sm font-bold text-[var(--color-mediterranean)]"
+                        onClick={() => window.scrollTo(0, 0)}
+                    >
                         {t('analysis.view_archive')}
                         <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>

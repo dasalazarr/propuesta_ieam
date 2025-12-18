@@ -17,8 +17,12 @@ const ArticlePage = () => {
         title: (i18n.language === 'en' && article.title_en) ? article.title_en : article.title,
         subtitle: (i18n.language === 'en' && article.subtitle_en) ? article.subtitle_en : article.subtitle,
         content: (i18n.language === 'en' && article.content_en) ? article.content_en : article.content,
-        category: article.category,
-        type: article.type,
+        category: (i18n.language === 'en' && article.category_en) ? article.category_en : article.category,
+        type: (i18n.language === 'en' && article.type_en) ? article.type_en : article.type,
+        heroImage: (i18n.language === 'en' && article.heroImage_en) ? article.heroImage_en : article.heroImage,
+        mainImage: (i18n.language === 'en' && article.mainImage_en) ? article.mainImage_en : article.mainImage,
+        mainImageCaption: (i18n.language === 'en' && article.mainImageCaption_en) ? article.mainImageCaption_en : article.mainImageCaption,
+        pullQuote: (i18n.language === 'en' && article.pullQuote_en) ? article.pullQuote_en : article.pullQuote,
     } : null;
 
     if (!article || !localizedArticle) {
@@ -45,7 +49,7 @@ const ArticlePage = () => {
             <section className="relative bg-[#0A2540] text-white section-shell overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={article.heroImage}
+                        src={localizedArticle.heroImage}
                         alt="Hero background"
                         className="w-full h-full object-cover opacity-30"
                         loading="eager"
@@ -82,7 +86,7 @@ const ArticlePage = () => {
                                         className="inline-flex items-center px-6 py-3 bg-[var(--color-accent-red)] text-white font-bold uppercase tracking-[0.18em] rounded-none hover:bg-[#b01b22] transition-colors"
                                         download
                                     >
-                                        {mat.label}
+                                        {(i18n.language === 'en' && mat.label_en) ? mat.label_en : mat.label}
                                     </a>
                                 ))}
                             </div>
@@ -95,15 +99,17 @@ const ArticlePage = () => {
             <section className="section-shell">
                 <div className="page-shell">
                     <div className="relative overflow-hidden rounded-sm border hairline">
-                        <img
-                            src={article.mainImage}
-                            alt="Main content visual"
-                            className="w-full h-[420px] object-cover"
-                            loading="lazy"
-                            decoding="async"
-                        />
+                        <div className="relative pt-[56.25%]">
+                            <img
+                                src={localizedArticle.mainImage}
+                                alt="Main content visual"
+                                className="absolute top-0 left-0 w-full h-full object-cover"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-6 py-4 text-white text-sm">
-                            {article.mainImageCaption}
+                            {localizedArticle.mainImageCaption}
                         </div>
                     </div>
                 </div>
@@ -118,9 +124,9 @@ const ArticlePage = () => {
                         <div dangerouslySetInnerHTML={{ __html: localizedArticle.content }} className="space-y-6 [&_p]:mb-6" />
 
                         {/* Pull Quote */}
-                        {article.pullQuote && (
+                        {localizedArticle.pullQuote && (
                             <div className="border-l-4 border-[var(--color-accent-red)] bg-[var(--color-paper-warm)] px-6 py-4 text-lg font-serif italic text-[var(--color-text-primary)] my-8">
-                                “{article.pullQuote}”
+                                “{localizedArticle.pullQuote}”
                             </div>
                         )}
 
@@ -147,7 +153,9 @@ const ArticlePage = () => {
                                     />
                                     <div className="text-center sm:text-left">
                                         <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-1">{auth.name}</h3>
-                                        <p className="text-slate-600 text-sm">{auth.role}</p>
+                                        <p className="text-slate-600 text-sm">
+                                            {(i18n.language === 'en' && auth.role_en) ? auth.role_en : auth.role}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
@@ -178,6 +186,7 @@ const ArticlePage = () => {
                                     const localizedRel = {
                                         title: (i18n.language === 'en' && rel.title_en) ? rel.title_en : rel.title,
                                         subtitle: (i18n.language === 'en' && rel.subtitle_en) ? rel.subtitle_en : rel.subtitle,
+                                        type: (i18n.language === 'en' && rel.type_en) ? rel.type_en : rel.type,
                                     };
                                     return (
                                         <Card
@@ -185,10 +194,11 @@ const ArticlePage = () => {
                                             variant="standard"
                                             title={localizedRel.title}
                                             summary={localizedRel.subtitle}
-                                            image={rel.heroImage}
-                                            badge={rel.type}
+                                            image={(i18n.language === 'en' && rel.heroImage_en) ? rel.heroImage_en : rel.heroImage}
+                                            badge={localizedRel.type}
                                             metadata={{ date: rel.publishDate, author: rel.author.name }}
                                             ctaLink={`/analisis/${rel.slug}`}
+                                            ctaText={i18n.language === 'en' ? 'Read more' : 'Leer más'}
                                         />
                                     );
                                 })}

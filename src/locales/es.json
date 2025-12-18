@@ -184,8 +184,7 @@
             "title": "Información de contacto",
             "description": "Para consultas generales, propuestas de investigación o solicitudes de prensa, puedes utilizar el formulario o escribirnos directamente.",
             "headquarters": "Sede",
-            "location": "Madrid, España",
-            "location_note": "(Consultar para dirección postal)"
+            "location": "Madrid, España"
         },
         "press": {
             "title": "Prensa y Medios",

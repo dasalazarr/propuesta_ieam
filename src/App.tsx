@@ -14,25 +14,30 @@ import DonationCancel from './pages/DonationCancel';
 import ContactPage from './pages/ContactPage';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/nosotros" element={<AboutPage />} />
-      <Route path="/contacto" element={<ContactPage />} />
-      <Route path="/eventos-y-actualidad" element={<EventsPage />} />
-      <Route path="/investigacion" element={<ResearchPage />} />
-      <Route path="/analisis/:slug" element={<ArticlePage />} />
-      <Route path="/eventos/:slug" element={<EventPage />} />
-      <Route path="/legal" element={<LegalPage />} />
-      <Route path="/cookies" element={<CookiesPage />} />
-      <Route path="/privacy" element={<PrivacyPage />} />
-      <Route path="/colabora" element={<CollaboratePage />} />
-      <Route path="/colabora/gracias" element={<DonationSuccess />} />
-      <Route path="/colabora/cancelado" element={<DonationCancel />} />
-      {/* Fallback/Redirect/Direct access for demo purposes */}
-      <Route path="/articulo-ejemplo" element={<Navigate to="/analisis/movilidad-africa-europa" replace />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<AboutPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+        <Route path="/eventos" element={<EventsPage />} />
+        <Route path="/investigacion" element={<ResearchPage />} />
+        <Route path="/analisis/:slug" element={<ArticlePage />} />
+        <Route path="/eventos/:slug" element={<EventPage />} />
+        <Route path="/legal" element={<LegalPage />} />
+        <Route path="/cookies" element={<CookiesPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/colabora" element={<CollaboratePage />} />
+        <Route path="/colabora/gracias" element={<DonationSuccess />} />
+        <Route path="/colabora/cancelado" element={<DonationCancel />} />
+        {/* Fallback/Redirect/Direct access for demo purposes */}
+        <Route path="/articulo-ejemplo" element={<Navigate to="/analisis/movilidad-africa-europa" replace />} />
+      </Routes>
+    </>
   );
 }
 

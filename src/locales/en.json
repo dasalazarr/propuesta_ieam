@@ -184,8 +184,7 @@
             "title": "Contact Information",
             "description": "For general inquiries, research proposals, or press requests, you can use the form or write to us directly.",
             "headquarters": "Headquarters",
-            "location": "Madrid, Spain",
-            "location_note": "(Contact for mailing address)"
+            "location": "Madrid, Spain"
         },
         "press": {
             "title": "Press & Media",

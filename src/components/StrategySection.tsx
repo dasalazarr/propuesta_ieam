@@ -65,17 +65,9 @@ const StrategySection = () => {
                                 ))}
                             </div>
 
-                            <p className="text-slate-600 leading-relaxed mb-6 text-sm">
+                            <p className="text-slate-600 leading-relaxed text-sm">
                                 {item.description}
                             </p>
-
-                            <Link
-                                to={item.link}
-                                className="inline-flex items-center text-sm font-bold text-[var(--color-mediterranean)] hover:text-[var(--color-text-primary)] transition-colors"
-                            >
-                                {t('strategy.cta')}
-                                <ArrowRight className="w-4 h-4 ml-1" />
-                            </Link>
                         </div>
                     ))}
                 </div>

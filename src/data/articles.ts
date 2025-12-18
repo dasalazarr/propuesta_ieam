@@ -3,33 +3,43 @@ import { ReactNode } from 'react';
 export interface Author {
     name: string;
     role: string;
+    role_en?: string;
     image: string;
     bio: string;
+    bio_en?: string;
 }
 
 export interface RelatedArticle {
     id: string;
     title: string;
+    title_en?: string;
     image: string;
     badge: string;
     metadata: {
         date: string;
         readTime: string;
     };
+    subtitle?: string;
+    subtitle_en?: string;
 }
 
 export interface Article {
     slug: string;
     type: 'Análisis' | 'Informe' | 'Entrevista' | 'Policy Brief' | 'Infografía' | 'Nota de prensa' | 'Reseña de evento';
+    type_en?: string;
     contentKind: 'analisis' | 'policy' | 'infografia' | 'reseña-evento' | 'entrevista' | 'nota-prensa';
     category: string;
+    category_en?: string;
     title: string;
     title_en?: string;
     subtitle: string;
     subtitle_en?: string;
     heroImage: string;
+    heroImage_en?: string;
     mainImage: string;
+    mainImage_en?: string;
     mainImageCaption: string;
+    mainImageCaption_en?: string;
     publishDate: string;
     readTime: string;
     author: Author;
@@ -37,9 +47,10 @@ export interface Article {
     content: string; // HTML string for simplicity and portability
     content_en?: string; // Optional English content
     pullQuote?: string; // Optional highlighted quote
+    pullQuote_en?: string;
     materialUrl?: string; // Optional downloadable material
     materialLabel?: string;
-    materials?: { label: string; url: string }[];
+    materials?: { label: string; label_en?: string; url: string }[];
     relatedArticles: RelatedArticle[];
 }
 
@@ -47,45 +58,59 @@ export const articles: Article[] = [
     {
         slug: 'movilidad-africa-europa',
         type: 'Informe',
+        type_en: 'Report',
         contentKind: 'policy',
         category: 'Migración · Mediterráneo',
+        category_en: 'Migration · Mediterranean',
         title: 'Repensar la movilidad entre Mali y Europa',
-        title_en: 'Rethinking mobility between Mali and Europe',
+        title_en: 'Rethinking Mobility Between Mali and Europe',
         subtitle: 'Un marco para ordenar la movilidad, reducir los costes humanos y crear beneficios compartidos para países de origen, tránsito y destino.',
-        subtitle_en: 'A framework to organize mobility, reduce human costs and create shared benefits for countries of origin, transit, and destination.',
-        heroImage: '/mali-europa-map.png',
-        mainImage: '/mali-europa-map.png',
+        subtitle_en: 'A framework to organize mobility, reduce human costs, and create shared benefits for countries of origin, transit, and destination.',
+        heroImage: '/images/informemalies.png',
+        heroImage_en: '/images/informemalien.png',
+        mainImage: '/images/informemalies.png',
+        mainImage_en: '/images/informemalien.png',
         mainImageCaption: 'Trayectos de movilidad regulada entre Bamako, Dakar y Madrid.',
+        mainImageCaption_en: 'Regulated mobility routes between Bamako, Dakar, and Madrid.',
         publishDate: '14 Nov 2024',
         readTime: '12 min',
         author: {
             name: 'Beatriz de León',
             role: 'Directora Ejecutiva',
+            role_en: 'Executive Director',
             image: '/team/member-2.jpg',
-            bio: 'Directora Ejecutiva del IEAM.'
+            bio: 'Directora Ejecutiva del IEAM.',
+            bio_en: 'Executive Director of IEAM.'
         },
         authors: [
             {
                 name: 'Beatriz de León',
                 role: 'Directora Ejecutiva',
+                role_en: 'Executive Director',
                 image: '/team/member-2.jpg',
-                bio: 'Directora Ejecutiva del IEAM.'
+                bio: 'Directora Ejecutiva del IEAM.',
+                bio_en: 'Executive Director of IEAM.'
             },
             {
                 name: 'Bréma Ely Dicko',
                 role: 'Investigador asociado',
+                role_en: 'Associate Researcher',
                 image: '/team/member-3.jpg',
-                bio: 'Investigador asociado del IEAM.'
+                bio: 'Investigador asociado del IEAM.',
+                bio_en: 'Associate Researcher at IEAM.'
             }
         ],
         pullQuote: 'La movilidad es inevitable; la diferencia está entre gestionarla con reglas claras o asumir sus costes en la irregularidad.',
+        pullQuote_en: 'Mobility is inevitable; the difference lies between managing it with clear rules or assuming its costs in irregularity.',
         materials: [
             {
                 label: 'Informe completo (ES)',
+                label_en: 'Full Report (ES)',
                 url: '/docs/ieam-policy-paper-repensar-movilidad-mali-europa-2025.pdf'
             },
             {
                 label: 'Informe completo (FR)',
+                label_en: 'Full Report (FR)',
                 url: '/docs/ieam-policy-paper-refonder-mobilites-mali-europe-2025.pdf'
             }
         ],
@@ -116,10 +141,38 @@ export const articles: Article[] = [
       
       <p class="mt-6 text-sm text-slate-600">Basado en el Policy Paper «Repensar la movilidad entre Mali y Europa», elaborado por Beatriz de León Cobo y el Pr. Bréma Ely Dicko.</p>
     `,
+        content_en: `
+      <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">EXECUTIVE SUMMARY</h2>
+      <p>The objective of this policy paper is to propose a framework of concrete actions for legal and circular mobility, the reintegration of returnees, and the regional governance of migratory routes between Mali, its sub-region, and Europe. This document is part of a series of works by the Spanish Institute for Migration Analysis (IEAM) and is the result of a collective intelligence workshop held in Bamako with institutional actors, academics, migration researchers, associations, technicians, and economists, aimed at identifying common priorities and proposing operational mechanisms.</p>
+      <p>For Spain and, in general, for Europe, the recent dynamics in the Atlantic route—where Malians are among the most present nationalities on the route to the Canary Islands—call for going beyond emergency management to build structural solutions.</p>
+      
+      <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">STRATEGIC MESSAGES</h2>
+      
+      <ul class="list-disc ml-6 space-y-4 text-slate-700">
+        <li><strong>Collective commitment and a multi-stakeholder approach are essential:</strong> States, local entities, the diaspora, and international partners must jointly build the mechanisms, pool funding, and define common indicators.</li>
+        
+        <li><strong>Successful reintegration relies on community roots, economic inclusion, and local monitoring,</strong> favoring collective approaches and mixed financing.</li>
+        
+        <li><strong>Legal and circular mobility must be treated as a strategic priority,</strong> with well-structured multilateral agreements and clear, flexible procedures.</li>
+        
+        <li><strong>Consolidation of regional mechanisms (ECOWAS, AU, AES, bilateral) is indispensable</strong> and must be more pragmatic, guaranteeing better protection for people with changing migratory statuses.</li>
+        
+        <li><strong>Interstate coordination and local flow management must evolve towards common committees and indicators,</strong> rooted in the field.</li>
+        
+        <li><strong>Protection of women and children must become a major transversal axis,</strong> with adapted mechanisms backed by the collection of qualitative indicators (safety, health, access to rights). Donors and diplomats are invited to prioritize this aspect to fill the existing gap in operational responses.</li>
+        
+        <li><strong>Sustainability and mutualization of funding:</strong> It is urgent to integrate local resources, diaspora investment, and an initial co-financing approach to overcome the donor-dependent model and ensure continuity.</li>
+        
+        <li><strong>Monitoring, transparency, and continuous adaptation are key to success:</strong> Every action, every program must be subject to monitoring, documentation, and evaluation to be corrected, expanded, or stopped based on measured results.</li>
+      </ul>
+      
+      <p class="mt-6 text-sm text-slate-600">Based on the Policy Paper "Rethinking Mobility Between Mali and Europe", prepared by Beatriz de León Cobo and Prof. Bréma Ely Dicko.</p>
+    `,
         relatedArticles: [
             {
                 id: 'rutas-migratorias-2026',
                 title: "Rutas migratorias en 2026: Proyecciones y tendencias",
+                title_en: "Migratory Routes in 2026: Projections and Trends",
                 image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
                 badge: "Análisis",
                 metadata: { date: "08 Dic 2025", readTime: "8 min" }
@@ -127,6 +180,7 @@ export const articles: Article[] = [
             {
                 id: 'visados-humanitarios',
                 title: "Policy Brief: Visados humanitarios",
+                title_en: "Policy Brief: Humanitarian Visas",
                 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
                 badge: "Policy Brief",
                 metadata: { date: "01 Dic 2025", readTime: "6 min" }
@@ -134,6 +188,7 @@ export const articles: Article[] = [
             {
                 id: 'entrevista-migracion-circular',
                 title: "Entrevista: 'La migración circular es el futuro de la cooperación'",
+                title_en: "Interview: 'Circular migration is the future of cooperation'",
                 image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2788&auto=format&fit=crop",
                 badge: "Entrevista",
                 metadata: { date: "01 Dic 2025", readTime: "10 min" }
@@ -266,40 +321,7 @@ export const articles: Article[] = [
     `,
         relatedArticles: []
     },
-    {
-        slug: 'seguridad-sahel-2025',
-        type: 'Reseña de evento',
-        contentKind: 'reseña-evento',
-        category: 'Sahel · Canarias',
-        title: 'El Sahel y su impacto en los flujos migratorios hacia Canarias',
-        subtitle: 'Webinar organizada por el Gobierno de Canarias e IRLab sobre dinámica geopolítica y rutas hacia el archipiélago.',
-        heroImage: '/images/evento-sahelmain.png',
-        mainImage: '/images/evento-sahelmain.png',
-        mainImageCaption: 'Cartel oficial de la jornada distribuido por el Gobierno de Canarias.',
-        publishDate: '03 Sep 2025',
-        readTime: '7 min',
-        author: {
-            name: 'Equipo IEAM',
-            role: 'Reseña de eventos',
-            image: '/favicon-new.png',
-            bio: 'Unidad de análisis y cobertura de eventos estratégicos del IEAM.'
-        },
-        pullQuote: 'La presión a Mauritania y Senegal desplaza las salidas hacia zonas menos vigiladas, con mayor riesgo para los viajeros.',
-        content: `
-      <p>Innovación para la gestión migratoria (IRLab) convocó una jornada para analizar los movimientos geopolíticos en el Sahel y sus repercusiones en los flujos hacia Canarias. El Gobierno de Canarias organizó una webinar abierta el 3 de septiembre.</p>
-      <p>Participaron la politóloga Beatriz Mesa, la directora del IEAM Beatriz de León Cobo y el periodista José Naranjo. Presentaron Octavio Caraballo (viceconsejero del Gabinete del Presidente) y Claudia Pérez (IRLab).</p>
-      <p>Se abordaron el deterioro político y de seguridad en el Sahel, el impacto en las salidas de embarcaciones hacia Canarias y la necesidad de políticas de cooperación europeas.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Rutas y riesgos</h3>
-      <p>El cierre de fronteras en Mauritania y Senegal ha desplazado los puntos de salida hacia Guinea Bissau y Guinea Conakry, incrementando las distancias (más de 2.200 km a El Hierro) y el riesgo para los viajeros.</p>
-      <p>El 60% de la población del Sahel tiene menos de 25 años; en 2050 podrían ser 500 millones. Sin oportunidades, la presión migratoria persistirá.</p>
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
-      <p>La migración no ha cesado: las rutas se adaptan al control. Se requiere cooperación UE-África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
-      <p class="mt-6 text-sm text-slate-600">Este análisis también fue relevante para entender las conexiones con Mali.</p>
-    `,
-        relatedArticles: [
-            { id: 'cumbre-hungria-crisis-migratoria-2025', title: 'Hungría acoge una cumbre internacional sobre la crisis migratoria europea', image: '/images/evento-hungria.webp', badge: 'Cumbre', metadata: { date: '24-25 Sep 2025', readTime: '—' } }
-        ]
-    },
+
     {
         slug: 'entrevista-beatriz-mauritania-canarias',
         type: 'Entrevista',

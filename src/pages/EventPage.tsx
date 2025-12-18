@@ -19,6 +19,7 @@ const EventPage = () => {
     location: (i18n.language === 'en' && event.location_en) ? event.location_en : event.location,
     format: (i18n.language === 'en' && event.format_en) ? event.format_en : event.format,
     category: (i18n.language === 'en' && event.category_en) ? event.category_en : event.category,
+    content: (i18n.language === 'en' && event.content_en) ? event.content_en : event.content,
     // Agenda and Speakers are currently structurally shared, titles might need specific translation keys if we want deep localization
     // For now we use the existing data as is, assuming names/roles might be mixed or Spanish.
     // If needed, we would need agenda_en etc. in data structure.
@@ -33,7 +34,7 @@ const EventPage = () => {
         <p className="text-slate-600 mb-8 text-center max-w-md">
           {i18n.language === 'en' ? 'Check the link or return to the agenda.' : 'Verifica el enlace o regresa a la agenda.'}
         </p>
-        <a href="/eventos-y-actualidad" className="px-6 py-3 bg-[var(--color-navy-900)] text-white font-bold uppercase tracking-[0.18em] rounded-none hover:bg-[var(--color-mediterranean)] transition-colors">
+        <a href="/eventos" className="px-6 py-3 bg-[var(--color-navy-900)] text-white font-bold uppercase tracking-[0.18em] rounded-none hover:bg-[var(--color-mediterranean)] transition-colors">
           {i18n.language === 'en' ? 'Back to events' : 'Volver a eventos'}
         </a>
       </div>
@@ -80,7 +81,15 @@ const EventPage = () => {
       <section className="section-shell">
         <div className="page-shell grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-7 space-y-8">
-            <p className="text-slate-700 text-lg leading-relaxed">{localizedEvent.summary}</p>
+            {localizedEvent.content ? (
+              <div dangerouslySetInnerHTML={{ __html: localizedEvent.content }} className="text-slate-700 text-lg leading-relaxed [&_p]:mb-4" />
+            ) : (
+              localizedEvent.summary.split('\n\n').map((paragraph, index) => (
+                <p key={index} className="text-slate-700 text-lg leading-relaxed mb-4">
+                  {paragraph}
+                </p>
+              ))
+            )}
             <div className="border-t hairline pt-6 space-y-3">
               <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
                 {i18n.language === 'en' ? 'Agenda' : 'Agenda'}

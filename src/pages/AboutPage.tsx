@@ -281,7 +281,7 @@ const AboutPage = () => {
             <div className="py-16 bg-slate-50 border-t border-slate-200">
                 <div className="page-shell">
                     <div className="text-center mb-12">
-                        <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-6">
+                        <h3 className="text-sm font-bold text-slate-400 mb-6">
                             {t('about.partners.label')}
                         </h3>
                         <p className="text-slate-600 leading-relaxed max-w-3xl mx-auto">
@@ -316,24 +316,6 @@ const AboutPage = () => {
                             </div>
                         </div>
 
-                        {/* Other Partners */}
-                        <div className="bg-white p-8 rounded-sm border border-slate-200">
-                            <h4 className="text-lg font-bold text-[#0A2540] mb-6 border-b border-slate-100 pb-2">{t('about.partners.others_title')}</h4>
-                            <ul className="grid md:grid-cols-2 gap-4">
-                                <li className="flex items-center text-slate-700 font-medium">
-                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
-                                    Fundación Ciudadanía y Valores (FUNCIVA)
-                                </li>
-                                <li className="flex items-center text-slate-700 font-medium">
-                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
-                                    Fundación Fortius
-                                </li>
-                                <li className="flex items-center text-slate-700 font-medium">
-                                    <div className="w-2 h-2 bg-[#D4212A] rounded-full mr-3"></div>
-                                    Universidad Camilo José Cela
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

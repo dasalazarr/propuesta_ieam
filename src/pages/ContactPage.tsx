@@ -152,8 +152,7 @@ const ContactPage = () => {
                                     <div className="ml-4">
                                         <h3 className="font-bold text-[#0A2540] text-sm uppercase tracking-wider mb-1">{t('contact.info.headquarters')}</h3>
                                         <p className="text-slate-600">
-                                            {t('contact.info.location')}<br />
-                                            <span className="text-sm text-slate-500">{t('contact.info.location_note')}</span>
+                                            {t('contact.info.location')}
                                         </p>
                                     </div>
                                 </div>

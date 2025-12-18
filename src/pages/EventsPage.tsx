@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import NewsletterCTA from '@/components/NewsletterCTA';
@@ -85,7 +86,7 @@ const EventsPage = () => {
                         {eventsData.map((event) => {
                             const locEvent = getLocalizedEvent(event);
                             return (
-                                <div key={event.slug} className="group bg-white border border-slate-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow grid md:grid-cols-12">
+                                <Link to={`/eventos/${event.slug}`} key={event.slug} className="group bg-white border border-slate-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow grid md:grid-cols-12">
                                     <div className="md:col-span-4 lg:col-span-3 aspect-video md:aspect-auto relative overflow-hidden">
                                         <img
                                             src={event.heroImage}
@@ -95,7 +96,7 @@ const EventsPage = () => {
                                             decoding="async"
                                         />
                                     </div>
-                                    <div className="md:col-span-8 lg:col-span-9 p-8 flex flex-col justify-center">
+                                    <div className="md:col-span-8 lg:col-span-9 p-8 flex flex-col justify-center h-full">
                                         <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
                                             <span className="flex items-center text-[#D4212A]">
                                                 <Calendar className="w-4 h-4 mr-1" />
@@ -109,14 +110,14 @@ const EventsPage = () => {
                                                 {locEvent.category}
                                             </span>
                                         </div>
-                                        <h3 className="text-xl md:text-2xl font-serif font-bold text-[#0A2540] mb-3 group-hover:text-[#006994] transition-colors">
+                                        <h3 className="text-xl md:text-2xl font-serif font-bold text-[#0A2540] mb-3 group-hover:text-[#006994] transition-colors line-clamp-2">
                                             {locEvent.title}
                                         </h3>
-                                        <p className="text-slate-600 leading-relaxed">
+                                        <p className="text-slate-600 leading-relaxed line-clamp-2">
                                             {locEvent.summary}
                                         </p>
                                     </div>
-                                </div>
+                                </Link>
                             );
                         })}
                     </div>

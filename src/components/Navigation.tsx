@@ -15,7 +15,7 @@ const Navigation = () => {
     { name: t('navigation.about'), path: '/nosotros' },
     {
       name: t('navigation.events'),
-      path: '/eventos-y-actualidad',
+      path: '/eventos',
     },
     {
       name: t('navigation.research'),

@@ -37,7 +37,7 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
               <Link
-                to="/eventos-y-actualidad"
+                to="/eventos"
                 className="inline-flex items-center justify-center px-7 py-3 text-[11px] font-bold uppercase tracking-[0.18em] border border-slate-300 text-[var(--color-text-primary)] bg-white hover:bg-slate-50 transition-colors"
               >
                 {t('hero.cta_events')}

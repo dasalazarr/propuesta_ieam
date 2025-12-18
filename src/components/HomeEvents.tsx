@@ -28,7 +28,7 @@ const HomeEvents = () => {
                             {t('home_events.section_title')}
                         </h2>
                         <Link
-                            to="/eventos-y-actualidad"
+                            to="/eventos"
                             className="inline-flex items-center px-6 py-3 border border-[var(--color-text-primary)] text-sm font-bold text-[var(--color-text-primary)] hover:bg-[var(--color-text-primary)] hover:text-white transition-colors"
                         >
                             {t('home_events.view_agenda')}
