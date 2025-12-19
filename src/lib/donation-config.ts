@@ -13,12 +13,14 @@ export interface DonationTier {
     id: string;
     title: string;
     amount: number | 'custom';
+    annualAmount?: number; // New field for annual pricing
     description: string;
     impact: string;
     featured?: boolean;
     links: {
         oneTime: string;
         monthly: string;
+        annual: string;
     };
 }
 
@@ -41,16 +43,19 @@ export const DONATION_CONFIG = {
      */
     paymentLinks: {
         basic: {
-            oneTime: 'https://buy.stripe.com/aFa6oH6sp5sHbEXeoHgfu00',
-            monthly: 'https://buy.stripe.com/eVqdR9aIFbR57oHfsLgfu01'
+            oneTime: 'https://buy.stripe.com/00wfZh8gc55UbjF8Lb18c02',
+            monthly: 'https://buy.stripe.com/eVqaEX6849mabjF2mN18c01',
+            annual: 'https://buy.stripe.com/5kQaEX2VSgOC9bx9Pf18c00'
         },
         solidarity: {
-            oneTime: 'https://buy.stripe.com/9B628rbMJf3hdN5a8rgfu02',
-            monthly: 'https://buy.stripe.com/9B66oH9EBbR5bEX3K3gfu03'
+            oneTime: 'https://buy.stripe.com/14A28raok9ma4VhgdD18c05',
+            monthly: 'https://buy.stripe.com/fZucN57c855UcnJ1iJ18c04',
+            annual: 'https://buy.stripe.com/8x2dR9aok7e29bx9Pf18c03'
         },
         institutional: {
-            oneTime: 'https://buy.stripe.com/28EbJ1eYV5sH7oH80jgfu04',
-            monthly: 'https://buy.stripe.com/fZu9ATaIF6wL5gz4O7gfu05'
+            oneTime: 'https://buy.stripe.com/dRm6oHbsodCq1J50eF18c08',
+            monthly: 'https://buy.stripe.com/aFa14n8gccym5Zl3qR18c07',
+            annual: 'https://buy.stripe.com/3cI7sL2VSaqecnJ1iJ18c06'
         },
     },
 
@@ -77,6 +82,7 @@ export const donationTiers: DonationTier[] = [
         id: 'basic',
         title: 'Apoyo Básico',
         amount: 20,
+        annualAmount: 200, // 20 * 10 (2 months free)
         description: 'Colaboración puntual para apoyar nuestra labor',
         impact: 'Contribuye a la publicación de un artículo de análisis',
         links: DONATION_CONFIG.paymentLinks.basic,
@@ -85,6 +91,7 @@ export const donationTiers: DonationTier[] = [
         id: 'solidarity',
         title: 'Apoyo Solidario',
         amount: 50,
+        annualAmount: 500, // 50 * 10 (2 months free)
         description: 'Impulsa la investigación independiente',
         impact: 'Financia la creación de una infografía de datos',
         featured: true,
@@ -94,6 +101,7 @@ export const donationTiers: DonationTier[] = [
         id: 'institutional',
         title: 'Apoyo Institucional',
         amount: 200,
+        annualAmount: 2000, // 200 * 10 (2 months free)
         description: 'Respaldo significativo a nuestra misión',
         impact: 'Patrocina un policy brief completo',
         links: DONATION_CONFIG.paymentLinks.institutional,
@@ -107,11 +115,12 @@ export const donationTiers: DonationTier[] = [
 /**
  * Get donation URL based on current mode
  */
-export function getDonationUrl(tierId: string, frequency: DonationFrequency = 'one-time'): string {
+export function getDonationUrl(tierId: string, frequency: DonationFrequency | 'annual' = 'one-time'): string {
     const tier = donationTiers.find((t) => t.id === tierId);
 
     if (DONATION_CONFIG.mode === 'payment_links') {
         if (!tier) return '#';
+        if (frequency === 'annual') return tier.links.annual;
         return frequency === 'monthly' ? tier.links.monthly : tier.links.oneTime;
     }
 

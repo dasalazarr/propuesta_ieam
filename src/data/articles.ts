@@ -56,6 +56,115 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'informe-rutas-migratorias-2025',
+        type: 'Informe',
+        type_en: 'Report',
+        contentKind: 'policy',
+        category: 'Migración · Fronteras',
+        category_en: 'Migration · Borders',
+        title: 'Migraciones y Migrantes: Las Rutas Migratorias Irregulares hacia Europa. España, un estudio de caso',
+        title_en: 'Migration and Migrants: Irregular Migratory Routes to Europe. Spain, a Case Study',
+        subtitle: 'Un análisis exhaustivo sobre la evolución, dinámicas y desafíos de la migración irregular hacia España en el contexto europeo (2015-2025).',
+        subtitle_en: 'A comprehensive analysis of the evolution, dynamics, and challenges of irregular migration to Spain within the European context (2015-2025).',
+        heroImage: '/images/informe-diciembre.png',
+        heroImage_en: '/images/informe-diciembre.png',
+        mainImage: '/images/informe-diciembre.png',
+        mainImage_en: '/images/informe-diciembre.png',
+        mainImageCaption: 'Portada del informe Diciembre 2025.',
+        mainImageCaption_en: 'Cover of the December 2025 report.',
+        publishDate: '22 Dec 2025',
+        readTime: '25 min',
+        author: {
+            name: 'Equipo IEAM',
+            role: 'Investigación',
+            role_en: 'Research Team',
+            image: '/favicon-new.png',
+            bio: 'Equipo de investigación del IEAM.',
+            bio_en: 'IEAM Research Team.'
+        },
+        content: `
+            <h3>Resumen Ejecutivo</h3>
+            <p>Las migraciones irregulares hacia Europa han experimentado transformaciones profundas en las últimas décadas. España, en particular, se ha consolidado como uno de los principales países receptores de llegadas irregulares dentro del espacio europeo, en un contexto marcado por la inestabilidad en África occidental, la presión sostenida en las rutas Atlántica y Mediterránea, y la creciente externalización de fronteras por parte de la Unión Europea. En 2025, estas dos rutas que conectan con Canarias y la Península representaron conjuntamente el 22 % del total de llegadas irregulares a la UE. Comprender estas dinámicas resulta esencial para interpretar la evolución reciente del fenómeno y sus implicaciones.</p>
+            <p>El propósito de este informe es analizar la evolución de la migración irregular hacia España en la última década, situándola en el marco europeo y examinando sus principales manifestaciones a partir de fuentes oficiales y humanitarias. El estudio ofrece una visión integrada de tendencias y flujos migratorios, rutas utilizadas y desafíos asociados a los sistemas de acogida y protección, subrayando su complejidad, carácter estructural y evolución en el tiempo. Para ello, se estructura en tres ejes: i) migraciones irregulares en el contexto europeo, a partir de los datos de Frontex; ii) migraciones irregulares en España, basadas en información del INE, el Observatorio Permanente de la Inmigración, la OIM y Caminando Fronteras; y iii) procesos de protección internacional, con datos del Ministerio del Interior y CEAR.</p>
+            
+            <h3>Principales hallazgos</h3>
+            
+            <h4>1. La migración irregular hacia Europa presenta una dinámica estructural y sostenida en el tiempo</h4>
+            <p>La migración irregular hacia Europa constituye un fenómeno persistente y estructural, con variaciones en intensidad y localización asociadas a coyunturas políticas, conflictos armados y cambios en los mecanismos de control fronterizo. Entre 2015 y 2025, más de cuatro millones de personas cruzaron de manera irregular las fronteras exteriores de la Unión Europea.</p>
+            <p>Los años 2015 y 2016 concentraron más de la mitad de estas entradas, en relación con la guerra de Siria, mientras que el periodo 2021–2025 muestra un nuevo ciclo de incremento tras el descenso registrado durante la pandemia de COVID-19. En 2025 (hasta agosto), las rutas con mayor peso fueron el Mediterráneo Central (37 %) y el Mediterráneo Oriental (28 %), mientras que las rutas con entrada por España (la Atlántica y la del Mediterráneo Occidental), representaron conjuntamente en torno al 22 % del total de las llegadas irregulares a la UE. La evolución histórica evidencia que el refuerzo del control en determinadas rutas no elimina los flujos, sino que tiende a provocar su reorientación geográfica.</p>
+            <p>Los datos de Frontex muestran asimismo una elevada diversidad en los países de origen. En 2025, las principales nacionalidades de las personas que llegaron de forma irregular a Europa fueron Bangladés (13.927 personas), Egipto (11.026), Afganistán (8.935), Mali (6.129), Sudán (5.959) y Eritrea (5.957), entre otras, con patrones de entrada diferenciados según proximidad geográfica y rutas utilizadas.</p>
+
+            <h4>2. La migración irregular hacia España presenta patrones territoriales y temporales heterogéneos</h4>
+            <p>En términos cuantitativos, las llegadas irregulares por vía marítima y terrestre representan solo una parte minoritaria del conjunto de la migración internacional hacia España, e incluso del total de personas en situación administrativa irregular. El informe subraya que una proporción significativa de la población extranjera en situación irregular ha accedido al territorio español por vías regulares y ha pasado posteriormente a una situación de irregularidad sobrevenida por la caducidad de visados o permisos de residencia.</p>
+            <p>No obstante, las llegadas irregulares por mar y por las fronteras terrestres de Ceuta y Melilla concentran una elevada atención mediática y política. Los datos del Ministerio del Interior muestran oscilaciones significativas desde comienzos del siglo XXI, con un primer pico destacado en 2006, cuando cerca de 40.000 personas llegaron de manera irregular, el 81 % de ellas a través del archipiélago canario. En la actualidad, la procedencia de las personas que llegan en embarcaciones a Canarias incluye principalmente Marruecos, Sáhara Occidental, Mauritania, Senegal y Gambia.</p>
+            <p>Tras una década de cifras relativamente contenidas, a partir de 2016 se inicia un incremento progresivo y sostenido de las llegadas por vía marítima, que culmina en máximos históricos en 2019 y, de nuevo, en 2023 y 2024, superando en estos últimos años los niveles registrados en 2006. El año 2024 marca el valor más alto de toda la serie histórica analizada. Los datos provisionales de 2025, hasta mediados de septiembre, muestran cifras inferiores a las de 2024 en la misma fecha, aunque superiores a las de 2023, lo que introduce incertidumbre sobre la evolución final del año.</p>
+            <p>Desde el punto de vista territorial, el informe identifica un cambio estructural en la distribución geográfica de las llegadas. Mientras que en los primeros años del periodo analizado la Península y Baleares concentraban la mayor parte de las entradas marítimas, a partir de 2020 se produce una inflexión clara que sitúa a Canarias como principal puerta de entrada, superando el 70 % del total de llegadas marítimas a España desde 2023. Esta concentración se mantiene durante 2024 y buena parte de 2025, si bien en los meses de verano de este último año se observa un repunte relativo de las llegadas a la Península y Baleares y una ligera desaceleración en Canarias.</p>
+            <p>Las diferencias territoriales también se reflejan en las vías de entrada y los perfiles de llegada. En Ceuta y Melilla predomina la entrada por vía terrestre, con periodos de mayor presión entre 2017 y 2019, cuando se superaron las 6.000 llegadas anuales. En la actualidad, Ceuta registra un mayor número de entradas que Melilla.</p>
+
+            <h4>3. Centralidad de la ruta atlántica y presión sobre Canarias</h4>
+            <p>La presión migratoria sobre Canarias se mantiene elevada desde 2020 y se intensifica especialmente a partir de 2023. El informe muestra que el archipiélago se ha convertido en la principal puerta de llegada de población migrante en situación irregular a España, impulsada por dinámicas estructurales como las salidas desde la fachada atlántica africana, las variaciones en los controles en Marruecos y Mauritania y la percepción de esta ruta como alternativa al Mediterráneo occidental. En 2024, Canarias registró más de 60.000 llegadas, representando más del 70 % del total de llegadas al país.</p>
+            <p>Este incremento confirma la persistencia de una de las rutas más peligrosas del mundo, en la que se siguen registrando elevados niveles de muertes y desapariciones. Asimismo, las islas soportan de forma desproporcionada la presión inicial de las llegadas, lo que genera saturación en los dispositivos de primera acogida y dificulta los procesos de derivación hacia la Península.</p>
+
+            <h4>4. Un sistema de gestión y regularización en transformación</h4>
+            <p>España se consolidó como país receptor de migración antes de disponer de una política migratoria plenamente desarrollada, lo que dio lugar a sucesivos procesos de regularización extraordinaria para otorgar permisos a personas ya residentes en el país. Estos procesos han configurado un régimen migratorio que combina vías ordinarias con mecanismos de regularización posterior, especialmente a través del arraigo.</p>
+            <p>En 2025, más de 328.000 personas residían en España bajo distintas modalidades de arraigo (social, laboral, familiar o formativo), procedentes mayoritariamente de Colombia (25 %), Marruecos (17 %) y Perú (8 %). La introducción del arraigo por formación en 2022 ha abierto nuevos itinerarios de inserción laboral en sectores con déficit de mano de obra, aunque su alcance sigue siendo limitado en relación con el volumen total de personas en situación irregular.</p>
+
+            <h4>5. Cooperación internacional y externalización del control migratorio</h4>
+            <p>Las respuestas institucionales a la migración irregular dependen en gran medida de la cooperación internacional. La externalización del control fronterizo constituye un pilar central de la política migratoria española y europea, basada en acuerdos de vigilancia, control y readmisión con países de origen y tránsito. Estos mecanismos han contribuido a una reconfiguración espacial y temporal de los flujos, sin que ello se traduzca necesariamente en un descenso sostenido de las llegadas. En 2023, por ejemplo, Marruecos había recibido más de 500 millones de euros en financiación europea destinada a este ámbito.</p>
+
+            <h4>6. Dificultades estructurales de medición y dimensión humanitaria</h4>
+            <p>El informe pone de relieve las dificultades estructurales para cuantificar con precisión la migración irregular, especialmente en lo relativo a las muertes y desapariciones en las rutas hacia España. Asimismo, destaca la estrecha relación entre migración irregular y protección internacional, ya que una parte relevante de las personas que llegan por vías irregulares procede de países en conflicto o con graves situaciones de inestabilidad y potencialmente cumple los requisitos para solicitar asilo.</p>
+            <p>Desde 2015 se ha producido un crecimiento significativo de las solicitudes de protección internacional en España, que pasaron de 3.422 en 2011 a 167.366 en 2024. Del total de solicitudes, solo el 69 % llega a ser admitido a trámite y, de estas, más del 60 % finaliza con una resolución desfavorable. En 2024 y 2025, las principales nacionalidades solicitantes en España fueron Venezuela, Colombia y Perú, junto con Mali y Senegal.</p>
+            <p>En paralelo, el análisis de los datos del Programa Migrantes Desaparecidos de la OIM y de organizaciones especializadas como Caminando Fronteras muestra que la ruta atlántica concentra un número particularmente elevado de víctimas mortales, en un contexto marcado por travesías más largas, condiciones marítimas adversas y el uso de embarcaciones precarias. No obstante, el informe subraya que las cifras disponibles probablemente infraestiman la magnitud real del fenómeno debido a las limitaciones de los sistemas de registro.</p>
+
+            <p>En conjunto, el informe pone de relieve la complejidad y persistencia de la migración irregular hacia España y su estrecha vinculación con las dinámicas migratorias europeas y globales. Los resultados muestran un fenómeno cambiante en sus manifestaciones territoriales y temporales, pero estructural en su continuidad, marcado por fuertes desigualdades entre regiones de origen, tránsito y destino, y por una elevada presión sobre determinados territorios fronterizos.</p>
+            <p>El análisis evidencia también la estrecha relación entre migración irregular, protección internacional y gestión administrativa, así como las limitaciones existentes para registrar plenamente las dimensiones humanas del fenómeno, en particular en lo relativo a las muertes y desapariciones en las rutas migratorias. En este contexto, España aparece como un espacio central de observación, tanto por su posición geográfica como por su papel en los sistemas europeos de control fronterizo, acogida y protección. La experiencia española, analizada en detalle, permite identificar patrones, tensiones y desafíos que trascienden el ámbito nacional y remiten a la necesidad de comprender la migración irregular como un fenómeno complejo, interdependiente y profundamente condicionado por factores internacionales.</p>
+        `,
+        content_en: `
+            <h3>Executive Summary</h3>
+            <p>Irregular migration widely Europe has undergone profound transformations in recent decades. Spain, in particular, has consolidated itself as one of the main receiving countries of irregular arrivals within the European space, in a context marked by instability in West Africa, sustained pressure on the Atlantic and Mediterranean routes, and the growing externalization of borders by the European Union. In 2025, these two routes connecting to the Canary Islands and the Peninsula jointly represented 22% of total irregular arrivals to the EU. Understanding these dynamics is essential to interpret the recent evolution of the phenomenon and its implications.</p>
+            <p>The purpose of this report is to analyze the evolution of irregular migration to Spain over the last decade, placing it within the European framework and examining its main manifestations based on official and humanitarian sources. The study offers an integrated view of migratory trends and flows, routes used, and challenges associated with reception and protection systems, highlighting their complexity, structural nature, and evolution over time. To this end, it is structured around three axes: i) irregular migrations in the European context, based on Frontex data; ii) irregular migrations in Spain, based on information from the INE, the Permanent Observatory on Immigration, the IOM, and Caminando Fronteras; and iii) international protection processes, with data from the Ministry of the Interior and CEAR.</p>
+            
+            <h3>Key Findings</h3>
+            
+            <h4>1. Irregular migration to Europe presents a structural and sustained dynamic over time</h4>
+            <p>Irregular migration to Europe constitutes a persistent and structural phenomenon, with variations in intensity and location associated with political conjunctures, armed conflicts, and changes in border control mechanisms. Between 2015 and 2025, more than four million people crossed the external borders of the European Union irregularly.</p>
+            <p>The years 2015 and 2016 concentrated more than half of these entries, in relation to the war in Syria, while the 2021–2025 period shows a new cycle of increase following the decrease recorded during the COVID-19 pandemic. In 2025 (until August), the routes with the greatest weight were the Central Mediterranean (37%) and the Eastern Mediterranean (28%), while the routes entering through Spain (the Atlantic and Western Mediterranean) jointly represented around 22% of total irregular arrivals to the EU. Historical evolution shows that reinforcing control on certain routes does not eliminate flows but tends to cause their geographical reorientation.</p>
+            <p>Frontex data also show high diversity in countries of origin. In 2025, the main nationalities of people arriving irregularly in Europe were Bangladesh (13,927 people), Egypt (11,026), Afghanistan (8,935), Mali (6,129), Sudan (5,959), and Eritrea (5,957), among others, with differentiated entry patterns according to geographical proximity and routes used.</p>
+
+            <h4>2. Irregular migration to Spain presents heterogeneous territorial and temporal patterns</h4>
+            <p>In quantitative terms, irregular arrivals by sea and land represent only a minority part of total international migration to Spain, and even of the total number of people in an irregular administrative situation. The report highlights that a significant proportion of the foreign population in an irregular situation entered Spanish territory through regular channels and subsequently fell into irregularity due to the expiration of visas or residence permits.</p>
+            <p>However, irregular arrivals by sea and through the land borders of Ceuta and Melilla attract high media and political attention. Ministry of the Interior data show significant fluctuations since the beginning of the 21st century, with a first notable peak in 2006, when nearly 40,000 people arrived irregularly, 81% of them through the Canary Islands archipelago. Currently, the origin of people arriving by boat in the Canary Islands mainly includes Morocco, Western Sahara, Mauritania, Senegal, and The Gambia.</p>
+            <p>After a decade of relatively contained figures, a progressive and sustained increase in arrivals by sea began in 2016, culminating in historical highs in 2019 and, again, in 2023 and 2024, surpassing in these latter years the levels recorded in 2006. The year 2024 marks the highest value of the entire historical series analyzed. Provisional data for 2025, up to mid-September, show figures lower than those of 2024 on the same date, although higher than those of 2023, which introduces uncertainty about the final evolution of the year.</p>
+            <p>From a territorial point of view, the report identifies a structural change in the geographical distribution of arrivals. While in the first years of the analyzed period the Peninsula and Balearic Islands concentrated most maritime entries, a clear turning point occurred after 2020, positioning the Canary Islands as the main entry point, surpassing 70% of total maritime arrivals to Spain since 2023. This concentration continues during 2024 and much of 2025, although in the summer months of the latter year, a relative rebound in arrivals to the Peninsula and Balearic Islands and a slight deceleration in the Canary Islands are observed.</p>
+            <p>Territorial differences are also reflected in entry routes and arrival profiles. In Ceuta and Melilla, entry by land predominates, with periods of greater pressure between 2017 and 2019, when annual arrivals exceeded 6,000. Currently, Ceuta records a higher number of entries than Melilla.</p>
+
+            <h4>3. Centrality of the Atlantic route and pressure on the Canary Islands</h4>
+            <p>Migratory pressure on the Canary Islands has remained high since 2020 and intensified particularly from 2023. The report shows that the archipelago has become the main point of arrival for the migrant population in an irregular situation in Spain, driven by structural dynamics such as departures from the African Atlantic coast, variations in controls in Morocco and Mauritania, and the perception of this route as an alternative to the Western Mediterranean. In 2024, the Canary Islands registered more than 60,000 arrivals, representing more than 70% of total arrivals to the country.</p>
+            <p>This increase confirms the persistence of one of the most dangerous routes in the world, where high levels of deaths and disappearances continue to be recorded. Likewise, the islands disproportionately bear the initial pressure of arrivals, generating saturation in first reception facilities and complicating referral processes to the Peninsula.</p>
+
+            <h4>4. A management and regularization system in transformation</h4>
+            <p>Spain consolidated itself as a migration-receiving country before having a fully developed migration policy, which led to successive extraordinary regularization processes to grant permits to people already residing in the country. These processes have shaped a migration regime that combines ordinary channels with subsequent regularization mechanisms, especially through "arraigo" (social rooting).</p>
+            <p>In 2025, more than 328,000 people resided in Spain under different modalities of arraigo (social, labor, family, or training), coming mostly from Colombia (25%), Morocco (17%), and Peru (8%). The introduction of training arraigo in 2022 opened new pathways for labor insertion in sectors with labor shortages, although its scope remains limited in relation to the total volume of people in an irregular situation.</p>
+
+            <h4>5. International cooperation and externalization of migration control</h4>
+            <p>Institutional responses to irregular migration depend largely on international cooperation. The externalization of border control constitutes a central pillar of Spanish and European migration policy, based on surveillance, control, and readmission agreements with countries of origin and transit. These mechanisms have contributed to a spatial and temporal reconfiguration of flows, without necessarily translating into a sustained decrease in arrivals. In 2023, for example, Morocco had received more than 500 million euros in European funding earmarked for this area.</p>
+
+            <h4>6. Structural difficulties of measurement and humanitarian dimension</h4>
+            <p>The report highlights structural difficulties in accurately quantifying irregular migration, especially regarding deaths and disappearances on routes to Spain. Likewise, it highlights the close relationship between irregular migration and international protection, as a significant part of the people arriving through irregular channels come from countries in conflict or with serious situations of instability and potentially meet the requirements to apply for asylum.</p>
+            <p>Since 2015, there has been significant growth in applications for international protection in Spain, rising from 3,422 in 2011 to 167,366 in 2024. Of the total applications, only 69% are admitted for processing and, of these, more than 60% end with an unfavorable resolution. In 2024 and 2025, the main applicant nationalities in Spain were Venezuela, Colombia, and Peru, together with Mali and Senegal.</p>
+            <p>In parallel, the analysis of data from the IOM's Missing Migrants Project and specialized organizations such as Caminando Fronteras shows that the Atlantic route concentrates a particularly high number of fatalities, in a context marked by longer journeys, adverse maritime conditions, and the use of precarious vessels. However, the report stresses that available figures likely underestimate the real magnitude of the phenomenon due to the limitations of registration systems.</p>
+
+            <p>Overall, the report highlights the complexity and persistence of irregular migration to Spain and its close link with European and global migratory dynamics. The results show a phenomenon changing in its territorial and temporal manifestations, but structural in its continuity, marked by strong inequalities between regions of origin, transit, and destination, and by high pressure on certain border territories.</p>
+            <p>The analysis also evidences the close relationship between irregular migration, international protection, and administrative management, as well as the existing limitations to fully register the human dimensions of the phenomenon, particularly regarding deaths and disappearances on migratory routes. In this context, Spain appears as a central space of observation, both for its geographical position and for its role in European systems of border control, reception, and protection. The Spanish experience, analyzed in detail, allows identifying patterns, tensions, and challenges that transcend the national sphere and refer to the need to understand irregular migration as a complex, interdependent phenomenon deeply conditioned by international factors.</p>
+        `,
+        materials: [
+            { label: 'Descargar Informe', label_en: 'Download Report', url: '/docs/informe-diciembre.pdf' }
+        ],
+        relatedArticles: [] // Featured article typically doesn't show related immediately below itself in the listings, but for consistency we keep the array
+    },
+
+    {
         slug: 'movilidad-africa-europa',
         type: 'Informe',
         type_en: 'Report',
@@ -72,7 +181,7 @@ export const articles: Article[] = [
         mainImage_en: '/images/informemalien.png',
         mainImageCaption: 'Trayectos de movilidad regulada entre Bamako, Dakar y Madrid.',
         mainImageCaption_en: 'Regulated mobility routes between Bamako, Dakar, and Madrid.',
-        publishDate: '14 Nov 2024',
+        publishDate: '14 Nov 2025',
         readTime: '12 min',
         author: {
             name: 'Beatriz de León',
@@ -198,35 +307,51 @@ export const articles: Article[] = [
     {
         slug: 'comparativa-llegadas-espana-2025',
         type: 'Infografía',
+        type_en: 'Infographic',
         contentKind: 'infografia',
         category: 'Flujos · España',
+        category_en: 'Flows · Spain',
         title: 'Comparativa de llegadas migratorias a España por vía terrestre y marítima (2024-2025)',
         title_en: 'Comparison of migratory arrivals to Spain by land and sea (2024-2025)',
         subtitle: 'El flujo migratorio hacia España desciende 31% interanual, con fuertes diferencias territoriales entre rutas marítimas y terrestres.',
         subtitle_en: 'Migratory flow to Spain drops 31% year-on-year, with strong territorial differences between maritime and land routes.',
-        heroImage: '/images/boat-atlantic.jpg',
-        mainImage: '/images/boat-atlantic.jpg',
+        heroImage: '/images/infografia-comparativamigratorias-es.png',
+        heroImage_en: '/images/infografia-comparativamigratorias-en.png',
+        mainImage: '/images/infografia-comparativamigratorias-es.png',
+        mainImage_en: '/images/infografia-comparativamigratorias-en.png',
         mainImageCaption: 'Patrulla marítima en la ruta atlántica hacia Canarias (2024-2025).',
+        mainImageCaption_en: 'Maritime patrol on the Atlantic route to the Canary Islands (2024-2025).',
         publishDate: '15 Sep 2025',
         readTime: '8 min',
         author: {
             name: 'Equipo IEAM',
             role: 'Análisis de datos',
+            role_en: 'Data Analysis',
             image: '/favicon-new.png',
-            bio: 'Unidad de datos y análisis territorial del IEAM.'
+            bio: 'Unidad de datos y análisis territorial del IEAM.',
+            bio_en: 'IEAM Data and Territorial Analysis Unit.'
         },
         pullQuote: 'La presión migratoria persiste y las rutas se adaptan al control fronterizo y a la cooperación internacional.',
+        pullQuote_en: 'Migration pressure persists and routes are adapting to border control and international cooperation.',
         materials: [
             {
-                label: 'Descargar infografía (PDF)',
-                url: '/docs/infografia-llegadas-nov2025-es.pdf'
+                label: 'Descargar infografía (ES)',
+                label_en: 'Download infographic (ES)',
+                url: '/docs/infografia-comparativamigratorias-es.pdf'
+            },
+            {
+                label: 'Descargar infografía (EN)',
+                label_en: 'Download infographic (EN)',
+                url: '/docs/infografia-comparativamigratorias-en.pdf'
             }
         ],
         content: `
       <p>Según los últimos datos del Ministerio del Interior, el flujo migratorio hacia España cayó 31% entre el 1 de enero y el 15 de septiembre de 2025 frente al mismo periodo de 2024: 26.211 personas vs. 37.970.</p>
+      
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Descenso general, con diferencias territoriales</h3>
       <p>Las llegadas por mar bajan 34% (35.882 a 23.583). Canarias concentra la caída: 26.758 a 12.487 (-53,3%). Ceuta desciende 68,4% y Melilla sube 19%. Baleares sube 70,9%, señal de desplazamiento parcial de rutas al Mediterráneo central. Embarcaciones interceptadas: -17,9% (1.122 a 921).</p>
       <p>Por vía terrestre, tendencia contraria: Ceuta +18,5% (2.026 a 2.401) y Melilla +266% (62 a 227), apuntando a reactivación de intentos fronterizos, sobre todo en Melilla.</p>
+      
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Factores que explican el descenso</h3>
       <ul class="list-disc ml-6 space-y-1 text-slate-700">
         <li>Patrullas mixtas Mauritania-España refuerzan vigilancia atlántica.</li>
@@ -234,45 +359,123 @@ export const articles: Article[] = [
         <li>Cooperación con Senegal y Mauritania para contener rutas.</li>
       </ul>
       <p>Aun así, aumentan salidas desde Guinea Conakry y Guinea-Bissau, lo que sugiere que el descenso puede ser coyuntural.</p>
+      
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusión</h3>
       <p>El balance provisional 2025 muestra menor flujo por mar, pero la presión continúa y las rutas se adaptan. El seguimiento constante es clave para anticipar repuntes y diseñar políticas eficaces y sostenibles.</p>
+    `,
+        content_en: `
+      <p>According to the latest data from the Ministry of the Interior, the flow of migrants to Spain fell by 31% between 1 January and 15 September 2025 compared to the same period in 2024: 26,211 people vs. 37,970.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Overall decline, with regional differences</h3>
+      <p>Arrivals by sea fell by 34% (35,882 to 23,583). The Canary Islands accounted for most of the decline: 26,758 to 12,487 (-53.3%). Ceuta fell by 68.4% and Melilla rose by 19%. The Balearic Islands rose by 70.9%, a sign of a partial shift of routes to the central Mediterranean. Intercepted boats: -17.9% (1,122 to 921).</p>
+      <p>By land, the trend is the opposite: Ceuta +18.5% (2,026 to 2,401) and Melilla +266% (62 to 227), pointing to a resurgence of border attempts, especially in Melilla.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Factors explaining the decline</h3>
+      <ul class="list-disc ml-6 space-y-1 text-slate-700">
+        <li>Joint Mauritania-Spain patrols reinforce Atlantic surveillance.</li>
+        <li>Stricter controls in Mauritania and an increase in detentions/expulsions to Mali and Senegal.</li>
+        <li>Cooperation with Senegal and Mauritania to contain routes.</li>
+      </ul>
+      <p>Even so, departures from Guinea Conakry and Guinea-Bissau are increasing, suggesting that the decline may be temporary.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusion</h3>
+      <p>The provisional balance for 2025 shows a lower flow by sea, but pressure continues and routes are adapting. Constant monitoring is key to anticipating upturns and designing effective and sustainable policies.</p>
     `,
         relatedArticles: []
     },
     {
         slug: 'comparativa-partidos-politicos-2024',
         type: 'Infografía',
+        type_en: 'Infographic',
         contentKind: 'infografia',
         category: 'Política · España',
+        category_en: 'Politics · Spain',
         title: 'Comparativa de partidos políticos ante el Pacto Migratorio',
         title_en: 'Comparison of political parties on the Migration Pact',
         subtitle: 'Síntesis comparada de las propuestas en materia de inmigración de los principales partidos políticos en España (2025).',
         subtitle_en: 'Comparative overview of immigration proposals from Spain\'s main political parties (2025).',
-        heroImage: "/images/politics.png",
-        mainImage: "/images/politics.png",
+        heroImage: "/images/infografia-partidospoliticoses.png",
+        heroImage_en: "/images/infografia-partidospoliticosen.png",
+        mainImage: "/images/infografia-partidospoliticoses.png",
+        mainImage_en: "/images/infografia-partidospoliticosen.png",
         mainImageCaption: 'Comparativa de propuestas migratorias de partidos políticos en España.',
-        publishDate: '10 Nov 2024',
+        mainImageCaption_en: 'Comparison of migration proposals from political parties in Spain.',
+        publishDate: '20 Oct 2025',
         readTime: '6 min',
         author: {
             name: 'Equipo IEAM',
             role: 'Investigación',
+            role_en: 'Research',
             image: '/favicon-new.png',
-            bio: 'Unidad de investigación IEAM.'
+            bio: 'Investigación y análisis de políticas públicas.',
+            bio_en: 'Research and analysis of public policies.'
         },
         pullQuote: 'El consenso político se fractura en los detalles de implementación del Pacto.',
         materials: [
             {
-                label: 'Descargar infografía (PDF)',
-                url: '/docs/infografia-partidospoliticos.pdf'
+                label: 'Descargar infografía (ES)',
+                label_en: 'Download infographic (ES)',
+                url: '/docs/infografia-partidospoliticoses.pdf'
+            },
+            {
+                label: 'Descargar infografía (EN)',
+                label_en: 'Download infographic (EN)',
+                url: '/docs/infografia-partidospoliticosen.pdf'
             }
         ],
         content: `
-      <p>En IEAM Instituto Español de Análisis Migratorio presentamos una síntesis comparada de las propuestas en materia de inmigración incluidas en los programas nacionales de los principales partidos políticos en España (2025).</p>
-      <p>La infografía resume las diferencias clave en modelos, prioridades y enfoques regulatorios que marcarán el debate migratorio en España.</p>
+      <p>En IEAM – Instituto Español de Análisis Migratorio presentamos una síntesis comparada de las propuestas en materia de inmigración incluidas en los programas nacionales (2025) de los principales partidos políticos en España. La infografía identifica diferencias claras en modelo, prioridades y enfoque regulatorio que previsiblemente marcarán el debate migratorio en los próximos meses.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Cuatro enfoques, cuatro lógicas de política migratoria</h3>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">1) PSOE: ordenación, vías legales e integración con reformas</h4>
+      <p>El programa socialista se articula en torno a una migración ordenada, segura y humanitaria, con énfasis en derechos humanos y cooperación internacional. Plantea reforzar la contratación en origen, avanzar en la reforma del Reglamento de Extranjería (arraigo laboral, residencia por formación) y desplegar un Plan Estatal de Integración y Convivencia con recursos para CCAA y ayuntamientos. Incluye, además, el cierre progresivo de los CIE, sustituyéndolos por alternativas de acogida.</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">2) PP: control, coordinación institucional y visado por puntos</h4>
+      <p>El Partido Popular propone un enfoque de gobernanza y control, con la creación de una autoridad única para coordinar la política migratoria. Sitúa el empleo como vía principal de entrada, introduciendo un visado por puntos basado en mérito e integración, y rechaza regularizaciones masivas. También refuerza el control de fronteras (medios, tecnología y cooperación europea), y vincula ayudas sociales a residencia legal y “esfuerzo” de integración.</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">3) Sumar: regularización amplia y garantías de derechos</h4>
+      <p>Sumar plantea una agenda centrada en regularización e integración, con una regularización extraordinaria inmediata de alrededor de 500.000 personas y una reforma integral del marco legal para habilitar un procedimiento de regularización permanente y simplificar trámites. Defiende el cierre de los CIE y apuesta por medidas de inclusión (incluida la dimensión digital y de accesibilidad administrativa).</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">4) VOX: expulsiones, restricción de ayudas y endurecimiento del sistema</h4>
+      <p>VOX adopta un enfoque de máxima disuasión: expulsión inmediata de quienes entren irregularmente y prioridad para expulsar también a residentes legales que cometan delitos graves o reincidan. Rechaza regularizaciones, propone suprimir ayudas a personas en situación irregular y eliminar subvenciones a ONG vinculadas (según su planteamiento) al rescate o asistencia migratoria. Incluye medidas específicas sobre MENAs y condiciona cooperación al desarrollo a la colaboración en devoluciones y control fronterizo.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Ejes que estructuran el debate</h3>
+      <p>Mirado en conjunto, la comparación permite identificar cuatro ejes que separan propuestas:</p>
+      <ul class="list-disc ml-6 space-y-2 text-slate-700">
+        <li>Vías legales vs. disuasión/expulsión (y el peso del empleo como puerta de entrada).</li>
+        <li>Regularización (extraordinaria o permanente) vs. rechazo total de regularizaciones.</li>
+        <li>Integración y recursos públicos (planes, educación y empleo) vs. condicionalidad estricta de ayudas.</li>
+        <li>Modelo institucional y de control (autoridad única, refuerzo fronterizo, papel europeo y Frontex, CIE sí/no).</li>
+      </ul>
+      <p class="mt-6">En IEAM seguiremos actualizando este análisis comparado para contribuir a un debate público más informado y útil para la toma de decisiones.</p>
     `,
         content_en: `
-      <p>At IEAM Instituto Español de Análisis Migratorio, we present a comparative overview of the immigration proposals included in the 2025 national programmes of Spain's main political parties.</p>
-      <p>The infographic highlights differing models, priorities and regulatory visions shaping Spain's migration debate.</p>
+      <p>At IEAM – Spanish Institute for Migration Analysis, we present a comparative summary of the immigration proposals included in the national programs (2025) of the main political parties in Spain. The infographic identifies clear differences in model, priorities, and regulatory approach that are likely to shape the migration debate in the coming months.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Four approaches, four migration policy rationales</h3>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">1) PSOE: order, legal channels, and integration with reforms</h4>
+      <p>The socialist program is structured around orderly, safe, and humanitarian migration, with an emphasis on human rights and international cooperation. It proposes strengthening recruitment at source, advancing the reform of the Immigration Regulations (work permits, residence for training) and deploying a State Plan for Integration and Coexistence with resources for autonomous communities and local councils. It also includes the progressive closure of the CIE, replacing them with reception alternatives.</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">2) PP: control, institutional coordination, and points-based visas</h4>
+      <p>The Popular Party proposes an approach based on governance and control, with the creation of a single authority to coordinate migration policy. It places employment as the main route of entry, introducing a points-based visa system based on merit and integration, and rejects mass regularizations. It also strengthens border control (resources, technology, and European cooperation) and links social assistance to legal residence and “efforts” at integration.</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">3) Sumar: broad regularization and guarantees of rights</h4>
+      <p>Sumar proposes an agenda focused on regularization and integration, with immediate extraordinary regularization of around 500,000 people and a comprehensive reform of the legal framework to enable a permanent regularization procedure and simplify procedures. It advocates the closure of the CIE (Immigrant Detention Centers) and is committed to inclusion measures (including the digital dimension and administrative accessibility).</p>
+      
+      <h4 class="text-lg font-bold text-slate-800 mt-6 mb-2">4) VOX: expulsions, restriction of aid, and tightening of the system</h4>
+      <p>VOX adopts an approach of maximum deterrence: immediate expulsion of those who enter irregularly and priority for the expulsion of legal residents who commit serious crimes or are repeat offenders. It rejects regularization, proposes abolishing aid to people in an irregular situation, and eliminating subsidies to NGOs linked (according to its approach) to rescue or migration assistance. It includes specific measures on unaccompanied foreign minors and makes development cooperation conditional on collaboration in returns and border control.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Axis structuring the debate</h3>
+      <p>Taken together, the comparison allows us to identify four axes that separate the proposals:</p>
+      <ul class="list-disc ml-6 space-y-2 text-slate-700">
+        <li>Legal channels vs. deterrence/expulsion (and the importance of employment as a gateway).</li>
+        <li>Regularization (extraordinary or permanent) vs. total rejection of regularizations.</li>
+        <li>Integration and public resources (plans, education, and employment) vs. strict conditionality of aid.</li>
+        <li>Institutional and control model (single authority, border reinforcement, European role and Frontex, CIE yes/no).</li>
+      </ul>
+      <p class="mt-6">At IEAM, we will continue to update this comparative analysis to contribute to a more informed and useful public debate for decision-making.</p>
     `,
         relatedArticles: []
     },
@@ -285,25 +488,31 @@ export const articles: Article[] = [
         title_en: 'Comparison: The evolution of the Frontex mandate',
         subtitle: 'Cómo ha cambiado la agencia de fronteras europea en la última década.',
         subtitle_en: 'How the European border agency has changed over the last decade.',
-        heroImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-        mainImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/infografia-frontexes.png",
+        heroImage_en: "/images/infografia-frontexen.png",
+        mainImage: "/images/infografia-frontexes.png",
+        mainImage_en: "/images/infografia-frontexen.png",
         mainImageCaption: 'Operación conjunta en el Mediterráneo.',
         publishDate: '05 Nov 2024',
         readTime: '8 min',
         author: {
             name: 'Equipo IEAM',
             role: 'Investigación',
+            role_en: 'Research',
             image: '/favicon-new.png',
-            bio: 'Unidad de investigación IEAM.'
+            bio: 'Unidad de investigación IEAM.',
+            bio_en: 'IEAM Research Unit.'
         },
         materials: [
             {
                 label: 'Infografía (ES)',
-                url: '/docs/frontex1.jpg'
+                label_en: 'Infographic (ES)',
+                url: '/docs/infografia-frontexes.pdf'
             },
             {
                 label: 'Infographic (EN)',
-                url: '/docs/frontex2.jpg'
+                label_en: 'Infographic (EN)',
+                url: '/docs/infografia-frontexen.pdf'
             }
         ],
         pullQuote: 'Un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.',
@@ -425,6 +634,101 @@ export const articles: Article[] = [
         relatedArticles: [
             { id: 'presentacion-informe-mediterraneo', title: 'Presentación del informe sobre la migración irregular en el Mediterráneo', image: '/images/evento-mesaredonda.png', badge: 'Presentación', metadata: { date: '24 Sep 2024', readTime: '—' } }
         ]
+    },
+    {
+        slug: 'comparativa-llegadas-espana-nov-2025',
+        type: 'Infografía',
+        type_en: 'Infographic',
+        contentKind: 'infografia',
+        category: 'Flujos · España',
+        category_en: 'Flows · Spain',
+        title: 'Comparativa de llegadas migratorias a España por vía terrestre y marítima (2024-2025) Actualización Noviembre',
+        title_en: 'Comparison of migratory arrivals to Spain by land and sea (2024-2025) November Update',
+        subtitle: 'El flujo migratorio hacia España desciende 41% hasta mediados de noviembre, con una reconfiguración de rutas hacia el Mediterráneo.',
+        subtitle_en: 'Migratory flow to Spain drops 41% by mid-November, with a reconfiguration of routes towards the Mediterranean.',
+        heroImage: '/images/infografia-comparativamigratorias-es-nov2025.png',
+        heroImage_en: '/images/infografia-comparativamigratorias-en-nov2025.png',
+        mainImage: '/images/infografia-comparativamigratorias-es-nov2025.png',
+        mainImage_en: '/images/infografia-comparativamigratorias-en-nov2025.png',
+        mainImageCaption: 'Evolución de llegadas migratorias a España (Ene-Nov 2025).',
+        mainImageCaption_en: 'Evolution of migratory arrivals to Spain (Jan-Nov 2025).',
+        publishDate: '25 Nov 2025',
+        readTime: '5 min',
+        author: {
+            name: 'Equipo IEAM',
+            role: 'Análisis de datos',
+            role_en: 'Data Analysis',
+            image: '/favicon-new.png',
+            bio: 'Unidad de datos y análisis territorial del IEAM.',
+            bio_en: 'IEAM Data and Territorial Analysis Unit.'
+        },
+        pullQuote: 'Baja el flujo total, pero las rutas se ajustan: el Mediterráneo gana peso y la presión se redistribuye.',
+        pullQuote_en: 'The total flow is decreasing, but the routes are adjusting: the Mediterranean is gaining weight and the pressure is being redistributed.',
+        materials: [
+            {
+                label: 'Descargar infografía (ES)',
+                label_en: 'Download infographic (ES)',
+                url: '/docs/infografia-comparativamigratorias-es-nov2025.pdf.pdf'
+            },
+            {
+                label: 'Descargar infografía (EN)',
+                label_en: 'Download infographic (EN)',
+                url: '/docs/infografia-comparativamigratorias-en-nov2025.pdf'
+            }
+        ],
+        content: `
+      <p>Según los últimos datos del Ministerio del Interior, el flujo migratorio hacia España cayó un 41% entre el 1 de enero y el 15 de noviembre de 2025 frente al mismo periodo de 2024: 31.742 personas vs. 54.216 (22.474 menos).</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Descenso general, con cambios claros por ruta</h3>
+      <p>Por vía marítima, las llegadas bajan en torno a un 45%: 51.849 → 28.362. La caída se explica sobre todo por Canarias, que pasa de 39.713 → 14.690 (-63%).</p>
+      <p>A la vez, se confirma un desplazamiento relativo hacia el Mediterráneo:</p>
+      <ul class="list-disc ml-6 space-y-1 text-slate-700">
+        <li><strong>Península:</strong> 7.408 → 6.929 (descenso leve).</li>
+        <li><strong>Baleares:</strong> 4.717 → 6.683 (+41,7%), señal de mayor peso de la ruta mediterránea.</li>
+        <li><strong>Ceuta (marítima):</strong> 28 → 5 (-82,1%).</li>
+        <li><strong>Melilla (marítima):</strong> 21 → 25 (+19%).</li>
+      </ul>
+      <p>Además, disminuye el número total de embarcaciones: 1.539 → 1.122 (-27,1%).</p>
+      <p>Por vía terrestre, la foto es mixta: Ceuta: 3.101 → 2.281 (descenso). Melilla: 86 → 279 (+224%), repunte muy significativo.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Claves para entender la reconfiguración</h3>
+      <p>La infografía apunta a varios elementos que ayudan a interpretar el cambio:</p>
+      <ul class="list-disc ml-6 space-y-1 text-slate-700">
+        <li>Aumentan las llegadas de somalíes a las costas españolas (posible indicador de nuevos enlaces de tránsito).</li>
+        <li>El punto de partida más habitual desde el Sahel se desplaza a Argelia, reforzando el papel del Mediterráneo.</li>
+        <li>Más presión en el corredor Mali–Mauritania por restricciones y expulsiones, mientras el Mediterráneo se refuerza como principal vía de entrada.</li>
+      </ul>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusión</h3>
+      <p>El balance provisional hasta el 15 de noviembre de 2025 refleja una reducción fuerte del total, pero también una adaptación de rutas: menos Canarias, más señales de Mediterráneo y un repunte terrestre en Melilla que conviene vigilar de cerca.</p>
+    `,
+        content_en: `
+      <p>According to the latest data from the Ministry of the Interior, the flow of migrants to Spain fell by 41% between January 1 and November 15, 2025, compared to the same period in 2024: 31,742 people vs. 54,216 (22,474 fewer).</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Overall decline, with clear changes by route</h3>
+      <p>By sea, arrivals fell by around 45%: 51,849 → 28,362. The decline is mainly explained by the Canary Islands, which went from 39,713 → 14,690 (-63%).</p>
+      <p>At the same time, a relative shift towards the Mediterranean is confirmed:</p>
+      <ul class="list-disc ml-6 space-y-1 text-slate-700">
+        <li><strong>Peninsula:</strong> 7,408 → 6,929 (slight decrease).</li>
+        <li><strong>Balearic Islands:</strong> 4,717 → 6,683 (+41.7%), a sign of the greater importance of the Mediterranean route.</li>
+        <li><strong>Ceuta (maritime):</strong> 28 → 5 (-82.1%).</li>
+        <li><strong>Melilla (maritime):</strong> 21 → 25 (+19%).</li>
+      </ul>
+      <p>In addition, the total number of vessels has decreased: 1,539 → 1,122 (-27.1%).</p>
+      <p>By land, the picture is mixed: Ceuta: 3,101 → 2,281 (decrease). Melilla: 86 → 279 (+224%), a very significant increase.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Keys to understanding the reconfiguration</h3>
+      <p>The infographic points to several elements that help to interpret the change:</p>
+      <ul class="list-disc ml-6 space-y-1 text-slate-700">
+        <li>There has been an increase in the number of Somalis arriving on Spanish shores (a possible indicator of new transit links).</li>
+        <li>The most common point of departure from the Sahel has shifted to Algeria, reinforcing the role of the Mediterranean.</li>
+        <li>There is more pressure on the Mali-Mauritania corridor due to restrictions and expulsions, while the Mediterranean is becoming the main route of entry.</li>
+      </ul>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusion</h3>
+      <p>The provisional balance up to November 15, 2025, reflects a sharp reduction in the total, but also an adaptation of routes: fewer Canary Islands, more signs of the Mediterranean, and a land-based upturn in Melilla that should be closely monitored.</p>
+    `,
+        relatedArticles: []
     }
 ];
 

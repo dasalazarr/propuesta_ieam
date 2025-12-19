@@ -22,6 +22,40 @@ const EventsPage = () => {
         };
     };
 
+    // Helper to parse dates like "24 Sep 2025" or "Jan 2025"
+    const parseDate = (dateString: string) => {
+        const months: { [key: string]: number } = {
+            'Ene': 0, 'Feb': 1, 'Mar': 2, 'Abr': 3, 'May': 4, 'Jun': 5,
+            'Jul': 6, 'Ago': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dic': 11,
+            'Jan': 0, 'Apr': 3, 'Aug': 7, 'Dec': 11
+        };
+
+        const parts = dateString.split(' ');
+
+        // Format: "Jan 2025"
+        if (parts.length === 2) {
+            const month = months[parts[0]] !== undefined ? months[parts[0]] : 0;
+            const year = parseInt(parts[1]);
+            return new Date(year, month, 1);
+        }
+
+        // Format: "24 Sep 2025"
+        if (parts.length === 3) {
+            const day = parseInt(parts[0]);
+            const month = months[parts[1]] !== undefined ? months[parts[1]] : 0;
+            const year = parseInt(parts[2]);
+            return new Date(year, month, day);
+        }
+
+        return new Date();
+    };
+
+    const sortedEvents = useMemo(() => {
+        return [...eventsData].sort((a, b) => {
+            return parseDate(b.date).getTime() - parseDate(a.date).getTime();
+        });
+    }, []);
+
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
@@ -83,18 +117,20 @@ const EventsPage = () => {
                     </h2>
 
                     <div className="grid gap-8">
-                        {eventsData.map((event) => {
+                        {sortedEvents.map((event) => {
                             const locEvent = getLocalizedEvent(event);
                             return (
                                 <Link to={`/eventos/${event.slug}`} key={event.slug} className="group bg-white border border-slate-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow grid md:grid-cols-12">
-                                    <div className="md:col-span-4 lg:col-span-3 aspect-video md:aspect-auto relative overflow-hidden">
+                                    <div className="md:col-span-4 lg:col-span-3 relative overflow-hidden">
+                                        <div className="relative w-full pt-[56.25%]">  {/* 16:9 Aspect Ratio */}
                                         <img
                                             src={event.heroImage}
                                             alt={locEvent.title}
-                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                            className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                                             loading="lazy"
                                             decoding="async"
                                         />
+                                        </div>
                                     </div>
                                     <div className="md:col-span-8 lg:col-span-9 p-8 flex flex-col justify-center h-full">
                                         <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">

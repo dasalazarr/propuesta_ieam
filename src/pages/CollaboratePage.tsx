@@ -8,13 +8,22 @@ import { useTranslation } from 'react-i18next';
 
 const CollaboratePage = () => {
   const { t } = useTranslation();
-  const [frequency, setFrequency] = useState<DonationFrequency>('one-time');
+  // Default to 'monthly' as per request ("Apoyo Periódico" default)
+  const [frequency, setFrequency] = useState<DonationFrequency>('monthly');
 
-  const handleDonate = (tierId: string) => {
-    const url = getDonationUrl(tierId, frequency);
+  const handleDonate = (tierId: string, explicitFrequency?: DonationFrequency | 'annual') => {
+    // Use explicit frequency if provided, otherwise fallback to page state
+    const targetFrequency = explicitFrequency || frequency;
+    const url = getDonationUrl(tierId, targetFrequency);
     if (url && url !== '#') {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
+  };
+
+  const calculateDiscount = (monthly: number, annual: number) => {
+    const totalMonthly = monthly * 12;
+    const saving = totalMonthly - annual;
+    return Math.round((saving / totalMonthly) * 100);
   };
 
   return (
@@ -57,15 +66,6 @@ const CollaboratePage = () => {
             <div className="flex justify-center mb-12">
               <div className="inline-flex bg-slate-100 p-1 rounded-full">
                 <button
-                  onClick={() => setFrequency('one-time')}
-                  className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 ${frequency === 'one-time'
-                    ? 'bg-[#0A2540] text-white shadow-md'
-                    : 'text-slate-500 hover:text-[#0A2540]'
-                    }`}
-                >
-                  {t('collaborate.switch.one_time')}
-                </button>
-                <button
                   onClick={() => setFrequency('monthly')}
                   className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 ${frequency === 'monthly'
                     ? 'bg-[#0A2540] text-white shadow-md'
@@ -73,6 +73,15 @@ const CollaboratePage = () => {
                     }`}
                 >
                   {t('collaborate.switch.monthly')}
+                </button>
+                <button
+                  onClick={() => setFrequency('one-time')}
+                  className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 ${frequency === 'one-time'
+                    ? 'bg-[#0A2540] text-white shadow-md'
+                    : 'text-slate-500 hover:text-[#0A2540]'
+                    }`}
+                >
+                  {t('collaborate.switch.one_time')}
                 </button>
               </div>
             </div>
@@ -97,14 +106,34 @@ const CollaboratePage = () => {
                   )}
 
                   <div className="p-6">
-                    {/* Amount */}
-                    <div className="text-center mb-4">
-                      <div className="text-4xl font-bold text-[var(--color-navy-900)]">
-                        {formatAmount(tier.amount, frequency)}
-                      </div>
-                      <div className="text-sm text-slate-500 mt-1 uppercase tracking-wide text-xs">
-                        {frequency === 'monthly' ? t('collaborate.switch.monthly') : t('collaborate.tiers.frequency')}
-                      </div>
+                    {/* Amount Display */}
+                    <div className="text-center mb-6">
+                      {frequency === 'monthly' && typeof tier.amount === 'number' && tier.annualAmount ? (
+                        /* Periodic View: Show Annual + Monthly */
+                        <div className="flex flex-col items-center gap-2">
+                          <div className="flex items-center gap-2 mb-1">
+                            <div className="text-2xl font-bold text-[var(--color-navy-900)]">
+                              €{tier.annualAmount}{t('collaborate.switch.per_year')}
+                            </div>
+                            <span className="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
+                              {t('collaborate.switch.save_badge', { percent: calculateDiscount(tier.amount, tier.annualAmount) })}
+                            </span>
+                          </div>
+                          <div className="text-sm text-slate-500 font-medium">
+                            o €{tier.amount}{t('collaborate.switch.per_month')}
+                          </div>
+                        </div>
+                      ) : (
+                        /* One-time View */
+                        <div>
+                          <div className="text-4xl font-bold text-[var(--color-navy-900)]">
+                            {formatAmount(tier.amount, frequency)}
+                          </div>
+                          <div className="text-sm text-slate-500 mt-1 uppercase tracking-wide text-xs">
+                            {t('collaborate.switch.one_time')}
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                     {/* Title */}
@@ -113,30 +142,58 @@ const CollaboratePage = () => {
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm text-slate-600 text-center mb-4">
+                    <p className="text-sm text-slate-600 text-center mb-4 min-h-[40px]">
                       {t(`collaborate.tiers.${tier.id}.description`)}
                     </p>
 
                     {/* Impact */}
-                    <div className="bg-slate-50 p-3 mb-6">
-                      <div className="flex items-start gap-2">
+                    <div className="bg-slate-50 p-3 mb-6 min-h-[60px] flex items-center">
+                      <div className="flex items-start gap-2 w-full">
                         <Check className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <p className="text-xs text-slate-600">{t(`collaborate.tiers.${tier.id}.impact`)}</p>
+                        <p className="text-xs text-slate-600 leading-snug">{t(`collaborate.tiers.${tier.id}.impact`)}</p>
                       </div>
                     </div>
 
-                    {/* CTA Button */}
-                    <button
-                      onClick={() => handleDonate(tier.id)}
-                      className={`w-full py-3 font-bold uppercase tracking-[0.12em] text-sm transition-colors flex items-center justify-center gap-2 group ${tier.featured
-                        ? 'bg-[var(--color-mediterranean)] text-white hover:bg-[var(--color-navy-900)]'
-                        : 'bg-[var(--color-navy-900)] text-white hover:bg-[var(--color-mediterranean)]'
-                        }`}
-                    >
-                      <Heart className="w-4 h-4" />
-                      {t('collaborate.tiers.button')} {formatAmount(tier.amount, frequency)}
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    {/* CTA Buttons */}
+                    <div className="space-y-3">
+                      {frequency === 'monthly' && tier.annualAmount ? (
+                        <>
+                          {/* Annual (Primary) */}
+                          <button
+                            onClick={() => handleDonate(tier.id, 'annual')}
+                            className={`w-full py-3 font-bold uppercase tracking-[0.12em] text-sm transition-colors flex items-center justify-center gap-2 group ${tier.featured
+                              ? 'bg-[var(--color-mediterranean)] text-white hover:bg-[var(--color-navy-900)]'
+                              : 'bg-[var(--color-navy-900)] text-white hover:bg-[var(--color-mediterranean)]'
+                              }`}
+                          >
+                            <Heart className="w-4 h-4" />
+                            {t('collaborate.tiers.button')} €{tier.annualAmount}/año
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                          </button>
+
+                          {/* Monthly (Secondary) */}
+                          <button
+                            onClick={() => handleDonate(tier.id, 'monthly')}
+                            className="w-full py-2 font-bold uppercase tracking-[0.12em] text-xs transition-colors flex items-center justify-center gap-2 text-slate-500 hover:text-[var(--color-navy-900)] hover:bg-slate-50 border border-transparent hover:border-slate-200"
+                          >
+                            O donar mensual: €{tier.amount}/mes
+                          </button>
+                        </>
+                      ) : (
+                        /* One-time Button */
+                        <button
+                          onClick={() => handleDonate(tier.id, 'one-time')}
+                          className={`w-full py-3 font-bold uppercase tracking-[0.12em] text-sm transition-colors flex items-center justify-center gap-2 group ${tier.featured
+                            ? 'bg-[var(--color-mediterranean)] text-white hover:bg-[var(--color-navy-900)]'
+                            : 'bg-[var(--color-navy-900)] text-white hover:bg-[var(--color-mediterranean)]'
+                            }`}
+                        >
+                          <Heart className="w-4 h-4" />
+                          {t('collaborate.tiers.button')} {frequency === 'one-time' ? formatAmount(tier.amount, frequency) : ''}
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

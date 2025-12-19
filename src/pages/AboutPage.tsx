@@ -130,10 +130,6 @@ const AboutPage = () => {
             <div className="py-16 bg-slate-50 border-t border-slate-200">
                 <div className="page-shell">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center space-x-2 text-xs font-bold tracking-widest uppercase text-[#D4212A] mb-4">
-                            <span className="w-2 h-2 bg-[#D4212A] rounded-full"></span>
-                            <span>{t('about.team.label')}</span>
-                        </div>
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0A2540]">
                             {t('about.team.title')}
                         </h2>

@@ -1,11 +1,25 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { articles } from '@/data/articles';
 
 const HeroSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const featured = articles[0];
+
+  const getLocalizedContent = (item: any) => {
+    const isEn = i18n.language === 'en';
+    return {
+      title: (isEn && item.title_en) ? item.title_en : item.title,
+      subtitle: (isEn && item.subtitle_en) ? item.subtitle_en : item.subtitle,
+      image: (isEn && item.heroImage_en) ? item.heroImage_en : item.heroImage,
+      type: (isEn && item.type_en) ? item.type_en : item.type,
+    };
+  };
+
+  const content = featured ? getLocalizedContent(featured) : null;
 
   return (
     <section className="relative min-h-screen flex items-center bg-white border-b hairline">
@@ -18,7 +32,6 @@ const HeroSection = () => {
             <div className="eyebrow text-[var(--color-text-primary)]">
               <span className="text-[11px] uppercase tracking-[0.18em] text-slate-500 ml-2">{t('hero.eyebrow')}</span>
             </div>
-
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-[-0.02em]">
               {t('hero.title_start')} <span className="italic text-[var(--color-accent-red)]">{t('hero.title_highlight')}</span> {t('hero.title_end')}
@@ -46,32 +59,21 @@ const HeroSection = () => {
           </div>
 
           <div className="lg:col-span-7 relative mt-8 lg:mt-0">
-            <div className="relative rounded-sm overflow-hidden border hairline group h-[300px] md:h-[400px] lg:h-[450px]">
-              <Link to="/analisis/movilidad-africa-europa" className="absolute inset-0 z-10" aria-label="Leer informe destacado"></Link>
-              <img
-                src="mali-europa-map.png"
-                alt="Global Migration Map"
-                className="w-full h-[420px] lg:h-[520px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A2540]/90 to-transparent p-8 pt-24">
-                <div className="inline-flex items-center px-3 py-1 bg-white/90 text-[#0A3D62] text-[11px] font-bold uppercase tracking-wider mb-3 border border-[#B6D7FF] rounded-full">
-                  {t('hero.featured.label')}
-                </div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                  {t('hero.featured.title')}
-                </h3>
-                <p className="text-slate-200 text-sm mb-4 max-w-xl">
-                  {t('hero.featured.subtitle')}
-                </p>
-                <div className="flex items-center text-xs text-slate-300 font-medium uppercase tracking-wide">
-                  <span className="flex items-center mr-4">
-                    <Calendar className="w-3 h-3 mr-1" />
-                    {t('hero.featured.date_nov')}
+            {featured && (
+              <div className="relative rounded-sm overflow-hidden border hairline group w-full aspect-video">
+                <Link to={`/analisis/${featured.slug}`} className="absolute inset-0 z-10" aria-label={content?.title}></Link>
+                <img
+                  src={content?.image}
+                  alt={content?.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <span className="text-white text-sm font-bold uppercase tracking-[0.2em] drop-shadow-md group-hover:opacity-0 group-hover:scale-110 transition-all duration-700 ease-out">
+                    {t('hero.featured.read_now')}
                   </span>
-                  <span>{t('hero.featured.reading_time')}</span>
                 </div>
               </div>
-            </div>
+            )}
             <div className="absolute -z-10 top-12 -right-12 w-64 h-64 bg-slate-50 rounded-full blur-3xl opacity-60"></div>
           </div>
 

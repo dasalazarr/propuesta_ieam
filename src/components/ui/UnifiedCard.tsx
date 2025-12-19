@@ -133,15 +133,15 @@ export const Card: React.FC<CardProps> = ({
       {/* Image Section */}
       {image && (
         <div className={classNames(
-          "relative overflow-hidden",
-          isFeatured ? "md:col-span-7 h-64 md:h-auto min-h-[260px]" : "h-48 w-full"
+          "relative overflow-hidden w-full bg-slate-100",
+          isFeatured ? "md:col-span-7 aspect-video" : "aspect-video"
         )}>
           <img
             src={image}
             alt={title}
             loading="lazy"
             decoding="async"
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
           />
           {badge && !isFeatured && (
             <div className="absolute top-4 left-4">

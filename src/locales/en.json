@@ -12,7 +12,8 @@
             "title": "Rethinking Mobility between Mali and Europe",
             "subtitle": "A new cooperation framework for sustainable and humane migration management.",
             "date_nov": "November 2024",
-            "reading_time": "Read time: 12 min"
+            "reading_time": "Read time: 12 min",
+            "read_now": "Read now"
         }
     },
     "strategy": {
@@ -141,6 +142,48 @@
             "subtitle": "Rigorous and evidence-based analysis to inform public policies.",
             "quote": "Transforming data into actionable knowledge to build fairer and more effective migration policies."
         },
+        "pillars": {
+            "title": "Our Pillars",
+            "subtitle": "At IEAM we have nine key pillars, get to know them",
+            "items": {
+                "mobility": {
+                    "title": "Legal and Orderly Mobility",
+                    "description": "Design and scaling of safe pathways as an effective tool against trafficking and exploitation."
+                },
+                "routes": {
+                    "title": "Key Routes and Geographies",
+                    "description": "Focus on the Mediterranean Sea and the Atlantic Ocean (Mauritania, Senegal, Ivory Coast) with an integrated reading of the Sahel and Central Africa."
+                },
+                "governance": {
+                    "title": "Governance and Regulatory Frameworks",
+                    "description": "Comparative monitoring of policies and laws in Europe and Africa, and promotion of procedural improvements in Spain."
+                },
+                "economy": {
+                    "title": "Economy, Employment and Business",
+                    "description": "Public-private cooperation to link real labor needs with dual training, circular mobility, and joint investment in value chains."
+                },
+                "diaspora": {
+                    "title": "Diasporas and Development",
+                    "description": "Support for leadership, entrepreneurship, and productive remittances; transnational links and counter-narratives against disinformation."
+                },
+                "narratives": {
+                    "title": "Public Perceptions and Narratives",
+                    "description": "Multi-stakeholder diagnosis (governments, civil society, companies, and media) to guide communication and evidence-based policies."
+                },
+                "diplomacy": {
+                    "title": "EU-Africa Alliances and Diplomacy",
+                    "description": "Incentives to cooperate with Europe, parliamentary advocacy, and comparative learning (benchmarking with Italy and France)."
+                },
+                "protection": {
+                    "title": "Protection and Safeguards",
+                    "description": "Border governance with a rights-based approach, attention to minors and gender, and returns and reintegration with dignity."
+                },
+                "data": {
+                    "title": "Data, Evaluation and Learning",
+                    "description": "Monitoring of trends by country, impact metrics, and continuous program adjustment."
+                }
+            }
+        },
         "categories": {
             "reports": "Reports",
             "infographics": "Infographics",
@@ -246,8 +289,11 @@
             "button": "Donate"
         },
         "switch": {
-            "monthly": "Monthly",
-            "one_time": "One-time"
+            "monthly": "Recurring Support",
+            "one_time": "One-time Support",
+            "save_badge": "Save {{percent}}%",
+            "per_year": "/year",
+            "per_month": "/month"
         },
         "impact": {
             "title": "Your Impact",
@@ -290,5 +336,25 @@
         },
         "description": "Transforming the migration debate with data and dialogue.",
         "rights": "All rights reserved."
+    },
+    "common": {
+        "read_more": "Read more",
+        "by": "by",
+        "badges": {
+            "infografía": "Infographic",
+            "infografia": "Infographic",
+            "informe": "Report",
+            "analisis": "Analysis",
+            "análisis": "Analysis",
+            "entrevista": "Interview",
+            "policy_brief": "Policy Brief",
+            "reseña_de_evento": "Event Review",
+            "evento": "Event",
+            "cumbre": "Summit",
+            "taller": "Workshop",
+            "foro": "Forum",
+            "diálogo": "Dialogue",
+            "dialogo": "Dialogue"
+        }
     }
 }

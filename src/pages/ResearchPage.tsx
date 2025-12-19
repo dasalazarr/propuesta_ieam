@@ -4,17 +4,17 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import { Card } from '@/components/ui/UnifiedCard';
+import ResearchPillars from '@/components/ResearchPillars';
 import { articles, Article } from '@/data/articles';
 import { useTranslation } from 'react-i18next';
 
 const ResearchPage = () => {
     const { t, i18n } = useTranslation();
-    const [activeTab, setActiveTab] = useState<'Informes' | 'Infografías' | 'Reseña de eventos' | 'Entrevistas y prensa'>('Informes');
+    const [activeTab, setActiveTab] = useState<'Informes' | 'Infografías' | 'Entrevistas y prensa'>('Informes');
 
     const categories = [
         { id: 'Informes', label: t('research.categories.reports') },
         { id: 'Infografías', label: t('research.categories.infographics') },
-        { id: 'Reseña de eventos', label: t('research.categories.events_review') },
         { id: 'Entrevistas y prensa', label: t('research.categories.press') },
     ] as const;
 
@@ -25,8 +25,6 @@ const ResearchPage = () => {
                     return article.type === 'Informe' || article.type === 'Policy Brief' || article.type === 'Análisis';
                 case 'Infografías':
                     return article.type === 'Infografía';
-                case 'Reseña de eventos':
-                    return article.type === 'Reseña de evento';
                 case 'Entrevistas y prensa':
                     return article.type === 'Entrevista' || article.type === 'Nota de prensa';
                 default:
@@ -96,6 +94,9 @@ const ResearchPage = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Research Pillars */}
+            <ResearchPillars />
 
             {/* Content Section */}
             <div className="page-shell section-shell">

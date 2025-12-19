@@ -11,8 +11,8 @@
             "label": "Informe Destacado",
             "title": "Repensar la Movilidad entre Mali y Europa",
             "subtitle": "Un nuevo marco de cooperación para una gestión migratoria sostenible y humana.",
-            "date_nov": "Noviembre 2024",
-            "reading_time": "Lectura: 12 min"
+            "reading_time": "Lectura: 12 min",
+            "read_now": "Leer ahora"
         }
     },
     "strategy": {
@@ -141,6 +141,48 @@
             "subtitle": "Análisis riguroso y basado en evidencia para informar políticas públicas.",
             "quote": "Transformar datos en conocimiento accionable para construir políticas migratorias más justas y efectivas."
         },
+        "pillars": {
+            "title": "Nuestros pilares",
+            "subtitle": "En el IEAM tenemos nueve pilares clave, conócelos",
+            "items": {
+                "mobility": {
+                    "title": "Movilidad legal y ordenada",
+                    "description": "Diseño y escalado de vías seguras como herramienta eficaz contra la trata y la explotación."
+                },
+                "routes": {
+                    "title": "Rutas y geografías clave",
+                    "description": "Foco en el Mar Mediterráneo y el Océano Atlántico (Mauritania, Senegal, Costa de Marfil) con lectura integrada del Sahel y África Central."
+                },
+                "governance": {
+                    "title": "Gobernanza y marcos normativos",
+                    "description": "Seguimiento comparado de políticas y leyes en Europa y África, e impulso de mejoras procedimentales en España."
+                },
+                "economy": {
+                    "title": "Economía, empleo y empresa",
+                    "description": "Cooperación público-privada para vincular necesidades reales de mano de obra con formación dual, movilidad circular e inversión conjunta en cadenas de valor."
+                },
+                "diaspora": {
+                    "title": "Diásporas y desarrollo",
+                    "description": "Apoyo a liderazgo, emprendimiento y remesas productivas; vínculos transnacionales y contranarrativas frente a la desinformación."
+                },
+                "narratives": {
+                    "title": "Percepciones y narrativas públicas",
+                    "description": "Diagnóstico multi-actor (gobiernos, sociedad civil, empresas y medios) para orientar comunicación y políticas basadas en evidencia."
+                },
+                "diplomacy": {
+                    "title": "Alianzas y diplomacia UE-África",
+                    "description": "Incentivos para cooperar con Europa, incidencia parlamentaria y aprendizaje comparado (benchmarking con Italia y Francia)."
+                },
+                "protection": {
+                    "title": "Protección y salvaguardas",
+                    "description": "Gobernanza fronteriza con enfoque de derechos, atención a menores y género, y retornos y reintegración con dignidad."
+                },
+                "data": {
+                    "title": "Datos, evaluación y aprendizaje",
+                    "description": "Monitorización de tendencias por país, métricas de impacto y ajuste continuo de programas."
+                }
+            }
+        },
         "categories": {
             "reports": "Informes",
             "infographics": "Infografías",
@@ -246,8 +288,11 @@
             "button": "Donar"
         },
         "switch": {
-            "monthly": "Mensual",
-            "one_time": "Puntual"
+            "monthly": "Apoyo Periódico",
+            "one_time": "Apoyo Puntual",
+            "save_badge": "Ahorra {{percent}}%",
+            "per_year": "/año",
+            "per_month": "/mes"
         },
         "impact": {
             "title": "Tu impacto",
@@ -290,5 +335,25 @@
         },
         "description": "Transformando el debate sobre migración con datos y diálogo.",
         "rights": "Todos los derechos reservados."
+    },
+    "common": {
+        "read_more": "Leer más",
+        "by": "por",
+        "badges": {
+            "infografía": "Infografía",
+            "infografia": "Infografía",
+            "informe": "Informe",
+            "analisis": "Análisis",
+            "análisis": "Análisis",
+            "entrevista": "Entrevista",
+            "policy_brief": "Policy Brief",
+            "reseña_de_evento": "Reseña de evento",
+            "evento": "Evento",
+            "cumbre": "Cumbre",
+            "taller": "Taller",
+            "foro": "Foro",
+            "diálogo": "Diálogo",
+            "dialogo": "Diálogo"
+        }
     }
 }
