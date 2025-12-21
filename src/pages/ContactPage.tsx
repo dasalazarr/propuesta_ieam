@@ -43,7 +43,8 @@ const ContactPage = () => {
                 body: JSON.stringify({
                     ...formData,
                     _subject: `Nuevo mensaje Web IEAM: ${formData.subject}`,
-                    _template: "table"
+                    _template: "table",
+                    _captcha: "false"
                 }),
                 signal: controller.signal
             });
@@ -74,7 +75,7 @@ const ContactPage = () => {
             let errorMessage = "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escribe a info@ieam.es";
 
             if (error.name === 'AbortError') {
-                errorMessage = "El envío ha tardado demasiado. Por favor, verifica tu conexión.";
+                errorMessage = "El envío ha tardado demasiado. Verifica tu conexión o desactiva el bloqueador de anuncios.";
             }
 
             setStatus({
