@@ -66,21 +66,21 @@ export const articles: Article[] = [
         title_en: 'Migration and Migrants: Irregular Migratory Routes to Europe. Spain, a Case Study',
         subtitle: 'Un análisis exhaustivo sobre la evolución, dinámicas y desafíos de la migración irregular hacia España en el contexto europeo (2015-2025).',
         subtitle_en: 'A comprehensive analysis of the evolution, dynamics, and challenges of irregular migration to Spain within the European context (2015-2025).',
-        heroImage: '/images/informe-diciembre.png',
-        heroImage_en: '/images/informe-diciembre.png',
-        mainImage: '/images/informe-diciembre.png',
-        mainImage_en: '/images/informe-diciembre.png',
-        mainImageCaption: 'Portada del informe Diciembre 2025.',
-        mainImageCaption_en: 'Cover of the December 2025 report.',
+        heroImage: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
+        heroImage_en: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
+        mainImage: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
+        mainImage_en: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
+        mainImageCaption: 'Portada del informe: Migraciones y Migrantes.',
+        mainImageCaption_en: 'Report cover: Migrations and Migrants.',
         publishDate: '22 Dec 2025',
         readTime: '25 min',
         author: {
-            name: 'Equipo IEAM',
-            role: 'Investigación',
-            role_en: 'Research Team',
-            image: '/favicon-new.png',
-            bio: 'Equipo de investigación del IEAM.',
-            bio_en: 'IEAM Research Team.'
+            name: 'Dolores López',
+            role: 'Investigadora asociada',
+            role_en: 'Associate Researcher',
+            image: '/team/member-5.jpg',
+            bio: 'Pamplona (España). Dolores López es licenciada en Geografía e Historia y doctora en Geografía por nuestra Universidad, además de contar con un Máster en Demografía por la London School of Economics (LSE). Es catedrática de Geografía Humana en la Facultad de Filosofía y Letras. Sus líneas de investigación se enmarcan en los estudios de familia, mortalidad y migraciones.',
+            bio_en: 'Pamplona (Spain). Dolores López holds a degree in Geography and History and a PhD in Geography, in addition to a Master\'s in Demography from the London School of Economics (LSE). She is a Professor of Human Geography. Her research focuses on family studies, mortality, and migrations.'
         },
         content: `
             <h3>Resumen Ejecutivo</h3>
@@ -159,7 +159,7 @@ export const articles: Article[] = [
             <p>The analysis also evidences the close relationship between irregular migration, international protection, and administrative management, as well as the existing limitations to fully register the human dimensions of the phenomenon, particularly regarding deaths and disappearances on migratory routes. In this context, Spain appears as a central space of observation, both for its geographical position and for its role in European systems of border control, reception, and protection. The Spanish experience, analyzed in detail, allows identifying patterns, tensions, and challenges that transcend the national sphere and refer to the need to understand irregular migration as a complex, interdependent phenomenon deeply conditioned by international factors.</p>
         `,
         materials: [
-            { label: 'Descargar Informe', label_en: 'Download Report', url: '/docs/informe-diciembre.pdf' }
+            { label: 'Descargar Informe', label_en: 'Download Report', url: '/docs/IEAM-REP-2025-001-ES_rutas-migratorias.pdf' }
         ],
         relatedArticles: [] // Featured article typically doesn't show related immediately below itself in the listings, but for consistency we keep the array
     },
@@ -215,12 +215,12 @@ export const articles: Article[] = [
             {
                 label: 'Informe completo (ES)',
                 label_en: 'Full Report (ES)',
-                url: '/docs/ieam-policy-paper-repensar-movilidad-mali-europa-2025.pdf'
+                url: '/docs/IEAM-PP-2025-001-ES_movilidad-mali.pdf'
             },
             {
                 label: 'Informe completo (FR)',
                 label_en: 'Full Report (FR)',
-                url: '/docs/ieam-policy-paper-refonder-mobilites-mali-europe-2025.pdf'
+                url: '/docs/IEAM-PP-2025-001-FR_mobilite-mali.pdf'
             }
         ],
         content: `
@@ -337,12 +337,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/infografia-comparativamigratorias-es.pdf'
+                url: '/docs/IEAM-INF-2025-001-ES_llegadas-sep.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/infografia-comparativamigratorias-en.pdf'
+                url: '/docs/IEAM-INF-2025-001-EN_arrivals-sep.pdf'
             }
         ],
         content: `
@@ -415,12 +415,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/infografia-partidospoliticoses.pdf'
+                url: '/docs/IEAM-INF-2025-002-ES_partidos-pacto.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/infografia-partidospoliticosen.pdf'
+                url: '/docs/IEAM-INF-2025-002-EN_parties-pact.pdf'
             }
         ],
         content: `
@@ -507,12 +507,12 @@ export const articles: Article[] = [
             {
                 label: 'Infografía (ES)',
                 label_en: 'Infographic (ES)',
-                url: '/docs/infografia-frontexes.pdf'
+                url: '/docs/IEAM-INF-2024-001-ES_frontex-mandato.pdf'
             },
             {
                 label: 'Infographic (EN)',
                 label_en: 'Infographic (EN)',
-                url: '/docs/infografia-frontexen.pdf'
+                url: '/docs/IEAM-INF-2024-001-EN_frontex-mandate.pdf'
             }
         ],
         pullQuote: 'Un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.',
@@ -536,10 +536,10 @@ export const articles: Article[] = [
         type: 'Entrevista',
         contentKind: 'entrevista',
         category: 'Entrevista · Flujos Atlánticos',
-        title: 'Entrevista a Beatriz de León Cobo: «La presión al Gobierno de Mauritania explica el descenso de llegadas de migrantes a Canarias»',
+        title: 'Sahel–España: cómo se transforman las rutas hacia Canarias, la península y las islas',
         subtitle: 'La directora del IEAM analiza cómo la presión a Mauritania y la inestabilidad del Sahel influyen en los flujos hacia Canarias.',
-        heroImage: '/images/entrevista-beatrizleon.webp',
-        mainImage: '/images/entrevista-beatrizleon.webp',
+        heroImage: '/images/prensa-diciembre2025.png',
+        mainImage: '/images/prensa-diciembre2025.png',
         mainImageCaption: 'Beatriz de León Cobo durante la jornada sobre Sahel y ruta hacia Canarias.',
         publishDate: '20 Sep 2025',
         readTime: '7 min',
@@ -668,12 +668,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/infografia-comparativamigratorias-es-nov2025.pdf.pdf'
+                url: '/docs/IEAM-INF-2025-003-ES_llegadas-nov.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/infografia-comparativamigratorias-en-nov2025.pdf'
+                url: '/docs/IEAM-INF-2025-003-EN_arrivals-nov.pdf'
             }
         ],
         content: `

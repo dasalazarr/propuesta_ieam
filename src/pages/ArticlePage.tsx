@@ -108,7 +108,7 @@ const ArticlePage = () => {
                                 decoding="async"
                             />
                         </div>
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-6 py-4 text-white text-sm">
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent px-6 py-4 text-white text-sm text-center">
                             {localizedArticle.mainImageCaption}
                         </div>
                     </div>

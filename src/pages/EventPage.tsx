@@ -20,6 +20,7 @@ const EventPage = () => {
     format: (i18n.language === 'en' && event.format_en) ? event.format_en : event.format,
     category: (i18n.language === 'en' && event.category_en) ? event.category_en : event.category,
     content: (i18n.language === 'en' && event.content_en) ? event.content_en : event.content,
+    heroImage: (i18n.language === 'en' && event.heroImage_en) ? event.heroImage_en : event.heroImage,
     // Agenda and Speakers are currently structurally shared, titles might need specific translation keys if we want deep localization
     // For now we use the existing data as is, assuming names/roles might be mixed or Spanish.
     // If needed, we would need agenda_en etc. in data structure.
@@ -48,7 +49,7 @@ const EventPage = () => {
       <section className="relative bg-[var(--color-navy-900)] text-[var(--color-cream)] section-shell overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={event.heroImage}
+            src={localizedEvent.heroImage}
             alt={localizedEvent.title}
             className="w-full h-full object-cover opacity-40"
             loading="eager"
@@ -90,22 +91,24 @@ const EventPage = () => {
                 </p>
               ))
             )}
-            <div className="border-t hairline pt-6 space-y-3">
-              <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
-                {i18n.language === 'en' ? 'Agenda' : 'Agenda'}
-              </h2>
-              <ul className="space-y-3">
-                {event.agenda.map((item, idx) => (
-                  <li key={idx} className="flex gap-4 text-slate-700">
-                    {item.time && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{item.time}</span>}
-                    <div>
-                      <div className="font-semibold">{item.title}</div>
-                      {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {event.agenda && event.agenda.length > 0 && (
+              <div className="border-t hairline pt-6 space-y-3">
+                <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
+                  {i18n.language === 'en' ? 'Agenda' : 'Agenda'}
+                </h2>
+                <ul className="space-y-3">
+                  {event.agenda.map((item, idx) => (
+                    <li key={idx} className="flex gap-4 text-slate-700">
+                      {item.time && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{item.time}</span>}
+                      <div>
+                        <div className="font-semibold">{item.title}</div>
+                        {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           <div className="lg:col-span-5 space-y-6">
@@ -120,19 +123,71 @@ const EventPage = () => {
                 />
               </div>
             )}
-            <div className="border hairline p-6 space-y-3 bg-[var(--color-paper-warm)]">
-              <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)]">
-                {i18n.language === 'en' ? 'Speakers' : 'Speakers'}
-              </h3>
-              <ul className="space-y-2">
-                {event.speakers.map((speaker) => (
-                  <li key={speaker.name} className="text-slate-700">
-                    <div className="font-semibold">{speaker.name}</div>
-                    <div className="text-sm text-slate-500">{speaker.role}</div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {event.speakers && event.speakers.length > 0 && (
+              <div className="border hairline p-6 bg-[var(--color-paper-warm)]">
+                <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-4">
+                  {i18n.language === 'en' ? 'Speakers' : 'Ponentes'}
+                </h3>
+
+                {(() => {
+                  const hasGroups = event.speakers.some((s) => s.group);
+
+                  if (hasGroups) {
+                    const groups: Record<string, typeof event.speakers> = {};
+                    const groupOrder: string[] = [];
+
+                    event.speakers.forEach((speaker) => {
+                      const groupName =
+                        i18n.language === "en"
+                          ? speaker.group_en || speaker.group || "General"
+                          : speaker.group || "General";
+                      if (!groups[groupName]) {
+                        groups[groupName] = [];
+                        groupOrder.push(groupName);
+                      }
+                      groups[groupName].push(speaker);
+                    });
+
+                    return (
+                      <div className="space-y-6">
+                        {groupOrder.map((group) => (
+                          <div key={group}>
+                            <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-primary)]/70 mb-3 border-b border-[var(--color-navy-900)]/10 pb-1">
+                              {group}
+                            </h4>
+                            <ul className="space-y-3">
+                              {groups[group].map((speaker) => (
+                                <li key={speaker.name} className="text-slate-700">
+                                  <div className="font-semibold leading-tight">
+                                    {speaker.name}
+                                  </div>
+                                  {speaker.role && (
+                                    <div className="text-sm text-slate-500 mt-0.5">
+                                      {speaker.role}
+                                    </div>
+                                  )}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <ul className="space-y-3">
+                      {event.speakers.map((speaker) => (
+                        <li key={speaker.name} className="text-slate-700">
+                          <div className="font-semibold leading-tight">{speaker.name}</div>
+                          {speaker.role && <div className="text-sm text-slate-500 mt-0.5">{speaker.role}</div>}
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                })()}
+              </div>
+            )}
           </div>
         </div>
       </section>
