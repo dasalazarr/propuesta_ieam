@@ -31,6 +31,9 @@ const ContactPage = () => {
         setStatus({ isSubmitting: true, message: null, type: null });
 
         try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+
             const response = await fetch("https://formsubmit.co/ajax/info@ieam.es", {
                 method: "POST",
                 headers: {
@@ -41,8 +44,11 @@ const ContactPage = () => {
                     ...formData,
                     _subject: `Nuevo mensaje Web IEAM: ${formData.subject}`,
                     _template: "table"
-                })
+                }),
+                signal: controller.signal
             });
+
+            clearTimeout(timeoutId);
 
             const data = await response.json();
 
@@ -63,11 +69,17 @@ const ContactPage = () => {
             } else {
                 throw new Error(data.message || 'Error sending message');
             }
-        } catch (error) {
+        } catch (error: any) {
             console.error('Submission error:', error);
+            let errorMessage = "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escribe a info@ieam.es";
+
+            if (error.name === 'AbortError') {
+                errorMessage = "El envío ha tardado demasiado. Por favor, verifica tu conexión.";
+            }
+
             setStatus({
                 isSubmitting: false,
-                message: "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escribe a info@ieam.es",
+                message: errorMessage,
                 type: 'error'
             });
         }
