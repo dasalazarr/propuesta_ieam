@@ -23,7 +23,7 @@ const ContactPage = () => {
         type: null
     });
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (!formData.privacy) return;
@@ -34,18 +34,23 @@ const ContactPage = () => {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
 
-            const response = await fetch("https://formsubmit.co/ajax/info@ieam.es", {
+            // Create FormData from the form
+            const formDataToSend = new FormData(e.currentTarget);
+
+            // Add Web3Forms access key - Get yours free at https://web3forms.com
+            // Replace with your actual access key
+            formDataToSend.append("access_key", "6dcc0b8d-f96e-4134-929d-0a7e3aa03e23");
+
+            // Add custom fields for better email formatting
+            formDataToSend.append("subject", `Nuevo mensaje Web IEAM: ${formData.subject}`);
+            formDataToSend.append("from_name", formData.name);
+
+            // Optional: Add honeypot for spam prevention
+            formDataToSend.append("botcheck", "");
+
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify({
-                    ...formData,
-                    _subject: `Nuevo mensaje Web IEAM: ${formData.subject}`,
-                    _template: "table",
-                    _captcha: "false"
-                }),
+                body: formDataToSend,
                 signal: controller.signal
             });
 
@@ -53,7 +58,7 @@ const ContactPage = () => {
 
             const data = await response.json();
 
-            if (response.ok) {
+            if (data.success) {
                 setStatus({
                     isSubmitting: false,
                     message: t('contact.form.success'),
@@ -72,10 +77,10 @@ const ContactPage = () => {
             }
         } catch (error: any) {
             console.error('Submission error:', error);
-            let errorMessage = "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escribe a info@ieam.es";
+            let errorMessage = "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo o escribe directamente a info@ieam.es";
 
             if (error.name === 'AbortError') {
-                errorMessage = "El envío ha tardado demasiado. Verifica tu conexión o desactiva el bloqueador de anuncios.";
+                errorMessage = "El envío ha tardado demasiado. Por favor, verifica tu conexión a internet.";
             }
 
             setStatus({
