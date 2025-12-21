@@ -192,7 +192,7 @@ export const events: EventItem[] = [
     content: `
       <p>El Foro de Diálogo Mediterráneo 2025 inauguró el año en Rabat con un encuentro de alto nivel centrado en uno de los desafíos más urgentes para el norte de África y el Mediterráneo en general: la migración irregular. Celebrado en la Rabat Business School de la Universidad Internacional de Rabat (UIR), el foro reunió a expertos internacionales, responsables políticos, académicos y actores de la sociedad civil, reforzando el papel de Rabat como un centro emergente para el diálogo estratégico sobre la gobernanza mediterránea.</p>
       
-      <img src="/images/rabat 1.png" alt="Foro de Diálogo Mediterráneo Rabat" class="w-full h-auto rounded-lg my-8 shadow-md" />
+      <img src="/images/rabat-1.png" alt="Foro de Diálogo Mediterráneo Rabat" class="w-full h-auto rounded-lg my-8 shadow-md" />
 
       <p>Organizado por Diálogo Mediterráneo en colaboración con EDEN Maroc y AMSED, el foro atrajo una fuerte participación desde temprano, llenando el recinto con especialistas deseosos de explorar las complejidades de la migración en la región.</p>
 
@@ -242,7 +242,7 @@ export const events: EventItem[] = [
     content_en: `
       <p>The Mediterranean Dialogue Forum 2025 opened the year in Rabat with a high-level gathering focused on one of the most pressing challenges for North Africa and the wider Mediterranean: irregular migration. Held at the Rabat Business School of the International University of Rabat (UIR), the forum brought together international experts, policymakers, academics, and civil-society actors, reinforcing Rabat’s role as an emerging hub for strategic dialogue on Mediterranean governance.</p>
       
-      <img src="/images/rabat 1.png" alt="Rabat Mediterranean Dialogue Forum" class="w-full h-auto rounded-lg my-8 shadow-md" />
+      <img src="/images/rabat-1.png" alt="Rabat Mediterranean Dialogue Forum" class="w-full h-auto rounded-lg my-8 shadow-md" />
 
       <p>Organised by Mediterranean Dialogue in partnership with EDEN Maroc and AMSED, the forum attracted strong participation from early in the morning, filling the venue with specialists eager to explore the complexities of migration in the region.</p>
 
