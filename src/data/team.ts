@@ -34,13 +34,13 @@ export const coreTeam: TeamMember[] = [
         bio_en: "Tunis. Specialist in political science and cultural studies. Coordinator of the Mediterranean Dialogue project at IEAM and professor at the University of Tunis El Manar. Previously, she was deputy director of the Islam & Liberty Network, focused on economic and political freedom in Muslim-majority countries. She holds a degree in Anglo-American literature from the École Normale Supérieure de Tunis and a Master's in Cultural Studies from the University of Carthage. She is currently pursuing a PhD in Political Science at Istanbul Medeniyet University. With extensive experience in governance and electoral processes, she has collaborated with international organizations such as the Initiatives of Change Foundation and Atlas Network."
     },
     {
-        img: "/team/member-4.jpg",
-        name: "Iván López",
+        img: "/team/camille.jpeg",
+        name: "Camille Dock",
         role: "Asistente de Investigación",
         role_en: "Research Assistant",
-        linkedin: "https://www.linkedin.com/in/iv%C3%A1n-l%C3%B3pez-ant%C3%B3n/",
-        bio: "Madrid (España). Estudiante de Derecho y Relaciones Internacionales en la Universidad Francisco de Vitoria. Cursa el diploma Integral Leadership Program, en colaboración con University of Notre Dame – Mendoza College of Business. Actualmente, está realizando un intercambio en University of Essex en Reino Unido. Colabora periódicamente en la revista internacional ATLAS. Además, cuenta con una amplia formación transversal en economía, filosofía y comunicación.",
-        bio_en: "Madrid (Spain). Law and International Relations student at Francisco de Vitoria University. He is pursuing the Integral Leadership Program diploma, in collaboration with the University of Notre Dame – Mendoza College of Business. Currently, he is on an exchange at the University of Essex in the United Kingdom. He collaborates periodically in the international magazine ATLAS. In addition, he has extensive cross-disciplinary training in economics, philosophy, and communication."
+        linkedin: "#",
+        bio: "París (Francia). Estudiante de Máster en Estudios Africanos en la Universidad de Ginebra, se especializa en el análisis geopolítico de las dinámicas políticas, económicas y de seguridad en el África subsahariana. Tras una estancia académica en la Universidad Paris 1 Panthéon-Sorbonne, se incorporó al Instituto Español de Análisis Migratorio en el marco de sus prácticas de fin de carrera. Allí redacta principalmente notas de análisis destinadas a esclarecer el impacto de los fenómenos políticos y de seguridad en las dinámicas migratorias, y realiza un seguimiento estratégico de los flujos migratorios entre África, España y Europa. Previamente trabajó en la misión permanente de Madagascar en la Oficina de Naciones Unidas en Ginebra así como en el Parlamento Europeo.",
+        bio_en: "Paris (France). Master's student in African Studies at the University of Geneva, specializing in the geopolitical analysis of political, economic, and security dynamics in sub-Saharan Africa. After an academic stay at the University Paris 1 Panthéon-Sorbonne, she joined the Spanish Institute for Migration Analysis as part of her final degree internship. There, she mainly drafts analysis notes intended to clarify the impact of political and security phenomena on migratory dynamics, and carries out strategic monitoring of migratory flows between Africa, Spain, and Europe. Previously, she worked at the permanent mission of Madagascar to the United Nations Office in Geneva as well as at the European Parliament."
     }
 ];
 

@@ -26,16 +26,27 @@ const LatestAnalysis = () => {
         return new Date(year, month, day);
     };
 
-    const featuredAnalysis = articles[0];
+    // Sort all articles by date first to ensure chronological order
+    const sortedArticles = [...articles].sort((a, b) => parseDate(b.publishDate).getTime() - parseDate(a.publishDate).getTime());
 
-    // Get all other articles, sort them by date (newest first), filter for Infographics, and take the top 3
-    const analysisItems = articles.slice(1)
-        .filter(article => article.type === 'Infografía')
-        .sort((a, b) => parseDate(b.publishDate).getTime() - parseDate(a.publishDate).getTime())
-        .slice(0, 3);
+    // 1. Featured: Newest Report
+    const featuredAnalysis = sortedArticles.find(a => a.type === 'Informe') || sortedArticles[0];
+
+    // 2. Secondary Slot 1: Next newest Report (excluding featured)
+    const nextReport = sortedArticles.find(a => a.type === 'Informe' && a.slug !== featuredAnalysis.slug);
+
+    // 3. Secondary Slots 2 & 3: Two newest Infographics
+    const infographics = sortedArticles
+        .filter(a => a.type === 'Infografía')
+        .slice(0, 2);
+
+    // Combine: [Report, Infographic 1, Infographic 2]
+    const analysisItems = [];
+    if (nextReport) analysisItems.push(nextReport);
+    analysisItems.push(...infographics);
 
     const getLocalizedContent = (item: any) => {
-        const isEn = i18n.language === 'en';
+        const isEn = i18n.language.startsWith('en');
         return {
             title: (isEn && item.title_en) ? item.title_en : item.title,
             subtitle: (isEn && item.subtitle_en) ? item.subtitle_en : item.subtitle,

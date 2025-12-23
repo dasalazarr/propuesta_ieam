@@ -13,7 +13,7 @@ const AboutPage = () => {
     const [selectedBio, setSelectedBio] = useState<TeamMember | null>(null);
 
     const getLocalizedMember = (member: TeamMember) => {
-        const isEn = i18n.language === 'en';
+        const isEn = i18n.language.startsWith('en');
         return {
             ...member,
             role: (isEn && member.role_en) ? member.role_en : member.role,

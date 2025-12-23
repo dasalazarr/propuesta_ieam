@@ -12,15 +12,17 @@ const EventPage = () => {
   const event = getEventBySlug(slug || '');
 
   // Localization helper
+  const isEn = i18n.language.startsWith('en');
+
   const localizedEvent = event ? {
-    title: (i18n.language === 'en' && event.title_en) ? event.title_en : event.title,
-    subtitle: (i18n.language === 'en' && event.subtitle_en) ? event.subtitle_en : event.subtitle,
-    summary: (i18n.language === 'en' && event.summary_en) ? event.summary_en : event.summary,
-    location: (i18n.language === 'en' && event.location_en) ? event.location_en : event.location,
-    format: (i18n.language === 'en' && event.format_en) ? event.format_en : event.format,
-    category: (i18n.language === 'en' && event.category_en) ? event.category_en : event.category,
-    content: (i18n.language === 'en' && event.content_en) ? event.content_en : event.content,
-    heroImage: (i18n.language === 'en' && event.heroImage_en) ? event.heroImage_en : event.heroImage,
+    title: (isEn && event.title_en) ? event.title_en : event.title,
+    subtitle: (isEn && event.subtitle_en) ? event.subtitle_en : event.subtitle,
+    summary: (isEn && event.summary_en) ? event.summary_en : event.summary,
+    location: (isEn && event.location_en) ? event.location_en : event.location,
+    format: (isEn && event.format_en) ? event.format_en : event.format,
+    category: (isEn && event.category_en) ? event.category_en : event.category,
+    content: (isEn && event.content_en) ? event.content_en : event.content,
+    heroImage: (isEn && event.heroImage_en) ? event.heroImage_en : event.heroImage,
     // Agenda and Speakers are currently structurally shared, titles might need specific translation keys if we want deep localization
     // For now we use the existing data as is, assuming names/roles might be mixed or Spanish.
     // If needed, we would need agenda_en etc. in data structure.
@@ -30,13 +32,13 @@ const EventPage = () => {
     return (
       <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
         <h1 className="text-4xl font-serif font-bold text-[var(--color-text-primary)] mb-4">
-          {i18n.language === 'en' ? 'Event not found' : 'Evento no encontrado'}
+          {i18n.language.startsWith('en') ? 'Event not found' : 'Evento no encontrado'}
         </h1>
         <p className="text-slate-600 mb-8 text-center max-w-md">
-          {i18n.language === 'en' ? 'Check the link or return to the agenda.' : 'Verifica el enlace o regresa a la agenda.'}
+          {i18n.language.startsWith('en') ? 'Check the link or return to the agenda.' : 'Verifica el enlace o regresa a la agenda.'}
         </p>
         <a href="/eventos" className="px-6 py-3 bg-[var(--color-navy-900)] text-white font-bold uppercase tracking-[0.18em] rounded-none hover:bg-[var(--color-mediterranean)] transition-colors">
-          {i18n.language === 'en' ? 'Back to events' : 'Volver a eventos'}
+          {i18n.language.startsWith('en') ? 'Back to events' : 'Volver a eventos'}
         </a>
       </div>
     );
@@ -94,18 +96,31 @@ const EventPage = () => {
             {event.agenda && event.agenda.length > 0 && (
               <div className="border-t hairline pt-6 space-y-3">
                 <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
-                  {i18n.language === 'en' ? 'Agenda' : 'Agenda'}
+                  {i18n.language.startsWith('en') ? 'Agenda' : 'Agenda'}
                 </h2>
                 <ul className="space-y-3">
-                  {event.agenda.map((item, idx) => (
-                    <li key={idx} className="flex gap-4 text-slate-700">
-                      {item.time && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{item.time}</span>}
-                      <div>
-                        <div className="font-semibold">{item.title}</div>
-                        {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
-                      </div>
-                    </li>
-                  ))}
+                  {event.agenda.map((item, idx) => {
+                    const hasDate = item.time && item.time.includes(' - ');
+                    const datePart = hasDate ? item.time?.split(' - ')[0] : null;
+                    const timePart = hasDate ? item.time?.split(' - ')[1] : item.time;
+
+                    return (
+                      <li key={idx} className={`block text-slate-700 ${datePart ? 'mt-6 first:mt-0' : ''}`}>
+                        {datePart && (
+                          <div className="text-sm font-bold uppercase tracking-wider text-[var(--color-accent-red)] mb-2 border-b border-[var(--color-text-primary)]/10 pb-1">
+                            {datePart}
+                          </div>
+                        )}
+                        <div className="flex gap-4">
+                          {timePart && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{timePart}</span>}
+                          <div>
+                            <div className="font-semibold">{item.title}</div>
+                            {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
@@ -126,7 +141,7 @@ const EventPage = () => {
             {event.speakers && event.speakers.length > 0 && (
               <div className="border hairline p-6 bg-[var(--color-paper-warm)]">
                 <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-4">
-                  {i18n.language === 'en' ? 'Speakers' : 'Ponentes'}
+                  {i18n.language.startsWith('en') ? 'Speakers' : 'Ponentes'}
                 </h3>
 
                 {(() => {
@@ -138,7 +153,7 @@ const EventPage = () => {
 
                     event.speakers.forEach((speaker) => {
                       const groupName =
-                        i18n.language === "en"
+                        i18n.language.startsWith('en')
                           ? speaker.group_en || speaker.group || "General"
                           : speaker.group || "General";
                       if (!groups[groupName]) {

@@ -34,7 +34,7 @@ const ResearchPage = () => {
     }, [activeTab]);
 
     const getLocalizedArticle = (article: Article) => {
-        const isEn = i18n.language === 'en';
+        const isEn = i18n.language.startsWith('en');
         return {
             title: (isEn && article.title_en) ? article.title_en : article.title,
             subtitle: (isEn && article.subtitle_en) ? article.subtitle_en : article.subtitle,
@@ -160,12 +160,14 @@ const ResearchPage = () => {
                             </div>
                         )}
 
-                        <div className="mt-12 text-center">
-                            <button className="inline-flex items-center px-8 py-3 border border-slate-300 text-sm font-bold text-[#0B263F] hover:bg-[#0B263F] hover:text-white transition-colors">
-                                {t('research.load_more')}
-                                <ArrowRight className="ml-2 w-4 h-4" />
-                            </button>
-                        </div>
+                        {filteredArticles.length > 4 && (
+                            <div className="mt-12 text-center">
+                                <button className="inline-flex items-center px-8 py-3 border border-slate-300 text-sm font-bold text-[#0B263F] hover:bg-[#0B263F] hover:text-white transition-colors">
+                                    {t('research.load_more')}
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </button>
+                            </div>
+                        )}
                     </div>
                 ) : (
                     <div className="text-center py-20 bg-slate-50 rounded-sm">

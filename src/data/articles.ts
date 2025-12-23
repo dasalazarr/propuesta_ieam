@@ -56,6 +56,75 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'movilidad-africa-occidental',
+        type: 'Informe',
+        type_en: 'Report',
+        contentKind: 'policy',
+        category: 'Migración · África Occidental',
+        category_en: 'Migration · West Africa',
+        title: 'Reformar la gobernanza de la movilidad en África Occidental',
+        title_en: 'Reforming Mobility Governance in West Africa',
+        subtitle: 'Un marco de acción común para integrar la dignidad humana, las realidades económicas y las necesidades de protección.',
+        subtitle_en: 'A common action framework to integrate human dignity, economic realities, and protection needs.',
+        heroImage: '/images/informeafricaes.png',
+        heroImage_en: '/images/informeafricaen.png',
+        mainImage: '/images/informeafricaes.png',
+        mainImage_en: '/images/informeafricaen.png',
+        mainImageCaption: 'Portada del informe: Movilidad África Occidental.',
+        mainImageCaption_en: 'Report cover: West Africa Mobility.',
+        publishDate: '23 Dec 2025',
+        readTime: '15 min',
+        author: {
+            name: 'Beatriz de León',
+            role: 'Directora Ejecutiva',
+            role_en: 'Executive Director',
+            image: '/team/member-2.jpg',
+            bio: 'Directora Ejecutiva del IEAM.',
+            bio_en: 'Executive Director of IEAM.'
+        },
+        materials: [
+            {
+                label: 'Descargar informe (ES)',
+                label_en: 'Download report (ES)',
+                url: '/docs/IEAM-PP-2025-002-ES_movilidad-africaoccidental.pdf'
+            },
+            {
+                label: 'Descargar informe (FR)',
+                label_en: 'Download report (FR)',
+                url: '/docs/IEAM-PP-2025-002-FR_movilidad-africaoccidental.pdf'
+            }
+        ],
+        content: `
+            <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">RESUMEN EJECUTIVO</h2>
+            <p>El objetivo de este policy paper es proponer un marco de acción común para transformar la migración irregular en movilidad ordenada a lo largo del eje Senegal-Mali-Mauritania-Europa, integrando en su enfoque de la dignidad humana, las realidades económicas y las necesidades de protección. El documento forma parte de una serie de trabajos del Instituto Español de Análisis Migratorio (IEAM) y es el resultado de un taller de inteligencia colectiva celebrado en Dakar, que reunió a investigadores, representantes gubernamentales, organizaciones internacionales y humanitarias, actores comunitarios, el sector privado y las diásporas. El objetivo del ejercicio era consolidar un diagnóstico compartido, identificar los puntos de vigilancia a corto plazo y formular recomendaciones y proyectos piloto operativos.</p>
+            <p>El diagnóstico se inscribe en un contexto de reactivación de la ruta atlántica como vía de acceso principal a la UE, con un repunte de las llegadas a las Canarias desde 2023-2024 y una diversificación de los perfiles (jóvenes, mujeres, niños, nuevos países de origen). No obstante, en 2025, la preeminencia de las salidas de Argelia hacia España sigue siendo, no obstante, significativa. En este panorama en recomposición, la gobernanza de la movilidad adolece menos de una falta de textos que de un déficit de coherencia en la aplicación, de un bilateralismo fragmentador y de efectos de desplazamiento que desvían las rutas hacia otras zonas —a veces más peligrosas— sin reducir los factores estructurales de las salidas.</p>
+            
+            <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">MENSAJES ESTRATÉGICOS</h2>
+            <ul class="list-disc ml-6 space-y-4 text-slate-700">
+                <li><strong>Soberanía mediante la coherencia regional:</strong> establecer una coordinación pragmática centrada en los efectos transfronterizos, con el fin de preservar la buena vecindad, las economías fronterizas y la estabilidad local; centrarse prioritariamente en las redes delictivas (y no en las personas) mediante una cooperación judicial reforzada, y reducir la extorsión en los puestos de control como condición para la eficacia.</li>
+                <li><strong>La diáspora y el arraigo comunitario como puente de confianza:</strong> conectar a las asociaciones de la diáspora, los municipios y los actores comunitarios en las zonas de origen para difundir información fiable, apoyar la tutoría y la inversión, reforzar las alternativas locales y fomentar los retornos sostenibles respaldadospor el entorno socioeconómico.</li>
+                <li><strong>Anclar la implementación a nivel territorial:</strong> articular mejor la oferta y la demanda a través de empresas, ayuntamientos y servicios descentralizados, para alinear perfiles, puestos, requisitos consulares y trayectorias viables.</li>
+                <li><strong>Hacer que la movilidad regular sea creíble y accesible:</strong> reformar las prácticas consulares (previsibilidad, transparencia, comunicación, reducción de plazos) y reducir el espacio que se deja a los intermediarios fraudulentos.</li>
+                <li><strong>Datos para tomar decisiones realistas y anticipar las rutas:</strong> institucionalizar una triangulación sistemática y crear un mecanismo de seguimiento ligero con informes periódicos compartidas entre los países de la región.</li>
+            </ul>
+        `,
+        content_en: `
+            <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">EXECUTIVE SUMMARY</h2>
+            <p>The objective of this policy paper is to propose a common framework for action to transform irregular migration into orderly mobility along the Senegal-Mali-Mauritania-Europe axis, integrating human dignity, economic realities, and protection needs into its approach. The document is part of a series of works by the Spanish Institute for Migration Analysis (IEAM) and is the result of a collective intelligence workshop held in Dakar, which brought together researchers, government representatives, international and humanitarian organizations, community actors, the private sector, and diasporas. The aim of the exercise was to consolidate a shared diagnosis, identify short-term vigilance points, and formulate recommendations and operational pilot projects.</p>
+            <p>The diagnosis takes place in a context of reactivation of the Atlantic route as a main access route to the EU, with a rebound in arrivals to the Canary Islands since 2023-2024 and a diversification of profiles (youth, women, children, new countries of origin). However, in 2025, the preeminence of departures from Algeria to Spain remains significant. In this recomposing landscape, mobility governance suffers less from a lack of texts than from a deficit of coherence in implementation, fragmenting bilateralism, and displacement effects that divert routes to other areas—sometimes more dangerous—without reducing the structural factors of departures.</p>
+            
+            <h2 class="text-2xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-4">STRATEGIC MESSAGES</h2>
+            <ul class="list-disc ml-6 space-y-4 text-slate-700">
+                <li><strong>Sovereignty through regional coherence:</strong> establish pragmatic coordination focused on cross-border effects, in order to preserve good neighborliness, border economies, and local stability; focus primarily on criminal networks (and not on people) through reinforced judicial cooperation, and reduce extortion at checkpoints as a condition for effectiveness.</li>
+                <li><strong>The diaspora and community rooting as a bridge of trust:</strong> connect diaspora associations, municipalities, and community actors in areas of origin to disseminate reliable information, support mentoring and investment, reinforce local alternatives, and promote sustainable returns backed by the socio-economic environment.</li>
+                <li><strong>Anchor implementation at the territorial level:</strong> better articulate supply and demand through companies, municipalities, and decentralized services, to align profiles, positions, consular requirements, and viable pathways.</li>
+                <li><strong>Make regular mobility credible and accessible:</strong> reform consular practices (predictability, transparency, communication, reduction of deadlines) and reduce the space left to fraudulent intermediaries.</li>
+                <li><strong>Data for realistic decision-making and anticipating routes:</strong> institutionalize systematic triangulation and create a light monitoring mechanism with periodic reports shared among the countries of the region.</li>
+            </ul>
+        `,
+        relatedArticles: []
+    },
+    {
         slug: 'informe-rutas-migratorias-2025',
         type: 'Informe',
         type_en: 'Report',

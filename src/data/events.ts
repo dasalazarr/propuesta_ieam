@@ -64,8 +64,8 @@ export const events: EventItem[] = [
       { time: "13:00", title: "Visita de campo", speaker: "Centro operativo de la Policía Húngara y vallado fronterizo" }
     ],
     speakers: [
+      { name: "Viktor Mársai", role: "Migration Research Institute (Anfitrión)" },
       { name: "Beatriz de León", role: "Directora Ejecutiva IEAM" },
-      { name: "Juan Soto Gómez", role: "Fortius" },
       { name: "Balázs Orbán", role: "Director Político PM Hungría" },
       { name: "Rocío de Meer", role: "Congreso de los Diputados (España)" }
     ]
@@ -83,7 +83,8 @@ export const events: EventItem[] = [
     location_en: "Dakar, Senegal",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/evento-dakar.png",
+    heroImage: "/images/evento-dakares.png",
+    heroImage_en: "/images/evento-dakaren.png",
     summary: "Taller de inteligencia colectiva en Dakar para diagnosticar dinámicas de movilidad en el eje Senegal-Malí-Mauritania-Europa y formular recomendaciones.",
     summary_en: "Collective intelligence workshop in Dakar to diagnose mobility dynamics in the Senegal-Mali-Mauritania-Europe axis and formulate recommendations.",
     content: `
@@ -130,7 +131,8 @@ export const events: EventItem[] = [
     location_en: "Bamako, Mali",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/evento-bamako.jpg",
+    heroImage: "/images/evento-bamakoes.png",
+    heroImage_en: "/images/evento-bakamoen.png",
     summary: "El IEAM celebra en Bamako un taller de inteligencia colectiva para co-construir un diagnóstico sobre movilidad y definir recomendaciones prácticas.",
     summary_en: "IEAM holds a collective intelligence workshop in Bamako to co-construct a mobility diagnosis and define practical recommendations.",
     content: `
@@ -459,26 +461,31 @@ export const events: EventItem[] = [
     location_en: "Las Palmas, Canary Islands",
     format: "Híbrido",
     format_en: "Hybrid",
-    heroImage: "/images/evento_canarias.jpg",
+    heroImage: "/images/evento-canariases.png",
+    heroImage_en: "/images/evento-canariasen.png",
     summary: "Innovación para la gestión migratoria -iniciativa que forma parte de IRLab- convoca una jornada para conocer los movimientos geopolíticos en la zona y sus repercusiones para el archipiélago.",
     summary_en: "Innovation for migration management -an initiative part of IRLab- convenes a session to understand geopolitical movements in the area and their repercussions for the archipelago.",
     content: `
-          < p > Innovación para la gestión migratoria(IRLab) - iniciativa que forma parte de IRLab - convoca una jornada para conocer los movimientos geopolíticos en la zona y sus repercusiones para el archipiélago.</p>
-            < p > El Gobierno de Canarias ha convocado, para el próximo miércoles 3 de septiembre, una jornada de análisis de la situación geopolítica en El Sahel y su impacto en las migraciones hacia el archipiélago a través de una webinar, en la que pueden participar todas aquellas personas que lo deseen.</p>
-              < p > En ella, intervendrán la doctora en Ciencias Políticas, Beatriz Mesa; la Directora del Instituto Español de Análisis Migratorio(IEAM), Beatriz de León Cobo; y el periodista José Naranjo, para abordar distintos aspectos de la coyuntura actual, desde el deterioro político y de seguridad en la región, al impacto en la salida de embarcaciones hacia Canarias.Esta sesión virtual será presentada por el viceconsejero del Gabinete del Presidente, Octavio Caraballo, y la coordinadora de Innovación para la gestión migratoria, Claudia Pérez.</p>
-                < p > El presidente de Canarias, Fernando Clavijo, ya ha expresado en distintas ocasiones su “preocupación” por la falta de respuesta de la Unión Europea(UE) ante este escenario, que alcanza también al fenómeno migratorio, y ha reclamado políticas de cooperación para que los países de esa región puedan tener un desarrollo y una convivencia pacífica.</p>
-                  < p > La expansión de la violencia yihadista, los déficits estructurales a nivel de desarrollo económico y de gobernanza o las repercusiones del cambio climático generan una situación de inestabilidad cada vez más creciente que puede afectar no solo a los países de esta zona del continente africano, sino también al entorno.</p>
-                    < h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3" > Rutas y riesgos </h3>
-                      < p > De hecho, la reducción en la llegada de migrantes a las costas canarias en los últimos meses no significa que la migración haya cesado, sino que los puntos de partida se están desplazando hacia el sur, hacia zonas menos vigiladas, lo que conlleva mayor riesgo para los viajeros.</p>
-                        < p > El cierre de fronteras en Mauritania y Senegal ha forzado a las redes de tráfico a desplazarse hasta el sur y buscar puntos de salida en Guinea Bissau y Guinea Conakry.De esta manera, esquivan los controles reforzados en África occidental.La distancia entre Conakri y El Hierro supera los 2.200 kilómetros, unos 750 kilómetros más que desde Senegal o Gambia.</p>
-                          < p > A ello se une la alta natalidad en los países de esta zona.El 60 % de la población de El Sahel tiene menos de 25 años y según las proyecciones estadísticas, en 2050 serán 500 millones de personas las que habiten estos países.Esta circunstancia requiere de oportunidades para la población en sus respectivos países como alternativa a la emigración.</p>
-                            < h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3" > Conclusiones </h3>
-                              < p > La migración no ha cesado: las rutas se adaptan al control.Se requiere cooperación UE - África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
-                                < p class="mt-6 text-sm text-slate-600" > Este análisis también fue relevante para entender las conexiones con Mali.</p>
-                                  `,
+      <p>Innovación para la gestión migratoria (IRLab) - iniciativa que forma parte de IRLab - convoca una jornada para conocer los movimientos geopolíticos en la zona y sus repercusiones para el archipiélago.</p>
+      <p>El Gobierno de Canarias ha convocado, para el próximo miércoles 3 de septiembre, una jornada de análisis de la situación geopolítica en El Sahel y su impacto en las migraciones hacia el archipiélago a través de una webinar, en la que pueden participar todas aquellas personas que lo deseen.</p>
+      <p>En ella, intervendrán la doctora en Ciencias Políticas, Beatriz Mesa; la Directora del Instituto Español de Análisis Migratorio (IEAM), Beatriz de León Cobo; y el periodista José Naranjo, para abordar distintos aspectos de la coyuntura actual, desde el deterioro político y de seguridad en la región, al impacto en la salida de embarcaciones hacia Canarias. Esta sesión virtual será presentada por el viceconsejero del Gabinete del Presidente, Octavio Caraballo, y la coordinadora de Innovación para la gestión migratoria, Claudia Pérez.</p>
+      <p>El presidente de Canarias, Fernando Clavijo, ya ha expresado en distintas ocasiones su “preocupación” por la falta de respuesta de la Unión Europea (UE) ante este escenario, que alcanza también al fenómeno migratorio, y ha reclamado políticas de cooperación para que los países de esa región puedan tener un desarrollo y una convivencia pacífica.</p>
+      <p>La expansión de la violencia yihadista, los déficits estructurales a nivel de desarrollo económico y de gobernanza o las repercusiones del cambio climático generan una situación de inestabilidad cada vez más creciente que puede afectar no solo a los países de esta zona del continente africano, sino también al entorno.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Rutas y riesgos</h3>
+      <p>De hecho, la reducción en la llegada de migrantes a las costas canarias en los últimos meses no significa que la migración haya cesado, sino que los puntos de partida se están desplazando hacia el sur, hacia zonas menos vigiladas, lo que conlleva mayor riesgo para los viajeros.</p>
+      <p>El cierre de fronteras en Mauritania y Senegal ha forzado a las redes de tráfico a desplazarse hasta el sur y buscar puntos de salida en Guinea Bissau y Guinea Conakry. De esta manera, esquivan los controles reforzados en África occidental. La distancia entre Conakri y El Hierro supera los 2.200 kilómetros, unos 750 kilómetros más que desde Senegal o Gambia.</p>
+      <p>A ello se une la alta natalidad en los países de esta zona. El 60 % de la población de El Sahel tiene menos de 25 años y según las proyecciones estadísticas, en 2050 serán 500 millones de personas las que habiten estos países. Esta circunstancia requiere de oportunidades para la población en sus respectivos países como alternativa a la emigración.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
+      <p>La migración no ha cesado: las rutas se adaptan al control. Se requiere cooperación UE - África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
+      <p class="mt-6 text-sm text-slate-600">Este análisis también fue relevante para entender las conexiones con Mali.</p>
+    `,
     agenda: [],
     speakers: [
-      { name: "Beatriz de León", role: "Directora Ejecutiva IEAM" }
+      { name: "Beatriz Mesa", role: "Doctora en Ciencias Políticas" },
+      { name: "Beatriz de León Cobo", role: "Directora Ejecutiva IEAM" },
+      { name: "José Naranjo", role: "Periodista" }
     ]
   }
 ];

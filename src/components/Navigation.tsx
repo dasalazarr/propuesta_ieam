@@ -31,7 +31,7 @@ const Navigation = () => {
   };
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'es' ? 'en' : 'es';
+    const newLang = i18n.language.startsWith('es') ? 'en' : 'es';
     i18n.changeLanguage(newLang);
   };
 

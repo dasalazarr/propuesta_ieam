@@ -10,7 +10,7 @@ const HeroSection = () => {
   const featured = articles[0];
 
   const getLocalizedContent = (item: any) => {
-    const isEn = i18n.language === 'en';
+    const isEn = i18n.language.startsWith('en');
     return {
       title: (isEn && item.title_en) ? item.title_en : item.title,
       subtitle: (isEn && item.subtitle_en) ? item.subtitle_en : item.subtitle,

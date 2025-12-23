@@ -14,15 +14,15 @@ const ArticlePage = () => {
 
     // Localization helper
     const localizedArticle = article ? {
-        title: (i18n.language === 'en' && article.title_en) ? article.title_en : article.title,
-        subtitle: (i18n.language === 'en' && article.subtitle_en) ? article.subtitle_en : article.subtitle,
-        content: (i18n.language === 'en' && article.content_en) ? article.content_en : article.content,
-        category: (i18n.language === 'en' && article.category_en) ? article.category_en : article.category,
-        type: (i18n.language === 'en' && article.type_en) ? article.type_en : article.type,
-        heroImage: (i18n.language === 'en' && article.heroImage_en) ? article.heroImage_en : article.heroImage,
-        mainImage: (i18n.language === 'en' && article.mainImage_en) ? article.mainImage_en : article.mainImage,
-        mainImageCaption: (i18n.language === 'en' && article.mainImageCaption_en) ? article.mainImageCaption_en : article.mainImageCaption,
-        pullQuote: (i18n.language === 'en' && article.pullQuote_en) ? article.pullQuote_en : article.pullQuote,
+        title: (i18n.language.startsWith('en') && article.title_en) ? article.title_en : article.title,
+        subtitle: (i18n.language.startsWith('en') && article.subtitle_en) ? article.subtitle_en : article.subtitle,
+        content: (i18n.language.startsWith('en') && article.content_en) ? article.content_en : article.content,
+        category: (i18n.language.startsWith('en') && article.category_en) ? article.category_en : article.category,
+        type: (i18n.language.startsWith('en') && article.type_en) ? article.type_en : article.type,
+        heroImage: (i18n.language.startsWith('en') && article.heroImage_en) ? article.heroImage_en : article.heroImage,
+        mainImage: (i18n.language.startsWith('en') && article.mainImage_en) ? article.mainImage_en : article.mainImage,
+        mainImageCaption: (i18n.language.startsWith('en') && article.mainImageCaption_en) ? article.mainImageCaption_en : article.mainImageCaption,
+        pullQuote: (i18n.language.startsWith('en') && article.pullQuote_en) ? article.pullQuote_en : article.pullQuote,
     } : null;
 
     if (!article || !localizedArticle) {

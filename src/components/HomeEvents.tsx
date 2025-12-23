@@ -10,7 +10,7 @@ const HomeEvents = () => {
     const events = eventsData.slice(0, 3);
 
     const getLocalizedContent = (item: any) => {
-        const isEn = i18n.language === 'en';
+        const isEn = i18n.language.startsWith('en');
         return {
             title: (isEn && item.title_en) ? item.title_en : item.title,
             // Assuming we display title only in card here, if subtitle used, add it.

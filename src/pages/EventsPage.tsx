@@ -11,7 +11,7 @@ const EventsPage = () => {
     const { t, i18n } = useTranslation();
 
     const getLocalizedEvent = (event: EventItem) => {
-        const isEn = i18n.language === 'en';
+        const isEn = i18n.language.startsWith('en');
         return {
             title: (isEn && event.title_en) ? event.title_en : event.title,
             subtitle: (isEn && event.subtitle_en) ? event.subtitle_en : event.subtitle,
@@ -19,6 +19,7 @@ const EventsPage = () => {
             category: (isEn && event.category_en) ? event.category_en : event.category,
             format: (isEn && event.format_en) ? event.format_en : event.format,
             summary: (isEn && event.summary_en) ? event.summary_en : event.summary,
+            heroImage: (isEn && event.heroImage_en) ? event.heroImage_en : event.heroImage,
         };
     };
 
@@ -123,13 +124,13 @@ const EventsPage = () => {
                                 <Link to={`/eventos/${event.slug}`} key={event.slug} className="group bg-white border border-slate-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow grid md:grid-cols-12">
                                     <div className="md:col-span-4 lg:col-span-3 relative overflow-hidden">
                                         <div className="relative w-full pt-[56.25%]">  {/* 16:9 Aspect Ratio */}
-                                        <img
-                                            src={event.heroImage}
-                                            alt={locEvent.title}
-                                            className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                                            loading="lazy"
-                                            decoding="async"
-                                        />
+                                            <img
+                                                src={locEvent.heroImage}
+                                                alt={locEvent.title}
+                                                className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                                loading="lazy"
+                                                decoding="async"
+                                            />
                                         </div>
                                     </div>
                                     <div className="md:col-span-8 lg:col-span-9 p-8 flex flex-col justify-center h-full">
