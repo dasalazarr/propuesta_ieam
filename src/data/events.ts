@@ -144,7 +144,7 @@ export const events: EventItem[] = [
     summary: "La conferencia MCC/MRI reunió a responsables políticos e investigadores para evaluar la crisis migratoria de 2015 y proponer soluciones sostenibles.",
     summary_en: "The MCC/MRI conference brought together policymakers and researchers to evaluate the 2015 migration crisis and propose sustainable solutions.",
     content: `
-      <p>La conferencia MCC/MRI reunió a responsables políticos, investigadores y representantes de organizaciones europeas y estadounidenses, así como a líderes políticos africanos, con el fin de examinar la gobernanza de la movilidad humana.</p>
+      <p>Szeged (Hungría), 24 y 25 de septiembre – La conferencia MCC/MRI reunió a responsables políticos, investigadores y representantes de organizaciones europeas y estadounidenses, así como a líderes políticos africanos, con el fin de examinar la gobernanza de la movilidad humana.</p>
       <p>El programa se estructuró en torno a tres pilares clave:</p>
       <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
         <li>La evaluación europea tras la crisis migratoria de 2015 y la necesidad de una mejor coordinación entre los Estados;</li>
@@ -162,7 +162,7 @@ export const events: EventItem[] = [
       <p>Asimismo, se recordó que muchos posibles candidatos a la migración irregular se enfrentan a obstáculos prácticos, ya que no tienen acceso a vías legales debido a barreras administrativas y a la falta de documentos básicos como el pasaporte. En este contexto, es esencial adaptar los programas de migración regular a las realidades de las personas y reforzar la preparación europea mediante la cooperación operativa y el intercambio de información.</p>
     `,
     content_en: `
-      <p>The MCC/MRI conference brought together policymakers, researchers, and representatives of European and American organizations, as well as African political leaders, to examine the governance of human mobility.</p>
+      <p>Szeged (Hungary), 24-25 September – The MCC/MRI conference brought together policymakers, researchers, and representatives of European and American organizations, as well as African political leaders, to examine the governance of human mobility.</p>
       <p>The program was structured around three key pillars:</p>
       <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
         <li>The European assessment following the 2015 migration crisis and the need for improved coordination among states;</li>
@@ -251,7 +251,7 @@ export const events: EventItem[] = [
     summary: "El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.",
     summary_en: "The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.",
     content: `
-      <p>El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.</p>
+      <p>Bamako (Malí), 19 de septiembre de 2025 – El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.</p>
       <p>La reunión, que se llevó a cabo en la capital maliense de 10:00 a 12:30, reunió a un pequeño grupo de expertos, autoridades y representantes de la sociedad civil bajo la Regla de Chatham House, garantizando la confidencialidad de las intervenciones y fomentando un debate abierto.</p>
       <p>El objetivo fue co-construir un diagnóstico compartido sobre las dinámicas de movilidad en Malí y definir recomendaciones prácticas para los horizontes de seis y doce meses, dirigidas a autoridades locales y nacionales, socios internacionales, ONG y actores económicos.</p>
       
@@ -268,7 +268,7 @@ export const events: EventItem[] = [
       <p>El IEAM invitó a investigadores, funcionarios ministeriales, agencias internacionales y líderes comunitarios a aportar datos y experiencias de campo, garantizando que las directrices fueran realistas y aplicables.</p>
     `,
     content_en: `
-      <p>The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.</p>
+      <p>Bamako (Mali), September 19, 2025 – The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.</p>
       <p>The meeting, which took place in the Malian capital from 10:00 to 12:30, gathered a small group of experts, authorities, and civil society representatives under the Chatham House Rule, ensuring the confidentiality of interventions and fostering open debate.</p>
       <p>The objective was to co-construct a shared diagnosis of mobility dynamics in Mali and to define practical recommendations for the six- and twelve-month horizons, directed at local and national authorities, international partners, NGOs, and economic actors.</p>
 

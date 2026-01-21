@@ -64,7 +64,7 @@ const EventPage = () => {
             <div className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-[#F2D4D6] mb-4">
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-[var(--color-accent-red)] rounded-full" />
-                Presencial
+                {i18n.language.startsWith('en') ? 'In-person' : 'Presencial'}
               </span>
               <span className="text-[var(--color-cream)]/80">{localizedEvent.location}</span>
             </div>
