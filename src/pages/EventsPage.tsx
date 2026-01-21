@@ -207,7 +207,12 @@ const EventsPage = () => {
                                                 {locEvent.location}
                                             </span>
                                             <span className="bg-slate-100 px-2 py-1 rounded-full border border-slate-200">
-                                                {locEvent.category}
+                                                {(event.slug === 'cumbre-szeged-2025' || event.slug === 'jornada-canarias-sahel') 
+                                                    ? (i18n.language.startsWith('en') ? 'External Event' : 'Evento Externo')
+                                                    : (event.slug === 'dialogo-mediterraneo-rabat' || event.slug === 'foro-bruselas-2024')
+                                                        ? (i18n.language.startsWith('en') ? 'Mediterranean Dialogue Event' : 'Evento Diálogo Mediterráneo')
+                                                        : locEvent.category
+                                                }
                                             </span>
                                         </div>
                                         <h3 className="text-xl md:text-2xl font-serif font-bold text-[#0A2540] mb-3 group-hover:text-[#006994] transition-colors line-clamp-2">

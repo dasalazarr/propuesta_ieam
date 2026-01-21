@@ -152,7 +152,7 @@ const ArticlePage = () => {
                                         decoding="async"
                                     />
                                     <div className="text-center sm:text-left">
-                                        <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-1">{auth.name}</h3>
+                                        <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-1">{(i18n.language === 'en' && (auth as any).name_en) ? (auth as any).name_en : auth.name}</h3>
                                         <p className="text-slate-600 text-sm">
                                             {(i18n.language === 'en' && auth.role_en) ? auth.role_en : auth.role}
                                         </p>

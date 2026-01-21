@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { articles } from '@/data/articles';
 import { events } from '@/data/events';
 
+import { useTranslation } from 'react-i18next';
+
 interface SearchResult {
     type: 'article' | 'event';
     title: string;
@@ -19,6 +21,8 @@ interface SearchModalProps {
 }
 
 const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
+    const { i18n } = useTranslation();
+    const isEn = i18n.language.startsWith('en');
     const [query, setQuery] = useState('');
     const [isVisible, setIsVisible] = useState(false);
 
@@ -45,35 +49,39 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
         const articleResults: SearchResult[] = articles
             .filter(article =>
                 article.title.toLowerCase().includes(normalizedQuery) ||
+                (article.title_en && article.title_en.toLowerCase().includes(normalizedQuery)) ||
                 article.subtitle.toLowerCase().includes(normalizedQuery) ||
+                (article.subtitle_en && article.subtitle_en.toLowerCase().includes(normalizedQuery)) ||
                 article.author.name.toLowerCase().includes(normalizedQuery)
             )
             .map(article => ({
                 type: 'article',
-                title: article.title,
-                subtitle: article.subtitle,
+                title: (isEn && article.title_en) ? article.title_en : article.title,
+                subtitle: (isEn && article.subtitle_en) ? article.subtitle_en : article.subtitle,
                 slug: `/analisis/${article.slug}`,
                 date: article.publishDate,
-                category: article.type
+                category: (isEn && article.type_en) ? article.type_en : article.type
             }));
 
         const eventResults: SearchResult[] = events
             .filter(event =>
                 event.title.toLowerCase().includes(normalizedQuery) ||
+                (event.title_en && event.title_en.toLowerCase().includes(normalizedQuery)) ||
                 event.subtitle.toLowerCase().includes(normalizedQuery) ||
+                (event.subtitle_en && event.subtitle_en.toLowerCase().includes(normalizedQuery)) ||
                 event.location.toLowerCase().includes(normalizedQuery)
             )
             .map(event => ({
                 type: 'event',
-                title: event.title,
-                subtitle: event.subtitle,
+                title: (isEn && event.title_en) ? event.title_en : event.title,
+                subtitle: (isEn && event.subtitle_en) ? event.subtitle_en : event.subtitle,
                 slug: `/eventos/${event.slug}`,
                 date: event.date,
-                category: event.category
+                category: (isEn && event.category_en) ? event.category_en : event.category
             }));
 
         return [...articleResults, ...eventResults].slice(0, 8); // Limit to 8 results
-    }, [query]);
+    }, [query, isEn]);
 
     if (!isVisible && !isOpen) return null;
 

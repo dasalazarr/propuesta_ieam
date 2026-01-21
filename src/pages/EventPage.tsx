@@ -96,7 +96,9 @@ const EventPage = () => {
             {event.agenda && event.agenda.length > 0 && (
               <div className="border-t hairline pt-6 space-y-3">
                 <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
-                  {i18n.language.startsWith('en') ? 'Agenda' : 'Agenda'}
+                  {isEn
+                    ? (event.agendaTitle_en || event.agendaTitle || 'Agenda')
+                    : (event.agendaTitle || 'Agenda')}
                 </h2>
                 <ul className="space-y-3">
                   {event.agenda.map((item, idx) => {
@@ -112,10 +114,14 @@ const EventPage = () => {
                           </div>
                         )}
                         <div className="flex gap-4">
-                          {timePart && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{timePart}</span>}
+                          {timePart && <span className="min-w-[85px] text-sm font-bold text-[var(--color-text-primary)]">{timePart}</span>}
                           <div>
                             <div className="font-semibold">{isEn && item.title_en ? item.title_en : item.title}</div>
-                            {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
+                            {(isEn && item.speaker_en ? item.speaker_en : item.speaker) && (
+                              <div className="text-sm text-slate-500 mt-1">
+                                {isEn && item.speaker_en ? item.speaker_en : item.speaker}
+                              </div>
+                            )}
                           </div>
                         </div>
                       </li>
@@ -138,20 +144,21 @@ const EventPage = () => {
                 />
               </div>
             )}
-            {event.speakers && event.speakers.length > 0 && (
+            {event.speakers && event.speakers.length > 0 && event.slug !== 'dialogo-mediterraneo-rabat' && (
               <div className="border hairline p-6 bg-[var(--color-paper-warm)]">
                 <h3 className="text-lg font-serif font-bold text-[var(--color-text-primary)] mb-4">
                   {i18n.language.startsWith('en') ? 'Speakers' : 'Ponentes'}
                 </h3>
 
                 {(() => {
-                  const hasGroups = event.speakers.some((s) => s.group);
+                  const filteredSpeakers = event.speakers.filter(speaker => speaker.name.includes('Beatriz de León') || speaker.name.includes('Viktor') || speaker.name.includes('Tasnim'));
+                  const hasGroups = filteredSpeakers.some((s) => s.group);
 
                   if (hasGroups) {
                     const groups: Record<string, typeof event.speakers> = {};
                     const groupOrder: string[] = [];
 
-                    event.speakers.forEach((speaker) => {
+                    filteredSpeakers.forEach((speaker) => {
                       const groupName =
                         i18n.language.startsWith('en')
                           ? speaker.group_en || speaker.group || "General"
@@ -192,7 +199,8 @@ const EventPage = () => {
 
                   return (
                     <ul className="space-y-3">
-                      {event.speakers.map((speaker) => (
+                      {filteredSpeakers
+                        .map((speaker) => (
                         <li key={speaker.name} className="text-slate-700">
                           <div className="font-semibold leading-tight">{speaker.name}</div>
                           {speaker.role && <div className="text-sm text-slate-500 mt-0.5">{isEn && speaker.role_en ? speaker.role_en : speaker.role}</div>}

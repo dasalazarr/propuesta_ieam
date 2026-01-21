@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight, Calendar, MapPin, Clock, FileText, Video, Mic } from 'lucide-react';
 import { cn } from '@/lib/utils'; // Assuming you have a utils file for class merging, if not I'll create a simple helper or remove it.
 
@@ -54,6 +55,7 @@ export const Card: React.FC<CardProps> = ({
   className,
   onClick,
 }) => {
+  const { i18n } = useTranslation();
   const isFeatured = variant === 'featured';
   const isCompact = variant === 'compact';
   const badgeTheme = getBadgeTheme(badge);
@@ -195,7 +197,7 @@ export const Card: React.FC<CardProps> = ({
             )}
             {metadata?.author && (
               <span className="text-slate-700 normal-case">
-                por {metadata.author}
+                {i18n.language.startsWith('en') ? `by ${metadata.author}` : `por ${metadata.author}`}
               </span>
             )}
           </div>
@@ -218,7 +220,7 @@ export const Card: React.FC<CardProps> = ({
 
         {/* Footer / CTA */}
         <div className="mt-auto pt-4 flex items-center text-[#0A2540] font-bold text-sm group-hover:translate-x-1 transition-transform">
-          {ctaText || "Leer más"}
+          {ctaText || (i18n.language.startsWith('en') ? 'Read more' : 'Leer más')}
           <ArrowRight className="w-4 h-4 ml-2" />
         </div>
       </div>

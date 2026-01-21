@@ -38,7 +38,8 @@ const ResearchPage = () => {
         return {
             title: (isEn && article.title_en) ? article.title_en : article.title,
             subtitle: (isEn && article.subtitle_en) ? article.subtitle_en : article.subtitle,
-            type: isEn ? getLocalizedType(article.type) : article.type
+            type: isEn ? getLocalizedType(article.type) : article.type,
+            image: (isEn && article.heroImage_en) ? article.heroImage_en : article.heroImage
         };
     };
 
@@ -129,7 +130,7 @@ const ResearchPage = () => {
                                     variant="featured"
                                     title={locFeatured.title}
                                     summary={locFeatured.subtitle}
-                                    image={featured.heroImage}
+                                    image={locFeatured.image}
                                     badge={locFeatured.type}
                                     metadata={{ date: featured.publishDate, author: featured.author.name }}
                                     ctaLink={`/analisis/${featured.slug}`}
@@ -149,7 +150,7 @@ const ResearchPage = () => {
                                             variant="standard"
                                             title={locPub.title}
                                             summary={locPub.subtitle}
-                                            image={pub.heroImage}
+                                            image={locPub.image}
                                             badge={locPub.type}
                                             metadata={{ date: pub.publishDate, author: pub.author.name }}
                                             ctaLink={`/analisis/${pub.slug}`}

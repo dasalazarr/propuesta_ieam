@@ -3,6 +3,7 @@ export interface EventAgendaItem {
   title: string;
   title_en?: string;
   speaker?: string;
+  speaker_en?: string;
 }
 
 export interface EventSpeaker {
@@ -26,6 +27,8 @@ export interface EventItem {
   location_en?: string;
   format: string;
   format_en?: string;
+  agendaTitle?: string;
+  agendaTitle_en?: string;
   heroImage: string;
   heroImage_en?: string;
   highlightImage?: string;
@@ -51,6 +54,8 @@ export const events: EventItem[] = [
     location_en: "Rome, Italy",
     format: "Chatham House",
     format_en: "Chatham House",
+    agendaTitle: "Programa del taller",
+    agendaTitle_en: "Workshop Programme",
     heroImage: "/images/workshop-es-rome.png",
     heroImage_en: "/images/workshop-en-rome.png",
     summary: "El IEAM organiza en Roma un taller para comparar los enfoques italianos y españoles sobre migración y evaluar su percepción por los socios africanos.",
@@ -78,12 +83,46 @@ export const events: EventItem[] = [
       <p class="mt-6"><i>For more information, you can contact the organization via email at <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
     `,
     agenda: [
-      { time: "09:30", title: "Sesión de apertura – Italia, España, la UE y África: ¿hacia una visión común de la movilidad?", title_en: "Opening session – Italy, Spain, the EU and Africa: toward a common vision of mobility?", speaker: "Expertos / Experts" },
-      { time: "10:30", title: "Sesión de trabajo 1 – Rutas cambiantes: Mediterráneo Central, Mediterráneo Occidental y Atlántico", title_en: "Working session 1 – Changing routes: Central Mediterranean, Western Mediterranean and Atlantic", speaker: "Mesa redonda / Roundtable" },
-      { time: "12:00", title: "Pausa para almuerzo", title_en: "Lunch break", speaker: "" },
-      { time: "13:00", title: "Sesión de trabajo 2 – Asociaciones con Estados africanos: seguridad, desarrollo y “paquetes” de movilidad", title_en: "Working session 2 – Partnerships with African states: security, development and mobility “packages”", speaker: "Mesa redonda / Roundtable" },
-      { time: "14:30", title: "Sesión de trabajo 3 – Economías de tránsito, crimen organizado y lucha contra el tráfico de migrantes", title_en: "Working session 3 – Transit economies, organised crime and the fight against migrant smuggling", speaker: "Mesa redonda / Roundtable" },
-      { time: "16:00", title: "Clausura", title_en: "Closing remarks", speaker: "" }
+      {
+        time: "9:30 am",
+        title: "Sesión de apertura – Italia, España, la UE y África: ¿hacia una visión común de la movilidad?",
+        title_en: "Opening session – Italy, Spain, the EU and Africa: toward a common vision of mobility?",
+        speaker: "Esta sesión alineará las perspectivas sobre la “gobernanza de la movilidad” e identificará dónde convergen o divergen los enfoques de la UE y de África.",
+        speaker_en: "This session will align perspectives on “mobility governance” and identify where EU and African approaches converge or diverge"
+      },
+      {
+        time: "10:30 am",
+        title: "Sesión de trabajo 1 – Rutas cambiantes: Mediterráneo Central, Mediterráneo Occidental y Atlántico",
+        title_en: "Working session 1 – Changing routes: Central Mediterranean, Western Mediterranean and Atlantic",
+        speaker: "Esta sesión analizará los cambios en los flujos y rutas migratorias, el papel de los países de tránsito y cómo las medidas de la UE y de los Estados nacionales influyen en la dinámica de las rutas y en los resultados de protección.",
+        speaker_en: "This session will analyse shifts in migration flows and routes, the role of transit countries, and how EU and national measures influence route dynamics and protection outcomes."
+      },
+      {
+        time: "12:00 pm",
+        title: "Pausa para almuerzo",
+        title_en: "Lunch break"
+      },
+      {
+        time: "1:00 pm",
+        title: "Sesión de trabajo 2 – Asociaciones con Estados africanos: seguridad, desarrollo y “paquetes” de movilidad",
+        title_en: "Working session 2 – Partnerships with African states: security, development and mobility “packages”",
+        speaker: "Esta sesión examinará cómo se diseñan e implementan los marcos de cooperación, evaluará sus efectos en la práctica y explorará cómo los socios africanos perciben su legitimidad y sostenibilidad.",
+        speaker_en: "This session will examine how cooperation frameworks are designed and implemented, assess their real-world effects, and explore how African partners perceive their legitimacy and sustainability."
+      },
+      {
+        time: "2:30 pm",
+        title: "Sesión de trabajo 3 – Economías de tránsito, crimen organizado y lucha contra el tráfico de migrantes",
+        title_en: "Working session 3 – Transit economies, organised crime and the fight against migrant smuggling",
+        speaker: "Esta sesión analizará las lógicas que sustentan las redes de facilitación y las economías de tránsito, y explorará cómo debilitar las redes criminales sin aumentar los riesgos para los migrantes ni perjudicar a las comunidades locales.",
+        speaker_en: "This session will examine the logics underpinning facilitation networks and transit economies and explore how to weaken criminal networks without increasing risks for migrants or harming local communities."
+      },
+      {
+        time: "4:00 pm",
+        title: "Clausura",
+        title_en: "Closing remarks",
+        speaker: "Esta sesión consolidará los principales hallazgos, los traducirá en recomendaciones operativas e identificará vías de seguimiento.",
+        speaker_en: "This session will consolidate main insights, translate them into operational recommendations and identify follow-up avenues."
+      }
     ],
     speakers: []
   },
@@ -142,8 +181,8 @@ export const events: EventItem[] = [
     `,
     agenda: [],
     speakers: [
-      { name: "Viktor Mársai", role: "Migration Research Institute (Anfitrión)" },
-      { name: "Beatriz de León", role: "Directora Ejecutiva IEAM" },
+      { name: "Viktor Mársai", role: "Migration Research Institute (Anfitrión)", role_en: "Migration Research Institute (Host)" },
+      { name: "Beatriz de León", role: "Directora Ejecutiva IEAM", role_en: "Executive Director IEAM" },
       { name: "Balázs Orbán", role: "Director Político PM Hungría" },
       { name: "Rocío de Meer", role: "Congreso de los Diputados (España)" }
     ]
@@ -268,8 +307,6 @@ export const events: EventItem[] = [
     content: `
       <p>El Foro de Diálogo Mediterráneo 2025 inauguró el año en Rabat con un encuentro de alto nivel centrado en uno de los desafíos más urgentes para el norte de África y el Mediterráneo en general: la migración irregular. Celebrado en la Rabat Business School de la Universidad Internacional de Rabat (UIR), el foro reunió a expertos internacionales, responsables políticos, académicos y actores de la sociedad civil, reforzando el papel de Rabat como un centro emergente para el diálogo estratégico sobre la gobernanza mediterránea.</p>
       
-      <img src="/images/rabat 1.png" alt="Foro de Diálogo Mediterráneo Rabat" class="w-full h-auto rounded-lg my-8 shadow-md" />
-
       <p>Organizado por Diálogo Mediterráneo en colaboración con EDEN Maroc y AMSED, el foro atrajo una fuerte participación desde temprano, llenando el recinto con especialistas deseosos de explorar las complejidades de la migración en la región.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Panel 1 – Comprendiendo los impulsores y el impacto de la migración irregular en Marruecos en el contexto mediterráneo</h3>
@@ -318,8 +355,6 @@ export const events: EventItem[] = [
     content_en: `
       <p>The Mediterranean Dialogue Forum 2025 opened the year in Rabat with a high-level gathering focused on one of the most pressing challenges for North Africa and the wider Mediterranean: irregular migration. Held at the Rabat Business School of the International University of Rabat (UIR), the forum brought together international experts, policymakers, academics, and civil-society actors, reinforcing Rabat’s role as an emerging hub for strategic dialogue on Mediterranean governance.</p>
       
-      <img src="/images/rabat 1.png" alt="Rabat Mediterranean Dialogue Forum" class="w-full h-auto rounded-lg my-8 shadow-md" />
-
       <p>Organised by Mediterranean Dialogue in partnership with EDEN Maroc and AMSED, the forum attracted strong participation from early in the morning, filling the venue with specialists eager to explore the complexities of migration in the region.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Panel 1 – Understanding the Drivers and Impact of Irregular Migration in Morocco within the Mediterranean Context</h3>
@@ -509,7 +544,7 @@ export const events: EventItem[] = [
       { name: "Loubna El Hassouni", role: "", group: "Sesión en Madrid", group_en: "Madrid Session" },
       { name: "Dr. Mohamed Wounouki", role: "", group: "Sesión en Madrid", group_en: "Madrid Session" },
       { name: "Malak Darwish", role: "", group: "Sesión en Madrid", group_en: "Madrid Session" },
-      { name: "Tasnim Idriss", role: "", group: "Sesión en Madrid", group_en: "Madrid Session" },
+      { name: "Tasnim Idriss", role: "Coordinadora del Norte de África", role_en: "North Africa Coordinator", group: "Sesión en Madrid", group_en: "Madrid Session" },
       // Brussels Session
       { name: "Juan Fernando López Aguilar", role: "MEP (S&D)", group: "Sesión en Bruselas", group_en: "Brussels Session" },
       { name: "Cecilia Strada", role: "MEP (S&D)", group: "Sesión en Bruselas", group_en: "Brussels Session" },

@@ -404,8 +404,9 @@ export const articles: Article[] = [
         readTime: '8 min',
         author: {
             name: 'Equipo IEAM',
-            role: 'Análisis de datos',
-            role_en: 'Data Analysis',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
             image: '/favicon-new.png',
             bio: 'Unidad de datos y análisis territorial del IEAM.',
             bio_en: 'IEAM Data and Territorial Analysis Unit.'
@@ -483,6 +484,7 @@ export const articles: Article[] = [
         readTime: '6 min',
         author: {
             name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
             role: 'Investigación',
             role_en: 'Research',
             image: '/favicon-new.png',
@@ -490,6 +492,7 @@ export const articles: Article[] = [
             bio_en: 'Research and analysis of public policies.'
         },
         pullQuote: 'El consenso político se fractura en los detalles de implementación del Pacto.',
+        pullQuote_en: 'The political consensus is fractured on the details of the Pact\'s implementation.',
         materials: [
             {
                 label: 'Descargar infografía (ES)',
@@ -576,6 +579,7 @@ export const articles: Article[] = [
         readTime: '8 min',
         author: {
             name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
             role: 'Investigación',
             role_en: 'Research',
             image: '/favicon-new.png',
@@ -595,6 +599,7 @@ export const articles: Article[] = [
             }
         ],
         pullQuote: 'Un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.',
+        pullQuote_en: 'A credible return system must be based on trust, transparency, and respect for human rights.',
         content: `
       <p>Desde IEAM Instituto Español de Análisis Migratorio, destacamos la reciente reunión organizada por Frontex los días 5 y 6 de noviembre de 2025 en Varsovia, centrada en el desarrollo de un sistema integrado de monitoreo de retornos en la UE.</p>
       <p>El encuentro reunió a representantes de la Oficina de Derechos Fundamentales (FRO) de Frontex para debatir cómo fortalecer un sistema de retorno humano, seguro y respetuoso con los derechos fundamentales.</p>
@@ -735,8 +740,9 @@ export const articles: Article[] = [
         readTime: '5 min',
         author: {
             name: 'Equipo IEAM',
-            role: 'Análisis de datos',
-            role_en: 'Data Analysis',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
             image: '/favicon-new.png',
             bio: 'Unidad de datos y análisis territorial del IEAM.',
             bio_en: 'IEAM Data and Territorial Analysis Unit.'
