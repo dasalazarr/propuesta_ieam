@@ -64,7 +64,7 @@ const EventPage = () => {
             <div className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-[#F2D4D6] mb-4">
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-[var(--color-accent-red)] rounded-full" />
-                {localizedEvent.format}
+                Presencial
               </span>
               <span className="text-[var(--color-cream)]/80">{localizedEvent.location}</span>
             </div>
@@ -114,7 +114,7 @@ const EventPage = () => {
                         <div className="flex gap-4">
                           {timePart && <span className="min-w-[64px] text-sm font-bold text-[var(--color-text-primary)]">{timePart}</span>}
                           <div>
-                            <div className="font-semibold">{item.title}</div>
+                            <div className="font-semibold">{isEn && item.title_en ? item.title_en : item.title}</div>
                             {item.speaker && <div className="text-sm text-slate-500">{item.speaker}</div>}
                           </div>
                         </div>
@@ -178,7 +178,7 @@ const EventPage = () => {
                                   </div>
                                   {speaker.role && (
                                     <div className="text-sm text-slate-500 mt-0.5">
-                                      {speaker.role}
+                                      {isEn && speaker.role_en ? speaker.role_en : speaker.role}
                                     </div>
                                   )}
                                 </li>
@@ -195,7 +195,7 @@ const EventPage = () => {
                       {event.speakers.map((speaker) => (
                         <li key={speaker.name} className="text-slate-700">
                           <div className="font-semibold leading-tight">{speaker.name}</div>
-                          {speaker.role && <div className="text-sm text-slate-500 mt-0.5">{speaker.role}</div>}
+                          {speaker.role && <div className="text-sm text-slate-500 mt-0.5">{isEn && speaker.role_en ? speaker.role_en : speaker.role}</div>}
                         </li>
                       ))}
                     </ul>

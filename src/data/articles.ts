@@ -86,12 +86,17 @@ export const articles: Article[] = [
             {
                 label: 'Descargar informe (ES)',
                 label_en: 'Download report (ES)',
-                url: '/docs/IEAM-PP-2025-002-ES_movilidad-africaoccidental.pdf'
+                url: '/docs/IEAM-2025-003-ES_movilidad-africaoccidental.pdf'
             },
             {
-                label: 'Descargar informe (FR)',
-                label_en: 'Download report (FR)',
-                url: '/docs/IEAM-PP-2025-002-FR_movilidad-africaoccidental.pdf'
+                label: 'Download report (EN)',
+                label_en: 'Download report (EN)',
+                url: '/docs/IEAM-2025-003-EN_mobility-westafrica.pdf'
+            },
+            {
+                label: 'Rapport complet (FR)',
+                label_en: 'Full Report (FR)',
+                url: '/docs/IEAM-2025-003-FR_movilidad-africaoccidenta.pdf'
             }
         ],
         content: `
@@ -135,10 +140,10 @@ export const articles: Article[] = [
         title_en: 'Migration and Migrants: Irregular Migratory Routes to Europe. Spain, a Case Study',
         subtitle: 'Un análisis exhaustivo sobre la evolución, dinámicas y desafíos de la migración irregular hacia España en el contexto europeo (2015-2025).',
         subtitle_en: 'A comprehensive analysis of the evolution, dynamics, and challenges of irregular migration to Spain within the European context (2015-2025).',
-        heroImage: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
-        heroImage_en: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
-        mainImage: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
-        mainImage_en: '/images/IEAM-REP-2025-001-ES_rutas-migratorias.png',
+        heroImage: '/images/informe-es-rutasmigratorias.png',
+        heroImage_en: '/images/informe-en-rutasmigratorias.png',
+        mainImage: '/images/informe-es-rutasmigratorias.png',
+        mainImage_en: '/images/informe-en-rutasmigratorias.png',
         mainImageCaption: 'Portada del informe: Migraciones y Migrantes.',
         mainImageCaption_en: 'Report cover: Migrations and Migrants.',
         publishDate: '22 Dec 2025',
@@ -228,7 +233,7 @@ export const articles: Article[] = [
             <p>The analysis also evidences the close relationship between irregular migration, international protection, and administrative management, as well as the existing limitations to fully register the human dimensions of the phenomenon, particularly regarding deaths and disappearances on migratory routes. In this context, Spain appears as a central space of observation, both for its geographical position and for its role in European systems of border control, reception, and protection. The Spanish experience, analyzed in detail, allows identifying patterns, tensions, and challenges that transcend the national sphere and refer to the need to understand irregular migration as a complex, interdependent phenomenon deeply conditioned by international factors.</p>
         `,
         materials: [
-            { label: 'Descargar Informe', label_en: 'Download Report', url: '/docs/IEAM-REP-2025-001-ES_rutas-migratorias.pdf' }
+            { label: 'Descargar Informe', label_en: 'Download Report', url: '/docs/IEAM-2025-002-ES_rutas-migratorias.pdf' }
         ],
         relatedArticles: [] // Featured article typically doesn't show related immediately below itself in the listings, but for consistency we keep the array
     },
@@ -284,12 +289,17 @@ export const articles: Article[] = [
             {
                 label: 'Informe completo (ES)',
                 label_en: 'Full Report (ES)',
-                url: '/docs/IEAM-PP-2025-001-ES_movilidad-mali.pdf'
+                url: '/docs/IEAM-2025-001-ES_movilidad-mali.pdf'
             },
             {
-                label: 'Informe completo (FR)',
+                label: 'Full Report (EN)',
+                label_en: 'Full Report (EN)',
+                url: '/docs/IEAM-2025-001-EN_mobility-mali.pdf'
+            },
+            {
+                label: 'Rapport complet (FR)',
                 label_en: 'Full Report (FR)',
-                url: '/docs/IEAM-PP-2025-001-FR_mobilite-mali.pdf'
+                url: '/docs/IEAM-2025-001-FR_mobilite-mali.pdf'
             }
         ],
         content: `
@@ -302,7 +312,7 @@ export const articles: Article[] = [
       <ul class="list-disc ml-6 space-y-4 text-slate-700">
         <li><strong>Es esencial contar con un compromiso colectivo y un enfoque multiactor:</strong> los Estados, las entidades locales, la diáspora y los socios internacionales deben construir conjuntamente los dispositivos, poner en común la financiación y definir indicadores comunes.</li>
         
-        <li><strong>Una reintegración satisfactoria pasa por el arraigo comunitario, la inclusión económica y el seguimiento local,</strong> favoreciendo los enfoques colectivos y la financiación mixta.</li>
+        <li><strong>Una reintegración satisfactoria pasa por el arraigo comunitario, si inclusión económica y el seguimiento local,</strong> favoreciendo los enfoques colectivos y la financiación mixta.</li>
         
         <li><strong>La movilidad legal y circular debe tratarse como una prioridad estratégica,</strong> con acuerdos multilaterales bien estructurados y procedimientos claros y flexibles.</li>
         
@@ -406,12 +416,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/IEAM-INF-2025-001-ES_llegadas-sep.pdf'
+                url: '/docs/IEAM-2025-004-ES_llegadas-sep.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/IEAM-INF-2025-001-EN_arrivals-sep.pdf'
+                url: '/docs/IEAM-2025-004-EN_arrivals-sep.pdf'
             }
         ],
         content: `
@@ -484,12 +494,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/IEAM-INF-2025-002-ES_partidos-pacto.pdf'
+                url: '/docs/IEAM-2025-005-ES_partidos-pacto.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/IEAM-INF-2025-002-EN_parties-pact.pdf'
+                url: '/docs/IEAM-2025-005-EN_parties-pact.pdf'
             }
         ],
         content: `
@@ -576,12 +586,12 @@ export const articles: Article[] = [
             {
                 label: 'Infografía (ES)',
                 label_en: 'Infographic (ES)',
-                url: '/docs/IEAM-INF-2024-001-ES_frontex-mandato.pdf'
+                url: '/docs/IEAM-2024-001-ES_frontex-mandato.pdf'
             },
             {
-                label: 'Infographic (EN)',
-                label_en: 'Infographic (EN)',
-                url: '/docs/IEAM-INF-2024-001-EN_frontex-mandate.pdf'
+                label: 'Descargar infografía (EN)',
+                label_en: 'Download infographic (EN)',
+                url: '/docs/IEAM-2024-001-EN_frontex-mandate.pdf'
             }
         ],
         pullQuote: 'Un sistema de retorno creíble debe basarse en la confianza, la transparencia y el respeto a los derechos humanos.',
@@ -737,12 +747,12 @@ export const articles: Article[] = [
             {
                 label: 'Descargar infografía (ES)',
                 label_en: 'Download infographic (ES)',
-                url: '/docs/IEAM-INF-2025-003-ES_llegadas-nov.pdf'
+                url: '/docs/IEAM-2025-006-ES_llegadas-nov.pdf'
             },
             {
                 label: 'Descargar infografía (EN)',
                 label_en: 'Download infographic (EN)',
-                url: '/docs/IEAM-INF-2025-003-EN_arrivals-nov.pdf'
+                url: '/docs/IEAM-2025-006-EN_arrivals-nov.pdf'
             }
         ],
         content: `

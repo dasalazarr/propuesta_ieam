@@ -51,10 +51,11 @@ const EventsPage = () => {
         return new Date();
     };
 
-    const sortedEvents = useMemo(() => {
-        return [...eventsData].sort((a, b) => {
-            return parseDate(b.date).getTime() - parseDate(a.date).getTime();
-        });
+    const splitEvents = useMemo(() => {
+        const now = new Date();
+        const upcoming = eventsData.filter(event => parseDate(event.date) >= now).sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime());
+        const past = eventsData.filter(event => parseDate(event.date) < now).sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+        return { upcoming, past };
     }, []);
 
     return (
@@ -99,16 +100,78 @@ const EventsPage = () => {
 
             <div className="page-shell section-shell">
 
-                {/* Upcoming Events Placeholder */}
+                {/* Upcoming Events Section */}
                 <div className="mb-20">
                     <h2 className="text-2xl font-serif font-bold text-[#0A2540] mb-6">
                         {t('events.upcoming.title')}
                     </h2>
-                    <div className="bg-slate-50 border border-slate-200 rounded-sm p-8 text-center">
-                        <p className="text-slate-600 text-lg">
-                            {t('events.upcoming.description')}
-                        </p>
-                    </div>
+
+                    {splitEvents.upcoming.length > 0 ? (
+                        <div className="space-y-12">
+                            {splitEvents.upcoming.map((event) => {
+                                const locEvent = getLocalizedEvent(event);
+                                return (
+                                    <div key={event.slug} className="group relative bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-sm hover:shadow-md transition-shadow">
+                                        {/* Badge */}
+                                        <div className="inline-block bg-[var(--color-navy-900)] text-white text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
+                                            {t('events.upcoming.badge', 'Upcoming')}
+                                        </div>
+
+                                        <div className="grid lg:grid-cols-12 gap-12">
+                                            <div className="lg:col-span-7 space-y-6">
+                                                <h3 className="text-3xl lg:text-4xl font-serif font-bold text-[#0A2540] leading-tight">
+                                                    {locEvent.title}
+                                                </h3>
+
+                                                <div className="flex flex-wrap items-center gap-6 text-sm font-bold uppercase tracking-wider text-slate-500">
+                                                    <span className="flex items-center text-[#D4212A]">
+                                                        <Calendar className="w-5 h-5 mr-2" />
+                                                        {event.date}
+                                                    </span>
+                                                    <span className="flex items-center">
+                                                        <MapPin className="w-5 h-5 mr-2" />
+                                                        {locEvent.location}
+                                                    </span>
+                                                </div>
+
+                                                <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                                                    {locEvent.summary}
+                                                </p>
+
+                                                <div className="pt-4">
+                                                    <Link
+                                                        to={`/eventos/${event.slug}`}
+                                                        className="inline-flex items-center justify-center px-8 py-3 bg-[var(--color-accent-gold)] text-[var(--color-navy-900)] font-bold rounded-sm hover:bg-[#E5B650] transition-colors"
+                                                    >
+                                                        {i18n.language.startsWith('en') ? 'Stay Informed' : 'Más información'}
+                                                        <ArrowRight className="ml-2 w-4 h-4" />
+                                                    </Link>
+                                                </div>
+                                            </div>
+
+                                            {/* Decorative/Image Side */}
+                                            <div className="lg:col-span-5 hidden lg:block relative">
+                                                <div className="relative w-full pt-[56.25%] bg-gradient-to-br from-slate-100 to-slate-50 rounded-xl overflow-hidden border border-slate-100">
+                                                    {/* We can use event image here or a pattern */}
+                                                    <img
+                                                        src={locEvent.heroImage}
+                                                        alt={locEvent.title}
+                                                        className="absolute inset-0 w-full h-full object-cover opacity-90 mix-blend-multiply"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    ) : (
+                        <div className="bg-slate-50 border border-slate-200 rounded-sm p-8 text-center">
+                            <p className="text-slate-600 text-lg">
+                                {t('events.upcoming.description')}
+                            </p>
+                        </div>
+                    )}
                 </div>
 
                 {/* Past Events List */}
@@ -118,7 +181,7 @@ const EventsPage = () => {
                     </h2>
 
                     <div className="grid gap-8">
-                        {sortedEvents.map((event) => {
+                        {splitEvents.past.map((event) => {
                             const locEvent = getLocalizedEvent(event);
                             return (
                                 <Link to={`/eventos/${event.slug}`} key={event.slug} className="group bg-white border border-slate-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow grid md:grid-cols-12">

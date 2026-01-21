@@ -1,12 +1,14 @@
 export interface EventAgendaItem {
   time?: string;
   title: string;
+  title_en?: string;
   speaker?: string;
 }
 
 export interface EventSpeaker {
   name: string;
   role: string;
+  role_en?: string;
   group?: string;
   group_en?: string;
 }
@@ -37,11 +39,60 @@ export interface EventItem {
 
 export const events: EventItem[] = [
   {
-    slug: "cumbre-budapest-2024",
-    title: "Cambiar el discurso, frenar el flujo y proteger Europa",
-    title_en: "Changing the Narrative, Stopping the Flow, and Protecting Europe",
-    subtitle: "La respuesta europea ante la crisis migratoria: lecciones de una década.",
-    subtitle_en: "The European response to the migration crisis: lessons from a decade.",
+    slug: "workshop-rome-2026",
+    title: "Taller de Inteligencia Colectiva en Roma",
+    title_en: "Collective Intelligence Workshop in Rome",
+    subtitle: "Gobernanza de la movilidad: enfoques de Italia, España y la UE.",
+    subtitle_en: "Mobility governance: Italian, Spanish, and EU approaches.",
+    category: "Taller",
+    category_en: "Workshop",
+    date: "06 Feb 2026",
+    location: "Roma, Italia",
+    location_en: "Rome, Italy",
+    format: "Chatham House",
+    format_en: "Chatham House",
+    heroImage: "/images/workshop-es-rome.png",
+    heroImage_en: "/images/workshop-en-rome.png",
+    summary: "El IEAM organiza en Roma un taller para comparar los enfoques italianos y españoles sobre migración y evaluar su percepción por los socios africanos.",
+    summary_en: "IEAM organizes a workshop in Rome to compare Italian and Spanish migration approaches and assess their perception by African partners.",
+    content: `
+      <p><b>Roma (Italia), 6 de febrero de 2026</b> – El Instituto Español de Análisis Migratorio (IEAM), en cooperación con AMIStaDeS, está organizando un taller de inteligencia colectiva el viernes 6 de febrero. El taller tiene como objetivo comparar los enfoques italianos y españoles dentro del marco más amplio de la UE, evaluar cómo estas políticas son percibidas y experimentadas por socios y profesionales africanos, e identificar áreas donde la cooperación puede ser más realista, operativa y alineada tanto con los imperativos de protección como con los objetivos de política más amplios.</p>
+      <p>La reunión, que se celebrará a puerta cerrada en la <b>Università Niccolò Cusano</b> de 9:30 a 16:30, reunirá a un pequeño grupo de expertos, funcionarios y representantes de la sociedad civil, bajo la Regla de Chatham House, que garantiza que las intervenciones permanezcan confidenciales para fomentar un debate abierto.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Objetivos del taller</h3>
+      <p>Este taller de inteligencia colectiva tiene como objetivo establecer un entendimiento compartido sobre cómo Italia, España, la UE y sus socios africanos definen e implementan la gobernanza de la movilidad. También busca fortalecer el análisis conjunto de las dinámicas en curso a lo largo de las rutas del Mediterráneo Central y Occidental, así como de la ruta Atlántica, examinar los marcos de cooperación con los Estados africanos y evaluar sus efectos en la práctica. Por último, pretende identificar opciones de seguimiento prácticas y vías operativas para mejorar la cooperación entre Italia, España, la UE y los países africanos involucrados.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resultados esperados</h3>
+      <p>Como producto final, se elaborará una breve nota de política que resumirá los principales hallazgos y proporcionará recomendaciones prácticas, sin atribución de autoría y preparada bajo la Regla de Chatham House. El taller también tendrá como objetivo fortalecer la red de actores italianos, españoles, europeos y africanos que trabajan en temas de migración y movilidad.</p>
+      <p class="mt-6"><i>Para más información, puede contactar con la organización por correo electrónico en <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+    `,
+    content_en: `
+      <p><b>Rome (Italy), 6 February 2026</b> – The Spanish Institute for Migration Analysis (IEAM), in cooperation with AMIStaDeS, is organizing a collective intelligence workshop on Friday, 6 February. The workshop aims to compare Italian and Spanish approaches within the broader EU framework, assess how these policies are perceived and experienced by African partners and practitioners, and identify areas where cooperation can be more realistic, operational, and aligned with both protection imperatives and broader policy objectives.</p>
+      <p>The meeting, which will be held behind closed doors at the <b>Università Niccolò Cusano</b> from 9:30 a.m. to 4:30 p.m., will bring together a small group of experts, officials, and civil society representatives, under the Chatham House Rule, which ensures that contributions remain confidential in order to foster an open discussion.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Workshop Objectives</h3>
+      <p>This collective intelligence workshop aims to establish a shared understanding of how Italy, Spain, the EU, and their African partners define and implement mobility governance. It also seeks to strengthen joint analysis of ongoing dynamics along the Central and Western Mediterranean routes as well as the Atlantic route, to examine cooperation frameworks with African states, and to assess their real-world effects. Finally, it aims to identify practical follow-up options and operational pathways to enhance cooperation between Italy, Spain, the EU, and the African countries involved.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Expected Outputs</h3>
+      <p>As a final product, a short policy note will be produced, summarising the main findings and providing practical recommendations, non-attributed and prepared under the Chatham House Rule. The workshop will also aim to strengthen the network of Italian, Spanish, European, and African stakeholders working on migration and mobility.</p>
+      <p class="mt-6"><i>For more information, you can contact the organization via email at <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+    `,
+    agenda: [
+      { time: "09:30", title: "Sesión de apertura – Italia, España, la UE y África: ¿hacia una visión común de la movilidad?", title_en: "Opening session – Italy, Spain, the EU and Africa: toward a common vision of mobility?", speaker: "Expertos / Experts" },
+      { time: "10:30", title: "Sesión de trabajo 1 – Rutas cambiantes: Mediterráneo Central, Mediterráneo Occidental y Atlántico", title_en: "Working session 1 – Changing routes: Central Mediterranean, Western Mediterranean and Atlantic", speaker: "Mesa redonda / Roundtable" },
+      { time: "12:00", title: "Pausa para almuerzo", title_en: "Lunch break", speaker: "" },
+      { time: "13:00", title: "Sesión de trabajo 2 – Asociaciones con Estados africanos: seguridad, desarrollo y “paquetes” de movilidad", title_en: "Working session 2 – Partnerships with African states: security, development and mobility “packages”", speaker: "Mesa redonda / Roundtable" },
+      { time: "14:30", title: "Sesión de trabajo 3 – Economías de tránsito, crimen organizado y lucha contra el tráfico de migrantes", title_en: "Working session 3 – Transit economies, organised crime and the fight against migrant smuggling", speaker: "Mesa redonda / Roundtable" },
+      { time: "16:00", title: "Clausura", title_en: "Closing remarks", speaker: "" }
+    ],
+    speakers: []
+  },
+  {
+    slug: "cumbre-szeged-2025",
+    title: "Cumbre MCC-MRI 2025: Gobernanza de la Movilidad Humana",
+    title_en: "MCC-MRI Summit 2025: Governance of Human Mobility",
+    subtitle: "Evaluación europea, perspectivas globales y dinámicas regionales.",
+    subtitle_en: "European assessment, global perspectives, and regional dynamics.",
     category: "Cumbre",
     category_en: "Summit",
     date: "24 Sep 2025",
@@ -49,20 +100,47 @@ export const events: EventItem[] = [
     location_en: "Szeged, Hungary",
     format: "Presencial",
     format_en: "In-person",
-    heroImage: "/images/evento-hungria.jpg",
-    summary: "En 2015, más de un millón de solicitantes de asilo llegaron a Europa desde Oriente Medio y África. Mientras algunos gobiernos los acogieron, Hungría fue el primer Estado miembro de la UE en advertir que la migración irregular a gran escala suponía un riesgo para la soberanía, la estabilidad, la seguridad y la cohesión social de Europa. El gobierno húngaro respondió cerrando sus fronteras y aprobando un sólido marco legal para frenar la entrada, destinando recursos significativos a desmantelar las redes criminales que la facilitaban.\n\nUna década después, este debate sigue abierto. Las medidas adoptadas por Hungría han sido objeto de críticas de la Comisión Europea, gobiernos favorables a la migración y ONG, pero también han influido en la opinión pública europea. El aumento de los atentados terroristas en Europa occidental, la aparición de “zonas de exclusión” y el debilitamiento de los estados de bienestar han reactivado el debate político en países que antes respaldaban la migración masiva.\n\nLa Cumbre MCC–MRI, que se celebrará en Szeged —en la frontera sur de Hungría—, reunirá a responsables políticos, investigadores y expertos internacionales para analizar los aprendizajes de la última década, compartir buenas prácticas y debatir sobre cómo la Unión Europea puede reforzar sus políticas de gestión migratoria. El Instituto Español de Análisis de la Migración (IEAM) estará representado especialmente en la sesión dedicada al Sahel.",
-    summary_en: "In 2015, over a million asylum seekers arrived in Europe from the Middle East and Africa. While some governments welcomed them, Hungary was the first EU Member State to warn that large-scale irregular migration posed a risk to Europe's sovereignty, stability, security, and social cohesion. The Hungarian government responded by closing its borders and passing a robust legal framework to stem the flow, dedicating significant resources to dismantling the criminal networks facilitating it.\n\nA decade later, this debate remains open. Hungary's measures have faced criticism from the European Commission, pro-migration governments, and NGOs, yet they have also influenced European public opinion. The rise involved in terrorist attacks in Western Europe, the emergence of 'no-go zones,' and the weakening of welfare states have revived the political debate in countries that previously supported mass migration.\n\nThe MCC–MRI Summit, to be held in Szeged—on Hungary's southern border—will gather policymakers, researchers, and international experts to analyze lessons from the last decade, share best practices, and discuss how the European Union can strengthen its migration management policies. The Spanish Institute for Migration Analysis (IEAM) will be specially represented in the session dedicated to the Sahel.",
-    agenda: [
-      { time: "24 SEP - 09:00", title: "Apertura", speaker: "Balázs Orbán, Tamás Dezső" },
-      { time: "09:30", title: "La crisis migratoria y Hungría", speaker: "Bálint Pásztor, Zsolt Barthel-Rúzsa, Mons. László Kiss-Rigó" },
-      { time: "11:15", title: "Crisis en Europa: lecciones y buenas prácticas", speaker: "Juan Soto Gómez (Fortius), Expertos de Alemania, Italia, Austria" },
-      { time: "13:45", title: "Cambiar el discurso europeo sobre migración", speaker: "Rocío de Meer, Rep. de Hungría, Portugal y Bélgica" },
-      { time: "15:00", title: "Perspectiva estadounidense", speaker: "Heritage Foundation, Center for Immigration Studies, Dept. Estado EE.UU." },
-      { time: "16:45", title: "De la demografía al terrorismo", speaker: "Expertos de Alemania, Reino Unido y Francia" },
-      { time: "25 SEP - 09:30", title: "Crisis en Cuerno de África y Oriente Medio", speaker: "Exresponsables de EE.UU., Somalia y Egipto" },
-      { time: "10:45", title: "El Sahel y la migración hacia Europa", speaker: "Beatriz de León Cobo (IEAM), Investigadores de Hungría y Polonia" },
-      { time: "13:00", title: "Visita de campo", speaker: "Centro operativo de la Policía Húngara y vallado fronterizo" }
-    ],
+    heroImage: "/images/event-es-mcc.png",
+    heroImage_en: "/images/event-en-mcc.png",
+    summary: "La conferencia MCC/MRI reunió a responsables políticos e investigadores para evaluar la crisis migratoria de 2015 y proponer soluciones sostenibles.",
+    summary_en: "The MCC/MRI conference brought together policymakers and researchers to evaluate the 2015 migration crisis and propose sustainable solutions.",
+    content: `
+      <p>La conferencia MCC/MRI reunió a responsables políticos, investigadores y representantes de organizaciones europeas y estadounidenses, así como a líderes políticos africanos, con el fin de examinar la gobernanza de la movilidad humana.</p>
+      <p>El programa se estructuró en torno a tres pilares clave:</p>
+      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
+        <li>La evaluación europea tras la crisis migratoria de 2015 y la necesidad de una mejor coordinación entre los Estados;</li>
+        <li>La perspectiva de Estados Unidos sobre el cambio de prioridades y los marcos regulatorios;</li>
+        <li>Las dinámicas regionales en el Sahel, el Cuerno de África y Oriente Medio, con un enfoque en soluciones que combinen seguridad, desarrollo e inversión.</li>
+      </ul>
+      <p>El objetivo común fue identificar respuestas prácticas y sostenibles para reducir la migración irregular, proteger a las personas y reforzar la estabilidad.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Primer día de debates – Comparación de los enfoques europeos</h3>
+      <p>Los debates celebrados durante el primer día pusieron de relieve y compararon los distintos enfoques europeos. Se abordaron temas como la cooperación operativa, el apoyo a los Estados fronterizos, la lucha contra las redes de tráfico y la garantía de los retornos.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Segundo día de debates - Dinámicas regionales</h3>
+      <p>El segundo día estuvo dedicado a las dinámicas regionales. La fragilidad estatal, la inseguridad, la corrupción y el desempleo juvenil se vincularon a expectativas no satisfechas. A continuación, se compartieron recomendaciones operativas para hacer frente a estos desafíos: programas de educación y formación profesional vinculados a empleos reales, apoyo a las start-ups y a las cadenas de valor agrícolas, proyectos de energías renovables que generen empleo local y mecanismos que involucren a las diásporas para movilizar inversión y mentoría.</p>
+      <p>Nuestra directora ejecutiva, <b>Beatriz de León Cobo</b>, intervino sobre la región del Sahel como estudio de caso, subrayando que el único camino sostenible consiste en ofrecer opciones efectivas en el pueblo o país de origen, así como en los centros regionales donde las personas puedan formarse, emprender y trabajar.</p>
+      <p>Asimismo, se recordó que muchos posibles candidatos a la migración irregular se enfrentan a obstáculos prácticos, ya que no tienen acceso a vías legales debido a barreras administrativas y a la falta de documentos básicos como el pasaporte. En este contexto, es esencial adaptar los programas de migración regular a las realidades de las personas y reforzar la preparación europea mediante la cooperación operativa y el intercambio de información.</p>
+    `,
+    content_en: `
+      <p>The MCC/MRI conference brought together policymakers, researchers, and representatives of European and American organizations, as well as African political leaders, to examine the governance of human mobility.</p>
+      <p>The program was structured around three key pillars:</p>
+      <ul class="list-disc pl-5 space-y-2 mb-6 text-slate-700">
+        <li>The European assessment following the 2015 migration crisis and the need for improved coordination among states;</li>
+        <li>The U.S. perspective on shifting priorities and regulatory frameworks;</li>
+        <li>Regional dynamics in the Sahel, the Horn of Africa, and the Middle East, with a focus on solutions combining security, development, and investment.</li>
+      </ul>
+      <p>The shared objective was to identify practical and sustainable responses to reduce irregular migration, protect individuals, and strengthen stability.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">First Day of Discussions – Comparison of European Approaches</h3>
+      <p>The discussions held on the first day highlighted and compared the different European approaches. Topics such as operational cooperation, support for border states, the fight against trafficking networks, and guaranteed returns were addressed.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Second Day of Discussions – Regional Dynamics</h3>
+      <p>The second day was dedicated to regional dynamics. State fragility, insecurity, corruption, and youth unemployment were linked to unmet expectations. Operational recommendations were then shared to address these challenges: vocational education and training programs connected to real jobs, support for start-ups and agricultural value chains, renewable energy projects generating local employment, and mechanisms involving diasporas to mobilize investment and mentorship.</p>
+      <p>Our executive director, <b>Beatriz de León Cobo</b>, spoke about the Sahel region as a case study, emphasizing that the only sustainable path is to offer effective options in the village or country of origin, as well as in regional hubs where people can train, start businesses, and work.</p>
+      <p>It was also recalled that many potential candidates for irregular migration face practical obstacles, as they do not have access to legal pathways due to administrative barriers and the lack of basic documents such as a passport. In this context, it is essential to adapt regular migration programs to the realities of individuals and to strengthen European preparedness through operational cooperation and information sharing.</p>
+    `,
+    agenda: [],
     speakers: [
       { name: "Viktor Mársai", role: "Migration Research Institute (Anfitrión)" },
       { name: "Beatriz de León", role: "Directora Ejecutiva IEAM" },
@@ -71,55 +149,53 @@ export const events: EventItem[] = [
     ]
   },
   {
-    slug: "dialogo-dakar-2024",
-    title: "Políticas regionales, desplazados y migrantes",
+    slug: "workshop-dakar-2025",
+    title: "Políticas regionales, personas desplazadas y migrantes",
     title_en: "Regional Policies, Displaced Persons and Migrants",
     subtitle: "Taller de inteligencia colectiva (Senegal-Malí-Mauritania ↔ Europa).",
     subtitle_en: "Collective intelligence workshop (Senegal-Mali-Mauritania ↔ Europe).",
-    category: "Diálogo",
-    category_en: "Dialogue",
+    category: "Taller",
+    category_en: "Workshop",
     date: "23 Sep 2025",
     location: "Dakar, Senegal",
     location_en: "Dakar, Senegal",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/evento-dakares.png",
-    heroImage_en: "/images/evento-dakaren.png",
+    heroImage: "/images/workshop-es-dakar.png",
+    heroImage_en: "/images/workshop-en-dakar.png",
     summary: "Taller de inteligencia colectiva en Dakar para diagnosticar dinámicas de movilidad en el eje Senegal-Malí-Mauritania-Europa y formular recomendaciones.",
     summary_en: "Collective intelligence workshop in Dakar to diagnose mobility dynamics in the Senegal-Mali-Mauritania-Europe axis and formulate recommendations.",
     content: `
-      <p>El próximo 23 de septiembre, la ciudad de Dakar (Senegal) acogerá el taller de inteligencia colectiva <b>«Políticas regionales, desplazados y migrantes (Senegal-Malí-Mauritania ↔ Europa)»</b>. El encuentro, de carácter cerrado y con una duración prevista de dos horas, reunirá a un grupo reducido de actores estratégicos —investigadores, representantes institucionales, agencias internacionales, organizaciones de la sociedad civil, humanitarias y miembros de la diáspora— con el fin de generar un espacio de reflexión y co-construcción.</p>
-      <p>La iniciativa busca elaborar un diagnóstico actualizado de las dinámicas de movilidad en el eje Senegal-Malí-Mauritania-Europa, identificar los principales factores de riesgo y formular recomendaciones operativas dirigidas a organizaciones no gubernamentales, organismos internacionales, autoridades locales y nacionales, así como a los socios europeos más directamente implicados, entre ellos la Unión Europea y España.</p>
+      <p>El 23 de septiembre, la ciudad de Dakar (Senegal) acogió el taller de inteligencia colectiva “Políticas regionales, personas desplazadas y migrantes (Senegal-Mali-Mauritania ↔ Europa)”. La reunión a puerta cerrada, que tuvo una duración de dos horas, reunió a un pequeño grupo de actores estratégicos – investigadores, representantes institucionales, agencias internacionales, organizaciones de la sociedad civil, grupos humanitarios y miembros de la diáspora – con el objetivo de generar un espacio de reflexión y co-construcción.</p>
+      <p>La iniciativa tuvo como objetivo elaborar un diagnóstico actualizado de las dinámicas de movilidad a lo largo del eje Senegal-Mali-Mauritania–Europa, identificar los principales factores de riesgo y formular recomendaciones operativas dirigidas a organizaciones no gubernamentales, organismos internacionales, autoridades locales y nacionales, así como a los socios europeos más directamente involucrados, incluyendo la Unión Europea y España.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Contexto</h3>
-      <p>La ruta atlántica de África Occidental ha recuperado en los últimos años una posición central en los flujos migratorios hacia la Unión Europea, con un aumento sostenido de llegadas a Canarias desde 2023-2024 y una mayor diversificación de perfiles migratorios (jóvenes, mujeres, niños y nuevos países de origen). Las costas de Senegal y Mauritania concentran actualmente buena parte de las salidas, mientras que la población maliense constituye uno de los grupos más representados.</p>
-      <p>Estos procesos se ven condicionados por las transformaciones regionales vinculadas a los reajustes en materia de seguridad en el Sahel, la recomposición de los marcos de integración y los acuerdos operativos bilaterales. Dichos factores afectan directamente a la libertad de circulación intrarregional, a las economías locales y a las dinámicas de las redes de tráfico.</p>
+      <p>La ruta atlántica de África Occidental ha recuperado una posición central en los flujos migratorios hacia la Unión Europea en los últimos años, con un aumento sostenido de las llegadas a las Islas Canarias desde 2023–2024 y una mayor diversificación de los perfiles migratorios, incluyendo jóvenes, mujeres, niños y nuevos países de origen. Las costas de Senegal y Mauritania representan actualmente una gran parte de las salidas, mientras que la población maliense constituye uno de los grupos más representados.</p>
+      <p>Estos procesos están condicionados por transformaciones regionales vinculadas a los reajustes de seguridad en el Sahel, la recomposición de los marcos de integración y los acuerdos operativos bilaterales. Estos factores afectan directamente la libertad de movimiento intrarregional, las economías locales y la dinámica de las redes de tráfico.</p>
 
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Contenidos y resultados</h3>
-      <p>El taller abordará aspectos prioritarios como la situación de desplazados internos y refugiados, los efectos de las reestructuraciones regionales sobre la movilidad y la protección, las prácticas de cooperación entre Estados y los elementos que favorecen la movilidad ordenada y segura.</p>
-      <p>Como resultado, se elaborará un <b>policy paper</b> que recogerá conclusiones y propuestas concretas diferenciadas por tipo de actor: autoridades nacionales y locales, organizaciones internacionales, ONG, Unión Europea, España, sector privado, diásporas y colectividades locales.</p>
-      <p>El encuentro se desarrollará bajo las reglas de <b>Chatham House</b>, garantizando un marco de intercambio seguro y constructivo que permita avanzar en recomendaciones compartidas.</p>
-      <p class="mt-6"><i>Para más información: <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a></i></p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Contenidos y Resultados</h3>
+      <p>El taller abordó aspectos prioritarios como la situación de las personas desplazadas internas y los refugiados, los efectos de la reestructuración regional sobre la movilidad y la protección, las prácticas de cooperación entre Estados y los elementos que favorecen una movilidad ordenada y segura.</p>
+      <p>Como resultado, se elaboró un documento de política, reuniendo conclusiones y propuestas concretas diferenciadas según el tipo de actor: autoridades nacionales y locales, organizaciones internacionales, ONG, la Unión Europea, España, el sector privado, las diásporas y las comunidades locales.</p>
+      <p>La reunión se celebró bajo la Regla de Chatham House, garantizando un marco de intercambio seguro y constructivo que permitió avanzar en recomendaciones compartidas.</p>
     `,
     content_en: `
-      <p>On September 23, the city of Dakar (Senegal) will host the collective intelligence workshop <b>"Regional Policies, Displaced Persons and Migrants (Senegal-Mali-Mauritania ↔ Europe)"</b>. The meeting, which will be closed-door and is expected to last two hours, will bring together a small group of strategic actors—researchers, institutional representatives, international agencies, civil society organizations, humanitarian groups, and diaspora members—to generate a space for reflection and co-construction.</p>
-      <p>The initiative seeks to develop an updated diagnosis of mobility dynamics in the Senegal-Mali-Mauritania-Europe axis, identify key risk factors, and formulate operational recommendations aimed at non-governmental organizations, international bodies, local and national authorities, as well as the most directly involved European partners, including the European Union and Spain.</p>
+      <p>On September 23, the city of Dakar (Senegal) hosted the collective intelligence workshop “Regional Policies, Displaced Persons and Migrants (Senegal-Mali-Mauritania ↔ Europe)”. The closed-door meeting, which lasted two hours, brought together a small group of strategic actors – researchers, institutional representatives, international agencies, civil society organizations, humanitarian groups, and members of the diaspora – to create a space for reflection and co-construction.</p>
+      <p>The initiative aimed to develop an updated diagnosis of mobility dynamics along the Senegal-Mali-Mauritania–Europe axis, identify key risk factors, and formulate operational recommendations for non-governmental organizations, international bodies, local and national authorities, as well as the most directly involved European partners, including the European Union and Spain.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Context</h3>
-      <p>The West African Atlantic route has regained a central position in migratory flows towards the European Union in recent years, with a sustained increase in arrivals to the Canary Islands since 2023-2024 and greater diversification of migratory profiles (youth, women, children, and new countries of origin). The coasts of Senegal and Mauritania currently account for a large portion of departures, while the Malian population constitutes one of the most represented groups.</p>
-      <p>These processes are conditioned by regional transformations linked to security realignments in the Sahel, the recomposition of integration frameworks, and bilateral operational agreements. These factors directly affect intra-regional freedom of movement, local economies, and the dynamics of trafficking networks.</p>
+      <p>The West African Atlantic route has regained a central position in migratory flows towards the European Union in recent years, with a sustained increase in arrivals to the Canary Islands since 2023–2024 and greater diversification of migratory profiles, including youth, women, children, and new countries of origin. The coasts of Senegal and Mauritania currently account for a large portion of departures, while the Malian population constitutes one of the most represented groups.</p>
+      <p>These processes are shaped by regional transformations linked to security realignments in the Sahel, the recomposition of integration frameworks, and bilateral operational agreements. These factors directly affect intra-regional freedom of movement, local economies, and the dynamics of trafficking networks.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Contents and Results</h3>
-      <p>The workshop will address priority aspects such as the situation of internally displaced persons and refugees, the effects of regional restructuring on mobility and protection, cooperation practices between States, and elements that favor orderly and safe mobility.</p>
-      <p>As a result, a <b>policy paper</b> will be produced, gathering conclusions and concrete proposals differentiated by type of actor: national and local authorities, international organizations, NGOs, the European Union, Spain, the private sector, diasporas, and local communities.</p>
-      <p>The meeting will be held under the <b>Chatham House Rule</b>, guaranteeing a safe and constructive exchange framework that allows for progress on shared recommendations.</p>
-      <p class="mt-6"><i>For more information: <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a></i></p>
+      <p>The workshop addressed priority aspects such as the situation of internally displaced persons and refugees, the effects of regional restructuring on mobility and protection, cooperation practices between States, and elements that favor orderly and safe mobility.</p>
+      <p>As a result, a policy paper was produced, gathering conclusions and concrete proposals differentiated by type of actor: national and local authorities, international organizations, NGOs, the European Union, Spain, the private sector, diasporas, and local communities.</p>
+      <p>The meeting was held under the Chatham House Rule, guaranteeing a safe and constructive exchange framework that allowed for progress on shared recommendations.</p>
     `,
     agenda: [],
     speakers: []
   },
   {
-    slug: "taller-bamako-2024",
+    slug: "taller-bamako-2025",
     title: "Taller de Inteligencia Colectiva en Bamako",
     title_en: "Collective Intelligence Workshop in Bamako",
     subtitle: "Movilidad legal, reintegración comunitaria y gobernanza en Malí.",
@@ -131,45 +207,43 @@ export const events: EventItem[] = [
     location_en: "Bamako, Mali",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/evento-bamakoes.png",
-    heroImage_en: "/images/evento-bakamoen.png",
-    summary: "El IEAM celebra en Bamako un taller de inteligencia colectiva para co-construir un diagnóstico sobre movilidad y definir recomendaciones prácticas.",
-    summary_en: "IEAM holds a collective intelligence workshop in Bamako to co-construct a mobility diagnosis and define practical recommendations.",
+    heroImage: "/images/workshop-es-bamako.png",
+    heroImage_en: "/images/workshop-en-bamako.png",
+    summary: "El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.",
+    summary_en: "The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.",
     content: `
-      <p><b>Bamako (Malí), 19 de septiembre de 2025</b> – El Instituto Español de Análisis Migratorio (IEAM) celebrará el próximo jueves 19 de septiembre un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.</p>
-      <p>El encuentro, que tendrá lugar en la capital maliense de 10:00 a 12:30 horas, reunirá a un grupo reducido de expertos, autoridades y representantes de la sociedad civil bajo la regla de <b>Chatham House</b>, que garantiza la confidencialidad de las intervenciones para fomentar un debate abierto.</p>
-      <p>El objetivo es co-construir un diagnóstico compartido sobre las dinámicas de movilidad en Malí y definir recomendaciones prácticas a seis y doce meses, dirigidas a autoridades locales y nacionales, socios internacionales, ONG y actores económicos.</p>
+      <p>El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.</p>
+      <p>La reunión, que se llevó a cabo en la capital maliense de 10:00 a 12:30, reunió a un pequeño grupo de expertos, autoridades y representantes de la sociedad civil bajo la Regla de Chatham House, garantizando la confidencialidad de las intervenciones y fomentando un debate abierto.</p>
+      <p>El objetivo fue co-construir un diagnóstico compartido sobre las dinámicas de movilidad en Malí y definir recomendaciones prácticas para los horizontes de seis y doce meses, dirigidas a autoridades locales y nacionales, socios internacionales, ONG y actores económicos.</p>
       
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Tres ejes de trabajo</h3>
-      <p>El taller se articulará en torno a tres líneas de debate:</p>
+      <p>El taller se estructuró en torno a tres líneas de debate:</p>
       <ul class="list-disc pl-5 space-y-2 mb-6">
-        <li><b>Movilidad legal y circular:</b> análisis de modelos existentes, obstáculos, pilotos por sectores, papel de las diásporas y mecanismos de seguimiento del “ida y vuelta”.</li>
-        <li><b>Reintegración de jóvenes y retornados:</b> umbrales de apoyo, paquetes de servicios y modelos colectivos como cooperativas o proyectos agrícolas.</li>
-        <li><b>Coordinación local y gestión regional:</b> alternativas a la migración irregular, opciones económicas, sanciones focalizadas y gestión de retornos en la subregión.</li>
+        <li><b>Movilidad legal y circular:</b> Los participantes analizaron los modelos existentes, los obstáculos, los proyectos piloto sectoriales, el papel de las diásporas y los mecanismos para el seguimiento de los “viajes de ida y vuelta”.</li>
+        <li><b>Reintegración de jóvenes y retornados:</b> Se debatieron los umbrales de apoyo, los paquetes de servicios y modelos colectivos como cooperativas o proyectos agrícolas.</li>
+        <li><b>Coordinación local y gestión regional:</b> Se examinaron alternativas a la migración irregular, opciones económicas, estrategias específicas y la gestión de retornos en la subregión.</li>
       </ul>
 
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resultado</h3>
-      <p>Como producto final se elaborará un <b>policy paper de 10 a 12 páginas</b> con recomendaciones diferenciadas para gobiernos, organizaciones internacionales, sociedad civil, sector privado y diásporas.</p>
-      <p>El IEAM ha invitado a investigadores, responsables ministeriales, agencias internacionales y líderes comunitarios a aportar datos y experiencias de terreno para garantizar orientaciones realistas y aplicables.</p>
-      <p class="mt-6"><i>Para más información, se puede contactar con la organización a través del correo <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resultados</h3>
+      <p>Como producto final, se elaboró un documento de política de 10 a 12 páginas, que contenía recomendaciones diferenciadas para gobiernos, organizaciones internacionales, sociedad civil, sector privado y diásporas.</p>
+      <p>El IEAM invitó a investigadores, funcionarios ministeriales, agencias internacionales y líderes comunitarios a aportar datos y experiencias de campo, garantizando que las directrices fueran realistas y aplicables.</p>
     `,
     content_en: `
-      <p><b>Bamako (Mali), September 19, 2025</b> – The Spanish Institute for Migration Analysis (IEAM) will hold a collective intelligence workshop next Thursday, September 19, focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.</p>
-      <p>The meeting, taking place in the Malian capital from 10:00 to 12:30, will gather a small group of experts, authorities, and civil society representatives under the <b>Chatham House Rule</b>, which ensures the confidentiality of interventions to foster open debate.</p>
-      <p>The objective is to co-construct a shared diagnosis of mobility dynamics in Mali and define practical recommendations for the six and twelve-month horizons, directed at local and national authorities, international partners, NGOs, and economic actors.</p>
+      <p>The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.</p>
+      <p>The meeting, which took place in the Malian capital from 10:00 to 12:30, gathered a small group of experts, authorities, and civil society representatives under the Chatham House Rule, ensuring the confidentiality of interventions and fostering open debate.</p>
+      <p>The objective was to co-construct a shared diagnosis of mobility dynamics in Mali and to define practical recommendations for the six- and twelve-month horizons, directed at local and national authorities, international partners, NGOs, and economic actors.</p>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Three Work Axes</h3>
-      <p>The workshop will be structured around three lines of debate:</p>
+      <p>The workshop was structured around three lines of debate:</p>
       <ul class="list-disc pl-5 space-y-2 mb-6">
-        <li><b>Legal and Circular Mobility:</b> Analysis of existing models, obstacles, sectoral pilots, the role of diasporas, and mechanisms for tracking "round trips".</li>
-        <li><b>Reintegration of Youth and Returnees:</b> Support thresholds, service packages, and collective models such as cooperatives or agricultural projects.</li>
-        <li><b>Local Coordination and Regional Management:</b> Alternatives to irregular migration, economic options, targeted strategies, and return management in the sub-region.</li>
+        <li><b>Legal and Circular Mobility:</b> Participants analyzed existing models, obstacles, sectoral pilots, the role of diasporas, and mechanisms for tracking “round trips.”</li>
+        <li><b>Reintegration of Youth and Returnees:</b> Discussions addressed support thresholds, service packages, and collective models such as cooperatives or agricultural projects.</li>
+        <li><b>Local Coordination and Regional Management:</b> Alternatives to irregular migration, economic options, targeted strategies, and return management in the sub-region were examined.</li>
       </ul>
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Outcome</h3>
-      <p>As a final product, a <b>10 to 12-page policy paper</b> will be produced with differentiated recommendations for governments, international organizations, civil society, the private sector, and diasporas.</p>
-      <p>IEAM has invited researchers, ministerial officials, international agencies, and community leaders to contribute data and field experiences to ensure realistic and applicable guidelines.</p>
-      <p class="mt-6"><i>For more information, you can contact the organization via email at <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+      <p>As a final product, a 10- to 12-page policy paper was produced, containing differentiated recommendations for governments, international organizations, civil society, the private sector, and diasporas.</p>
+      <p>IEAM invited researchers, ministerial officials, international agencies, and community leaders to contribute data and field experiences, ensuring that the guidelines were realistic and applicable.</p>
     `,
     agenda: [],
     speakers: []
@@ -451,41 +525,67 @@ export const events: EventItem[] = [
   {
     slug: "jornada-canarias-sahel",
     title: "Jornada de análisis: El Sahel y su impacto en los flujos migratorios hacia Canarias",
-    title_en: "Analysis Session: The Sahel and its impact on migratory flows to the Canary Islands",
+    title_en: "Webinar: The Sahel and its impact on migratory flows to the Canary Islands",
     subtitle: "Análisis de las rutas atlánticas y la seguridad regional.",
     subtitle_en: "Analysis of Atlantic routes and regional security.",
     category: "Jornada",
-    category_en: "Conference",
+    category_en: "Webinar",
     date: "03 Sep 2025",
     location: "Las Palmas, Canarias",
     location_en: "Las Palmas, Canary Islands",
     format: "Híbrido",
     format_en: "Hybrid",
-    heroImage: "/images/evento-canariases.png",
-    heroImage_en: "/images/evento-canariasen.png",
-    summary: "Innovación para la gestión migratoria -iniciativa que forma parte de IRLab- convoca una jornada para conocer los movimientos geopolíticos en la zona y sus repercusiones para el archipiélago.",
-    summary_en: "Innovation for migration management -an initiative part of IRLab- convenes a session to understand geopolitical movements in the area and their repercussions for the archipelago.",
+    heroImage: "/images/event-es-sahel.png",
+    heroImage_en: "/images/event-en-sahel.png",
+    summary: "La iniciativa Innovación para la gestión migratoria (IRLab) organizó una sesión para analizar los movimientos geopolíticos en el Sahel y sus repercusiones para las Islas Canarias.",
+    summary_en: "The Innovation for Migration Management initiative (IRLab) organized a session to examine geopolitical movements in the Sahel and their repercussions for the Canary Islands.",
     content: `
-      <p>Innovación para la gestión migratoria (IRLab) - iniciativa que forma parte de IRLab - convoca una jornada para conocer los movimientos geopolíticos en la zona y sus repercusiones para el archipiélago.</p>
-      <p>El Gobierno de Canarias ha convocado, para el próximo miércoles 3 de septiembre, una jornada de análisis de la situación geopolítica en El Sahel y su impacto en las migraciones hacia el archipiélago a través de una webinar, en la que pueden participar todas aquellas personas que lo deseen.</p>
-      <p>En ella, intervendrán la doctora en Ciencias Políticas, Beatriz Mesa; la Directora del Instituto Español de Análisis Migratorio (IEAM), Beatriz de León Cobo; y el periodista José Naranjo, para abordar distintos aspectos de la coyuntura actual, desde el deterioro político y de seguridad en la región, al impacto en la salida de embarcaciones hacia Canarias. Esta sesión virtual será presentada por el viceconsejero del Gabinete del Presidente, Octavio Caraballo, y la coordinadora de Innovación para la gestión migratoria, Claudia Pérez.</p>
-      <p>El presidente de Canarias, Fernando Clavijo, ya ha expresado en distintas ocasiones su “preocupación” por la falta de respuesta de la Unión Europea (UE) ante este escenario, que alcanza también al fenómeno migratorio, y ha reclamado políticas de cooperación para que los países de esa región puedan tener un desarrollo y una convivencia pacífica.</p>
-      <p>La expansión de la violencia yihadista, los déficits estructurales a nivel de desarrollo económico y de gobernanza o las repercusiones del cambio climático generan una situación de inestabilidad cada vez más creciente que puede afectar no solo a los países de esta zona del continente africano, sino también al entorno.</p>
+      <p>La iniciativa Innovación para la gestión migratoria (IRLab) organizó una sesión para analizar los movimientos geopolíticos en el Sahel y sus repercusiones para las Islas Canarias.</p>
+      <p>El Gobierno de Canarias celebró, el miércoles 3 de septiembre, un webinar de análisis sobre la situación geopolítica en el Sahel y su impacto en los flujos migratorios hacia el archipiélago, abierto a todas las personas interesadas.</p>
+      <p>La sesión contó con la intervención de la doctora Beatriz Mesa, experta en Ciencias Políticas; Beatriz de León Cobo, directora del Instituto Español de Análisis Migratorio (IEAM); y el periodista José Naranjo, quienes abordaron distintos aspectos de la coyuntura actual, desde el deterioro político y de seguridad en la región hasta el impacto en la salida de embarcaciones hacia Canarias. La sesión virtual fue presentada por Octavio Caraballo, viceconsejero del Gabinete del Presidente, y Claudia Pérez, coordinadora de Innovación para la Gestión Migratoria.</p>
+      <p>El presidente de Canarias, Fernando Clavijo, había expresado en varias ocasiones su preocupación por la falta de respuesta de la Unión Europea (UE) ante la situación, que también afecta a los flujos migratorios, y reclamó políticas de cooperación para que los países de la región puedan alcanzar un desarrollo y una convivencia pacífica.</p>
+      <p>La expansión de la violencia yihadista, los déficits estructurales en desarrollo económico y gobernanza, y las repercusiones del cambio climático generan una situación de inestabilidad cada vez más creciente, que puede afectar no solo a los países de esta zona del continente africano, sino también al entorno circundante.</p>
       
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Rutas y riesgos</h3>
-      <p>De hecho, la reducción en la llegada de migrantes a las costas canarias en los últimos meses no significa que la migración haya cesado, sino que los puntos de partida se están desplazando hacia el sur, hacia zonas menos vigiladas, lo que conlleva mayor riesgo para los viajeros.</p>
-      <p>El cierre de fronteras en Mauritania y Senegal ha forzado a las redes de tráfico a desplazarse hasta el sur y buscar puntos de salida en Guinea Bissau y Guinea Conakry. De esta manera, esquivan los controles reforzados en África occidental. La distancia entre Conakri y El Hierro supera los 2.200 kilómetros, unos 750 kilómetros más que desde Senegal o Gambia.</p>
-      <p>A ello se une la alta natalidad en los países de esta zona. El 60 % de la población de El Sahel tiene menos de 25 años y según las proyecciones estadísticas, en 2050 serán 500 millones de personas las que habiten estos países. Esta circunstancia requiere de oportunidades para la población en sus respectivos países como alternativa a la emigración.</p>
+      <p>De hecho, la reducción en la llegada de migrantes a las costas canarias en los últimos meses no significa que la migración haya cesado; más bien, los puntos de partida se están desplazando hacia el sur, hacia zonas menos vigiladas, lo que conlleva un mayor riesgo para los viajeros.</p>
+      <p>El cierre de fronteras en Mauritania y Senegal ha obligado a las redes de tráfico a desplazarse hacia el sur y buscar puntos de salida en Guinea-Bisáu y Guinea-Conakry. De esta manera, esquivan los controles reforzados en África Occidental. La distancia entre Conakry y El Hierro supera los 2.200 kilómetros, unos 750 kilómetros más que desde Senegal o Gambia.</p>
+      <p>A esto se suma la alta natalidad en los países de esta región. El 60 % de la población del Sahel tiene menos de 25 años y, según las proyecciones estadísticas, para 2050 habrán 500 millones de personas habitando estos países. Esta circunstancia requiere generar oportunidades para la población en sus respectivos países como alternativa a la emigración.</p>
       
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
-      <p>La migración no ha cesado: las rutas se adaptan al control. Se requiere cooperación UE - África, oportunidades en origen y seguimiento constante de las dinámicas regionales.</p>
-      <p class="mt-6 text-sm text-slate-600">Este análisis también fue relevante para entender las conexiones con Mali.</p>
+      <p>La migración no ha cesado: las rutas se adaptan a los controles. Se requiere cooperación entre la UE y África, oportunidades en los países de origen y un seguimiento constante de las dinámicas regionales.</p>
+    `,
+    content_en: `
+      <p>The Innovation for Migration Management initiative (IRLab) organized a session to examine geopolitical movements in the Sahel and their repercussions for the Canary Islands.</p>
+      <p>The Government of the Canary Islands held, on Wednesday, September 3, a webinar analyzing the geopolitical situation in the Sahel and its impact on migration flows to the archipelago, which was open to all interested participants.</p>
+      <p>The session featured interventions by Dr. Beatriz Mesa, Political Science expert; Beatriz de León Cobo, Director of the Spanish Institute for Migration Analysis (IEAM); and journalist José Naranjo, who addressed various aspects of the current situation, from political and security deterioration in the region to the impact on departures of boats toward the Canary Islands. The virtual session was presented by Octavio Caraballo, Deputy Counselor of the President’s Office, and Claudia Pérez, Coordinator of Innovation for Migration Management.</p>
+      <p>The President of the Canary Islands, Fernando Clavijo, had repeatedly expressed his concern over the lack of response from the European Union (EU) to the situation, which also affects migratory flows, and called for cooperation policies to enable countries in the region to achieve development and peaceful coexistence.</p>
+      <p>The expansion of jihadist violence, structural deficits in economic development and governance, and the repercussions of climate change create an increasingly unstable situation, which can affect not only the countries in this part of the African continent but also the surrounding region.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Routes and Risks</h3>
+      <p>Indeed, the reduction in the arrival of migrants on the coasts of the Canary Islands in recent months does not mean that migration has ceased; rather, the points of departure are shifting southward, to less monitored areas, which entails greater risk for travelers.</p>
+      <p>The closure of borders in Mauritania and Senegal has forced trafficking networks to move further south and seek departure points in Guinea-Bissau and Guinea-Conakry. In this way, they evade the reinforced controls in West Africa. The distance between Conakry and El Hierro exceeds 2,200 kilometers, about 750 kilometers more than from Senegal or Gambia.</p>
+      <p>Added to this is the high birth rate in the countries of this region. 60% of the population of the Sahel is under 25 years old, and according to statistical projections, by 2050, 500 million people will inhabit these countries. This situation requires the creation of opportunities for the population in their respective countries as an alternative to emigration.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusions</h3>
+      <p>Migration has not ceased: routes adapt to controls. Cooperation between the EU and Africa, opportunities in countries of origin, and continuous monitoring of regional dynamics are required.</p>
     `,
     agenda: [],
     speakers: [
-      { name: "Beatriz Mesa", role: "Doctora en Ciencias Políticas" },
-      { name: "Beatriz de León Cobo", role: "Directora Ejecutiva IEAM" },
-      { name: "José Naranjo", role: "Periodista" }
+      {
+        name: "Beatriz Mesa",
+        role: "Doctora en Ciencias Políticas",
+        role_en: "Political Science expert"
+      },
+      {
+        name: "Beatriz de León Cobo",
+        role: "Directora Ejecutiva IEAM",
+        role_en: "Executive Director, IEAM"
+      },
+      {
+        name: "José Naranjo",
+        role: "Periodista",
+        role_en: "Journalist"
+      }
     ]
   }
 ];
