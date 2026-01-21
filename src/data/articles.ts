@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 
 export interface Author {
     name: string;
+    name_en?: string;
     role: string;
     role_en?: string;
     image: string;
@@ -618,24 +619,32 @@ export const articles: Article[] = [
     {
         slug: 'entrevista-beatriz-mauritania-canarias',
         type: 'Entrevista',
+        type_en: 'Interview',
         contentKind: 'entrevista',
         category: 'Entrevista · Flujos Atlánticos',
+        category_en: 'Interview · Atlantic Flows',
         title: 'Sahel–España: cómo se transforman las rutas hacia Canarias, la península y las islas',
+        title_en: 'Sahel–Spain: how routes to the Canary Islands, the Peninsula and the islands are changing',
         subtitle: 'La directora del IEAM analiza cómo la presión a Mauritania y la inestabilidad del Sahel influyen en los flujos hacia Canarias.',
+        subtitle_en: 'The Director of IEAM analyses how pressure on Mauritania and instability in the Sahel are influencing migration flows toward the Canary Islands.',
         heroImage: '/images/prensa-diciembre2025.png',
         mainImage: '/images/prensa-diciembre2025.png',
         mainImageCaption: 'Beatriz de León Cobo durante la jornada sobre Sahel y ruta hacia Canarias.',
+        mainImageCaption_en: 'Beatriz de León Cobo during the session on the Sahel and the route to the Canary Islands.',
         publishDate: '20 Sep 2025',
         readTime: '7 min',
         author: {
             name: 'Beatriz de León Cobo',
             role: 'Directora IEAM',
+            role_en: 'IEAM Director',
             image: '/team/member-2.jpg',
-            bio: 'Directora del IEAM y consultora en Sic Transit Advisory; profesora en la Universidad Francisco de Vitoria.'
+            bio: 'Directora del IEAM y consultora en Sic Transit Advisory; profesora en la Universidad Francisco de Vitoria.',
+            bio_en: 'Director of IEAM and consultant at Sic Transit Advisory; professor at the Universidad Francisco de Vitoria.'
         },
         pullQuote: 'La presión ejercida por el Gobierno de Mauritania ha intensificado el control tras el aumento de salidas desde Senegal y Mali.',
+        pullQuote_en: 'Pressure from the Government of Mauritania has led to intensified control following the increase in departures from Senegal and Mali.',
         content: `
-      <p>Beatriz de León Cobo, directora del Instituto Español de Análisis Migratorio (IEAM), participó en una jornada organizada por el Gobierno de Canarias sobre la geopolítica del Sahel y su impacto en la ruta migratoria hacia el Archipiélago. En esta entrevista para “La Provincia”, analiza los factores que explican las dinámicas actuales.</p>
+      <p>Beatriz de León Cobo, directora del Instituto Español de Análisis Migratorio (IEAM), participó en una jornada organizada por el Gobierno de Canarias sobre la geopolítica del Sahel y su impacto en la ruta migratoria hacia el Archipiélago. En esta entrevista para "La Provincia", analiza los factores que explican las dinámicas actuales.</p>
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">¿Cómo influye la inestabilidad del Sahel en los flujos hacia Canarias?</h3>
       <p>Tres factores explican el incremento: la crisis de gobernanza en el Sahel (prioridad al terrorismo sobre servicios y gestión migratoria), la crisis económica y de seguridad, y factores estructurales como la crisis climática. La mayoría de perfiles son migrantes económicos, especialmente de Mali.</p>
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">¿Es suficiente reforzar Frontex?</h3>
@@ -648,6 +657,21 @@ export const articles: Article[] = [
       <p>No: las organizaciones han declarado no querer atacar Europa tras la retirada internacional; se concentran en la región y expansión hacia el sur (Benín, Ghana, Togo).</p>
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">¿Por qué bajan las llegadas a Canarias?</h3>
       <p>Por la presión del Gobierno de Mauritania ante el aumento de salidas desde Senegal y Mali. La ruta argelina es muy peligrosa y las redes han buscado alternativas. Es pronto para saber si se mantendrá la tendencia.</p>
+    `,
+        content_en: `
+      <p>Beatriz de León Cobo, Director of the Spanish Institute for Migration Analysis (IEAM), took part in a session organised by the Government of the Canary Islands on the geopolitics of the Sahel and its impact on the migration route toward the archipelago. In this interview for La Provincia, she analyses the factors that explain current dynamics.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">How does instability in the Sahel influence migration flows toward the Canary Islands?</h3>
+      <p>Three factors explain the increase: the governance crisis in the Sahel, where counterterrorism takes precedence over public services and migration management; the economic and security crisis; and structural factors such as the climate crisis. The majority of profiles are economic migrants, particularly from Mali.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Is strengthening Frontex enough?</h3>
+      <p>Useful in emergencies, but insufficient on its own. A comprehensive strategy is needed at the origin and transit stages, combining operational support, international coordination, and development. EU–Mauritania and Spain–Senegal frameworks exist, but they need to be expanded.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Limited response from the EU?</h3>
+      <p>The EU reflects diverse priorities (Ukraine, the Middle East, international aid). Europe is rearming and redefining its priorities; public and media pressure in each Member State is key to keeping the Sahel on the agenda.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Why is there no stability despite UN/EU missions?</h3>
+      <p>Rather than a failure, the results are limited: without sustainability or local ownership, the impact does not last once the donor withdraws. Programs need to be consolidated so they can continue when attention shifts elsewhere.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Does jihadism in the Sahel threaten the Canary Islands?</h3>
+      <p>No: the organisations have stated that they do not intend to attack Europe following the international withdrawal; they are focused on the region and expansion southward (Benin, Ghana, Togo).</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Why are arrivals in the Canary Islands decreasing?</h3>
+      <p>Due to pressure from the Government of Mauritania in response to the increase in departures from Senegal and Mali. The Algerian route is very dangerous, and trafficking networks have sought alternatives. It is too early to know whether this trend will continue.</p>
     `,
         relatedArticles: []
     },
