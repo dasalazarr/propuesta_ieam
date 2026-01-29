@@ -838,6 +838,90 @@ export const articles: Article[] = [
       <p>The provisional balance up to November 15, 2025, reflects a sharp reduction in the total, but also an adaptation of routes: fewer Canary Islands, more signs of the Mediterranean, and a land-based upturn in Melilla that should be closely monitored.</p>
     `,
         relatedArticles: []
+    },
+    {
+        slug: 'perspectivas-migracion-internacional-2025',
+        type: 'Infografía',
+        type_en: 'Infographic',
+        contentKind: 'infografia',
+        category: 'Migración · OCDE',
+        category_en: 'Migration · OECD',
+        title: 'Perspectivas de la migración internacional, 2025',
+        title_en: 'International Migration Outlook, 2025',
+        subtitle: 'Análisis del informe de la OCDE sobre la migración permanente y la población nacida en el extranjero en países europeos.',
+        subtitle_en: 'Analysis of the OECD report on permanent migration and the foreign-born population in European countries.',
+        heroImage: '/images/internationalmigrationoutlook_ES.png',
+        heroImage_en: '/images/internationalmigrationoutlook_EN.png',
+        mainImage: '/images/internationalmigrationoutlook_ES.png',
+        mainImage_en: '/images/internationalmigrationoutlook_EN.png',
+        mainImageCaption: 'Infografía: Perspectivas de la migración internacional, 2025.',
+        mainImageCaption_en: 'Infographic: International Migration Outlook, 2025.',
+        publishDate: '29 Jan 2026',
+        readTime: '6 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de datos y análisis del IEAM.',
+            bio_en: 'IEAM Data and Analysis Unit.'
+        },
+        pullQuote: 'A pesar de una disminución del 4%, el número total de nuevos inmigrantes permanentes sigue siendo históricamente alto, alcanzando los 6,2 millones de personas.',
+        pullQuote_en: 'Despite a 4% decrease, the total number of new permanent immigrants remains historically high, reaching 6.2 million people.',
+        materials: [
+            {
+                label: 'Descargar infografía (ES)',
+                label_en: 'Download infographic (ES)',
+                url: '/docs/IEAM-2026-007-ES-internationalmigrationoutlook.pdf'
+            },
+            {
+                label: 'Descargar infografía (EN)',
+                label_en: 'Download infographic (EN)',
+                url: '/docs/IEAM-2026-007-EN-internationalmigrationoutlook.pdf'
+            }
+        ],
+        content: `
+      <p>La edición de 2025 de International Migration Outlook destaca un ligero descenso de la inmigración permanente a los países de la OCDE en 2024. A pesar de una disminución del 4 %, el número total de nuevos inmigrantes permanentes sigue siendo históricamente alto, alcanzando los 6,2 millones de personas, lo que representa un aumento del 15 % en comparación con los niveles registrados en 2019, antes de la pandemia.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Porcentaje de población nacida en el extranjero en cuatro países europeos, 2024</h3>
+      <p>Entre la información presentada en el informe, el IEAM analizó el porcentaje de población nacida en el extranjero en cuatro países europeos especialmente afectados por estas dinámicas migratorias: España, Italia, Alemania y Francia.</p>
+      <ul class="list-disc ml-6 space-y-2 text-slate-700">
+        <li><strong>España</strong> cuenta con 8,8 millones de residentes nacidos en el extranjero, lo que representa el 18,4 % de su población total. Esta proporción ha aumentado un 48 % desde 2014.</li>
+        <li><strong>Italia</strong> cuenta con 6,7 millones de residentes nacidos en el extranjero, lo que representa el 11,2 % de su población total. Esta proporción ha aumentado un 16 % desde 2014.</li>
+        <li><strong>Alemania</strong> cuenta con 16,2 millones de residentes nacidos en el extranjero, lo que representa el 19,1 % de su población total. Esta proporción ha aumentado un 55 % desde 2014.</li>
+        <li><strong>Francia</strong> cuenta con 9,3 millones de residentes nacidos en el extranjero, lo que representa el 14 % de su población total. Esta proporción ha aumentado un 21 % desde 2014.</li>
+      </ul>
+      <p>Estos cambios reflejan una dinámica migratoria sostenida, impulsada en gran medida por motivos familiares, económicos y humanitarios.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Principales motivos de la migración permanente a los países de la OCDE</h3>
+      <p>La reunificación familiar sigue siendo el principal motivo de la migración permanente a los países de la OCDE. La migración laboral, tras un aumento continuo desde 2020, ha disminuido ligeramente. Al mismo tiempo, la migración humanitaria está aumentando, en relación con el elevado número de solicitudes de asilo.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Principales avances en las políticas de migración e integración</h3>
+      <p>En respuesta a los importantes flujos migratorios, las políticas de migración e integración de varios países de la OCDE han sido objeto de importantes reformas. Las políticas de migración laboral se centran en atraer talento y satisfacer las necesidades específicas del mercado laboral. Al mismo tiempo, muchos países han endurecido sus sistemas de asilo, introduciendo procedimientos acelerados, reduciendo las prestaciones y aplicando nuevas restricciones a la reunificación familiar. El acceso a los programas de integración también se ha regulado más y va acompañado de mayores obligaciones para los recién llegados.</p>
+      <p>No obstante, este endurecimiento de las políticas va acompañado de una ampliación del apoyo específico, en particular para las mujeres migrantes.</p>
+    `,
+        content_en: `
+      <p>The 2025 edition of the International Migration Outlook highlights a slight decline in permanent immigration to OECD countries in 2024. Despite a 4% decrease, the total number of new permanent immigrants remains historically high, reaching 6.2 million people, which represents a 15% increase compared with levels recorded in 2019, before the pandemic.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Share of the Foreign-Born Population in Four European Countries, 2024</h3>
+      <p>Among the information presented in the report, the IEAM analyzed the share of the foreign-born population in four European countries particularly affected by these migration dynamics: Spain, Italy, Germany, and France.</p>
+      <ul class="list-disc ml-6 space-y-2 text-slate-700">
+        <li><strong>Spain</strong> has 8.8 million foreign-born residents, representing 18.4% of its total population. This share has increased by 48% since 2014.</li>
+        <li><strong>Italy</strong> has 6.7 million foreign-born residents, representing 11.2% of its total population. This share has increased by 16% since 2014.</li>
+        <li><strong>Germany</strong> has 16.2 million foreign-born residents, representing 19.1% of its total population. This share has increased by 55% since 2014.</li>
+        <li><strong>France</strong> has 9.3 million foreign-born residents, representing 14% of its total population. This share has increased by 21% since 2014.</li>
+      </ul>
+      <p>These changes reflect a sustained migration dynamic, largely driven by family, economic, and humanitarian motives.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Main Reasons for Permanent Migration to OECD Countries</h3>
+      <p>Family reunification remains the primary reason for permanent migration to OECD countries. Labor migration, after a continuous increase since 2020, has slightly declined. At the same time, humanitarian migration is on the rise, linked to the high number of asylum applications.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Major Developments in Migration and Integration Policies</h3>
+      <p>In response to significant migration flows, migration and integration policies in several OECD countries have undergone major reforms. Labor migration policies focus on attracting talent and meeting specific labor market needs. At the same time, many countries have tightened their asylum systems, introducing accelerated procedures, reduced benefits, and new restrictions on family reunification. Access to integration programs has also become more regulated and is accompanied by increased obligations for new arrivals.</p>
+      <p>Nevertheless, this tightening of policies is accompanied by an expansion of targeted support, particularly for migrant women.</p>
+    `,
+        relatedArticles: []
     }
 ];
 
