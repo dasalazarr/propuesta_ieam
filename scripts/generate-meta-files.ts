@@ -1,12 +1,13 @@
 
 import { articles } from "../src/data/articles";
+import { events } from "../src/data/events";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_PATH = path.resolve(__dirname, "../dist");
-const ARTICLES_PATH = path.join(DIST_PATH, "garden/article");
+const BASE_URL = "https://ieam.es";
 
 function escapeHtml(unsafe: string) {
     if (!unsafe) return "";
@@ -18,95 +19,67 @@ function escapeHtml(unsafe: string) {
         .replace(/'/g, "&#039;");
 }
 
-async function generateMetaFiles() {
-    console.log("🚀 Starting OG Tag Generation for Articles...");
+function processItems(items: any[], baseOutPath: string, urlPrefix: string, template: string) {
+    let count = 0;
+    const fullOutPath = path.join(DIST_PATH, baseOutPath);
 
-    // Check if dist exists
+    if (!fs.existsSync(fullOutPath)) {
+        fs.mkdirSync(fullOutPath, { recursive: true });
+    }
+
+    for (const item of items) {
+        const slug = item.slug;
+        const itemDir = path.join(fullOutPath, slug);
+
+        if (!fs.existsSync(itemDir)) {
+            fs.mkdirSync(itemDir, { recursive: true });
+        }
+
+        const title = escapeHtml(item.title + " | IEAM");
+        const description = escapeHtml(item.subtitle || item.summary || (item.content ? item.content.substring(0, 150) + "..." : "IEAM - Instituto Español de Análisis Migratorio"));
+        const image = escapeHtml(item.heroImage || item.mainImage || "/logo-og.png");
+        const url = `${BASE_URL}/${urlPrefix}/${slug}`;
+
+        let html = template;
+
+        html = html.replace(/<title>.*?<\/title>/, `<title>${title}</title>`);
+        html = html.replace(/<meta property="og:title"[\s\S]*?\/>/, `<meta property="og:title" content="${title}" />`);
+        html = html.replace(/<meta property="og:description"[\s\S]*?\/>/, `<meta property="og:description" content="${description}" />`);
+
+        const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+        html = html.replace(/<meta property="og:image"[\s\S]*?\/>/, `<meta property="og:image" content="${fullImage}" />`);
+        html = html.replace(/<meta property="og:url"[\s\S]*?\/>/, `<meta property="og:url" content="${url}" />`);
+
+        fs.writeFileSync(path.join(itemDir, "index.html"), html);
+        count++;
+    }
+    return count;
+}
+
+async function generateMetaFiles() {
+    console.log("🚀 Starting OG Tag Generation...");
+
     if (!fs.existsSync(DIST_PATH)) {
         console.error("❌ Error: 'dist' directory not found. Run 'npm run build' first.");
         process.exit(1);
     }
 
-    // Read the main index.html template from dist
     const templatePath = path.join(DIST_PATH, "index.html");
     if (!fs.existsSync(templatePath)) {
         console.error("❌ Error: dist/index.html not found.");
         process.exit(1);
     }
 
-    let template = fs.readFileSync(templatePath, "utf-8");
+    const template = fs.readFileSync(templatePath, "utf-8");
 
-    // Ensure directory exists
-    if (!fs.existsSync(ARTICLES_PATH)) {
-        fs.mkdirSync(ARTICLES_PATH, { recursive: true });
-    }
+    const articleCount = processItems(articles, "garden/article", "garden/article", template);
+    console.log(`✅ Generated meta tags for ${articleCount} articles.`);
 
-    let count = 0;
+    const eventCount = processItems(events, "eventos", "eventos", template);
+    console.log(`✅ Generated meta tags for ${eventCount} events.`);
 
-    for (const article of articles) {
-        const articleSlug = article.slug;
-        const articleDir = path.join(ARTICLES_PATH, articleSlug);
-
-        // Ensure slug directory exists
-        if (!fs.existsSync(articleDir)) {
-            fs.mkdirSync(articleDir, { recursive: true });
-        }
-
-        // Prepare Meta Data
-        const title = escapeHtml(article.title + " | IEAM");
-        const description = escapeHtml(article.subtitle || article.content.substring(0, 150) + "...");
-        const image = escapeHtml(article.heroImage || article.mainImage || "https://www.ieam.es/logo-og.png");
-        const url = `https://www.ieam.es/garden/article/${articleSlug}`;
-
-        // Replace Meta Tags in Template
-        // We use a regex based replacement or simple string replacement if we know the placeholders.
-        // Since we already added default tags, we will REPLACE them.
-
-        let articleHtml = template;
-
-        // Replace Title
-        articleHtml = articleHtml.replace(
-            /<title>.*?<\/title>/,
-            `<title>${title}</title>`
-        );
-
-        // Replace OG Title
-        articleHtml = articleHtml.replace(
-            /<meta property="og:title" content=".*?" \/>/,
-            `<meta property="og:title" content="${title}" />`
-        );
-
-        // Replace OG Description
-        articleHtml = articleHtml.replace(
-            /<meta property="og:description"[\s\S]*?\/>/,
-            `<meta property="og:description" content="${description}" />`
-        );
-
-        // Replace OG Image
-        // Handle relative paths for images by prepending domain if needed
-        const fullImage = image.startsWith("http") ? image : `https://www.ieam.es${image}`;
-        articleHtml = articleHtml.replace(
-            /<meta property="og:image" content=".*?" \/>/,
-            `<meta property="og:image" content="${fullImage}" />`
-        );
-
-        // Replace OG URL
-        articleHtml = articleHtml.replace(
-            /<meta property="og:url" content=".*?" \/>/,
-            `<meta property="og:url" content="${url}" />`
-        );
-
-        // Add Twitter Cards specifically if missing (although og covers most)
-        // Note: The template already has twitter:user generic, but we could enhance if needed.
-        // For now, relying on the OG tags which Twitter respects.
-
-        // Write the file
-        fs.writeFileSync(path.join(articleDir, "index.html"), articleHtml);
-        console.log(`✅ Generated meta tags for: ${articleSlug}`);
-        count++;
-    }
-
-    console.log(`✨ Successfully generated ${count} article meta files.`);
+    console.log(`✨ Successfully generated ${articleCount + eventCount} meta files.`);
 }
 
 generateMetaFiles();
+
