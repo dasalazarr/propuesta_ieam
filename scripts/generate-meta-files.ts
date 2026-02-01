@@ -37,7 +37,7 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
 
         const title = escapeHtml(item.title + " | IEAM");
         const description = escapeHtml(item.subtitle || item.summary || (item.content ? item.content.substring(0, 150) + "..." : "IEAM - Instituto Español de Análisis Migratorio"));
-        const image = escapeHtml(item.heroImage || item.mainImage || "/logo-og.png");
+        const image = escapeHtml(item.heroImage || item.mainImage || "/ieam-logo-new.png");
         const url = `${BASE_URL}/${urlPrefix}/${slug}`;
 
         let html = template;
