@@ -48,6 +48,7 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
 
         const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
         html = html.replace(/<meta property="og:image"[\s\S]*?\/>/, `<meta property="og:image" content="${fullImage}" />`);
+        html = html.replace(/<\/head>/, `<meta property="og:image:secure_url" content="${fullImage}" />\n  <meta property="og:image:width" content="1200" />\n  <meta property="og:image:height" content="630" />\n</head>`);
         html = html.replace(/<meta property="og:url"[\s\S]*?\/>/, `<meta property="og:url" content="${url}" />`);
 
         fs.writeFileSync(path.join(itemDir, "index.html"), html);
