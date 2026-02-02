@@ -56,8 +56,8 @@ export const events: EventItem[] = [
     format_en: "Chatham House",
     agendaTitle: "Programa del taller",
     agendaTitle_en: "Workshop Programme",
-    heroImage: "/images/workshop-es-rome.png",
-    heroImage_en: "/images/workshop-en-rome.png",
+    heroImage: "/images/workshop-es-rome.jpg",
+    heroImage_en: "/images/workshop-en-rome.jpg",
     summary: "El IEAM organiza en Roma un taller para comparar los enfoques italianos y españoles sobre migración y evaluar su percepción por los socios africanos.",
     summary_en: "IEAM organizes a workshop in Rome to compare Italian and Spanish migration approaches and assess their perception by African partners.",
     content: `
@@ -200,8 +200,8 @@ export const events: EventItem[] = [
     location_en: "Dakar, Senegal",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/workshop-es-dakar.png",
-    heroImage_en: "/images/workshop-en-dakar.png",
+    heroImage: "/images/workshop-es-dakar.jpg",
+    heroImage_en: "/images/workshop-en-dakar.jpg",
     summary: "Taller de inteligencia colectiva en Dakar para diagnosticar dinámicas de movilidad en el eje Senegal-Malí-Mauritania-Europa y formular recomendaciones.",
     summary_en: "Collective intelligence workshop in Dakar to diagnose mobility dynamics in the Senegal-Mali-Mauritania-Europe axis and formulate recommendations.",
     content: `
@@ -246,8 +246,8 @@ export const events: EventItem[] = [
     location_en: "Bamako, Mali",
     format: "Chatham House",
     format_en: "Chatham House",
-    heroImage: "/images/workshop-es-bamako.png",
-    heroImage_en: "/images/workshop-en-bamako.png",
+    heroImage: "/images/workshop-es-bamako.jpg",
+    heroImage_en: "/images/workshop-en-bamako.jpg",
     summary: "El Instituto Español de Análisis Migratorio (IEAM) celebró un taller de inteligencia colectiva centrado en la movilidad legal, la reintegración comunitaria y la gobernanza de las rutas migratorias en Malí.",
     summary_en: "The Spanish Institute for Migration Analysis (IEAM) held a collective intelligence workshop focusing on legal mobility, community reintegration, and the governance of migration routes in Mali.",
     content: `
