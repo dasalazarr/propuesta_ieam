@@ -139,8 +139,8 @@ export const events: EventItem[] = [
     location_en: "Szeged, Hungary",
     format: "Presencial",
     format_en: "In-person",
-    heroImage: "/images/event-es-mcc.png",
-    heroImage_en: "/images/event-en-mcc.png",
+    heroImage: "/images/event-es-mcc.jpg",
+    heroImage_en: "/images/event-en-mcc.jpg",
     summary: "La conferencia MCC/MRI reunió a responsables políticos e investigadores para evaluar la crisis migratoria de 2015 y proponer soluciones sostenibles.",
     summary_en: "The MCC/MRI conference brought together policymakers and researchers to evaluate the 2015 migration crisis and propose sustainable solutions.",
     content: `
@@ -300,8 +300,8 @@ export const events: EventItem[] = [
     location_en: "Rabat Business School, UIR",
     format: "Presencial",
     format_en: "In-person",
-    heroImage: "/images/mdmarruecoses.png",
-    heroImage_en: "/images/mdmarruecosen.png",
+    heroImage: "/images/mdmarruecoses.jpg",
+    heroImage_en: "/images/mdmarruecosen.jpg",
     summary: "El Foro de Diálogo Mediterráneo 2025 inauguró el año en Rabat con un encuentro de alto nivel centrado en la migración irregular.",
     summary_en: "The Mediterranean Dialogue Forum 2025 opened the year in Rabat with a high-level gathering focused on irregular migration.",
     content: `
@@ -338,7 +338,7 @@ export const events: EventItem[] = [
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Presentación de la Nota de País sobre Migración Irregular en Marruecos</h3>
       <p>El foro también contó con la presentación de una Nota de País actualizada que resume las tendencias clave, vulnerabilidades y recomendaciones de políticas. El documento fue bien recibido como un recurso valioso para investigadores y tomadores de decisiones que trabajan en la gobernanza migratoria.</p>
 
-      <img src="/images/rabat3.png" alt="Participantes en el foro de Rabat" class="w-full h-auto rounded-lg my-8 shadow-md" />
+      <img src="/images/rabat3.jpg" alt="Participantes en el foro de Rabat" class="w-full h-auto rounded-lg my-8 shadow-md" />
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Observaciones finales y perspectivas</h3>
       <p>El Foro de Diálogo Mediterráneo 2025 concluyó con un mensaje claro: abordar la migración irregular requiere un diálogo sostenido, una investigación rigurosa y asociaciones regionales más fuertes. El foro posicionó con éxito a Marruecos —y a Rabat en particular— como una plataforma central para la reflexión política mediterránea.</p>
@@ -386,7 +386,7 @@ export const events: EventItem[] = [
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Presentation of the Country Note on Irregular Migration in Morocco</h3>
       <p>The forum also featured the presentation of an updated Country Note summarising key trends, vulnerabilities, and policy recommendations. The document was well received as a valuable resource for researchers and decision-makers working on migration governance.</p>
 
-      <img src="/images/rabat3.png" alt="Participants at the Rabat forum" class="w-full h-auto rounded-lg my-8 shadow-md" />
+      <img src="/images/rabat3.jpg" alt="Participants at the Rabat forum" class="w-full h-auto rounded-lg my-8 shadow-md" />
 
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Closing Remarks & Outlook</h3>
       <p>The Mediterranean Dialogue Forum 2025 concluded with a clear message: addressing irregular migration requires sustained dialogue, rigorous research, and stronger regional partnerships. The forum successfully positioned Morocco—and Rabat in particular—as a central platform for Mediterranean policy reflection.</p>
@@ -421,8 +421,8 @@ export const events: EventItem[] = [
     location_en: "Madrid & Brussels",
     format: "Presencial",
     format_en: "In-person",
-    heroImage: "/images/mdbruselases.png",
-    heroImage_en: "/images/mdbruselasen.png",
+    heroImage: "/images/mdbruselases.jpg",
+    heroImage_en: "/images/mdbruselasen.jpg",
     summary: "El Foro de Diálogo Mediterráneo 2024 se desarrolló a lo largo de dos días entre Madrid y Bruselas, reuniendo a responsables políticos, investigadores y líderes de la sociedad civil.",
     summary_en: "The Mediterranean Dialogue Forum 2024 unfolded over two days between Madrid and Brussels, bringing together policymakers, researchers, and civil-society leaders.",
     content: `
@@ -570,8 +570,8 @@ export const events: EventItem[] = [
     location_en: "Las Palmas, Canary Islands",
     format: "Híbrido",
     format_en: "Hybrid",
-    heroImage: "/images/event-es-sahel.png",
-    heroImage_en: "/images/event-en-sahel.png",
+    heroImage: "/images/event-es-sahel.jpg",
+    heroImage_en: "/images/event-en-sahel.jpg",
     summary: "La iniciativa Innovación para la gestión migratoria (IRLab) organizó una sesión para analizar los movimientos geopolíticos en el Sahel y sus repercusiones para las Islas Canarias.",
     summary_en: "The Innovation for Migration Management initiative (IRLab) organized a session to examine geopolitical movements in the Sahel and their repercussions for the Canary Islands.",
     content: `

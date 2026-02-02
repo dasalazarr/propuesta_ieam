@@ -47,6 +47,19 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
         html = html.replace(/<meta property="og:description"[\s\S]*?\/>/, `<meta property="og:description" content="${description}" />`);
 
         const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+
+        // Size warning for WhatsApp compatibility
+        if (!image.startsWith("http")) {
+            const imagePath = path.join(__dirname, "../public", image);
+            if (fs.existsSync(imagePath)) {
+                const stats = fs.statSync(imagePath);
+                const fileSizeInKB = stats.size / 1024;
+                if (fileSizeInKB > 300) {
+                    console.warn(`\x1b[33m⚠️ Warning: Image "${image}" is large (${fileSizeInKB.toFixed(1)}KB). WhatsApp might not display it (recommended < 300KB).\x1b[0m`);
+                }
+            }
+        }
+
         html = html.replace(/<meta property="og:image"[\s\S]*?\/>/, `<meta property="og:image" content="${fullImage}" />`);
         html = html.replace(/<\/head>/, `<meta property="og:image:secure_url" content="${fullImage}" />\n  <meta property="og:image:width" content="1200" />\n  <meta property="og:image:height" content="630" />\n</head>`);
         html = html.replace(/<meta property="og:url"[\s\S]*?\/>/, `<meta property="og:url" content="${url}" />`);
