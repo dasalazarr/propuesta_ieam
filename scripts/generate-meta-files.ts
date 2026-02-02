@@ -42,36 +42,14 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
 
         let html = template;
 
-        // Replace basic meta tags
         html = html.replace(/<title>.*?<\/title>/, `<title>${title}</title>`);
         html = html.replace(/<meta property="og:title"[\s\S]*?\/>/, `<meta property="og:title" content="${title}" />`);
         html = html.replace(/<meta property="og:description"[\s\S]*?\/>/, `<meta property="og:description" content="${description}" />`);
 
         const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
         html = html.replace(/<meta property="og:image"[\s\S]*?\/>/, `<meta property="og:image" content="${fullImage}" />`);
+        html = html.replace(/<\/head>/, `<meta property="og:image:secure_url" content="${fullImage}" />\n  <meta property="og:image:width" content="1200" />\n  <meta property="og:image:height" content="630" />\n</head>`);
         html = html.replace(/<meta property="og:url"[\s\S]*?\/>/, `<meta property="og:url" content="${url}" />`);
-        html = html.replace(/<meta property="og:type"[\s\S]*?\/>/, `<meta property="og:type" content="article" />`);
-
-        // Add comprehensive image and Twitter tags before </head>
-        const additionalTags = `
-  <meta property="og:image:secure_url" content="${fullImage}" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="${title}" />
-  <meta property="og:site_name" content="IEAM" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="${title}" />
-  <meta name="twitter:description" content="${description}" />
-  <meta name="twitter:image" content="${fullImage}" />
-  <meta name="twitter:image:alt" content="${title}" />
-</head>`;
-
-        // Remove existing og:image:secure_url and related tags if they exist, then add the new comprehensive set
-        html = html.replace(/<meta property="og:image:secure_url"[\s\S]*?<\/head>/, additionalTags);
-        if (!html.includes('og:image:secure_url')) {
-            html = html.replace(/<\/head>/, additionalTags);
-        }
 
         fs.writeFileSync(path.join(itemDir, "index.html"), html);
         count++;

@@ -56,8 +56,8 @@ export const events: EventItem[] = [
     format_en: "Chatham House",
     agendaTitle: "Programa del taller",
     agendaTitle_en: "Workshop Programme",
-    heroImage: "/images/workshop-es-rome.jpg",
-    heroImage_en: "/images/workshop-en-rome.jpg",
+    heroImage: "/images/workshop-es-rome.png",
+    heroImage_en: "/images/workshop-en-rome.png",
     summary: "El IEAM organiza en Roma un taller para comparar los enfoques italianos y españoles sobre migración y evaluar su percepción por los socios africanos.",
     summary_en: "IEAM organizes a workshop in Rome to compare Italian and Spanish migration approaches and assess their perception by African partners.",
     content: `
