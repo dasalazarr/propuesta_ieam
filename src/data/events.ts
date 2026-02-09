@@ -58,71 +58,81 @@ export const events: EventItem[] = [
     agendaTitle_en: "Workshop Programme",
     heroImage: "/images/workshop-es-rome.jpg",
     heroImage_en: "/images/workshop-en-rome.jpg",
-    summary: "El IEAM organiza en Roma un taller para comparar los enfoques italianos y españoles sobre migración y evaluar su percepción por los socios africanos.",
-    summary_en: "IEAM organizes a workshop in Rome to compare Italian and Spanish migration approaches and assess their perception by African partners.",
+    summary: "El IEAM organizó en Roma un taller de inteligencia colectiva para comparar los enfoques italianos y españoles sobre gobernanza de la movilidad y evaluar su percepción por los socios africanos.",
+    summary_en: "IEAM organised a collective intelligence workshop in Rome to compare Italian and Spanish mobility governance approaches and assess their perception by African partners.",
     content: `
-      <p><b>Roma (Italia), 6 de febrero de 2026</b> – El Instituto Español de Análisis Migratorio (IEAM), en cooperación con AMIStaDeS, está organizando un taller de inteligencia colectiva el viernes 6 de febrero. El taller tiene como objetivo comparar los enfoques italianos y españoles dentro del marco más amplio de la UE, evaluar cómo estas políticas son percibidas y experimentadas por socios y profesionales africanos, e identificar áreas donde la cooperación puede ser más realista, operativa y alineada tanto con los imperativos de protección como con los objetivos de política más amplios.</p>
-      <p>La reunión, que se celebrará a puerta cerrada en la <b>Università Niccolò Cusano</b> de 9:30 a 16:30, reunirá a un pequeño grupo de expertos, funcionarios y representantes de la sociedad civil, bajo la Regla de Chatham House, que garantiza que las intervenciones permanezcan confidenciales para fomentar un debate abierto.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resumen del Taller</h3>
+      <p>El Instituto Español de Análisis Migratorio (IEAM), en colaboración con AMIStaDeS, organizó un taller de inteligencia colectiva el viernes 6 de febrero. El evento brindó la oportunidad de comparar los enfoques italiano y español dentro del marco más amplio de la UE, examinar cómo estas políticas son percibidas y experimentadas por socios y profesionales africanos, y identificar áreas donde la cooperación podría ser más realista, operativa y alineada con los imperativos de protección y los objetivos políticos generales.</p>
+      <p>La reunión se llevó a cabo a puertas cerradas en la <b>Università Niccolò Cusano</b> de 9:30 a.m. a 4:30 p.m., reuniendo a alrededor de cuarenta participantes bajo la Regla de Chatham House, lo que garantizó que las contribuciones permanecieran confidenciales para fomentar un debate abierto y sincero.</p>
       
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Objetivos del taller</h3>
-      <p>Este taller de inteligencia colectiva tiene como objetivo establecer un entendimiento compartido sobre cómo Italia, España, la UE y sus socios africanos definen e implementan la gobernanza de la movilidad. También busca fortalecer el análisis conjunto de las dinámicas en curso a lo largo de las rutas del Mediterráneo Central y Occidental, así como de la ruta Atlántica, examinar los marcos de cooperación con los Estados africanos y evaluar sus efectos en la práctica. Por último, pretende identificar opciones de seguimiento prácticas y vías operativas para mejorar la cooperación entre Italia, España, la UE y los países africanos involucrados.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Participantes</h3>
+      <p>El taller reunió a una amplia variedad de actores, incluyendo agencias de la ONU (UNODC, UNHCR), agencias gubernamentales regionales (Islas Canarias), el NATO Southern Hub, instituciones europeas (EEAS, EUSR), ministerios nacionales (Italia, España, Francia), organizaciones humanitarias (MSF), organizaciones religiosas y de la sociedad civil (Sant'Egidio), think tanks, instituciones de investigación y expertos africanos.</p>
+      <p>Esta diversidad permitió contar con perspectivas transversales institucionales, operativas y analíticas sobre los problemas de movilidad euro-africana.</p>
       
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resultados esperados</h3>
-      <p>Como producto final, se elaborará una breve nota de política que resumirá los principales hallazgos y proporcionará recomendaciones prácticas, sin atribución de autoría y preparada bajo la Regla de Chatham House. El taller también tendrá como objetivo fortalecer la red de actores italianos, españoles, europeos y africanos que trabajan en temas de migración y movilidad.</p>
-      <p class="mt-6"><i>Para más información, puede contactar con la organización por correo electrónico en <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Objetivos del Taller</h3>
+      <p>Este taller de inteligencia colectiva tuvo como objetivo establecer un entendimiento compartido sobre cómo Italia, España, la UE y sus socios africanos definen e implementan la gobernanza de la movilidad. También buscó fortalecer el análisis conjunto de las dinámicas en curso a lo largo de las rutas del Mediterráneo Central, Mediterráneo Occidental y Atlántico.</p>
+      <p>Además, el taller examinó los marcos de cooperación con los Estados africanos, evaluando sus efectos en la práctica, y proporcionó un espacio para discutir las economías de tránsito, el crimen organizado y las respuestas contra el tráfico de migrantes, prestando especial atención a las consecuencias no deseadas y alternativas de reducción de daños.</p>
+      <p>Finalmente, el taller tuvo como objetivo identificar opciones prácticas de seguimiento y vías operativas para mejorar la cooperación entre Italia, España, la UE y los socios africanos.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Temas Tratados</h3>
+      <p>El taller se estructuró en varias sesiones clave:</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Sesión de apertura – Italia, España, la UE y África: ¿Hacia una visión común de la movilidad?</h4>
+      <p>Esta sesión alineó perspectivas sobre la gobernanza de la movilidad e identificó las áreas donde los enfoques de la UE y de África convergen o divergen.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Sesión de trabajo 1 – Cambios en las rutas: Mediterráneo Central, Mediterráneo Occidental y Atlántico</h4>
+      <p>Esta sesión analizó los cambios en los flujos y rutas migratorias, el papel de los países de tránsito y cómo las medidas de la UE y nacionales influyen en la dinámica de las rutas y en los resultados de protección.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Sesión de trabajo 2 – Asociaciones con Estados africanos: "paquetes" de seguridad, desarrollo y movilidad</h4>
+      <p>Esta sesión examinó cómo se diseñan e implementan los marcos de cooperación, evaluó sus efectos en la práctica y exploró cómo los socios africanos perciben su legitimidad y sostenibilidad.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Sesión de trabajo 3 – Economías de tránsito, crimen organizado y lucha contra el tráfico de migrantes</h4>
+      <p>Esta sesión analizó la lógica de las redes de facilitación y las economías de tránsito y exploró cómo debilitar las redes criminales sin aumentar los riesgos para los migrantes ni perjudicar a las comunidades locales.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Conclusiones finales</h4>
+      <p>Esta sesión consolidó los principales hallazgos, los tradujo en recomendaciones operativas e identificó vías de seguimiento.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resultados</h3>
+      <p>A partir de las discusiones del taller, IEAM publicará en los próximos meses una serie de Policy Papers, resumiendo los hallazgos clave y proporcionando recomendaciones prácticas.</p>
+      <p>El taller también fortaleció la red de actores de Italia–España–UE–África en materia de migración y movilidad, e identificó un conjunto de iniciativas de seguimiento alineadas con los intereses de los actores y las restricciones institucionales.</p>
     `,
     content_en: `
-      <p><b>Rome (Italy), 6 February 2026</b> – The Spanish Institute for Migration Analysis (IEAM), in cooperation with AMIStaDeS, is organizing a collective intelligence workshop on Friday, 6 February. The workshop aims to compare Italian and Spanish approaches within the broader EU framework, assess how these policies are perceived and experienced by African partners and practitioners, and identify areas where cooperation can be more realistic, operational, and aligned with both protection imperatives and broader policy objectives.</p>
-      <p>The meeting, which will be held behind closed doors at the <b>Università Niccolò Cusano</b> from 9:30 a.m. to 4:30 p.m., will bring together a small group of experts, officials, and civil society representatives, under the Chatham House Rule, which ensures that contributions remain confidential in order to foster an open discussion.</p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Workshop Overview</h3>
+      <p>The Spanish Institute for Migration Analysis (IEAM), in collaboration with AMIStaDeS, organised a collective intelligence workshop on Friday, 6 February. The event provided an opportunity to compare Italian and Spanish approaches within the broader EU framework, to examine how these policies are perceived and experienced by African partners and practitioners, and to identify areas where cooperation could be made more realistic, operational, and aligned with both protection imperatives and broader policy objectives.</p>
+      <p>The meeting was held behind closed doors at <b>Università Niccolò Cusano</b> from 9:30 a.m. to 4:30 p.m., bringing together around forty participants under the Chatham House Rule, ensuring that contributions remained confidential in order to foster open and frank discussion.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Participants</h3>
+      <p>The workshop brought together a diverse range of stakeholders, including UN agencies (UNODC, UNHCR), regional government agencies (Canary Islands), the NATO Southern Hub, European institutions (EEAS, EUSR), national ministries (Italy, Spain, France), humanitarian organisations (MSF), faith-based and civil society organisations (Sant'Egidio), think tanks, research institutions, and African experts.</p>
+      <p>This diversity enabled cross-cutting institutional, operational, and analytical perspectives on Euro-African mobility issues.</p>
       
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Workshop Objectives</h3>
-      <p>This collective intelligence workshop aims to establish a shared understanding of how Italy, Spain, the EU, and their African partners define and implement mobility governance. It also seeks to strengthen joint analysis of ongoing dynamics along the Central and Western Mediterranean routes as well as the Atlantic route, to examine cooperation frameworks with African states, and to assess their real-world effects. Finally, it aims to identify practical follow-up options and operational pathways to enhance cooperation between Italy, Spain, the EU, and the African countries involved.</p>
+      <p>This collective intelligence workshop aimed to establish a shared understanding of how Italy, Spain, the EU, and their African partners define and implement mobility governance. It also sought to strengthen joint analysis of ongoing dynamics along the Central Mediterranean, Western Mediterranean, and Atlantic routes.</p>
+      <p>In addition, the workshop examined cooperation frameworks with African states, assessing their real-world effects, and provided space to discuss transit economies, organised crime, and anti-smuggling responses, with particular attention to unintended consequences and harm-reduction alternatives.</p>
+      <p>Finally, it aimed to identify practical follow-up options and operational pathways to enhance cooperation between Italy, Spain, the EU, and African partners.</p>
       
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Expected Outputs</h3>
-      <p>As a final product, a short policy note will be produced, summarising the main findings and providing practical recommendations, non-attributed and prepared under the Chatham House Rule. The workshop will also aim to strengthen the network of Italian, Spanish, European, and African stakeholders working on migration and mobility.</p>
-      <p class="mt-6"><i>For more information, you can contact the organization via email at <a href="mailto:beatriz.deleoncobo@ieam.es" class="text-blue-600 hover:underline">beatriz.deleoncobo@ieam.es</a>.</i></p>
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Themes Discussed</h3>
+      <p>The workshop was structured around several key sessions:</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Opening session – Italy, Spain, the EU and Africa: Toward a common vision of mobility?</h4>
+      <p>This session aligned perspectives on mobility governance and identified areas where EU and African approaches converge or diverge.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Working session 1 – Changing routes: Central Mediterranean, Western Mediterranean and Atlantic</h4>
+      <p>This session analysed shifts in migration flows and routes, the role of transit countries, and how EU and national measures influence route dynamics and protection outcomes.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Working session 2 – Partnerships with African states: Security, development and mobility "packages"</h4>
+      <p>This session examined how cooperation frameworks are designed and implemented, assessed their real-world effects, and explored how African partners perceive their legitimacy and sustainability.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Working session 3 – Transit economies, organised crime and the fight against migrant smuggling</h4>
+      <p>This session examined the logics underpinning facilitation networks and transit economies and explored how to weaken criminal networks without increasing risks for migrants or harming local communities.</p>
+      
+      <h4 class="text-lg font-bold text-[var(--color-text-primary)] mt-6 mb-2">Closing remarks</h4>
+      <p>This session consolidated the main insights, translated them into operational recommendations, and identified follow-up avenues.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Outputs</h3>
+      <p>Building on the workshop discussions, IEAM will publish a series of Policy Papers in the coming months, summarising key findings and providing practical recommendations.</p>
+      <p>The workshop also strengthened the Italy–Spain–EU–Africa network of stakeholders on migration and mobility and identified a set of follow-up initiatives aligned with stakeholder interests and institutional constraints.</p>
     `,
     agenda: [
-      {
-        time: "9:30 am",
-        title: "Sesión de apertura – Italia, España, la UE y África: ¿hacia una visión común de la movilidad?",
-        title_en: "Opening session – Italy, Spain, the EU and Africa: toward a common vision of mobility?",
-        speaker: "Esta sesión alineará las perspectivas sobre la “gobernanza de la movilidad” e identificará dónde convergen o divergen los enfoques de la UE y de África.",
-        speaker_en: "This session will align perspectives on “mobility governance” and identify where EU and African approaches converge or diverge"
-      },
-      {
-        time: "10:30 am",
-        title: "Sesión de trabajo 1 – Rutas cambiantes: Mediterráneo Central, Mediterráneo Occidental y Atlántico",
-        title_en: "Working session 1 – Changing routes: Central Mediterranean, Western Mediterranean and Atlantic",
-        speaker: "Esta sesión analizará los cambios en los flujos y rutas migratorias, el papel de los países de tránsito y cómo las medidas de la UE y de los Estados nacionales influyen en la dinámica de las rutas y en los resultados de protección.",
-        speaker_en: "This session will analyse shifts in migration flows and routes, the role of transit countries, and how EU and national measures influence route dynamics and protection outcomes."
-      },
-      {
-        time: "12:00 pm",
-        title: "Pausa para almuerzo",
-        title_en: "Lunch break"
-      },
-      {
-        time: "1:00 pm",
-        title: "Sesión de trabajo 2 – Asociaciones con Estados africanos: seguridad, desarrollo y “paquetes” de movilidad",
-        title_en: "Working session 2 – Partnerships with African states: security, development and mobility “packages”",
-        speaker: "Esta sesión examinará cómo se diseñan e implementan los marcos de cooperación, evaluará sus efectos en la práctica y explorará cómo los socios africanos perciben su legitimidad y sostenibilidad.",
-        speaker_en: "This session will examine how cooperation frameworks are designed and implemented, assess their real-world effects, and explore how African partners perceive their legitimacy and sustainability."
-      },
-      {
-        time: "2:30 pm",
-        title: "Sesión de trabajo 3 – Economías de tránsito, crimen organizado y lucha contra el tráfico de migrantes",
-        title_en: "Working session 3 – Transit economies, organised crime and the fight against migrant smuggling",
-        speaker: "Esta sesión analizará las lógicas que sustentan las redes de facilitación y las economías de tránsito, y explorará cómo debilitar las redes criminales sin aumentar los riesgos para los migrantes ni perjudicar a las comunidades locales.",
-        speaker_en: "This session will examine the logics underpinning facilitation networks and transit economies and explore how to weaken criminal networks without increasing risks for migrants or harming local communities."
-      },
-      {
-        time: "4:00 pm",
-        title: "Clausura",
-        title_en: "Closing remarks",
-        speaker: "Esta sesión consolidará los principales hallazgos, los traducirá en recomendaciones operativas e identificará vías de seguimiento.",
-        speaker_en: "This session will consolidate main insights, translate them into operational recommendations and identify follow-up avenues."
-      }
     ],
     speakers: []
   },

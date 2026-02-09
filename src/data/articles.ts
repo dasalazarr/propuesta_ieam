@@ -922,6 +922,75 @@ export const articles: Article[] = [
       <p>Nevertheless, this tightening of policies is accompanied by an expansion of targeted support, particularly for migrant women.</p>
     `,
         relatedArticles: []
+    },
+    {
+        slug: 'ieam-ganador-foessa-2025',
+        type: 'Nota de prensa',
+        type_en: 'Press Release',
+        contentKind: 'nota-prensa',
+        category: 'Investigación · Premios',
+        category_en: 'Research · Awards',
+        title: 'IEAM, ganador del Concurso de Proyectos de Investigación FOESSA 2025',
+        title_en: 'IEAM, winner of the FOESSA Foundation 2025 Research Project Competition',
+        subtitle: 'El proyecto “Puentes y muros: itinerarios de inclusión de las personas migrantes en España” ha sido seleccionado como ganador.',
+        subtitle_en: 'The project “Bridges and Walls: Pathways to the Inclusion of Migrants in Spain” has been selected as the winner.',
+        heroImage: '/images/ieam_ganador.jpg',
+        mainImage: '/images/ieam_ganador.jpg',
+        mainImageCaption: 'IEAM galardonado por la Fundación FOESSA.',
+        mainImageCaption_en: 'IEAM awarded by the FOESSA Foundation.',
+        publishDate: '05 Feb 2026',
+        readTime: '5 min',
+        author: {
+            name: 'Beatriz de León Cobo',
+            role: 'Directora IEAM',
+            role_en: 'IEAM Director',
+            image: '/team/member-2.jpg',
+            bio: 'Directora del IEAM y consultora en Sic Transit Advisory; profesora en la Universidad Francisco de Vitoria.',
+            bio_en: 'Director of IEAM and consultant at Sic Transit Advisory; professor at the Universidad Francisco de Vitoria.'
+        },
+        content: `
+            <p>El Instituto Español de Análisis Migratorio (IEAM) ha sido seleccionado como ganador del Concurso de Proyectos de Investigación 2025 de la Fundación FOESSA, con el proyecto “Puentes y muros: itinerarios de inclusión de las personas migrantes en España”. El jurado ha destacado su capacidad para aportar una mirada rigurosa y conectada con la realidad social sobre uno de los grandes retos de la España actual: la inclusión social de las personas migrantes.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Un punto de partida claro: la inclusión no es automática</h3>
+            <p>El proyecto parte de una idea central alineada con el enfoque FOESSA: la inclusión no es un estado al que se llega de forma automática, sino un proceso dinámico con avances, bloqueos y retrocesos. Desde esta perspectiva, la investigación analiza cómo interactúan la situación administrativa, el acceso al empleo y las relaciones sociales en las trayectorias vitales de las personas migrantes, y qué factores facilitan o dificultan su participación plena en la sociedad.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Metodología: enfoque cualitativo, participativo y territorial</h3>
+            <p>Para capturar esa dinámica con precisión, el estudio combinará una metodología cualitativa y participativa, basada en:</p>
+            <ul class="list-disc ml-6 space-y-2 text-slate-700">
+                <li><strong>Entrevistas en profundidad</strong> con personas migrantes y con actores clave (administraciones públicas, entidades sociales y profesionales del ámbito laboral).</li>
+                <li><strong>Talleres de inteligencia colectiva</strong>, orientados a contrastar experiencias, identificar cuellos de botella institucionales y aterrizar recomendaciones operativas.</li>
+                <li><strong>Análisis comparado</strong> de contextos territoriales con realidades y presiones distintas: Islas Canarias, Andalucía y Madrid.</li>
+            </ul>
+            <p>Este diseño permite reconstruir itinerarios concretos de inclusión, entender dónde se producen las “fracturas” del proceso y cómo las políticas y prácticas existentes se traducen en experiencias reales.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Objetivo: conocimiento útil y propuestas operativas</h3>
+            <p>Bajo la dirección de Beatriz de León Cobo, el equipo del IEAM busca identificar qué elementos no están funcionando en los procesos de inclusión —por ejemplo, barreras administrativas, dificultades de empleabilidad o ausencia de redes sociales— y transformar ese diagnóstico en soluciones operativas útiles para administraciones públicas y organizaciones sociales.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Próximos pasos</h3>
+            <p>En los próximos meses, el IEAM iniciará el trabajo de campo y la programación de los talleres, con el compromiso de producir resultados aplicables y con valor para la acción pública y social. Agradecemos a la Fundación FOESSA su confianza y la oportunidad de contribuir a una comprensión más fina y realista de las trayectorias de inclusión de las personas migrantes en España.</p>
+        `,
+        content_en: `
+            <p>The Spanish Institute of Migration Analysis (IEAM) has been selected as the winner of the FOESSA Foundation’s 2025 Research Project Competition with its project “Bridges and Walls: Pathways to the Inclusion of Migrants in Spain.” The jury highlighted the project’s ability to provide a rigorous perspective closely connected to social realities on one of today’s major challenges in Spain: the social inclusion of migrants.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">A clear starting point: inclusion is not automatic</h3>
+            <p>The project is based on a central idea aligned with the FOESSA approach: inclusion is not a state that is reached automatically, but a dynamic process with advances, blockages, and setbacks. From this perspective, the research examines how administrative status, access to employment, and social relationships interact in the life trajectories of migrants, and which factors facilitate or hinder their full participation in society.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Methodology: qualitative, participatory, and territorial approach</h3>
+            <p>To capture this dynamic accurately, the study will combine a qualitative and participatory methodology, based on:</p>
+            <ul class="list-disc ml-6 space-y-2 text-slate-700">
+                <li><strong>In-depth interviews</strong> with migrants and key stakeholders (public administrations, social organizations, and labor professionals).</li>
+                <li><strong>Collective intelligence workshops</strong> aimed at comparing experiences, identifying institutional bottlenecks, and developing operational recommendations.</li>
+                <li><strong>Comparative analysis</strong> of territorial contexts with different realities and pressures: the Canary Islands, Andalusia, and Madrid.</li>
+            </ul>
+            <p>This design allows for the reconstruction of concrete inclusion pathways, understanding where “fractures” in the process occur, and how existing policies and practices translate into real-life experiences.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Objective: actionable knowledge and operational proposals</h3>
+            <p>Under the direction of Beatriz de León Cobo, the IEAM team seeks to identify which elements are not working in inclusion processes – such as administrative barriers, employment difficulties, or the absence of social networks – and to turn this diagnosis into actionable solutions for public administrations and social organizations.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Next steps</h3>
+            <p>In the coming months, IEAM will begin fieldwork and the organization of workshops, with a commitment to produce actionable results that are valuable for public and social action. We are grateful to the FOESSA Foundation for their trust and for the opportunity to contribute to a deeper and more realistic understanding of migrants’ inclusion pathways in Spain.</p>
+        `,
+        relatedArticles: []
     }
 ];
 
