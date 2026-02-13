@@ -65,6 +65,8 @@ export const events: EventItem[] = [
       <p>El Instituto Español de Análisis Migratorio (IEAM), en colaboración con AMIStaDeS, organizó un taller de inteligencia colectiva el viernes 6 de febrero. El evento brindó la oportunidad de comparar los enfoques italiano y español dentro del marco más amplio de la UE, examinar cómo estas políticas son percibidas y experimentadas por socios y profesionales africanos, y identificar áreas donde la cooperación podría ser más realista, operativa y alineada con los imperativos de protección y los objetivos políticos generales.</p>
       <p>La reunión se llevó a cabo a puertas cerradas en la <b>Università Niccolò Cusano</b> de 9:30 a.m. a 4:30 p.m., reuniendo a alrededor de cuarenta participantes bajo la Regla de Chatham House, lo que garantizó que las contribuciones permanecieran confidenciales para fomentar un debate abierto y sincero.</p>
       
+      <img src="/images/eventoromaimagen.jpg" alt="Taller en Roma" class="w-full h-auto rounded-lg my-8 shadow-md" />
+      
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Participantes</h3>
       <p>El taller reunió a una amplia variedad de actores, incluyendo agencias de la ONU (UNODC, UNHCR), agencias gubernamentales regionales (Islas Canarias), el NATO Southern Hub, instituciones europeas (EEAS, EUSR), ministerios nacionales (Italia, España, Francia), organizaciones humanitarias (MSF), organizaciones religiosas y de la sociedad civil (Sant'Egidio), think tanks, instituciones de investigación y expertos africanos.</p>
       <p>Esta diversidad permitió contar con perspectivas transversales institucionales, operativas y analíticas sobre los problemas de movilidad euro-africana.</p>
@@ -100,6 +102,8 @@ export const events: EventItem[] = [
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Workshop Overview</h3>
       <p>The Spanish Institute for Migration Analysis (IEAM), in collaboration with AMIStaDeS, organised a collective intelligence workshop on Friday, 6 February. The event provided an opportunity to compare Italian and Spanish approaches within the broader EU framework, to examine how these policies are perceived and experienced by African partners and practitioners, and to identify areas where cooperation could be made more realistic, operational, and aligned with both protection imperatives and broader policy objectives.</p>
       <p>The meeting was held behind closed doors at <b>Università Niccolò Cusano</b> from 9:30 a.m. to 4:30 p.m., bringing together around forty participants under the Chatham House Rule, ensuring that contributions remained confidential in order to foster open and frank discussion.</p>
+      
+      <img src="/images/eventoromaimagen.jpg" alt="Workshop in Rome" class="w-full h-auto rounded-lg my-8 shadow-md" />
       
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Participants</h3>
       <p>The workshop brought together a diverse range of stakeholders, including UN agencies (UNODC, UNHCR), regional government agencies (Canary Islands), the NATO Southern Hub, European institutions (EEAS, EUSR), national ministries (Italy, Spain, France), humanitarian organisations (MSF), faith-based and civil society organisations (Sant'Egidio), think tanks, research institutions, and African experts.</p>
