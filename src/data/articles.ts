@@ -57,6 +57,104 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'atlas-migraciones-2025',
+        type: 'Infografía',
+        type_en: 'Infographic',
+        contentKind: 'infografia',
+        category: 'Migración · UE',
+        category_en: 'Migration · EU',
+        title: 'Atlas de las Migraciones, 2025',
+        title_en: 'Atlas of Migration, 2025',
+        subtitle: 'El Atlas de las Migraciones profundiza en los complejos vínculos entre conflictos y desplazamientos de población.',
+        subtitle_en: 'The Atlas of Migration explores the complex links between conflicts and population displacement.',
+        heroImage: '/images/Migration_Atlas_2025_-_ES.png',
+        heroImage_en: '/images/Migration_Atlas_2025_-_EN.png',
+        mainImage: '/images/Migration_Atlas_2025_-_ES.png',
+        mainImage_en: '/images/Migration_Atlas_2025_-_EN.png',
+        mainImageCaption: 'Atlas de las Migraciones, 2025: Infografía destacada.',
+        mainImageCaption_en: 'Atlas of Migration, 2025: Featured infographic.',
+        publishDate: '20 Feb 2026',
+        readTime: '7 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de datos y análisis del IEAM.',
+            bio_en: 'IEAM Data and Analysis Unit.'
+        },
+        pullQuote: 'Más de 51 millones de personas necesitaban protección internacional a finales de 2024.',
+        pullQuote_en: 'Over 51 million people were in need of international protection at the end of 2024.',
+        materials: [
+            {
+                label: 'Descargar Atlas (ES)',
+                label_en: 'Download Atlas (ES)',
+                url: '/docs/Migration_Atlas_2025_-_ES.pdf'
+            },
+            {
+                label: 'Descargar Atlas (EN)',
+                label_en: 'Download Atlas (EN)',
+                url: '/docs/Migration_Atlas_2025_-_EN.pdf'
+            }
+        ],
+        content: `
+      <p>El Atlas de las Migraciones, publicado por la Oficina de Publicaciones de la Unión Europea, es una obra de referencia que ofrece una visión general de las migraciones y una base de conocimientos destinada a los responsables políticos, partes interesadas, empresas, investigadores y al público en general.</p>
+      <p>La edición 2025 ofrece un análisis basado en los datos de los movimientos migratorios en los 27 Estados miembros de la UE y en 171 países y territorios de todo el mundo.</p>
+      <p>Esta edición profundiza especialmente en los complejos vínculos entre conflictos y desplazamientos de población.</p>
+      <p>En el marco de esta publicación, el Instituto Español de Análisis Migratorio (IEAM) ha analizado los principales datos referentes a España e Italia.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Desplazamientos forzados en fuerte aumento a nivel mundial</h3>
+      <p>El número de personas desplazadas de forma forzosa ha experimentado un aumento espectacular en los últimos 15 años. Según las Naciones Unidas, más de 51 millones de personas necesitaban protección internacional a finales de 2024.</p>
+      <p>Al mismo tiempo, el número de conflictos armados también ha aumentado, alcanzando más de 180 en 2024. Ambos fenómenos suelen estar arraigados en la fragilidad de los Estados y tienden a exacerbarla.</p>
+      <p>Los desplazamientos forzados tienen múltiples implicaciones: sociales, medioambientales y de seguridad. Los conflictos, a su vez, se traducen en víctimas humanas, destrucción de infraestructuras y colapso institucional.</p>
+      <p>Comprender la naturaleza multidimensional de estos fenómenos y su papel en la fragilidad de los Estados es esencial para desarrollar políticas eficaces y adaptadas a estos desafíos globales.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Flujos migratorios anuales hacia y desde España e Italia</h3>
+      <p>En 2023, España registró un volumen elevado de flujos migratorios. El país recibió 1.251.000 inmigrantes, de los cuales el 72 % procedía de países terceros (fuera de la UE) y el 28 % de otros Estados miembros. Al mismo tiempo, 609.000 personas abandonaron España, de las cuales el 65 % se dirigió a países fuera de la UE y el 35 % a otros Estados miembros.</p>
+      <p>Italia presenta un patrón similar, pero con flujos menores. Recibió 440.000 inmigrantes, de los cuales el 76 % procedía de países fuera de la UE y el 24 % de otros Estados miembros, mientras que 158.000 personas emigraron, con una distribución casi equilibrada entre destinos extraeuropeos (51 %) e intraeuropeos (49 %).</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Solicitudes de asilo: un aumento continuo</h3>
+      <p>El número de personas que presentaron una primera solicitud de asilo aumentó en ambos países entre 2023 y 2024.</p>
+      <p>En España, el número de primeras solicitudes pasó de 160.470 a 165.465, lo que supone un aumento de casi el 3 %. Los hombres siguieron siendo mayoría, representando el 53 % en 2023 y el 58 % en 2024, mientras que las mujeres representaban el 47 % y el 42 %, respectivamente.</p>
+      <p>En Italia, el aumento fue más pronunciado, con 130.565 primeras solicitudes en 2023 y 151.120 en 2024, un incremento de aproximadamente el 16 %. Los hombres representaron una proporción aún mayor de los solicitantes: 84 % en 2023 y 81 % en 2024, frente al 16 % y 19 % de mujeres, respectivamente.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Inclusión social: desigualdades persistentes según el origen</h3>
+      <p>Los datos sobre inclusión social revelan desigualdades significativas entre nacionales y poblaciones migrantes.</p>
+      <p>En España, el 20,6 % de los españoles están en riesgo de pobreza o exclusión social, frente al 35,0 % de los ciudadanos de otros Estados miembros de la UE y al 53,4 % de los nacionales de terceros países. La diferencia es notable: los nacionales de terceros países están más de dos veces y media más expuestos a este riesgo que los españoles.</p>
+      <p>En Italia, la situación sigue una tendencia comparable. El riesgo de pobreza o exclusión social afecta al 21,1 % de los italianos, al 36,3 % de los ciudadanos de otros Estados miembros de la UE y al 37,0 % de los nacionales de terceros países.</p>
+      <p>Estas cifras ponen de relieve la persistencia de vulnerabilidades específicas de las poblaciones migrantes, lo que requiere políticas de integración reforzadas, específicas y eficaces.</p>
+    `,
+        content_en: `
+      <p>The Atlas of Migration, published by the Publications Office of the European Union, is a reference work providing an overview of migration and a knowledge base for policymakers, stakeholders, businesses, researchers, and the general public.</p>
+      <p>The 2025 edition offers an analysis based on data on migration movements in the 27 EU Member States and in 171 countries and territories worldwide.</p>
+      <p>This edition particularly explores the complex links between conflicts and population displacement.</p>
+      <p>Within the framework of this publication, the Spanish Institute for Migration Analysis (IEAM) has analyzed the main data concerning Spain and Italy.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Forced Displacement on the Rise Worldwide</h3>
+      <p>The number of forcibly displaced people has risen sharply over the past 15 years. According to the United Nations, over 51 million people were in need of international protection at the end of 2024.</p>
+      <p>At the same time, the number of armed conflicts has also increased, reaching over 180 in 2024. Both phenomena are often rooted in state fragility.</p>
+      <p>Forced displacement has multiple implications: social, environmental, and security-related. Conflicts, in turn, result in human casualties, infrastructure destruction, and institutional breakdown.</p>
+      <p>Understanding the multidimensional nature of these phenomena and their role in state fragility is essential for designing effective and targeted policies to address these global challenges.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Annual Migration Flows to and from Spain and Italy</h3>
+      <p>In 2023, Spain recorded a high volume of migration flows. The country received 1,251,000 immigrants, of whom 72% came from third countries (outside the EU) and 28% from other Member States. At the same time, 609,000 people left Spain, with 65% moving to countries outside the EU and 35% to other Member States.</p>
+      <p>Italy shows a similar pattern, but with lower flows. It received 440,000 immigrants, of whom 76% came from countries outside the EU and 24% from other Member States, while 158,000 people emigrated, with an almost balanced distribution between extra-European (51%) and intra-European (49%) destinations.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Asylum Applications: A Continuous Increase</h3>
+      <p>The number of people submitting a first asylum application increased in both countries between 2023 and 2024.</p>
+      <p>In Spain, the number of first applications rose from 160,470 to 165,465, an increase of nearly 3%. Men remained the majority, accounting for 53% in 2023 and 58% in 2024, while women represented 47% and 42%, respectively.</p>
+      <p>In Italy, the increase was more pronounced, with 130,565 first applications in 2023 and 151,120 in 2024, an increase of about 16%. Men accounted for an even larger share of applicants, representing 84% in 2023 and 81% in 2024, compared with 16% and 19% for women, respectively.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Social Inclusion: Persistent Inequalities by Origin</h3>
+      <p>Data on social inclusion reveal significant inequalities between nationals and migrant populations.</p>
+      <p>In Spain, 20.6% of Spaniards are at risk of poverty or social exclusion, compared with 35.0% of nationals from other EU Member States and 53.4% of third-country nationals. The gap is striking: third-country nationals are more than two and a half times more exposed to this risk than Spaniards.</p>
+      <p>In Italy, the situation shows a similar trend. The risk of poverty or social exclusion affects 21.1% of Italians, 36.3% of nationals from other EU Member States, and 37.0% of third-country nationals.</p>
+      <p>These figures highlight the persistence of vulnerabilities specific to migrant populations, calling for strengthened, targeted, and effective integration policies.</p>
+    `,
+        relatedArticles: []
+    },
+    {
         slug: 'movilidad-africa-occidental',
         type: 'Informe',
         type_en: 'Report',
@@ -475,10 +573,10 @@ export const articles: Article[] = [
         title_en: 'Comparison of political parties on the Migration Pact',
         subtitle: 'Síntesis comparada de las propuestas en materia de inmigración de los principales partidos políticos en España (2025).',
         subtitle_en: 'Comparative overview of immigration proposals from Spain\'s main political parties (2025).',
-        heroImage: "/images/infografia-partidospoliticoses.jpg",
-        heroImage_en: "/images/infografia-partidospoliticosen.jpg",
-        mainImage: "/images/infografia-partidospoliticoses.jpg",
-        mainImage_en: "/images/infografia-partidospoliticosen.jpg",
+        heroImage: "/images/infografia-partidospoliticoses.png",
+        heroImage_en: "/images/infografia-partidospoliticosen.png",
+        mainImage: "/images/infografia-partidospoliticoses.png",
+        mainImage_en: "/images/infografia-partidospoliticosen.png",
         mainImageCaption: 'Comparativa de propuestas migratorias de partidos políticos en España.',
         mainImageCaption_en: 'Comparison of migration proposals from political parties in Spain.',
         publishDate: '20 Oct 2025',
@@ -850,10 +948,10 @@ export const articles: Article[] = [
         title_en: 'International Migration Outlook, 2025',
         subtitle: 'Análisis del informe de la OCDE sobre la migración permanente y la población nacida en el extranjero en países europeos.',
         subtitle_en: 'Analysis of the OECD report on permanent migration and the foreign-born population in European countries.',
-        heroImage: '/images/internationalmigrationoutlook_ES.jpg',
-        heroImage_en: '/images/internationalmigrationoutlook_EN.jpg',
-        mainImage: '/images/internationalmigrationoutlook_ES.jpg',
-        mainImage_en: '/images/internationalmigrationoutlook_EN.jpg',
+        heroImage: '/images/internationalmigrationoutlook_ES.png',
+        heroImage_en: '/images/internationalmigrationoutlook_EN.png',
+        mainImage: '/images/internationalmigrationoutlook_ES.png',
+        mainImage_en: '/images/internationalmigrationoutlook_EN.png',
         mainImageCaption: 'Infografía: Perspectivas de la migración internacional, 2025.',
         mainImageCaption_en: 'Infographic: International Migration Outlook, 2025.',
         publishDate: '29 Jan 2026',
