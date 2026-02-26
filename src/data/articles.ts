@@ -57,6 +57,78 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'eeuu-75-paises-excluidos',
+        type: 'Infografía',
+        type_en: 'Infographic',
+        contentKind: 'infografia',
+        category: 'Migración · EEUU',
+        category_en: 'Migration · USA',
+        title: '75 países excluidos de la inmigración legal permanente a Estados Unidos',
+        title_en: '75 countries excluded from permanent legal immigration to the United States',
+        subtitle: 'El anuncio de la administración Trump de una pausa prevista en la emisión de visados permanentes podría modificar significativamente los patrones de inmigración legal permanente.',
+        subtitle_en: 'The announcement by the Trump administration of a planned pause on the issuance of permanent visas could significantly reshape patterns of permanent legal immigration.',
+        heroImage: '/images/infografía-75paísesexcluidos_ES.png',
+        heroImage_en: '/images/Infographic_75countriesexcluded_EN.png',
+        mainImage: '/images/infografía-75paísesexcluidos_ES.png',
+        mainImage_en: '/images/Infographic_75countriesexcluded_EN.png',
+        mainImageCaption: 'Impacto de la pausa administrativa en visados de inmigrante (FY 2024).',
+        mainImageCaption_en: 'Impact of the administrative pause on immigrant visas (FY 2024).',
+        publishDate: '26 Feb 2026',
+        readTime: '6 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de datos y análisis del IEAM.',
+            bio_en: 'IEAM Data and Analysis Unit.'
+        },
+        materials: [
+            {
+                label: 'Descargar Infografía (ES)',
+                label_en: 'Download Infographic (ES)',
+                url: '/docs/infografía-75paísesexcluidos_ES.pdf'
+            },
+            {
+                label: 'Download Infographic (EN)',
+                label_en: 'Download Infographic (EN)',
+                url: '/docs/Infographic_75countriesexcluded_EN.pdf'
+            }
+        ],
+        content: `
+      <p>El anuncio de la administración Trump de una pausa prevista en la emisión de visados permanentes para posibles inmigrantes procedentes de 75 países podría modificar significativamente los patrones de inmigración legal permanente hacia los Estados Unidos. Al suspender temporalmente la tramitación de visados de inmigrante para un amplio grupo de países, la medida tiene el potencial de afectar a una parte considerable de los solicitantes que buscan la residencia permanente legal. Este análisis del Instituto Español de Análisis de la Migración (IEAM) examina el alcance de estos posibles impactos basándose en los datos sobre visados de inmigrante publicados por el Departamento de Estado de Estados Unidos para el año fiscal 2024.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Proporción de visados de inmigrante de Estados Unidos afectados por la suspensión (año fiscal 2024)</h3>
+      <p>En el año fiscal 2024, Estados Unidos emitió un total de 612.258 visados de inmigrante (visados permanentes que permiten a ciudadanos extranjeros entrar en el país y obtener una green card). De ellos, 280.015 visados – casi el 46 % de todos los visados permanentes emitidos ese año – fueron concedidos a nacionales de los 75 países actualmente sujetos a la pausa administrativa. Además, 287.950 visados fueron otorgados a nacionales de países afectados tanto por la pausa como por las prohibiciones o restricciones de viaje previstas para 2025. Estas cifras ponen de relieve la proporción de visados de inmigrante afectados por la suspensión y las restricciones relacionadas, demostrando el impacto significativo sobre los solicitantes.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Países más afectados</h3>
+      <p>Los países más afectados por la pausa administrativa son Afganistán, Cuba, Pakistán, Jamaica, Bangladés y Colombia. Según se informa, la pausa tiene como objetivo dar tiempo a la administración para desarrollar nuevos métodos de evaluación destinados a identificar a las personas con probabilidades de convertirse en una «carga pública». Sin embargo, en el año fiscal 2024, solo 1.008 personas de todas las nacionalidades – no únicamente de los 75 países afectados – vieron denegado un visado de inmigrante por este motivo, lo que sugiere que la medida constituye una respuesta política de gran alcance frente a un problema limitado.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Visados de inmigrante emitidos a nacionales de países de África Occidental y del Sahel (año fiscal 2024)</h3>
+      <p>En el año fiscal 2024, se emitieron visados de inmigrante a nacionales de varios países de África Occidental y del Sahel. Senegal recibió 1.119 visados y Gambia 792, ambos afectados tanto por la pausa administrativa de los 75 países como por las prohibiciones o restricciones de viaje. En contraste, Mali recibió 275 visados, Níger 155 y Mauritania 128, todos sujetos únicamente a prohibiciones o restricciones de viaje. Estas cifras ilustran el impacto desigual de la pausa administrativa y de las restricciones relacionadas en la región.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Contexto más amplio</h3>
+      <p>La lista de los 75 países elaborada por el Departamento de Estado no afecta a las personas que ingresan a Estados Unidos con visados de turista, de trabajo temporal o de estudiante. Tampoco se aplica a quienes ya se encuentran en el país y han solicitado, o solicitarán, una green card. Muchos inmigrantes renuncian a beneficios para los que son elegibles debido a preocupaciones administrativas o por temor a que su uso pueda afectar una futura solicitud de inmigración. Además, las investigaciones muestran de manera consistente que los inmigrantes utilizan los beneficios públicos en menor medida que los estadounidenses nacidos en el país, en parte porque muchos no ciudadanos no son elegibles para la asistencia federal. Este enfoque pasa por alto las contribuciones más amplias de los inmigrantes en términos de capital humano, creación de empleo y emprendimiento.</p>
+    `,
+        content_en: `
+      <p>The announcement by the Trump administration of a planned pause on the issuance of permanent visas for would-be immigrants from 75 countries could significantly reshape patterns of permanent legal immigration to the United States. By temporarily suspending immigrant visa processing for a large group of countries, the measure has the potential to affect a substantial share of applicants seeking lawful permanent residence. This analysis by the Spanish Institute for Migration Analysis (IEAM) examines the scope of these potential impacts based on immigrant visa data published by the U.S. State Department for fiscal year 2024.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Share of U.S. Immigrant Visas Affected by the Suspension (FY 2024)</h3>
+      <p>In fiscal year 2024, the United States issued a total of 612,258 immigrant visas (permanent visas that allow foreign nationals to enter the country and obtain a green card). Of these, 280,015 visas – nearly 46% of all permanent visas issued that year – were granted to nationals of the 75 countries now subject to the administrative pause. Additionally, 287,950 visas were issued to nationals of countries impacted by both the pause and the 2025 travel bans or restrictions. These figures highlight the share of immigrant visas affected by the suspension and related restrictions, demonstrating the significant effect on applicants.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Most Affected Countries</h3>
+      <p>The countries most affected by the administrative pause are Afghanistan, Cuba, Pakistan, Jamaica, Bangladesh, and Colombia. The pause is reportedly intended to give the administration time to develop new screening methods for individuals likely to become a “public charge.” However, in fiscal year 2024, only 1,008 individuals of all nationalities – not only those from the 75 affected countries – were denied an immigrant visa on these grounds, suggesting that the measure represents a sweeping policy response to a limited problem.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Immigrant Visas Issued to Nationals of West African and Sahel Countries (FY 2024)</h3>
+      <p>In fiscal year 2024, immigrant visas were issued to nationals of several West African and Sahel countries. Senegal received 1,119 visas and Gambia 792, both affected by the 75-country pause as well as travel bans or restrictions. In contrast, Mali received 275 visas, Niger 155, and Mauritania 128, all subject only to travel bans or restrictions. These figures illustrate the uneven impact of the administrative pause and related restrictions across the region.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Broader Context</h3>
+      <p>The State Department’s listing of the 75 countries does not affect individuals entering the United States on tourist, temporary work, or student visas. It also does not apply to individuals already in the country who have applied for, or will apply for, a green card. Many immigrants forgo benefits for which they are eligible due to administrative concerns or fear that using them could affect a future immigration application. Moreover, research consistently shows that immigrants use public benefits at lower rates than native-born Americans, in part because many noncitizens are ineligible for federal assistance. This approach overlooks the broader contributions immigrants make in terms of human capital, job creation, and entrepreneurship.</p>
+    `,
+        relatedArticles: []
+    },
+    {
         slug: 'atlas-migraciones-2025',
         type: 'Infografía',
         type_en: 'Infographic',
