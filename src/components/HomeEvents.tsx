@@ -109,7 +109,7 @@ const HomeEvents = () => {
                                     </span>
                                 </div>
                                 {/* Image */}
-                                <div className="relative h-64 lg:h-auto min-h-[280px] overflow-hidden">
+                                <div className="relative aspect-video overflow-hidden">
                                     <img
                                         src={getLocalizedContent(upcomingEvent).heroImage}
                                         alt={getLocalizedContent(upcomingEvent).title}
