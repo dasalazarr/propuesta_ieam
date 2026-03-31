@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import { getEventBySlug } from '@/data/events';
 import { useTranslation } from 'react-i18next';
+import EventRegistrationForm from '@/components/EventRegistrationForm';
 
 const EventPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -129,6 +130,10 @@ const EventPage = () => {
                   })}
                 </ul>
               </div>
+            )}
+            
+            {event.slug === 'lanzamiento-oficial-ieam' && (
+              <EventRegistrationForm />
             )}
           </div>
 

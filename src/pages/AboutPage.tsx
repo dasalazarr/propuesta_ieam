@@ -61,14 +61,8 @@ const AboutPage = () => {
                             </div>
                         </div>
 
-                        {/* Floating Content Box */}
-                        <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-sm">
-                            <p className="text-lg font-serif italic text-white leading-relaxed">
-                                {t('about.hero.floating_quote')}
-                            </p>
                         </div>
                     </div>
-                </div>
             </div>
 
             {/* Mission & Vision Section */}

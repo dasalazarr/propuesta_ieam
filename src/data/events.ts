@@ -697,8 +697,8 @@ export const events: EventItem[] = [
   },
   {
     slug: "lanzamiento-oficial-ieam",
-    title: "Lanzamiento oficial del IEAM",
-    title_en: "Official Launch of IEAM",
+    title: "Instituto Español de Análisis Migratorio (IEAM) España, Europa y África: Una mirada sobre Movilidad, Rutas Migratorias y Cooperación",
+    title_en: "Spanish Institute for Migration Analysis (IEAM) Spain, Europe, and Africa: A Perspective on Mobility, Migration Routes, and Cooperation",
     subtitle: "Mesa redonda sobre los principales desafíos en materia de migración y la gobernanza europea de la movilidad.",
     subtitle_en: "Roundtable on the main migration challenges and European mobility governance.",
     category: "Evento de Lanzamiento",
@@ -732,7 +732,7 @@ export const events: EventItem[] = [
           <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
         </ul>
         <p class="mb-4">Para información sobre la inscripción por favor contacte a <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
-        <p>También puede registrarse directamente para el evento aquí: <a href="https://forms.gle/MqTrftEwMBsjQWrm7" target="_blank" rel="noopener noreferrer" class="text-[#D4212A] font-bold hover:underline">Enlace de inscripción</a>.</p>
+        <p>También puede registrarse utilizando el formulario de inscripción que se encuentra al final de esta página.</p>
       </div>
     `,
     content_en: `
@@ -755,7 +755,7 @@ export const events: EventItem[] = [
           <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
         </ul>
         <p class="mb-4">For information about registration, please contact <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
-        <p>You can also register directly for the event here: <a href="https://forms.gle/6Ebg5mxSUQwSwLpR6" target="_blank" rel="noopener noreferrer" class="text-[#D4212A] font-bold hover:underline">Registration link</a>.</p>
+        <p>You can also register using the registration form located at the bottom of this page.</p>
       </div>
     `,
     agenda: [],
