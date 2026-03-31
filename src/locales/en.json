@@ -201,7 +201,8 @@
         "hero_quote": "Dialogue is the first step towards shared solutions. Every event is an opportunity to build bridges.",
         "upcoming": {
             "title": "Upcoming Events",
-            "description": "In this section we will publish upcoming IEAM events and activities."
+            "description": "In this section we will publish upcoming IEAM events and activities.",
+            "badge": "Upcoming"
         },
         "past": {
             "title": "Past Events",

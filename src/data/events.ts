@@ -636,6 +636,130 @@ export const events: EventItem[] = [
         role_en: "Journalist"
       }
     ]
+  },
+  {
+    slug: "conferencia-budapest-2026",
+    title: "Conferencia: “Hacia horizontes más prometedores – y regreso: Una perspectiva global sobre la migración”",
+    title_en: "Conference: “To Greener Pastures – and Back: A Global Outlook on Migration”",
+    subtitle: "El enfoque bilateral español: resultados alentadores, viabilidad a largo plazo incierta y factores económicos.",
+    subtitle_en: "The Spanish bilateral approach: encouraging results, long-term viability uncertain, and economic factors.",
+    category: "Conferencia",
+    category_en: "Conference",
+    date: "24 Mar 2026",
+    location: "Budapest, Hungría",
+    location_en: "Budapest, Hungary",
+    format: "Presencial",
+    format_en: "In-person",
+    heroImage: "/images/evento-hungria-es.png",
+    heroImage_en: "/images/evento-hungria-en.png",
+    summary: "Participación de Beatriz de León Cobo, Directora Ejecutiva del IEAM, en un panel internacional sobre migración organizado por el Danube Institute.",
+    summary_en: "Participation of Beatriz de León Cobo, Executive Director of IEAM, in an international migration panel organized by the Danube Institute.",
+    content: `
+      <p>Budapest, 24 de marzo de 2026 – Beatriz de León Cobo, Directora Ejecutiva del Instituto Español de Análisis Migratorio (IEAM), participó en un panel internacional titulado “To Greener Pastures – and Back: A Global Outlook on Migration”, organizado por el Danube Institute.</p>
+      <p>La discusión, que reunió a expertos de diversos ámbitos, se centró en varios temas clave:</p>
+      <ul class="list-disc pl-5 space-y-2 mb-6">
+        <li>El posible impacto de la inestabilidad geopolítica en los flujos migratorios;</li>
+        <li>Cambios en el marco de asilo de la UE, especialmente la ampliación de los conceptos de “país de origen seguro” y “tercer país seguro”;</li>
+        <li>Desarrollos recientes en la política migratoria española.</li>
+      </ul>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">El enfoque bilateral español: resultados alentadores, viabilidad a largo plazo incierta</h3>
+      <p>En esta ocasión, Beatriz de León Cobo presentó un análisis de la evolución de la estrategia española de gestión de la migración. Destacó el desarrollo de acuerdos bilaterales con varios países africanos, incluido Senegal, que van más allá de las simples políticas de retorno.</p>
+      <p>Estos acuerdos incluyen cooperación entre autoridades de seguridad y marítimas, así como iniciativas destinadas a abordar las causas estructurales de la migración irregular. Aunque los primeros resultados observados en las rutas hacia las Islas Canarias parecen prometedores, ella señaló que todavía es demasiado pronto para evaluar la viabilidad a largo plazo de estas medidas.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Factores económicos en el centro de las dinámicas migratorias</h3>
+      <p>De manera más amplia, la Directora Ejecutiva del IEAM destacó que los factores económicos constituyen el principal motor de la migración irregular desde África. Tomando como ejemplo Senegal, donde cerca de 100,000 jóvenes ingresan cada año al mercado laboral con perspectivas limitadas de empleo, señaló que la falta de oportunidades locales constituye un incentivo estructural a la emigración – un desafío que requiere soluciones de fondo, más allá de las políticas de control fronterizo.</p>
+    `,
+    content_en: `
+      <p>Budapest, March 24, 2026 – Beatriz de León Cobo, Executive Director of the Spanish Institute for Migration Analysis (IEAM), participated in an international panel entitled “To Greener Pastures – and Back: A Global Outlook on Migration”, organized by the Danube Institute.</p>
+      <p>The discussion, which brought together experts from diverse backgrounds, focused on several key issues:</p>
+      <ul class="list-disc pl-5 space-y-2 mb-6">
+        <li>The potential impact of geopolitical instability on migration flows;</li>
+        <li>Changes in the EU asylum framework, notably the expansion of the notions of “safe country of origin” and “safe third country”;</li>
+        <li>Recent developments in Spanish migration policy.</li>
+      </ul>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">The Spanish bilateral approach: encouraging results, long-term viability uncertain</h3>
+      <p>On this occasion, Beatriz de León Cobo presented an analysis of the evolution of Spain’s migration management strategy. She highlighted the development of bilateral agreements with several African countries, including Senegal, which go beyond simple return policies.</p>
+      <p>These agreements include cooperation between security and maritime authorities, as well as initiatives aimed at addressing the root causes of irregular migration. While early results on the routes to the Canary Islands appear promising, she noted that it is still too early to assess the long-term viability of these measures.</p>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Economic factors at the heart of migration dynamics</h3>
+      <p>More broadly, the Executive Director of IEAM emphasized that economic factors are the main driver of irregular migration from Africa. Using Senegal as an example, where nearly 100,000 young people enter the labor market each year with limited employment prospects, she highlighted that the lack of local opportunities constitutes a structural incentive for emigration – a challenge that requires long-term solutions beyond border control policies alone.</p>
+    `,
+    agenda: [],
+    speakers: [
+      {
+        name: "Beatriz de León Cobo",
+        role: "Directora Ejecutiva IEAM",
+        role_en: "Executive Director, IEAM"
+      }
+    ]
+  },
+  {
+    slug: "lanzamiento-oficial-ieam",
+    title: "Lanzamiento oficial del IEAM",
+    title_en: "Official Launch of IEAM",
+    subtitle: "Mesa redonda sobre los principales desafíos en materia de migración y la gobernanza europea de la movilidad.",
+    subtitle_en: "Roundtable on the main migration challenges and European mobility governance.",
+    category: "Evento de Lanzamiento",
+    category_en: "Launch Event",
+    date: "16 Apr 2026",
+    location: "Madrid, España",
+    location_en: "Madrid, Spain",
+    format: "Presencial",
+    format_en: "In-person",
+    heroImage: "/images/lanzamiento-ieam-es.png",
+    heroImage_en: "/images/lanzamiento-ieam-en.png",
+    summary: "El jueves 16 de abril, el IEAM celebrará su acto de lanzamiento oficial en la Sala Europa del Parlamento Europeo en Madrid.",
+    summary_en: "On Thursday, 16 April, IEAM will hold its official launch event at the Sala Europa, within the European Parliament Liaison Office in Madrid.",
+    content: `
+      <p>En un contexto en el que la migración ocupa un lugar central en las agendas políticas españolas, europeas e internacionales, el Instituto Español de Análisis Migratorio (IEAM) se integra en el ecosistema europeo de investigación y diálogo sobre políticas migratorias. El jueves, 16 de abril, el IEAM celebrará su acto de lanzamiento oficial en la Sala Europa, en la Oficina de Enlace del Parlamento Europeo en Madrid.</p>
+      <p>Fundado como un espacio independiente de investigación, análisis y reflexión sobre las dinámicas migratorias que conectan África, el Mediterráneo y Europa, el IEAM tiene como objetivo proporcionar una comprensión rigurosa, estratégica y útil de la movilidad humana. Su trabajo se basa en la convicción de que la complejidad de los fenómenos migratorios requiere respuestas mejor fundamentadas, mejor coordinadas y más atentas a las realidades políticas, sociales y humanas.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Programa del evento</h3>
+      <p>El evento será la ocasión de presentar oficialmente el Instituto y sus primeras publicaciones, que incluyen dos informes recientes y una serie de Policy Papers. También contará con una mesa redonda que reunirá a expertos y actores institucionales, dedicada a la reflexión sobre los principales desafíos en materia de migración, tanto a nivel europeo como en el marco de la cooperación con África.</p>
+      <p>Las discusiones abordarán las rutas migratorias, la migración irregular, la cooperación euroafricana y los desafíos de la gobernanza europea de la movilidad, contribuyendo a un diálogo informado, útil y orientado a la acción.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Un encuentro en la intersección de los mundos político, académico e institucional</h3>
+      <p>El evento reunirá a académicos e investigadores, periodistas, representantes institucionales, funcionarios de administraciones públicas (incluidas las europeas), profesionales de cooperación internacional y expertos de campo que trabajan directamente en cuestiones migratorias y en las relaciones euroafricanas.</p>
+      
+      <div class="bg-slate-50 border border-slate-200 p-6 rounded-lg mt-8 mb-8">
+        <h4 class="text-lg font-bold mb-4">Para más información e inscripción</h4>
+        <p class="mb-2">Descubra ahora los trabajos, análisis y publicaciones del IEAM:</p>
+        <ul class="list-none space-y-2 mb-4">
+          <li>🌐 <a href="https://ieam.es/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Sitio web</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/company/108785900/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">LinkedIn</a></li>
+          <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
+        </ul>
+        <p class="mb-4">Para información sobre la inscripción por favor contacte a <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
+        <p>También puede registrarse directamente para el evento aquí: <a href="https://forms.gle/MqTrftEwMBsjQWrm7" target="_blank" rel="noopener noreferrer" class="text-[#D4212A] font-bold hover:underline">Enlace de inscripción</a>.</p>
+      </div>
+    `,
+    content_en: `
+      <p>In a context where migration occupies a central place on Spanish, European, and international political agendas, the Spanish Institute for Migration Analysis (IEAM) joins the European ecosystem for research and policy dialogue on migration. On Thursday, 16 April, IEAM will hold its official launch event at the Sala Europa, within the European Parliament Liaison Office in Madrid.</p>
+      <p>Founded as an independent space for research, analysis, and reflection on migration dynamics connecting Africa, the Mediterranean, and Europe, IEAM aims to provide a rigorous, strategic, and useful understanding of human mobility. Its work is guided by a strong conviction: the complexity of migration phenomena requires better-founded, better-coordinated responses that are attentive to political, social, and human realities.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Event Program</h3>
+      <p>The evening will provide an opportunity to officially present the Institute and its first publications, including two recent reports and a series of Policy Papers. It will also feature a roundtable bringing together experts and institutional actors, dedicated to reflection on the main challenges in migration, both at the European level and in the context of cooperation with Africa.</p>
+      <p>Discussions will focus on migration routes, irregular migration, Euro-African cooperation, and the challenges of European mobility governance, contributing to a dialogue that is informed, useful, and action-oriented.</p>
+      
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">A Gathering at the Crossroads of Political, Academic, and Institutional Worlds</h3>
+      <p>The event will bring together academics and researchers, journalists, institutional representatives, public administration officials (including European), international cooperation professionals, and field experts working on migration and Euro-African relations.</p>
+      
+      <div class="bg-slate-50 border border-slate-200 p-6 rounded-lg mt-8 mb-8">
+        <h4 class="text-lg font-bold mb-4">Learn More & Registration</h4>
+        <p class="mb-2">Discover IEAM’s research, analyses, and publications now:</p>
+        <ul class="list-none space-y-2 mb-4">
+          <li>🌐 <a href="https://ieam.es/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Website</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/company/108785900/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">LinkedIn</a></li>
+          <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
+        </ul>
+        <p class="mb-4">For information about registration, please contact <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
+        <p>You can also register directly for the event here: <a href="https://forms.gle/6Ebg5mxSUQwSwLpR6" target="_blank" rel="noopener noreferrer" class="text-[#D4212A] font-bold hover:underline">Registration link</a>.</p>
+      </div>
+    `,
+    agenda: [],
+    speakers: []
   }
 ];
 

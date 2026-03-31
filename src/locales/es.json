@@ -200,7 +200,8 @@
         "hero_quote": "El diálogo es el primer paso hacia soluciones compartidas. Cada evento es una oportunidad para construir puentes.",
         "upcoming": {
             "title": "Próximos eventos",
-            "description": "En esta sección publicaremos los próximos eventos y actividades del IEAM."
+            "description": "En esta sección publicaremos los próximos eventos y actividades del IEAM.",
+            "badge": "Próximos"
         },
         "past": {
             "title": "Eventos pasados",

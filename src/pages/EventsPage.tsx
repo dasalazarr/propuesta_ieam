@@ -207,7 +207,7 @@ const EventsPage = () => {
                                                 {locEvent.location}
                                             </span>
                                             <span className="bg-slate-100 px-2 py-1 rounded-full border border-slate-200">
-                                                {(event.slug === 'cumbre-szeged-2025' || event.slug === 'jornada-canarias-sahel') 
+                                                {(event.slug === 'cumbre-szeged-2025' || event.slug === 'jornada-canarias-sahel' || event.slug === 'conferencia-budapest-2026') 
                                                     ? (i18n.language.startsWith('en') ? 'External Event' : 'Evento Externo')
                                                     : (event.slug === 'dialogo-mediterraneo-rabat' || event.slug === 'foro-bruselas-2024')
                                                         ? (i18n.language.startsWith('en') ? 'Mediterranean Dialogue Event' : 'Evento Diálogo Mediterráneo')
