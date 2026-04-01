@@ -306,6 +306,19 @@ const AboutPage = () => {
                             </div>
                         </div>
 
+                        {/* FOESSA */}
+                        <div className="bg-white p-8 rounded-sm border border-slate-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6">
+                            <div className="w-32 flex-shrink-0 flex items-center justify-center">
+                                <img src="/colaboration/foessa.png" alt="Fundación FOESSA" className="w-full h-auto object-contain" loading="lazy" decoding="async" />
+                            </div>
+                            <div>
+                                <h4 className="text-xl font-serif font-bold text-[#0A2540] mb-2">{t('about.partners.foessa.name')}</h4>
+                                <p className="text-slate-600 text-sm leading-relaxed">
+                                    {t('about.partners.foessa.text')}
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
