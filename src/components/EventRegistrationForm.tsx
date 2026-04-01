@@ -35,30 +35,34 @@ const EventRegistrationForm = () => {
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 15000);
 
-            const formDataToSend = new FormData();
-            formDataToSend.append("access_key", "6dcc0b8d-f96e-4134-929d-0a7e3aa03e23");
-            formDataToSend.append("subject", "Registro: Lanzamiento Oficial IEAM");
-            formDataToSend.append("from_name", `${formData.name} ${formData.surname}`);
-            formDataToSend.append("Email", formData.email);
-            formDataToSend.append("Nombre", formData.name);
-            formDataToSend.append("Apellidos", formData.surname);
-            formDataToSend.append("Documento/Pasaporte", formData.idDocument);
-            formDataToSend.append("Organización", formData.organization);
-            formDataToSend.append("Cargo", formData.position);
-            formDataToSend.append("Consentimiento Futuros Eventos", formData.consentFuture ? 'Sí' : 'No');
-            formDataToSend.append("Consentimiento Fotos/Videos", formData.consentPhoto ? 'Sí' : 'No');
-            formDataToSend.append("botcheck", "");
+            const templateParams = {
+                name: formData.name,
+                surname: formData.surname,
+                email: formData.email,
+                idDocument: formData.idDocument,
+                organization: formData.organization,
+                position: formData.position,
+                consentFuture: formData.consentFuture ? 'Sí' : 'No',
+                consentPhoto: formData.consentPhoto ? 'Sí' : 'No'
+            };
 
-            const response = await fetch("https://api.web3forms.com/submit", {
+            const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
                 method: "POST",
-                body: formDataToSend,
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    service_id: "service_n9vux1v",
+                    template_id: "template_giusocj",
+                    user_id: "pJE3a1QQcx7YTTB2A",
+                    template_params: templateParams
+                }),
                 signal: controller.signal
             });
 
             clearTimeout(timeoutId);
-            const data = await response.json();
 
-            if (data.success) {
+            if (response.ok) {
                 setStatus({
                     isSubmitting: false,
                     message: isEn ? "Registration successful. Thank you!" : "Inscripción completada. ¡Gracias!",
@@ -75,7 +79,8 @@ const EventRegistrationForm = () => {
                     consentPhoto: false
                 });
             } else {
-                throw new Error(data.message || 'Error sending message');
+                const errorText = await response.text();
+                throw new Error(errorText || 'Error sending message');
             }
         } catch (error: any) {
             console.error('Submission error:', error);
@@ -152,12 +157,13 @@ const EventRegistrationForm = () => {
 
                 <div className="space-y-2">
                     <label htmlFor="idDocument" className="text-sm font-bold text-slate-700 uppercase tracking-wider">
-                        {isEn ? 'Passport or National ID' : 'Número de pasaporte o documento nacional de identidad'}
+                        {isEn ? 'Passport or National ID' : 'Número de pasaporte o documento nacional de identidad'} <span className="text-[#D4212A]">*</span>
                     </label>
                     <input
                         type="text"
                         id="idDocument"
                         name="idDocument"
+                        required
                         disabled={status.isSubmitting}
                         value={formData.idDocument}
                         onChange={handleChange}
