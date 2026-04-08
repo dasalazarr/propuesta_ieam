@@ -57,6 +57,85 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'diplomacia-migratoria-2026',
+        type: 'Policy Brief',
+        type_en: 'Policy Brief',
+        contentKind: 'policy',
+        category: 'Migración · Diplomacia',
+        category_en: 'Migration · Diplomacy',
+        title: 'Diplomacia migratoria euroafricana',
+        title_en: 'Euro-African migration diplomacy',
+        subtitle: 'Hacia un enfoque integrado y sostenible de la movilidad.',
+        subtitle_en: 'Towards an integrated and sustainable vision of mobility.',
+        heroImage: '/images/informe-2-2026-ES.png',
+        heroImage_en: '/images/informe-2-2026-EN.png',
+        mainImage: '/images/informe-2-2026-ES.png',
+        mainImage_en: '/images/informe-2-2026-EN.png',
+        mainImageCaption: 'Diplomacia migratoria euroafricana.',
+        mainImageCaption_en: 'Euro-African migration diplomacy.',
+        publishDate: '08 Abr 2026',
+        readTime: '12 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de investigación del IEAM.',
+            bio_en: 'IEAM Research Unit.'
+        },
+        content: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resumen ejecutivo</h3>
+            <p>El presente Policy Paper propone orientaciones estratégicas para reforzar la coherencia de la diplomacia migratoria entre la Unión Europea y sus socios africanos, superando un enfoque centrado únicamente en la gestión de flujos, con el fin de promover una visión más integrada y sostenible de la movilidad.</p>
+            <p>Este documento se inscribe en la continuidad de los trabajos del Instituto Español de Análisis Migratorio (IEAM) y constituye el resultado de un taller de inteligencia colectiva organizado en Roma, conjuntamente por el IEAM y el centro de investigación independiente italiano AMIStaDeS.</p>
+            <p>El taller reunió a un amplio grupo de actores clave, incluidos representantes de agencias de la ONU, instituciones europeas, representantes ministeriales, organizaciones humanitarias, empresas y de la sociedad civil, así como expertos africanos. Esta diversidad de actores permitió compartir perspectivas institucionales, operativas y analíticas sobre las dinámicas de movilidad euroafricana. Asimismo, contribuyó a identificar puntos de convergencia, formular recomendaciones y esbozar líneas de acción destinadas a reforzar la coherencia estratégica entre las políticas migratorias, de desarrollo y de cooperación internacional.</p>
+            <p>El análisis de este Policy Paper se sitúa en un contexto de profunda recomposición de la diplomacia migratoria euroafricana, marcado por la implementación del Pacto Europeo sobre Migración y Asilo, la multiplicación de iniciativas bilaterales, así como la reconfiguración geopolítica del Sahel y sus rutas migratorias. En este contexto, la gobernanza de la movilidad adolece menos de la falta de instrumentos que de un déficit de articulación estratégica: las iniciativas se acumulan sin una arquitectura integrada, generando fragmentación, dinámicas de desplazamiento de rutas e inestabilidad en las relaciones UE–África. A esta fragmentación se suma una discrepancia estructural entre las decisiones políticas a corto plazo – dictadas por los ciclos electorales y la presión mediática – y el tiempo necesario a largo plazo de los mecanismos estructurales, como el empleo, la formación, la movilidad legal y la gobernanza.</p>
+            
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Mensajes estratégicos</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Aclarar la doctrina pública de la diplomacia migratoria</strong>, definiendo de forma explícita los objetivos perseguidos y los instrumentos movilizados, precisando la articulación entre seguridad, movilidad legal y desarrollo, jerarquizando las prioridades operativas y alineando la comunicación pública con esa doctrina de manera coherente y continua, con independencia de las coyunturas electorales.</li>
+                <li><strong>Reducir la fragmentación mediante una coordinación regional mínima</strong>, inscribiendo los acuerdos bilaterales en un marco regional que permita anticipar los efectos de desplazamiento y limitar las consecuencias negativas en los corredores vecinos, integrando de forma sistemática la dimensión humanitaria y los riesgos añadidos para las personas migrantes durante las reorientaciones de rutas.</li>
+                <li><strong>Garantizar la previsibilidad de los compromisos</strong>, mediante marcos financieros y jurídicos plurianuales, una mayor continuidad normativa y el mantenimiento de los mecanismos más allá de los ciclos políticos, como condición esencial para la credibilidad de las asociaciones.</li>
+                <li><strong>Construir una reciprocidad efectiva</strong>, adaptando las estrategias a los contextos nacionales africanos, promoviendo un codesarrollo con efectos medibles sobre el terreno y garantizando un acceso real a las vías legales de movilidad.</li>
+                <li><strong>Reforzar la rendición de cuentas</strong>, mediante una evaluación independiente que integre indicadores sistémicos – como el desplazamiento de rutas, los impactos regionales y la protección internacional –, elaborados conjuntamente con los socios africanos y hechos públicos para convertir los compromisos políticos en marcos operativos verificables.</li>
+            </ul>
+        `,
+        content_en: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Executive Summary</h3>
+            <p>This Policy Paper proposes strategic guidance to strengthen the coherence of migration diplomacy between the European Union and its African partners, moving beyond an approach focused solely on flow management to promote a more integrated and sustainable vision of mobility.</p>
+            <p>Building on the work of the Spanish Institute for Migration Analysis (IEAM), this document is the result of a collective intelligence workshop organized in Rome, jointly by the IEAM and the independent Italian research center AMIStaDeS.</p>
+            <p>The workshop brought together a broad group of key stakeholders, including representatives from UN agencies, European institutions, national ministries, humanitarian and civil society organizations, as well as African experts. This diversity of participants enabled the exchange of institutional, operational, and analytical perspectives on Euro-African mobility dynamics. It also helped identify areas of convergence, formulate recommendations, and outline courses of action aimed at strengthening strategic coherence across migration, development, and international cooperation policies.</p>
+            <p>The analysis presented in this Policy Paper takes place within a context of profound reconfiguration of Euro-African migration diplomacy, marked by the implementation of the European Pact on Migration and Asylum, the proliferation of bilateral initiatives, and the geopolitical reshaping of the Sahel and its migration routes. In this context, mobility governance suffers less from a lack of instruments than from a deficit of strategic coordination: initiatives accumulate without an integrated framework, generating fragmentation, route-shifting dynamics, and instability in EU–Africa relations. This fragmentation is further compounded by a structural mismatch between short-term political decisions – driven by electoral cycles and media pressure – and the time needed to act on structural levers such as employment, training, legal mobility, and governance.</p>
+            
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Strategic Messages</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Clarify the public doctrine of migration diplomacy:</strong> explicitly define the objectives pursued and the instruments deployed, clarify the links between security, legal mobility, and development, prioritize operational objectives, and align public communication with this doctrine in a coherent and consistent manner, regardless of electoral or political cycles.</li>
+                <li><strong>Reduce fragmentation through minimal regional coordination:</strong> embed bilateral agreements within a regional framework that allows anticipating displacement effects and limiting negative consequences on neighboring corridors, while systematically integrating the humanitarian dimension and the increased risks for migrants during route diversions.</li>
+                <li><strong>Ensure the predictability of commitments:</strong> establish multiannual financial and legal frameworks, strengthen regulatory continuity, and maintain mechanisms beyond political cycles, a condition essential to the credibility of partnerships.</li>
+                <li><strong>Build effective reciprocity:</strong> adapt strategies to African national contexts, promote co-development with measurable impacts on the ground, and ensure genuine access to legal mobility pathways.</li>
+                <li><strong>Strengthen accountability:</strong> establish an independent evaluation integrating systemic indicators – such as route shifts, regional impacts, and international protection – developed jointly with African partners and made public, in order to transform political commitments into verifiable operational frameworks.</li>
+            </ul>
+        `,
+        materials: [
+            {
+                label: 'Descargar Policy Paper (ES)',
+                label_en: 'Download Policy Paper (ES)',
+                url: '/docs/IEAM-2026-002-ES_diplomacia-migratoria.pdf'
+            },
+            {
+                label: 'Download Policy Paper (EN)',
+                label_en: 'Download Policy Paper (EN)',
+                url: '/docs/IEAM-2026-002-EN_migration-diplomacy.pdf'
+            },
+            {
+                label: 'Télécharger le document (FR)',
+                label_en: 'Download Policy Paper (FR)',
+                url: '/docs/IEAM-2026-002-FR_diplomatie-migratoire.pdf'
+            }
+        ],
+        relatedArticles: []
+    },
+    {
         slug: 'informe-rutas-migratorias-2026-parte-2',
         type: 'Informe',
         type_en: 'Report',

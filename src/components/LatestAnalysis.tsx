@@ -30,10 +30,10 @@ const LatestAnalysis = () => {
     const sortedArticles = [...articles].sort((a, b) => parseDate(b.publishDate).getTime() - parseDate(a.publishDate).getTime());
 
     // 1. Featured: Newest Report
-    const featuredAnalysis = sortedArticles.find(a => a.type === 'Informe') || sortedArticles[0];
+    const featuredAnalysis = sortedArticles.find(a => a.type === 'Informe' || a.type === 'Policy Brief') || sortedArticles[0];
 
     // 2. Secondary Slot 1: Next newest Report (excluding featured)
-    const nextReport = sortedArticles.find(a => a.type === 'Informe' && a.slug !== featuredAnalysis.slug);
+    const nextReport = sortedArticles.find(a => (a.type === 'Informe' || a.type === 'Policy Brief') && a.slug !== featuredAnalysis.slug);
 
     // 3. Secondary Slots 2 & 3: Two newest Infographics
     const infographics = sortedArticles

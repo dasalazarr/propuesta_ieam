@@ -7,7 +7,7 @@ import { articles } from '@/data/articles';
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation();
-  const featured = articles.find(a => a.type === 'Informe') || articles[0];
+  const featured = articles.find(a => a.type === 'Informe' || a.type === 'Policy Brief') || articles[0];
 
   const getLocalizedContent = (item: any) => {
     const isEn = i18n.language.startsWith('en');
