@@ -57,6 +57,106 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'enfoque-por-rutas-2026',
+        type: 'Policy Brief',
+        type_en: 'Policy Brief',
+        contentKind: 'policy',
+        category: 'Migración · Seguridad',
+        category_en: 'Migration · Security',
+        title: 'Enfoque por rutas: ¿Reducir los flujos visibles o reducir las vulnerabilidades?',
+        title_en: 'Route-based approach: Reducing visible flows or reducing vulnerabilities?',
+        subtitle: 'Hacia una estrategia coherente de protección y lucha contra las economías criminales.',
+        subtitle_en: 'Towards a coherent strategy for protection and the fight against criminal economies.',
+        heroImage: '/images/enfoque-rutas-es.jpg',
+        heroImage_en: '/images/enfoque-rutas-en.jpg',
+        mainImage: '/images/enfoque-rutas-es.jpg',
+        mainImage_en: '/images/enfoque-rutas-en.jpg',
+        mainImageCaption: 'Enfoque por rutas: vulnerabilidades y economías criminales en corredores migratorios.',
+        mainImageCaption_en: 'Route-based approach: vulnerabilities and criminal economies in migration corridors.',
+        publishDate: '10 Abr 2026',
+        readTime: '10 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de investigación del IEAM.',
+            bio_en: 'IEAM Research Unit.'
+        },
+        content: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resumen ejecutivo</h3>
+            <p>El presente Policy Paper propone orientaciones estratégicas destinadas a reducir las vulnerabilidades a lo largo de las rutas migratorias y a debilitar las economías criminales que las estructuran, superando un enfoque centrado únicamente en la reducción de los flujos visibles. El objetivo es promover una estrategia coherente que combine la protección de las personas migrantes con la lucha contra los mecanismos de explotación.</p>
+            <p>Este documento se inscribe en la continuidad de los trabajos del Instituto Español de Análisis Migratorio (IEAM) y constituye el resultado de un taller de inteligencia colectiva organizado en Roma, conjuntamente por el IEAM y el centro de investigación independiente italiano AMIStaDeS.</p>
+            <p>El taller reunió a un amplio abanico de actores clave, incluidos representantes de agencias de las Naciones Unidas, instituciones europeas, representantes ministeriales, organizaciones humanitarias y de la sociedad civil, empresas, así como expertos africanos. Esta diversidad permitió cruzar perspectivas institucionales, operacionales y analíticas sobre las dinámicas de los corredores migratorios euroafricanos. También contribuyó a identificar puntos de convergencia, formular recomendaciones y esbozar las primeras líneas de acción orientadas a reforzar la coherencia entre las políticas de seguridad, humanitarias y de desarrollo.</p>
+            <p>El análisis de este Policy Paper se enmarca en un contexto en el que las rutas migratorias funcionan como un sistema regional integrado, estructurado por movimientos mixtos, tanto regulares como irregulares. Las políticas basadas en un control puntual de seguridad tienden a producir efectos de desplazamiento de los corredores, a incrementar los costes de tránsito y a trasladar los riesgos hacia segmentos menos vigilados, sin reducir los incentivos económicos subyacentes.</p>
+            <p>A esta dinámica de desplazamiento se suma una vulnerabilidad acumulativa creciente: a medida que los trayectos se prolongan, las personas en situación de movilidad quedan expuestas a un deterioro progresivo de su salud física y mental. Asimismo, se enfrentan a un endeudamiento coercitivo con respecto a las redes de facilitación, así como a formas de explotación diferenciadas en función del género.</p>
+            <p>Por otra parte, las economías del tránsito aglutinan una pluralidad de actores – desde redes criminales hasta ciertos segmentos paraestatales –, cuya rentabilidad tiende a consolidarse cuando la presión securitaria se intensifica.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Mensajes estratégicos</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Reducir la porosidad institucional en las zonas de tránsito:</strong> reforzar las capacidades operativas de los pasos fronterizos, instaurar mecanismos de supervisión interna independiente, formar a los agentes en los estándares internacionales de protección, y promover alternativas económicas focalizadas para reducir la dependencia local de los ingresos vinculados a la facilitación migratoria.</li>
+                <li><strong>Actuar sobre la rentabilidad de las economías de facilitación y no solo sobre los flujos visibles:</strong> estructurar investigaciones financieras coordinadas por corredor, mejorar la trazabilidad de los pagos transnacionales, identificar a los intermediarios logísticos y a los beneficiarios reales, más allá de los simples puntos de interceptación.</li>
+                <li><strong>Garantizar una continuidad protectora a lo largo de los corredores:</strong> superar la perspectiva de un único Estado para cubrir la totalidad del trayecto – desde el origen hasta el destino – mediante mecanismos de denuncia accesibles y seguros, acompañamiento psicosocial y asistencia jurídica, así como una coordinación transnacional del seguimiento de casos.</li>
+                <li><strong>Integrar la demanda estructural de mano de obra en la estrategia migratoria:</strong> articular las políticas migratorias y laborales, establecer dispositivos focalizados de movilidad legal en los sectores de alta demanda, y colaborar con las redes de diáspora para proporcionar información fiable y prevenir riesgos, con el fin de reducir la dependencia de las cadenas informales.</li>
+                <li><strong>Alinear la coordinación operativa con la realidad transnacional de las rutas:</strong> crear plataformas técnicas para el intercambio de información y el seguimiento longitudinal de las dinámicas de los corredores, en las que participen organizaciones internacionales y Estados africanos socios, para garantizar la apropiación y la sostenibilidad de los dispositivos desplegados.</li>
+            </ul>
+        `,
+        content_en: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Executive Summary</h3>
+            <p>This Policy Paper proposes strategic guidelines aimed at reducing vulnerabilities along migration routes and undermining the criminal economies that structure them, moving beyond an approach focused solely on reducing visible flows. The aim is to promote a coherent strategy that combines the protection of migrants with the fight against mechanisms of exploitation.</p>
+            <p>This document forms part of the ongoing work of the Spanish Institute for Migration Analysis (IEAM) and is the result of a collective intelligence workshop organised in Rome jointly by the IEAM and the independent Italian research centre AMIStaDeS.</p>
+            <p>The workshop brought together a wide range of key stakeholders, including representatives from United Nations agencies, European institutions, government ministries, humanitarian and civil society organisations, businesses, as well as African experts. This diversity enabled the exchange of institutional, operational and analytical perspectives on the dynamics of Euro-African migration corridors. It also helped to identify points of convergence, formulate recommendations and outline initial lines of action aimed at strengthening coherence between security, humanitarian and development policies.</p>
+            <p>The analysis in this Policy Paper is set against a backdrop in which migration routes function as an integrated regional system, structured by mixed movements, both regular and irregular. Policies based on ad hoc security controls tend to displace migration corridors, increase transit costs and shift risks to less monitored segments, without reducing the underlying economic incentives.</p>
+            <p>Added to this displacement dynamic is a growing cumulative vulnerability: as journeys are prolonged, people on the move are exposed to a progressive deterioration in their physical and mental health. Furthermore, they face coercive indebtedness to facilitation networks, as well as forms of exploitation that differ according to gender.</p>
+            <p>Furthermore, transit economies bring together a diverse range of actors – from criminal networks to certain parastatal entities – whose profitability tends to increase as security pressures intensify.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Strategic Messages</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Reduce institutional porosity in transit zones:</strong> strengthen the operational capacities of border crossings, establish independent internal oversight mechanisms, train officials in international protection standards, and promote targeted economic alternatives to reduce local dependence on income linked to migration facilitation.</li>
+                <li><strong>Address the profitability of facilitation economies and not just visible flows:</strong> structure coordinated financial investigations by corridor, improve the traceability of transnational payments, and identify logistical intermediaries and beneficial owners, going beyond mere interception points.</li>
+                <li><strong>Ensure protective continuity along the corridors:</strong> move beyond the perspective of a single state to cover the entire journey – from origin to destination – through accessible and secure reporting mechanisms, psychosocial support and legal assistance, as well as transnational coordination of case follow-up.</li>
+                <li><strong>Integrate the structural demand for labour into the migration strategy:</strong> align migration and labour policies, establish targeted legal mobility schemes in high-demand sectors, and collaborate with diaspora networks to provide reliable information and prevent risks, with the aim of reducing dependence on informal networks.</li>
+                <li><strong>Align operational coordination with the transnational reality of the routes:</strong> create technical platforms for information exchange and the longitudinal monitoring of corridor dynamics, involving international organisations and partner African states, to ensure ownership and the sustainability of the mechanisms deployed.</li>
+            </ul>
+        `,
+        materials: [
+            {
+                label: 'Descargar Policy Paper (ES)',
+                label_en: 'Download Policy Paper (ES)',
+                url: '/docs/IEAM-2026-003-ES_enfoque-por-rutas.pdf'
+            },
+            {
+                label: 'Download Policy Paper (EN)',
+                label_en: 'Download Policy Paper (EN)',
+                url: '/docs/IEAM-2026-003-EN_route-based-approach.pdf'
+            },
+            {
+                label: 'Télécharger le document (FR)',
+                label_en: 'Download Policy Paper (FR)',
+                url: '/docs/IEAM-2026-003-FR_approche-par-routes.pdf'
+            }
+        ],
+        relatedArticles: [
+            {
+                id: 'diplomacia-migratoria-2026',
+                title: 'Diplomacia migratoria euroafricana',
+                title_en: 'Euro-African migration diplomacy',
+                image: '/images/informe-2-2026-ES.jpg',
+                badge: 'Policy Brief',
+                metadata: { date: '08 Abr 2026', readTime: '12 min' }
+            },
+            {
+                id: 'movilidad-africa-occidental',
+                title: 'Reformar la gobernanza de la movilidad en África Occidental',
+                title_en: 'Reforming Mobility Governance in West Africa',
+                image: '/images/informeafricaes.jpg',
+                badge: 'Informe',
+                metadata: { date: '23 Dec 2025', readTime: '15 min' }
+            }
+        ]
+    },
+    {
         slug: 'diplomacia-migratoria-2026',
         type: 'Policy Brief',
         type_en: 'Policy Brief',

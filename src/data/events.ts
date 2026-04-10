@@ -771,7 +771,7 @@ export const events: EventItem[] = [
           <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, comisario principal de la Policía Nacional, responsable actualmente de inmigración y fronteras.</p>
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, subdirector general de la Subdirección General para África Occidental, Dirección General para África, Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.</p>
           <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, asesora de gabinete del Ministerio de Inclusión, Seguridad Social y Migraciones de España.</p>
-          <p class="text-slate-600 mt-2">Representante de la Organización Internacional para las Migraciones (OIM), sede de Madrid.</p>
+          <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, oficial de política y enlace de la Oficina de la Organización Internacional para las Migraciones (OIM) en España.</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
@@ -844,7 +844,7 @@ export const events: EventItem[] = [
           <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, Chief Commissioner of the National Police, currently responsible for immigration and borders.</p>
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, Deputy Director-General for West Africa, Directorate-General for Africa, Ministry of Foreign Affairs, European Union and Cooperation.</p>
           <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, advisor in the office of the Ministry of Inclusion, Social Security and Migration of Spain.</p>
-          <p class="text-slate-600 mt-2">Representative of the International Organization for Migration (IOM), Madrid office.</p>
+          <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, Policy and Liaison Officer at the International Organization for Migration (IOM) Office in Spain.</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
@@ -862,7 +862,7 @@ export const events: EventItem[] = [
       { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of IEAM", speaker: "Beatriz de León Cobo, Directora ejecutiva del IEAM", speaker_en: "Beatriz de León Cobo, Executive Director of IEAM" },
       { time: "18:45 – 19:00", title: "Presentación del informe (parte I y parte II)", title_en: "Presentation of the report (Part I and Part II)", speaker: "Dra. Dolores López · Valentina Benincasa", speaker_en: "Dr. Dolores López · Valentina Benincasa" },
       { time: "19:00 – 19:30", title: "Presentación de policy papers", title_en: "Presentation of policy papers", speaker: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada", speaker_en: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada" },
-      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "The migration issue between Africa and Europe: strategic challenges and shared responses", speaker: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Representante OIM", speaker_en: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · IOM Representative" },
+      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "The migration issue between Africa and Europe: strategic challenges and shared responses", speaker: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini", speaker_en: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini" },
       { time: "20:20 – 20:30", title: "Conclusión y clausura", title_en: "Conclusion and closing remarks" },
       { time: "20:30 – 21:15", title: "Vino español", title_en: "Spanish wine reception" }
     ],
@@ -876,7 +876,7 @@ export const events: EventItem[] = [
       { name: "Alfredo García Miravete", role: "Comisario Principal de la Policía Nacional", role_en: "Chief Commissioner of the National Police" },
       { name: "Francisco de Borja Morate Martín", role: "Subdirector General para África Occidental, MAEUEC", role_en: "Deputy Director-General for West Africa, Ministry of Foreign Affairs" },
       { name: "Ana Hernández Rodríguez", role: "Asesora de gabinete, Ministerio de Inclusión, SS y Migraciones", role_en: "Cabinet Advisor, Ministry of Inclusion, Social Security and Migration" },
-      { name: "Representante OIM", role: "Organización Internacional para las Migraciones, Madrid", role_en: "International Organization for Migration, Madrid" }
+      { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" }
     ]
   }
 ];
