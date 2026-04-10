@@ -94,44 +94,7 @@ const EventPage = () => {
                 </p>
               ))
             )}
-            {event.agenda && event.agenda.length > 0 && (
-              <div className="border-t hairline pt-6 space-y-3">
-                <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)]">
-                  {isEn
-                    ? (event.agendaTitle_en || event.agendaTitle || 'Agenda')
-                    : (event.agendaTitle || 'Agenda')}
-                </h2>
-                <ul className="space-y-3">
-                  {event.agenda.map((item, idx) => {
-                    const hasDate = item.time && item.time.includes(' - ');
-                    const datePart = hasDate ? item.time?.split(' - ')[0] : null;
-                    const timePart = hasDate ? item.time?.split(' - ')[1] : item.time;
-
-                    return (
-                      <li key={idx} className={`block text-slate-700 ${datePart ? 'mt-6 first:mt-0' : ''}`}>
-                        {datePart && (
-                          <div className="text-sm font-bold uppercase tracking-wider text-[var(--color-accent-red)] mb-2 border-b border-[var(--color-text-primary)]/10 pb-1">
-                            {datePart}
-                          </div>
-                        )}
-                        <div className="flex gap-4">
-                          {timePart && <span className="min-w-[85px] text-sm font-bold text-[var(--color-text-primary)]">{timePart}</span>}
-                          <div>
-                            <div className="font-semibold">{isEn && item.title_en ? item.title_en : item.title}</div>
-                            {(isEn && item.speaker_en ? item.speaker_en : item.speaker) && (
-                              <div className="text-sm text-slate-500 mt-1">
-                                {isEn && item.speaker_en ? item.speaker_en : item.speaker}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            )}
-            
+                        
             {event.slug === 'lanzamiento-oficial-ieam' && (
               <EventRegistrationForm />
             )}

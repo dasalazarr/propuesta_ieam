@@ -697,8 +697,8 @@ export const events: EventItem[] = [
   },
   {
     slug: "lanzamiento-oficial-ieam",
-    title: "Instituto Español de Análisis Migratorio (IEAM) España, Europa y África: Una mirada sobre Movilidad, Rutas Migratorias y Cooperación",
-    title_en: "Spanish Institute for Migration Analysis (IEAM) Spain, Europe, and Africa: A Perspective on Mobility, Migration Routes, and Cooperation",
+    title: "Lanzamiento oficial del IEAM en Madrid: migración, cooperación euroafricana y gobernanza europea",
+    title_en: "Official Launch of IEAM in Madrid: Migration, Euro-African Cooperation, and European Governance",
     subtitle: "Mesa redonda sobre los principales desafíos en materia de migración y la gobernanza europea de la movilidad.",
     subtitle_en: "Roundtable on the main migration challenges and European mobility governance.",
     category: "Evento de Lanzamiento",
@@ -715,24 +715,74 @@ export const events: EventItem[] = [
     content: `
       <p>En un contexto en el que la migración ocupa un lugar central en las agendas políticas españolas, europeas e internacionales, el Instituto Español de Análisis Migratorio (IEAM) se integra en el ecosistema europeo de investigación y diálogo sobre políticas migratorias. El jueves, 16 de abril, el IEAM celebrará su acto de lanzamiento oficial en la Sala Europa, en la Oficina de Enlace del Parlamento Europeo en Madrid.</p>
       <p>Fundado como un espacio independiente de investigación, análisis y reflexión sobre las dinámicas migratorias que conectan África, el Mediterráneo y Europa, el IEAM tiene como objetivo proporcionar una comprensión rigurosa, estratégica y útil de la movilidad humana. Su trabajo se basa en la convicción de que la complejidad de los fenómenos migratorios requiere respuestas mejor fundamentadas, mejor coordinadas y más atentas a las realidades políticas, sociales y humanas.</p>
-      
+
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Programa del evento</h3>
       <p>El evento será la ocasión de presentar oficialmente el Instituto y sus primeras publicaciones, que incluyen dos informes recientes y una serie de Policy Papers. También contará con una mesa redonda que reunirá a expertos y actores institucionales, dedicada a la reflexión sobre los principales desafíos en materia de migración, tanto a nivel europeo como en el marco de la cooperación con África.</p>
       <p>Las discusiones abordarán las rutas migratorias, la migración irregular, la cooperación euroafricana y los desafíos de la gobernanza europea de la movilidad, contribuyendo a un diálogo informado, útil y orientado a la acción.</p>
-      
+
       <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Un encuentro en la intersección de los mundos político, académico e institucional</h3>
       <p>El evento reunirá a académicos e investigadores, periodistas, representantes institucionales, funcionarios de administraciones públicas (incluidas las europeas), profesionales de cooperación internacional y expertos de campo que trabajan directamente en cuestiones migratorias y en las relaciones euroafricanas.</p>
-      
+
       <div class="bg-slate-50 border border-slate-200 p-6 rounded-lg mt-8 mb-8">
-        <h4 class="text-lg font-bold mb-4">Para más información e inscripción</h4>
+        <h4 class="text-lg font-bold mb-4">Para más información</h4>
         <p class="mb-2">Descubra ahora los trabajos, análisis y publicaciones del IEAM:</p>
         <ul class="list-none space-y-2 mb-4">
           <li>🌐 <a href="https://ieam.es/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Sitio web</a></li>
           <li>🔗 <a href="https://www.linkedin.com/company/108785900/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">LinkedIn</a></li>
           <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
         </ul>
-        <p class="mb-4">Para información sobre la inscripción por favor contacte a <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
-        <p>También puede registrarse utilizando el formulario de inscripción que se encuentra al final de esta página.</p>
+        <p class="mb-2">Para información sobre la inscripción por favor contacte a <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
+        <p>Puede registrarse directamente para el evento aquí: <a href="https://forms.gle/MqTrftEwMBsjQWrm7" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Enlace de inscripción</a>.</p>
+      </div>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Programa</h3>
+
+      <div class="space-y-6 mt-4">
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación institucional del IEAM</h4>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM.<br/>Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:00</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación del informe (parte I y parte II)</h4>
+          <p class="text-slate-600 mt-1 italic">• Migraciones y migrantes. ¿Cómo estudiar la irregularidad en los procesos migratorios? España: un estudio de caso</p>
+          <p class="text-slate-600 mt-2"><strong>Dra. Dolores López</strong>, investigadora asociada del IEAM y profesora de Geografía Humana en la Universidad de Navarra, especializada en migraciones en España.</p>
+          <p class="text-slate-600 mt-2"><strong>Valentina Benincasa</strong>, investigadora asociada del IEAM, docente en el Máster de Género, Migraciones y Derechos Humanos (Universidad Complutense de Madrid) y doctora en Antropología Social, especializada en humanitarismo y políticas de fronteras.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:00 – 19:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación de policy papers</h4>
+          <p class="text-slate-600 mt-1 italic">• Repensar la movilidad entre Mali y Europa: movilidad legal y circular, reintegración con un enfoque comunitario y gobernanza regional</p>
+          <p class="text-slate-600 italic">• Reformar la gobernanza de la movilidad en África Occidental</p>
+          <p class="text-slate-600 mt-2"><strong>Roméo Gbaguidi</strong>, investigador asociado del IEAM y presidente del think tank LemAfriQ, especializado en migraciones entre África y Europa, así como en las diásporas africanas.</p>
+          <p class="text-slate-600 mt-2"><strong>Soraya Aybar</strong>, investigadora asociada del IEAM y directora de África Mundi, medio especializado en el continente africano y en las relaciones entre África y Europa.</p>
+          <p class="text-slate-600 mt-3 italic">• Diplomacia migratoria UE–África: de la gestión de los flujos a la coherencia estratégica</p>
+          <p class="text-slate-600 italic">• Enfoque por rutas: ¿reducir los flujos o las vulnerabilidades? Hacia una estrategia coherente de protección y lucha contra las economías criminales</p>
+          <p class="text-slate-600 italic">• Vías legales creíbles: entre promesa política y capacidad real - Estructurar la movilidad circular, el arraigo local y el papel de las diásporas</p>
+          <p class="text-slate-600 mt-2"><strong>Ángel Losada</strong>, diplomático español, embajador de España en Irán (2021–2024) y antiguo representante especial de la Unión Europea para el Sahel (2015–2021).</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas</h4>
+          <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, comisario principal de la Policía Nacional, responsable actualmente de inmigración y fronteras.</p>
+          <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, subdirector general de la Subdirección General para África Occidental, Dirección General para África, Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.</p>
+          <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, asesora de gabinete del Ministerio de Inclusión, Seguridad Social y Migraciones de España.</p>
+          <p class="text-slate-600 mt-2">Representante de la Organización Internacional para las Migraciones (OIM), sede de Madrid.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:20 – 20:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Conclusión y clausura</h4>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:30 – 21:15</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Vino español</h4>
+        </div>
       </div>
     `,
     content_en: `
@@ -747,19 +797,87 @@ export const events: EventItem[] = [
       <p>The event will bring together academics and researchers, journalists, institutional representatives, public administration officials (including European), international cooperation professionals, and field experts working on migration and Euro-African relations.</p>
       
       <div class="bg-slate-50 border border-slate-200 p-6 rounded-lg mt-8 mb-8">
-        <h4 class="text-lg font-bold mb-4">Learn More & Registration</h4>
+        <h4 class="text-lg font-bold mb-4">Learn More</h4>
         <p class="mb-2">Discover IEAM’s research, analyses, and publications now:</p>
         <ul class="list-none space-y-2 mb-4">
           <li>🌐 <a href="https://ieam.es/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Website</a></li>
           <li>🔗 <a href="https://www.linkedin.com/company/108785900/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">LinkedIn</a></li>
           <li>𝕏 <a href="https://x.com/ieamigratorio" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">X</a></li>
         </ul>
-        <p class="mb-4">For information about registration, please contact <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
-        <p>You can also register using the registration form located at the bottom of this page.</p>
+        <p class="mb-2">For information about registration, please contact <a href="mailto:info@ieam.es" class="text-[var(--color-accent-blue)] hover:underline font-medium">info@ieam.es</a>.</p>
+        <p>You can register directly for the event here: <a href="https://forms.gle/6Ebg5mxSUQwSwLpR6" target="_blank" rel="noopener noreferrer" class="text-[var(--color-accent-blue)] hover:underline font-medium">Registration link</a>.</p>
+      </div>
+
+      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Program</h3>
+
+      <div class="space-y-6 mt-4">
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Institutional presentation of IEAM</h4>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Executive Director of IEAM.<br/>Welcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:00</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentation of the report (Part I and Part II)</h4>
+          <p class="text-slate-600 mt-1 italic">• Migration and migrants. How can we study irregularity in migration processes? Spain: a case study</p>
+          <p class="text-slate-600 mt-2"><strong>Dr. Dolores López</strong>, associate researcher at IEAM and professor of Human Geography at the University of Navarra, specializing in migration in Spain.</p>
+          <p class="text-slate-600 mt-2"><strong>Valentina Benincasa</strong>, associate researcher at IEAM, lecturer in the Master's program in Gender, Migration and Human Rights (Complutense University of Madrid), and PhD in Social Anthropology, specializing in humanitarianism and border policies.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:00 – 19:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentation of policy papers</h4>
+          <p class="text-slate-600 mt-1 italic">• Rethinking mobility between Mali and Europe: legal and circular mobility, reintegration with a community-based approach, and regional governance</p>
+          <p class="text-slate-600 italic">• Reforming mobility governance in West Africa</p>
+          <p class="text-slate-600 mt-2"><strong>Roméo Gbaguidi</strong>, associate researcher at IEAM and president of the think tank LemAfriQ, specializing in migration between Africa and Europe, as well as African diasporas.</p>
+          <p class="text-slate-600 mt-2"><strong>Soraya Aybar</strong>, associate researcher at IEAM and director of África Mundi, a media outlet specializing in the African continent and Africa–Europe relations.</p>
+          <p class="text-slate-600 mt-3 italic">• EU–Africa migration diplomacy: from flow management to strategic coherence</p>
+          <p class="text-slate-600 italic">• Route-based approach: reducing flows or vulnerabilities? Towards a coherent strategy for protection and the fight against criminal economies</p>
+          <p class="text-slate-600 italic">• Credible legal pathways: between political promise and real capacity – structuring circular mobility, local rootedness, and the role of diasporas</p>
+          <p class="text-slate-600 mt-2"><strong>Ángel Losada</strong>, Spanish diplomat, Ambassador of Spain to Iran (2021–2024) and former EU Special Representative for the Sahel (2015–2021).</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">The migration issue between Africa and Europe: strategic challenges and shared responses</h4>
+          <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, Chief Commissioner of the National Police, currently responsible for immigration and borders.</p>
+          <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, Deputy Director-General for West Africa, Directorate-General for Africa, Ministry of Foreign Affairs, European Union and Cooperation.</p>
+          <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, advisor in the office of the Ministry of Inclusion, Social Security and Migration of Spain.</p>
+          <p class="text-slate-600 mt-2">Representative of the International Organization for Migration (IOM), Madrid office.</p>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:20 – 20:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Conclusion and closing remarks</h4>
+        </div>
+
+        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:30 – 21:15</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Spanish wine reception</h4>
+        </div>
       </div>
     `,
-    agenda: [],
-    speakers: []
+    agenda: [
+      { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of IEAM", speaker: "Beatriz de León Cobo, Directora ejecutiva del IEAM", speaker_en: "Beatriz de León Cobo, Executive Director of IEAM" },
+      { time: "18:45 – 19:00", title: "Presentación del informe (parte I y parte II)", title_en: "Presentation of the report (Part I and Part II)", speaker: "Dra. Dolores López · Valentina Benincasa", speaker_en: "Dr. Dolores López · Valentina Benincasa" },
+      { time: "19:00 – 19:30", title: "Presentación de policy papers", title_en: "Presentation of policy papers", speaker: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada", speaker_en: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada" },
+      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "The migration issue between Africa and Europe: strategic challenges and shared responses", speaker: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Representante OIM", speaker_en: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · IOM Representative" },
+      { time: "20:20 – 20:30", title: "Conclusión y clausura", title_en: "Conclusion and closing remarks" },
+      { time: "20:30 – 21:15", title: "Vino español", title_en: "Spanish wine reception" }
+    ],
+    speakers: [
+      { name: "Beatriz de León Cobo", role: "Directora Ejecutiva del IEAM", role_en: "Executive Director of IEAM" },
+      { name: "Dra. Dolores López", role: "Investigadora asociada IEAM, Univ. de Navarra", role_en: "Associate researcher IEAM, University of Navarra" },
+      { name: "Valentina Benincasa", role: "Investigadora asociada IEAM, UCM", role_en: "Associate researcher IEAM, UCM" },
+      { name: "Roméo Gbaguidi", role: "Investigador asociado IEAM, presidente LemAfriQ", role_en: "Associate researcher IEAM, president of LemAfriQ" },
+      { name: "Soraya Aybar", role: "Investigadora asociada IEAM, directora de África Mundi", role_en: "Associate researcher IEAM, director of África Mundi" },
+      { name: "Ángel Losada", role: "Diplomático, ex Embajador de España en Irán y ex Representante Especial UE para el Sahel", role_en: "Diplomat, former Ambassador of Spain to Iran and former EU Special Representative for the Sahel" },
+      { name: "Alfredo García Miravete", role: "Comisario Principal de la Policía Nacional", role_en: "Chief Commissioner of the National Police" },
+      { name: "Francisco de Borja Morate Martín", role: "Subdirector General para África Occidental, MAEUEC", role_en: "Deputy Director-General for West Africa, Ministry of Foreign Affairs" },
+      { name: "Ana Hernández Rodríguez", role: "Asesora de gabinete, Ministerio de Inclusión, SS y Migraciones", role_en: "Cabinet Advisor, Ministry of Inclusion, Social Security and Migration" },
+      { name: "Representante OIM", role: "Organización Internacional para las Migraciones, Madrid", role_en: "International Organization for Migration, Madrid" }
+    ]
   }
 ];
 
