@@ -46,22 +46,49 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
         html = html.replace(/<meta property="og:title"[\s\S]*?\/>/, `<meta property="og:title" content="${title}" />`);
         html = html.replace(/<meta property="og:description"[\s\S]*?\/>/, `<meta property="og:description" content="${description}" />`);
 
-        const fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+        let fullImage = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+        let imageType = "image/jpeg";
+        if (fullImage.endsWith(".png")) imageType = "image/png";
+        if (fullImage.endsWith(".webp")) imageType = "image/webp";
 
-        // Size warning for WhatsApp compatibility
+        // Size warning & Optimization suggestion for WhatsApp compatibility
         if (!image.startsWith("http")) {
             const imagePath = path.join(__dirname, "../public", image);
             if (fs.existsSync(imagePath)) {
                 const stats = fs.statSync(imagePath);
                 const fileSizeInKB = stats.size / 1024;
-                if (fileSizeInKB > 300) {
+                
+                // If it's a PNG and large, check if a JPG version exists and use it instead
+                if (image.endsWith(".png") && fileSizeInKB > 300) {
+                    const jpgPath = image.replace(".png", ".jpg");
+                    const fullJpgPath = path.join(__dirname, "../public", jpgPath);
+                    if (fs.existsSync(fullJpgPath)) {
+                        const jpgStats = fs.statSync(fullJpgPath);
+                        if (jpgStats.size < stats.size) {
+                            console.log(`\x1b[36mℹ️ Optimization: Using "${jpgPath}" instead of "${image}" for better WhatsApp preview (${(jpgStats.size/1024).toFixed(1)}KB vs ${fileSizeInKB.toFixed(1)}KB)\x1b[0m`);
+                            fullImage = `${BASE_URL}${jpgPath}`;
+                            imageType = "image/jpeg";
+                        }
+                    }
+                }
+
+                if (fileSizeInKB > 300 && !fullImage.includes(".jpg")) {
                     console.warn(`\x1b[33m⚠️ Warning: Image "${image}" is large (${fileSizeInKB.toFixed(1)}KB). WhatsApp might not display it (recommended < 300KB).\x1b[0m`);
                 }
             }
         }
 
         html = html.replace(/<meta property="og:image"[\s\S]*?\/>/, `<meta property="og:image" content="${fullImage}" />`);
-        html = html.replace(/<\/head>/, `<meta property="og:image:secure_url" content="${fullImage}" />\n  <meta property="og:image:width" content="1200" />\n  <meta property="og:image:height" content="630" />\n</head>`);
+        
+        const ogTags = [
+            `  <meta property="og:image:secure_url" content="${fullImage}" />`,
+            `  <meta property="og:image:type" content="${imageType}" />`,
+            `  <meta property="og:image:width" content="1200" />`,
+            `  <meta property="og:image:height" content="630" />`,
+            `  <meta name="twitter:image" content="${fullImage}" />`
+        ].join("\n");
+
+        html = html.replace(/<\/head>/, `${ogTags}\n</head>`);
         html = html.replace(/<meta property="og:url"[\s\S]*?\/>/, `<meta property="og:url" content="${url}" />`);
 
         fs.writeFileSync(path.join(itemDir, "index.html"), html);
