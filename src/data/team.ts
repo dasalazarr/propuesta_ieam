@@ -55,15 +55,6 @@ export const researchFellows: TeamMember[] = [
         bio_en: "Bamako (Mali). Bréma Ely Dicko holds a PhD in Sociology of Migration and Interethnic Relations from Paris 7 Denis Diderot University and is a professor at the University of Letters and Human Sciences of Bamako (ULSHB). He has served as a special advisor to two transitional prime ministers in Mali on issues related to internally displaced persons, refugees, migration, slavery, and state return in the central regions of the country. Additionally, he was part of the drafting team for the new Constitution and headed the Research Unit of the Truth, Justice and Reconciliation Commission (CVJR), co-authoring its final report. A Knight of the National Order of Mali, his research focuses on Malian migrations, interethnic relations, mobility governance, and violent extremism, fields in which he has published numerous books and academic articles."
     },
     {
-        img: "/team/member-5.jpg",
-        name: "Dolores López",
-        role: "Investigadora asociada",
-        role_en: "Associate Researcher",
-        linkedin: "https://www.linkedin.com/in/lopez-dolores-83761323/",
-        bio: "Pamplona (España). Dolores López es licenciada en Geografía e Historia y doctora en Geografía por nuestra Universidad, además de contar con un Máster en Demografía por la London School of Economics (LSE). Es catedrática de Geografía Humana en la Facultad de Filosofía y Letras, donde imparte clases en diferentes grados de este centro y en la Facultad de Derecho, así como en el Máster en Matrimonio y Familia y en el Máster en Diseño y Gestión Ambiental de Edificios. Sus líneas de investigación se enmarcan en los estudios de familia (mujeres, fecundidad, conciliación, vejez y juventud), mortalidad y migraciones. Ha realizado estancias de investigación en la LSE, en la Office of Population Research (Universidad de Princeton) y en el Centre d'Estudis Demogràfics de la Universidad Autónoma de Barcelona.",
-        bio_en: "Pamplona (Spain). Dolores López holds a degree in Geography and History and a PhD in Geography from our University, in addition to a Master's in Demography from the London School of Economics (LSE). She is a Professor of Human Geography at the Faculty of Philosophy and Letters, where she teaches in various degree programs at this center and at the Faculty of Law, as well as in the Master's in Marriage and Family and the Master's in Environmental Design and Management of Buildings. Her research focuses on family studies (women, fertility, work-life balance, aging, and youth), mortality, and migrations. She has conducted research stays at LSE, Office of Population Research (Princeton University), and Centre d'Estudis Demogràfics at the Autonomous University of Barcelona."
-    },
-    {
         img: "/team/martial_zongo.jpg",
         name: "Martial Zongo",
         role: "Investigador asociado",
