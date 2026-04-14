@@ -57,6 +57,105 @@ export interface Article {
 
 export const articles: Article[] = [
     {
+        slug: 'vias-legales-creibles-2026',
+        type: 'Policy Brief',
+        type_en: 'Policy Brief',
+        contentKind: 'policy',
+        category: 'Migración · Movilidad',
+        category_en: 'Migration · Mobility',
+        title: 'Vías legales creíbles: Entre la promesa política y la capacidad real',
+        title_en: 'Credible legal pathways: Between political promise and actual capacity',
+        subtitle: 'Orientaciones estratégicas para convertir las vías legales en mecanismos eficaces y sostenibles.',
+        subtitle_en: 'Strategic guidelines to turn legal pathways into effective and sustainable mechanisms.',
+        heroImage: '/images/informe-4-2026-ES.png',
+        heroImage_en: '/images/informe-4-2026-EN.png',
+        mainImage: '/images/informe-4-2026-ES.png',
+        mainImage_en: '/images/informe-4-2026-EN.png',
+        mainImageCaption: 'Vías legales creíbles: movilidad euroafricana.',
+        mainImageCaption_en: 'Credible legal pathways: Euro-African mobility.',
+        publishDate: '14 Abr 2026',
+        readTime: '12 min',
+        author: {
+            name: 'Equipo IEAM',
+            name_en: 'IEAM Team',
+            role: 'Investigación',
+            role_en: 'Research',
+            image: '/favicon-new.png',
+            bio: 'Unidad de investigación del IEAM.',
+            bio_en: 'IEAM Research Unit.'
+        },
+        content: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Resumen ejecutivo</h3>
+            <p>El presente Policy Paper propone orientaciones estratégicas destinadas a convertir las vías legales de migración en mecanismos más creíbles, eficaces y sostenibles para la gestionar la movilidad entre la Unión Europea y sus socios africanos. El objetivo es superar centrado en las necesidades de visibilidad política a corto plazo y avanzar hacia una arquitectura operativa coherente, basada en las realidades económicas y territoriales.</p>
+            <p>Este documento se inscribe en la continuidad de los trabajos del Instituto Español de Análisis Migratorio (IEAM) y es el resultado de un taller de inteligencia colectiva organizado en Roma por el IEAM y el centro de investigación independiente italiano AMIStaDeS.</p>
+            <p>El taller reunió a una amplia gama de actores clave, entre los que se encontraban representantes de agencias de las Naciones Unidas, instituciones europeas, representantes ministeriales, organizaciones humanitarias y de la sociedad civil, empresas, así como expertos africanos. Esta diversidad de actores permitió intercambiar perspectivas institucionales, operativas y analíticas sobre las dinámicas de la movilidad euroafricana. También contribuyó a identificar las tensiones estructurales que limitan la eficacia de los dispositivos existentes y a esbozar líneas de acción para transformar los programas piloto en mecanismos estructurales creíbles y adaptados a las capacidades y prioridades de los socios africanos.</p>
+            <p>El análisis de este Policy Paper se inscribe en un contexto marcado por la paradoja de las vías legales: aunque son políticamente visibles, siguen siendo estructuralmente periféricas. Los programas de movilidad circular pueden generar resultados positivos a nivel individual, pero no cambian de forma significativa las dinámicas de fondo del sistema. Esta tensión se explica por tres desajustes persistentes: la distancia entre la escala real de los programas y la presión demográfica, la falta de confianza en los procedimientos, agravada por la opacidad consular, y la débil integración de estos dispositivos en las estrategias locales de formación, empleo y reintegración. A estas limitaciones se suman una creciente presión demográfica africana, una capacidad de absorción europea limitada por los ciclos políticos y una sostenibilidad financiera que sigue dependiendo en exceso de la financiación externa a corto plazo.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Mensajes estratégicos</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Hacer que la credibilidad pueda medirse:</strong> publicar de manera armonizada indicadores consulares – plazos de tramitación, tasas de aceptación y motivos de denegación – con el fin de transformar los anuncios políticos en compromisos verificables, reducir la incertidumbre sistémica y limitar el recurso a la intermediación informal.</li>
+                <li><strong>Garantizar la accesibilidad social de los procedimientos:</strong> simplificar los requisitos documentales, adaptar las condiciones financieras a los niveles de ingresos de los países socios y establecer mecanismos de asistencia administrativa local certificada, con el fin de corregir las distorsiones de acceso que orientan estructuralmente las vías legales hacia los candidatos con mayores recursos, en detrimento de los perfiles buscados por los sectores.</li>
+                <li><strong>Estructurar el ciclo completo de la movilidad circular:</strong> condicionar todo programa a una arquitectura coherente que integre la preparación previa a la partida, la adecuación entre empleo y competencias, la protección durante la estancia y un retorno estructurado que ofrezca perspectivas reales de reincorporación, basado en diagnósticos sectoriales documentados y un reconocimiento mutuo de las cualificaciones.</li>
+                <li><strong>Territorializar la reintegración:</strong> ir más allá de los dispositivos individuales a corto plazo para integrar los retornos en dinámicas económicas locales, apoyando proyectos colectivos, condicionando los dispositivos de ayuda a la reintegración a una inserción en sectores identificados y orientando la financiación hacia una lógica de inversión territorial plurianual.</li>
+                <li><strong>Estructurar el papel de las diásporas:</strong> ir más allá de su invocación política para crear interfaces institucionales claras con las administraciones locales, garantizar los instrumentos financieros y alinear los proyectos de inversión con las estrategias territoriales, sin convertir por ello a la diáspora en un sustituto de las políticas públicas.</li>
+                <li><strong>Garantizar la sostenibilidad financiera:</strong> salir del modelo de dependencia de los donantes movilizando financiaciones mixtas que combinen presupuestos nacionales, administraciones locales, sector privado, diásporas y apoyo europeo específico, e integrando la movilidad legal en las estrategias de empleo y desarrollo territorial de los países socios, condición esencial para la corresponsabilidad y la viabilidad a largo plazo.</li>
+            </ul>
+        `,
+        content_en: `
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Executive Summary</h3>
+            <p>This Policy Paper proposes strategic guidelines aimed at making legal migration channels more credible, effective and sustainable mechanisms for managing mobility between the European Union and its African partners. The objective is to move beyond a focus on short-term political visibility and progress towards a coherent operational framework, based on economic and territorial realities.</p>
+            <p>This document forms part of the ongoing work of the Spanish Institute for Migration Analysis (IEAM) and is the result of a collective intelligence workshop organised in Rome by the IEAM and the independent Italian research centre AMIStaDeS.</p>
+            <p>The workshop brought together a wide range of key stakeholders, including representatives from United Nations agencies, European institutions, ministries, humanitarian and civil society organisations, businesses, as well as African experts. This diversity of stakeholders enabled the exchange of institutional, operational and analytical perspectives on the dynamics of Euro-African mobility. It also helped to identify the structural tensions that limit the effectiveness of existing mechanisms and to outline courses of action for transforming pilot programmes into credible structural mechanisms tailored to the capacities and priorities of African partners.</p>
+            <p>The analysis in this Policy Paper is set against a backdrop marked by the paradox of legal channels: although they are politically visible, they remain structurally peripheral. Circular mobility programmes can generate positive outcomes at the individual level, but they do not significantly alter the underlying dynamics of the system. This tension stems from three persistent mismatches: the gap between the actual scale of the programmes and demographic pressure; a lack of trust in procedures, exacerbated by consular opacity; and the weak integration of these mechanisms into local strategies for training, employment and reintegration. Added to these limitations are growing demographic pressure from Africa, a European absorption capacity limited by political cycles, and financial sustainability that remains overly dependent on short-term external funding.</p>
+
+            <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Strategic Messages</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-4">
+                <li><strong>Making credibility measurable:</strong> publish harmonised consular indicators – processing times, acceptance rates and grounds for refusal – in order to transform political announcements into verifiable commitments, reduce systemic uncertainty and limit the use of informal intermediation.</li>
+                <li><strong>Ensure the social accessibility of procedures:</strong> simplify documentary requirements, adapt financial conditions to the income levels of partner countries, and establish mechanisms for certified local administrative assistance, with the aim of correcting the access distortions that structurally steer legal channels towards candidates with greater resources, to the detriment of the profiles sought by the sectors.</li>
+                <li><strong>Structure the entire cycle of circular mobility:</strong> make all programmes subject to a coherent framework that integrates pre-departure preparation, the matching of jobs and skills, protection during the stay, and a structured return offering real prospects for reintegration, based on documented sectoral assessments and mutual recognition of qualifications.</li>
+                <li><strong>Territorialise reintegration:</strong> go beyond short-term individual schemes to integrate returns into local economic dynamics, supporting collective projects, making reintegration support schemes conditional on integration into identified sectors, and directing funding towards a multi-annual territorial investment approach.</li>
+                <li><strong>Structuring the role of diasporas:</strong> moving beyond their political invocation to create clear institutional interfaces with local authorities, securing financial instruments and aligning investment projects with territorial strategies, without thereby turning the diaspora into a substitute for public policies.</li>
+                <li><strong>Ensuring financial sustainability:</strong> moving away from the model of donor dependency by mobilising blended finance that combines national budgets, local authorities, the private sector, diasporas and specific European support, and integrating legal mobility into partner countries’ employment and territorial development strategies, an essential condition for shared responsibility and long-term viability.</li>
+            </ul>
+        `,
+        materials: [
+            {
+                label: 'Descargar Policy Paper (ES)',
+                label_en: 'Download Policy Paper (ES)',
+                url: '/docs/IEAM-2026-004-ES_vas-legales-crebles.pdf'
+            },
+            {
+                label: 'Download Policy Paper (EN)',
+                label_en: 'Download Policy Paper (EN)',
+                url: '/docs/IEAM-2026-004-EN_credible-legal-pathways.pdf'
+            },
+            {
+                label: 'Télécharger le document (FR)',
+                label_en: 'Download Policy Paper (FR)',
+                url: '/docs/IEAM-2026-004-FR_voies-lgales-crdibles.pdf'
+            }
+        ],
+        relatedArticles: [
+            {
+                id: 'enfoque-por-rutas-2026',
+                title: 'Enfoque por rutas',
+                title_en: 'Route-based approach',
+                image: '/images/informe-3-2026-ES.jpg',
+                badge: 'Policy Brief',
+                metadata: { date: '10 Abr 2026', readTime: '10 min' }
+            },
+            {
+                id: 'diplomacia-migratoria-2026',
+                title: 'Diplomacia migratoria euroafricana',
+                title_en: 'Euro-African migration diplomacy',
+                image: '/images/informe-2-2026-ES.png',
+                badge: 'Policy Brief',
+                metadata: { date: '08 Abr 2026', readTime: '12 min' }
+            }
+        ]
+    },
+
+    {
         slug: 'enfoque-por-rutas-2026',
         type: 'Policy Brief',
         type_en: 'Policy Brief',
