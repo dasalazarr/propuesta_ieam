@@ -741,34 +741,40 @@ export const events: EventItem[] = [
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
           <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación institucional del IEAM</h4>
-          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM.<br/>Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.</p>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM. <strong>Javier Zarzalejos</strong>, eurodiputado.</p>
+          <p class="text-slate-600 mt-1">Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:00</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación del informe (parte I y parte II)</h4>
-          <p class="text-slate-600 mt-1 italic">• Migraciones y migrantes. ¿Cómo estudiar la irregularidad en los procesos migratorios? España: un estudio de caso</p>
-          <p class="text-slate-600 mt-2"><strong>Dra. Dolores López</strong>, investigadora asociada del IEAM y profesora de Geografía Humana en la Universidad de Navarra, especializada en migraciones en España.</p>
-          <p class="text-slate-600 mt-2"><strong>Valentina Benincasa</strong>, investigadora asociada del IEAM, docente en el Máster de Género, Migraciones y Derechos Humanos (Universidad Complutense de Madrid) y doctora en Antropología Social, especializada en humanitarismo y políticas de fronteras.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:00 – 19:30</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación de policy papers</h4>
-          <p class="text-slate-600 mt-1 italic">• Repensar la movilidad entre Mali y Europa: movilidad legal y circular, reintegración con un enfoque comunitario y gobernanza regional</p>
-          <p class="text-slate-600 italic">• Reformar la gobernanza de la movilidad en África Occidental</p>
-          <p class="text-slate-600 mt-2"><strong>Roméo Gbaguidi</strong>, investigador asociado del IEAM y presidente del think tank LemAfriQ, especializado en migraciones entre África y Europa, así como en las diásporas africanas.</p>
-          <p class="text-slate-600 mt-2"><strong>Soraya Aybar</strong>, investigadora asociada del IEAM y directora de África Mundi, medio especializado en el continente africano y en las relaciones entre África y Europa.</p>
-          <p class="text-slate-600 mt-3 italic">• Diplomacia migratoria UE–África: de la gestión de los flujos a la coherencia estratégica</p>
-          <p class="text-slate-600 italic">• Enfoque por rutas: ¿reducir los flujos o las vulnerabilidades? Hacia una estrategia coherente de protección y lucha contra las economías criminales</p>
-          <p class="text-slate-600 italic">• Vías legales creíbles: entre promesa política y capacidad real - Estructurar la movilidad circular, el arraigo local y el papel de las diásporas</p>
-          <p class="text-slate-600 mt-2"><strong>Ángel Losada</strong>, diplomático español, embajador de España en Irán (2021–2024) y antiguo representante especial de la Unión Europea para el Sahel (2015–2021).</p>
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación de los trabajos del instituto</h4>
+          <p class="text-slate-600 mt-1"><strong>Moderadora: Soraya Aybar</strong>, investigadora asociada del IEAM y directora de África Mundi, medio especializado en el continente africano y en las relaciones entre África y Europa.</p>
+          
+          <div class="mt-4 space-y-4">
+            <div>
+              <p class="text-slate-600 italic">• Migraciones y migrantes. ¿Cómo estudiar la irregularidad en los procesos migratorios? España: un estudio de caso</p>
+              <p class="text-slate-600 mt-1"><strong>Valentina Benincasa</strong>, investigadora asociada del IEAM, docente en el Máster de Género, Migraciones y Derechos Humanos (Universidad Complutense de Madrid) y doctora en Antropología Social, especializada en humanitarismo y políticas de fronteras.</p>
+            </div>
+            
+            <div>
+              <p class="text-slate-600 italic">• Repensar la movilidad entre Mali y Europa: movilidad legal y circular, reintegración con un enfoque comunitario y gobernanza regional</p>
+              <p class="text-slate-600 italic">• Reformar la gobernanza de la movilidad en África Occidental</p>
+              <p class="text-slate-600 mt-1"><strong>Roméo Gbaguidi</strong>, investigador asociado del IEAM y presidente del think tank LemAfriQ, especializado en migraciones entre África y Europa, así como en las diásporas africanas.</p>
+            </div>
+            
+            <div>
+              <p class="text-slate-600 italic">• Diplomacia migratoria UE–África: de la gestión de los flujos a la coherencia estratégica</p>
+              <p class="text-slate-600 italic">• Enfoque por rutas: ¿reducir los flujos o las vulnerabilidades? Hacia una estrategia coherente de protección y lucha contra las economías criminales</p>
+              <p class="text-slate-600 italic">• Vías legales creíbles: entre promesa política y capacidad real - Estructurar la movilidad circular, el arraigo local y el papel de las diásporas</p>
+              <p class="text-slate-600 mt-1"><strong>Ángel Losada</strong>, diplomático español, embajador de España en Irán (2021–2024) y antiguo representante especial de la Unión Europea para el Sahel (2015–2021).</p>
+            </div>
+          </div>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20</p>
           <h4 class="font-bold text-[var(--color-text-primary)] mt-1">La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas</h4>
-          <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, comisario principal de la Policía Nacional, responsable actualmente de inmigración y fronteras.</p>
+          <p class="text-slate-600 mt-1"><strong>Moderadora: Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM.</p>
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, subdirector general de la Subdirección General para África Occidental, Dirección General para África, Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.</p>
           <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, asesora de gabinete del Ministerio de Inclusión, Seguridad Social y Migraciones de España.</p>
           <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, oficial de política y enlace de la Oficina de la Organización Internacional para las Migraciones (OIM) en España.</p>
@@ -784,6 +790,7 @@ export const events: EventItem[] = [
           <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Vino español</h4>
         </div>
       </div>
+
     `,
     content_en: `
       <p>In a context where migration occupies a central place on Spanish, European, and international political agendas, the Spanish Institute for Migration Analysis (IEAM) joins the European ecosystem for research and policy dialogue on migration. On Thursday, 16 April, IEAM will hold its official launch event at the Sala Europa, within the European Parliament Liaison Office in Madrid.</p>
@@ -813,38 +820,44 @@ export const events: EventItem[] = [
       <div class="space-y-6 mt-4">
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Institutional presentation of IEAM</h4>
-          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Executive Director of IEAM.<br/>Welcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Institutional presentation of the IEAM</h4>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Executive Director of the IEAM. <strong>Javier Zarzalejos</strong>, Member of the European Parliament.</p>
+          <p class="text-slate-600 mt-1">Welcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:00</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentation of the report (Part I and Part II)</h4>
-          <p class="text-slate-600 mt-1 italic">• Migration and migrants. How can we study irregularity in migration processes? Spain: a case study</p>
-          <p class="text-slate-600 mt-2"><strong>Dr. Dolores López</strong>, associate researcher at IEAM and professor of Human Geography at the University of Navarra, specializing in migration in Spain.</p>
-          <p class="text-slate-600 mt-2"><strong>Valentina Benincasa</strong>, associate researcher at IEAM, lecturer in the Master's program in Gender, Migration and Human Rights (Complutense University of Madrid), and PhD in Social Anthropology, specializing in humanitarianism and border policies.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:00 – 19:30</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentation of policy papers</h4>
-          <p class="text-slate-600 mt-1 italic">• Rethinking mobility between Mali and Europe: legal and circular mobility, reintegration with a community-based approach, and regional governance</p>
-          <p class="text-slate-600 italic">• Reforming mobility governance in West Africa</p>
-          <p class="text-slate-600 mt-2"><strong>Roméo Gbaguidi</strong>, associate researcher at IEAM and president of the think tank LemAfriQ, specializing in migration between Africa and Europe, as well as African diasporas.</p>
-          <p class="text-slate-600 mt-2"><strong>Soraya Aybar</strong>, associate researcher at IEAM and director of África Mundi, a media outlet specializing in the African continent and Africa–Europe relations.</p>
-          <p class="text-slate-600 mt-3 italic">• EU–Africa migration diplomacy: from flow management to strategic coherence</p>
-          <p class="text-slate-600 italic">• Route-based approach: reducing flows or vulnerabilities? Towards a coherent strategy for protection and the fight against criminal economies</p>
-          <p class="text-slate-600 italic">• Credible legal pathways: between political promise and real capacity – structuring circular mobility, local rootedness, and the role of diasporas</p>
-          <p class="text-slate-600 mt-2"><strong>Ángel Losada</strong>, Spanish diplomat, Ambassador of Spain to Iran (2021–2024) and former EU Special Representative for the Sahel (2015–2021).</p>
+          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:30</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentation of the Institute’s work</h4>
+          <p class="text-slate-600 mt-1"><strong>Moderator: Soraya Aybar</strong>, Associate Researcher at the IEAM and Director of África Mundi, a media outlet specialising in the African continent and Africa–Europe relations.</p>
+          
+          <div class="mt-4 space-y-4">
+            <div>
+              <p class="text-slate-600 italic">• Migration and migrants: How can irregularity in migration processes be studied? Spain as a case study</p>
+              <p class="text-slate-600 mt-1"><strong>Valentina Benincasa</strong>, Associate Researcher at the IEAM, lecturer in the Master’s programme in Gender, Migration and Human Rights (Complutense University of Madrid), and PhD in Social Anthropology, specialising in humanitarianism and border policies.</p>
+            </div>
+            
+            <div>
+              <p class="text-slate-600 italic">• Rethinking mobility between Mali and Europe: legal and circular mobility, reintegration through a community-based approach, and regional governance</p>
+              <p class="text-slate-600 italic">• Reforming mobility governance in West Africa</p>
+              <p class="text-slate-600 mt-1"><strong>Roméo Gbaguidi</strong>, Associate Researcher at the IEAM and President of the LemAfriQ think tank, specialising in migration between Africa and Europe, as well as African diasporas.</p>
+            </div>
+            
+            <div>
+              <p class="text-slate-600 italic">• EU–Africa migration diplomacy: from flow management to strategic coherence</p>
+              <p class="text-slate-600 italic">• Route-based approach: reducing flows or vulnerabilities? Towards a coherent strategy for protection and the fight against criminal economies</p>
+              <p class="text-slate-600 italic">• Credible legal pathways: between political promise and actual capacity – structuring circular mobility, local integration and the role of diasporas</p>
+              <p class="text-slate-600 mt-1"><strong>Ángel Losada</strong>, Spanish diplomat, Ambassador of Spain to Iran (2021–2024) and former EU Special Representative for the Sahel (2015–2021).</p>
+            </div>
+          </div>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">The migration issue between Africa and Europe: strategic challenges and shared responses</h4>
-          <p class="text-slate-600 mt-2"><strong>Alfredo García Miravete</strong>, Chief Commissioner of the National Police, currently responsible for immigration and borders.</p>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Migration between Africa and Europe: strategic challenges and shared responses</h4>
+          <p class="text-slate-600 mt-1"><strong>Moderator: Beatriz de León Cobo</strong>, Executive Director of the IEAM.</p>
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, Deputy Director-General for West Africa, Directorate-General for Africa, Ministry of Foreign Affairs, European Union and Cooperation.</p>
-          <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, advisor in the office of the Ministry of Inclusion, Social Security and Migration of Spain.</p>
-          <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, Policy and Liaison Officer at the International Organization for Migration (IOM) Office in Spain.</p>
+          <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, Cabinet Advisor at the Spanish Ministry of Inclusion, Social Security and Migration.</p>
+          <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, Policy Officer and Liaison at the Office of the International Organization for Migration (IOM) in Spain.</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
@@ -854,30 +867,30 @@ export const events: EventItem[] = [
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:30 – 21:15</p>
-          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Spanish wine reception</h4>
+          <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Reception (Spanish wine)</h4>
         </div>
       </div>
+
     `,
     agenda: [
-      { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of IEAM", speaker: "Beatriz de León Cobo, Directora ejecutiva del IEAM", speaker_en: "Beatriz de León Cobo, Executive Director of IEAM" },
-      { time: "18:45 – 19:00", title: "Presentación del informe (parte I y parte II)", title_en: "Presentation of the report (Part I and Part II)", speaker: "Dra. Dolores López · Valentina Benincasa", speaker_en: "Dr. Dolores López · Valentina Benincasa" },
-      { time: "19:00 – 19:30", title: "Presentación de policy papers", title_en: "Presentation of policy papers", speaker: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada", speaker_en: "Roméo Gbaguidi · Soraya Aybar · Ángel Losada" },
-      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "The migration issue between Africa and Europe: strategic challenges and shared responses", speaker: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini", speaker_en: "Alfredo García Miravete · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini" },
+      { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of the IEAM", speaker: "Beatriz de León Cobo · Javier Zarzalejos", speaker_en: "Beatriz de León Cobo · Javier Zarzalejos" },
+      { time: "18:45 – 19:30", title: "Presentación de los trabajos del instituto", title_en: "Presentation of the Institute’s work", speaker: "Soraya Aybar · Valentina Benincasa · Roméo Gbaguidi · Ángel Losada", speaker_en: "Soraya Aybar · Valentina Benincasa · Roméo Gbaguidi · Ángel Losada" },
+      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "Migration between Africa and Europe: strategic challenges and shared responses", speaker: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini", speaker_en: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini" },
       { time: "20:20 – 20:30", title: "Conclusión y clausura", title_en: "Conclusion and closing remarks" },
-      { time: "20:30 – 21:15", title: "Vino español", title_en: "Spanish wine reception" }
+      { time: "20:30 – 21:15", title: "Vino español", title_en: "Reception (Spanish wine)" }
     ],
     speakers: [
       { name: "Beatriz de León Cobo", role: "Directora Ejecutiva del IEAM", role_en: "Executive Director of IEAM" },
-      { name: "Dra. Dolores López", role: "Investigadora asociada IEAM, Univ. de Navarra", role_en: "Associate researcher IEAM, University of Navarra" },
+      { name: "Javier Zarzalejos", role: "Eurodiputado", role_en: "Member of the European Parliament" },
       { name: "Valentina Benincasa", role: "Investigadora asociada IEAM, UCM", role_en: "Associate researcher IEAM, UCM" },
       { name: "Roméo Gbaguidi", role: "Investigador asociado IEAM, presidente LemAfriQ", role_en: "Associate researcher IEAM, president of LemAfriQ" },
       { name: "Soraya Aybar", role: "Investigadora asociada IEAM, directora de África Mundi", role_en: "Associate researcher IEAM, director of África Mundi" },
       { name: "Ángel Losada", role: "Diplomático, ex Embajador de España en Irán y ex Representante Especial UE para el Sahel", role_en: "Diplomat, former Ambassador of Spain to Iran and former EU Special Representative for the Sahel" },
-      { name: "Alfredo García Miravete", role: "Comisario Principal de la Policía Nacional", role_en: "Chief Commissioner of the National Police" },
       { name: "Francisco de Borja Morate Martín", role: "Subdirector General para África Occidental, MAEUEC", role_en: "Deputy Director-General for West Africa, Ministry of Foreign Affairs" },
       { name: "Ana Hernández Rodríguez", role: "Asesora de gabinete, Ministerio de Inclusión, SS y Migraciones", role_en: "Cabinet Advisor, Ministry of Inclusion, Social Security and Migration" },
       { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" }
     ]
+
   }
 ];
 
