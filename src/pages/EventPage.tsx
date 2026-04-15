@@ -119,14 +119,13 @@ const EventPage = () => {
                 </h3>
 
                 {(() => {
-                  const filteredSpeakers = event.speakers.filter(speaker => speaker.name.includes('Beatriz de León') || speaker.name.includes('Viktor') || speaker.name.includes('Tasnim'));
-                  const hasGroups = filteredSpeakers.some((s) => s.group);
+                  const hasGroups = event.speakers.some((s) => s.group);
 
                   if (hasGroups) {
                     const groups: Record<string, typeof event.speakers> = {};
                     const groupOrder: string[] = [];
 
-                    filteredSpeakers.forEach((speaker) => {
+                    event.speakers.forEach((speaker) => {
                       const groupName =
                         i18n.language.startsWith('en')
                           ? speaker.group_en || speaker.group || "General"
@@ -167,7 +166,7 @@ const EventPage = () => {
 
                   return (
                     <ul className="space-y-3">
-                      {filteredSpeakers
+                      {event.speakers
                         .map((speaker) => (
                         <li key={speaker.name} className="text-slate-700">
                           <div className="font-semibold leading-tight">{speaker.name}</div>
