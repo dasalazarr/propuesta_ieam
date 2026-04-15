@@ -741,7 +741,8 @@ export const events: EventItem[] = [
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
           <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Presentación institucional del IEAM</h4>
-          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM. <strong>Javier Zarzalejos</strong>, eurodiputado.</p>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM.</p>
+          <p class="text-slate-600 mt-1"><strong>Javier Zarzalejos</strong>, eurodiputado.</p>
           <p class="text-slate-600 mt-1">Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.</p>
         </div>
 
@@ -821,7 +822,8 @@ export const events: EventItem[] = [
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
           <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45</p>
           <h4 class="font-bold text-[var(--color-text-primary)] mt-1">Institutional presentation of the IEAM</h4>
-          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Executive Director of the IEAM. <strong>Javier Zarzalejos</strong>, Member of the European Parliament.</p>
+          <p class="text-slate-600 mt-1"><strong>Beatriz de León Cobo</strong>, Executive Director of the IEAM.</p>
+          <p class="text-slate-600 mt-1"><strong>Javier Zarzalejos</strong>, Member of the European Parliament.</p>
           <p class="text-slate-600 mt-1">Welcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.</p>
         </div>
 
