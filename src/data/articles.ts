@@ -262,16 +262,16 @@ export const articles: Article[] = [
         contentKind: 'policy',
         category: 'Migración · Diplomacia',
         category_en: 'Migration · Diplomacy',
-        title: 'Diplomacia migratoria euroafricana',
-        title_en: 'Euro-African migration diplomacy',
-        subtitle: 'Hacia un enfoque integrado y sostenible de la movilidad.',
-        subtitle_en: 'Towards an integrated and sustainable vision of mobility.',
+        title: 'Diplomacia migratoria UE–África',
+        title_en: 'EU–Africa Migration Diplomacy',
+        subtitle: 'De la gestión de los flujos a la coherencia estratégica',
+        subtitle_en: 'From Flow Management to Strategic Coherence',
         heroImage: '/images/informe-2-2026-ES.png',
         heroImage_en: '/images/informe-2-2026-EN.png',
         mainImage: '/images/informe-2-2026-ES.png',
         mainImage_en: '/images/informe-2-2026-EN.png',
-        mainImageCaption: 'Diplomacia migratoria euroafricana.',
-        mainImageCaption_en: 'Euro-African migration diplomacy.',
+        mainImageCaption: 'Diplomacia migratoria UE–África.',
+        mainImageCaption_en: 'EU–Africa Migration Diplomacy',
         publishDate: '08 Abr 2026',
         readTime: '12 min',
         author: {
@@ -292,11 +292,11 @@ export const articles: Article[] = [
             
             <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Mensajes estratégicos</h3>
             <ul class="list-disc pl-6 mb-4 space-y-4">
-                <li><strong>Aclarar la doctrina pública de la diplomacia migratoria</strong>, definiendo de forma explícita los objetivos perseguidos y los instrumentos movilizados, precisando la articulación entre seguridad, movilidad legal y desarrollo, jerarquizando las prioridades operativas y alineando la comunicación pública con esa doctrina de manera coherente y continua, con independencia de las coyunturas electorales.</li>
-                <li><strong>Reducir la fragmentación mediante una coordinación regional mínima</strong>, inscribiendo los acuerdos bilaterales en un marco regional que permita anticipar los efectos de desplazamiento y limitar las consecuencias negativas en los corredores vecinos, integrando de forma sistemática la dimensión humanitaria y los riesgos añadidos para las personas migrantes durante las reorientaciones de rutas.</li>
-                <li><strong>Garantizar la previsibilidad de los compromisos</strong>, mediante marcos financieros y jurídicos plurianuales, una mayor continuidad normativa y el mantenimiento de los mecanismos más allá de los ciclos políticos, como condición esencial para la credibilidad de las asociaciones.</li>
-                <li><strong>Construir una reciprocidad efectiva</strong>, adaptando las estrategias a los contextos nacionales africanos, promoviendo un codesarrollo con efectos medibles sobre el terreno y garantizando un acceso real a las vías legales de movilidad.</li>
-                <li><strong>Reforzar la rendición de cuentas</strong>, mediante una evaluación independiente que integre indicadores sistémicos – como el desplazamiento de rutas, los impactos regionales y la protección internacional –, elaborados conjuntamente con los socios africanos y hechos públicos para convertir los compromisos políticos en marcos operativos verificables.</li>
+                <li><strong>Aclarar la doctrina pública de la diplomacia migratoria:</strong> definiendo de forma explícita los objetivos perseguidos y los instrumentos movilizados, precisando la articulación entre seguridad, movilidad legal y desarrollo, jerarquizando las prioridades operativas y alineando la comunicación pública con esa doctrina de manera coherente y continua, con independencia de las coyunturas electorales.</li>
+                <li><strong>Reducir la fragmentación mediante una coordinación regional mínima:</strong> inscribiendo los acuerdos bilaterales en un marco regional que permita anticipar los efectos de desplazamiento y limitar las consecuencias negativas en los corredores vecinos, integrando de forma sistemática la dimensión humanitaria y los riesgos añadidos para las personas migrantes durante las reorientaciones de rutas.</li>
+                <li><strong>Garantizar la previsibilidad de los compromisos:</strong> mediante marcos financieros y jurídicos plurianuales, una mayor continuidad normativa y el mantenimiento de los mecanismos más allá de los ciclos políticos, como condición esencial para la credibilidad de las asociaciones.</li>
+                <li><strong>Construir una reciprocidad efectiva:</strong> adaptando las estrategias a los contextos nacionales africanos, promoviendo un codesarrollo con efectos medibles sobre el terreno y garantizando un acceso real a las vías legales de movilidad.</li>
+                <li><strong>Reforzar la rendición de cuentas:</strong> mediante una evaluación independiente que integre indicadores sistémicos – como el desplazamiento de rutas, los impactos regionales y la protección internacional –, elaborados conjuntamente con los socios africanos y hechos públicos para convertir los compromisos políticos en marcos operativos verificables.</li>
             </ul>
         `,
         content_en: `
