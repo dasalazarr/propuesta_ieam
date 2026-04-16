@@ -779,6 +779,7 @@ export const events: EventItem[] = [
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, subdirector general de la Subdirección General para África Occidental, Dirección General para África, Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.</p>
           <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, asesora de gabinete del Ministerio de Inclusión, Seguridad Social y Migraciones de España.</p>
           <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, oficial de política y enlace de la Oficina de la Organización Internacional para las Migraciones (OIM) en España.</p>
+          <p class="text-slate-600 mt-2"><strong>Javier Albaladejo</strong>, Comisario Principal de la Policía Nacional (r).</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
@@ -860,6 +861,7 @@ export const events: EventItem[] = [
           <p class="text-slate-600 mt-2"><strong>Francisco de Borja Morate Martín</strong>, Deputy Director-General for West Africa, Directorate-General for Africa, Ministry of Foreign Affairs, European Union and Cooperation.</p>
           <p class="text-slate-600 mt-2"><strong>Ana Hernández Rodríguez</strong>, Cabinet Advisor at the Spanish Ministry of Inclusion, Social Security and Migration.</p>
           <p class="text-slate-600 mt-2"><strong>Agustín Mussini</strong>, Policy Officer and Liaison at the Office of the International Organization for Migration (IOM) in Spain.</p>
+          <p class="text-slate-600 mt-2"><strong>Javier Albaladejo</strong>, Principal Commissioner of the National Police (r.).</p>
         </div>
 
         <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
@@ -877,7 +879,7 @@ export const events: EventItem[] = [
     agenda: [
       { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of the IEAM", speaker: "Beatriz de León Cobo · Javier Zarzalejos", speaker_en: "Beatriz de León Cobo · Javier Zarzalejos" },
       { time: "18:45 – 19:30", title: "Presentación de los trabajos del instituto", title_en: "Presentation of the Institute’s work", speaker: "Soraya Aybar · Valentina Benincasa · Roméo Gbaguidi · Ángel Losada", speaker_en: "Soraya Aybar · Valentina Benincasa · Roméo Gbaguidi · Ángel Losada" },
-      { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "Migration between Africa and Europe: strategic challenges and shared responses", speaker: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini", speaker_en: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini" },
+      { time: "19:30 - 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "Migration between Africa and Europe: strategic challenges and shared responses", speaker: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini · Javier Albaladejo", speaker_en: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini · Javier Albaladejo" },
       { time: "20:20 – 20:30", title: "Conclusión y clausura", title_en: "Conclusion and closing remarks" },
       { time: "20:30 – 21:15", title: "Vino español", title_en: "Reception (Spanish wine)" }
     ],
@@ -890,7 +892,8 @@ export const events: EventItem[] = [
       { name: "Ángel Losada", role: "Diplomático, ex Embajador de España en Irán y ex Representante Especial UE para el Sahel", role_en: "Diplomat, former Ambassador of Spain to Iran and former EU Special Representative for the Sahel" },
       { name: "Francisco de Borja Morate Martín", role: "Subdirector General para África Occidental, MAEUEC", role_en: "Deputy Director-General for West Africa, Ministry of Foreign Affairs" },
       { name: "Ana Hernández Rodríguez", role: "Asesora de gabinete, Ministerio de Inclusión, SS y Migraciones", role_en: "Cabinet Advisor, Ministry of Inclusion, Social Security and Migration" },
-      { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" }
+      { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" },
+      { name: "Javier Albaladejo", role: "Comisario Principal de la Policía Nacional (r.)", role_en: "Principal Commissioner of the National Police (r.)" }
     ]
 
   }
