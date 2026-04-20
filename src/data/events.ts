@@ -803,15 +803,6 @@ export const events: EventItem[] = [
       { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" },
       { name: "Javier Albaladejo", role: "Comisario Principal de la Policía Nacional (r.)", role_en: "Principal Commissioner of the National Police (r.)" }
     ]
-  }role_en: "Associate researcher IEAM, president of LemAfriQ" },
-      { name: "Soraya Aybar", role: "Investigadora asociada IEAM, directora de África Mundi", role_en: "Associate researcher IEAM, director of África Mundi" },
-      { name: "Ángel Losada", role: "Diplomático, ex Embajador de España en Irán y ex Representante Especial UE para el Sahel", role_en: "Diplomat, former Ambassador of Spain to Iran and former EU Special Representative for the Sahel" },
-      { name: "Francisco de Borja Morate Martín", role: "Subdirector General para África Occidental, MAEUEC", role_en: "Deputy Director-General for West Africa, Ministry of Foreign Affairs" },
-      { name: "Ana Hernández Rodríguez", role: "Asesora de gabinete, Ministerio de Inclusión, SS y Migraciones", role_en: "Cabinet Advisor, Ministry of Inclusion, Social Security and Migration" },
-      { name: "Agustín Mussini", role: "Oficial de política y enlace de la OIM en España", role_en: "Policy and Liaison Officer at IOM Spain" },
-      { name: "Javier Albaladejo", role: "Comisario Principal de la Policía Nacional (r.)", role_en: "Principal Commissioner of the National Police (r.)" }
-    ]
-
   }
 ];
 
