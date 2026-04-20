@@ -101,6 +101,25 @@ const EventPage = () => {
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> {localizedEvent.location}</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {localizedEvent.format}</span>
             </div>
+
+            {/* Download buttons in hero — same pattern as ArticlePage */}
+            {attachments.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-3">
+                {attachments.map((att) => (
+                  <a
+                    key={att.url}
+                    href={att.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--color-accent-red)] text-white font-bold uppercase tracking-[0.18em] text-xs hover:bg-[#b01b22] transition-colors"
+                  >
+                    <Download className="w-4 h-4 flex-shrink-0" />
+                    {isEn && att.label_en ? att.label_en : att.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -112,10 +131,24 @@ const EventPage = () => {
           {/* Left column: article content + agenda */}
           <div className="lg:col-span-7 space-y-8">
             {localizedEvent.content ? (
-              <div dangerouslySetInnerHTML={{ __html: localizedEvent.content }} className="text-slate-700 text-lg leading-relaxed [&_p]:mb-4" />
+              <div
+                dangerouslySetInnerHTML={{ __html: localizedEvent.content }}
+                className="
+                  prose prose-slate max-w-none
+                  text-slate-700 text-lg leading-[1.85]
+                  [&_p]:mb-5 [&_p]:text-slate-700
+                  [&_h3]:text-2xl [&_h3]:font-serif [&_h3]:font-bold [&_h3]:text-[var(--color-text-primary)] [&_h3]:mt-10 [&_h3]:mb-4
+                  [&_h4]:text-lg [&_h4]:font-bold [&_h4]:text-[var(--color-text-primary)] [&_h4]:mt-8 [&_h4]:mb-3
+                  [&_ul]:pl-5 [&_ul]:space-y-2 [&_ul]:mb-5
+                  [&_li]:text-slate-700 [&_li]:leading-relaxed
+                  [&_b]:font-semibold [&_b]:text-[var(--color-text-primary)]
+                  [&_img]:rounded-sm [&_img]:shadow-md [&_img]:my-8
+                  [&_blockquote]:border-l-4 [&_blockquote]:border-[var(--color-accent-red)] [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-slate-600
+                "
+              />
             ) : (
               localizedEvent.summary.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-slate-700 text-lg leading-relaxed mb-4">
+                <p key={index} className="text-slate-700 text-lg leading-[1.85] mb-5">
                   {paragraph}
                 </p>
               ))
@@ -182,35 +215,6 @@ const EventPage = () => {
                         decoding="async"
                       />
                     </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Downloadable attachments */}
-            {attachments.length > 0 && (
-              <div className="border-t hairline pt-8">
-                <h2 className="text-2xl font-serif font-bold text-[var(--color-text-primary)] mb-5">
-                  {isEn ? 'Documents' : 'Documentos'}
-                </h2>
-                <div className="flex flex-col gap-3">
-                  {attachments.map((att, idx) => (
-                    <a
-                      key={idx}
-                      href={att.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                      className="group flex items-center gap-4 p-4 border hairline bg-[var(--color-paper-warm)] hover:bg-[var(--color-navy-900)] hover:text-white transition-colors duration-200"
-                    >
-                      <span className="flex-shrink-0 w-9 h-9 flex items-center justify-center border border-current rounded-full group-hover:border-white transition-colors">
-                        <Download className="w-4 h-4" />
-                      </span>
-                      <span className="text-sm font-semibold tracking-wide">
-                        {isEn && att.label_en ? att.label_en : att.label}
-                      </span>
-                      <span className="ml-auto text-xs font-bold uppercase tracking-wider opacity-50 group-hover:opacity-80">PDF</span>
-                    </a>
                   ))}
                 </div>
               </div>

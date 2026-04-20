@@ -806,12 +806,8 @@ export const events: EventItem[] = [
       "/images/eventoieam4.webp"
     ],
     attachments: [
-      { label: "Diplomacia migratoria UE–África (ES)", label_en: "EU–Africa Migration Diplomacy (ES)", url: "/docs/IEAM-2026-002-ES_diplomacia-migratoria.pdf" },
-      { label: "EU–Africa Migration Diplomacy (EN)", label_en: "EU–Africa Migration Diplomacy (EN)", url: "/docs/IEAM-2026-002-EN_migration-diplomacy.pdf" },
-      { label: "Enfoque por rutas (ES)", label_en: "Route-based approach (ES)", url: "/docs/IEAM-2026-003-ES_enfoque-por-rutas.pdf" },
-      { label: "Route-based approach (EN)", label_en: "Route-based approach (EN)", url: "/docs/IEAM-2026-003-EN_route-based-approach.pdf" },
-      { label: "Vías legales creíbles (ES)", label_en: "Credible legal pathways (ES)", url: "/docs/IEAM-2026-004-ES_vas-legales-crebles.pdf" },
-      { label: "Credible legal pathways (EN)", label_en: "Credible legal pathways (EN)", url: "/docs/IEAM-2026-004-EN_credible-legal-pathways.pdf" }
+      { label: "Comunicado de prensa (ES)", label_en: "Comunicado de prensa (ES)", url: "/docs/Communiqu_de_presse_-_ES.pdf" },
+      { label: "Press release (EN)", label_en: "Press release (EN)", url: "/docs/Communiqu_de_presse_-_EN.pdf" }
     ],
     speakers: [
       { name: "Beatriz de León Cobo", role: "Directora Ejecutiva del IEAM", role_en: "Executive Director of IEAM" },
