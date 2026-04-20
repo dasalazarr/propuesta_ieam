@@ -35,9 +35,15 @@ function processItems(items: any[], baseOutPath: string, urlPrefix: string, temp
             fs.mkdirSync(itemDir, { recursive: true });
         }
 
-        const title = escapeHtml(item.title + " | IEAM");
-        const description = escapeHtml(item.subtitle || item.summary || (item.content ? item.content.substring(0, 150) + "..." : "IEAM - Instituto Español de Análisis Migratorio"));
-        const image = escapeHtml(item.heroImage || item.mainImage || "/ieam-logo-new.png");
+        const title = escapeHtml((item.title_en && urlPrefix.includes('/en') ? item.title_en : item.title) + " | IEAM");
+        const description = escapeHtml((item.subtitle_en && urlPrefix.includes('/en') ? item.subtitle_en : item.subtitle) || (item.summary_en && urlPrefix.includes('/en') ? item.summary_en : item.summary) || (item.content ? item.content.substring(0, 150) + "..." : "IEAM - Instituto Español de Análisis Migratorio"));
+        
+        // Pick English image if we are in an English context or if it's the only one
+        let image = item.heroImage || item.mainImage || "/ieam-logo-new.png";
+        if (urlPrefix.includes('/en') && item.heroImage_en) {
+            image = item.heroImage_en;
+        }
+
         const url = `${BASE_URL}/${urlPrefix}/${slug}`;
 
         let html = template;
