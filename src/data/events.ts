@@ -713,172 +713,76 @@ export const events: EventItem[] = [
     summary: "El IEAM celebró su acto de lanzamiento oficial en la Oficina del Parlamento Europeo en Madrid, reuniendo a expertos y representantes institucionales para analizar los retos migratorios.",
     summary_en: "The IEAM held its official launch event at the European Parliament Office in Madrid, bringing together experts and institutional representatives to analyze migration challenges.",
     content: `
-      <p class="lead text-lg mb-6">El Instituto Español de Análisis Migratorio presenta en Madrid sus primeros trabajos y reivindica un debate más riguroso, estratégico y de largo plazo sobre migración.</p>
-      
+      <p>El Instituto Español de Análisis Migratorio presenta en Madrid sus primeros trabajos y reivindica un debate más riguroso, estratégico y de largo plazo sobre migración.</p>
       <p>El acto de lanzamiento del IEAM, celebrado en la Oficina del Parlamento Europeo en Madrid, reunió a representantes institucionales, expertos, organismos internacionales y socios africanos y europeos para analizar los principales retos migratorios entre África y Europa.</p>
-      
-      <p>Madrid, 16 de abril de 2026. El Instituto Español de Análisis Migratorio (IEAM) celebró este miércoles en la Oficina del Parlamento Europeo en Madrid su acto de lanzamiento oficial, una jornada que sirvió para presentar sus primeros resultados de investigación, compartir su metodología de trabajo y abrir un espacio de reflexión plural sobre uno de los grandes asuntos estructurales de nuestro tiempo: la migración. Dirigido por Beatriz de León Cobo, el IEAM arrancó su actividad en septiembre de 2025 con la vocación de ofrecer análisis riguroso, proponer políticas innovadoras y generar espacios de diálogo que permitan anticipar y gestionar la migración africana de manera sostenible, humana y útil para ambas regiones.</p>
-      
-      <p>La jornada permitió visibilizar un trabajo ya avanzado. En apenas seis meses, el Instituto ha elaborado informes técnicos, policy papers, infografías y actividades de diálogo estratégico en distintos puntos de Europa y África, con talleres celebrados en Bamako, Dakar y Roma. Su metodología combina diálogo estratégico, investigación e influencia pública, reuniendo a gobiernos, investigadores, sociedad civil, diásporas y sector privado para producir análisis aplicados y recomendaciones útiles para la toma de decisiones.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <img src="/images/eventoieam1.webp" alt="Lanzamiento IEAM 1" class="rounded-lg shadow-md w-full h-64 object-cover" />
-        <img src="/images/eventoieam2.webp" alt="Lanzamiento IEAM 2" class="rounded-lg shadow-md w-full h-64 object-cover" />
-      </div>
-
+      <p>Madrid, 16 de abril de 2026. El Instituto Español de Análisis Migratorio (IEAM) celebró este miércoles en la Oficina del Parlamento Europeo en Madrid su acto de lanzamiento oficial, una jornada que sirvió para presentar sus primeros resultados de investigación, compartir su metodología de trabajo y abrir un espacio de reflexión plural sobre uno de los grandes asuntos estructurales de nuestro tiempo: la migración. Dirigido por Beatriz de León Cobo, el IEAM arrancó su actividad en septiembre de 2025 con la vocación de ofrecer análisis riguroso, proponer políticas innovadoras y generar espacios de diálogo que permitan anticipar y gestionar la migración africana de manera sostenible, humana y útil para ambas regiones. La jornada permitió visibilizar un trabajo ya avanzado. En apenas seis meses, el Instituto ha elaborado informes técnicos, policy papers, infografías y actividades de diálogo estratégico en distintos puntos de Europa y África, con talleres celebrados en Bamako, Dakar y Roma. Su metodología combina diálogo estratégico, investigación e influencia pública, reuniendo a gobiernos, investigadores, sociedad civil, diásporas y sector privado para producir análisis aplicados y recomendaciones útiles para la toma de decisiones.</p>
       <p>La directora ejecutiva del Instituto, Beatriz de León Cobo, recordó que el IEAM es una iniciativa que se puso en marcha hace seis meses, en septiembre de 2025, en un contexto internacional marcado por la aceleración de la información, la polarización del debate y la dificultad de construir políticas migratorias eficaces, humanas y con una visión a largo plazo. En su intervención, explicó que el Instituto quiere generar espacios donde puedan escucharse opiniones diversas, incluso discrepantes, con el fin de mejorar la calidad de las políticas públicas. También subrayó que África Occidental y el Sahel ocupan un lugar prioritario en esta primera fase del Instituto, tanto por la relevancia geopolítica de la región como por la necesidad de integrar las perspectivas africanas en el debate europeo.</p>
-      
       <p>El evento comenzó con la intervención del eurodiputado Javier Zarzalejos, quien defendió una aproximación integral al fenómeno migratorio y advirtió, además, de que con frecuencia se confunden los problemas de integración con los problemas específicos de la inmigración y reclamó una respuesta que combine gestión eficaz, cooperación, integración y respeto a los valores democráticos. A su juicio, Europa se encuentra en “un punto de inflexión” en su estrategia migratoria, con el nuevo Pacto sobre Migración y Asilo como marco de referencia, pero ese esfuerzo de eficacia debe mantenerse dentro de un sistema de garantías suficientes que preserve los derechos y la dignidad de las personas.</p>
-      
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Presentación de resultados</h3>
       <p>La primera mesa de presentación de resultados estuvo moderada por Soraya Aybar, directora de África Mundi, y reunió a Valentina Benincasa, profesora del máster “Género, Migración y Derechos Humanos” de la Universidad Complutense de Madrid; Roméo Gbaguidi, presidente y director de investigación del Laboratorio para el Estudio de las Migraciones Africanas (LemAfriQ); y Ángel Losada, diplomático español y exrepresentante especial de la Unión Europea para el Sahel. La sesión permitió aterrizar tres grandes ejes del trabajo del Instituto: la migración irregular en España, la gobernanza de la movilidad en África Occidental y la dimensión europea de las políticas migratorias.</p>
-      
       <p>Entre sus conclusiones destacan la importancia de la irregularidad sobrevenida y la situación de los menores no acompañados. Ángel Losada advirtió de que uno de los principales obstáculos para construir una política europea eficaz hacia el Sahel sigue siendo la falta de unidad entre los propios Estados miembros. También se refirió a Irán para subrayar la importancia de anticiparse a las crisis regionales antes de que se conviertan en presiones migratorias mayores sobre Europa, y recordó que la migración no puede abordarse solo desde el control de fronteras, sino desde una estrategia más amplia de asociación, prevención y corresponsabilidad.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <img src="/images/eventoieam3.webp" alt="Lanzamiento IEAM 3" class="rounded-lg shadow-md w-full h-64 object-cover" />
-        <img src="/images/eventoieam4.webp" alt="Lanzamiento IEAM 4" class="rounded-lg shadow-md w-full h-64 object-cover" />
-      </div>
-
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Retos estratégicos y respuestas comunes</h3>
       <p>La segunda gran mesa de la jornada, centrada en “La migración entre África y Europa: retos estratégicos y respuestas comunes”, reunió a Ana Hernández Rodríguez, asesora ministerial del Ministerio de Inclusión, Seguridad Social y Migraciones; Francisco de Borja Morate Martín, subdirector general para África Occidental del Ministerio de Asuntos Exteriores, Unión Europea y Cooperación; Agustín Mussini, responsable de políticas y enlace de la Oficina de la Organización Internacional para las Migraciones en España; y Javier Albaladejo, excomisario principal de la Policía Nacional.</p>
-      
-      <p>En relación con el proceso extraordinario de regularización, Hernández Rodríguez insistió en que se trata de una medida orientada a personas que ya están en España, no a nuevas llegadas. “No se está regalando dinero, se les está regalando la posibilidad de ser personas con derechos y obligaciones”, afirmó. Para la representante del Ministerio, el debate ha estado muy condicionado por la difusión de versiones incorrectas del texto y por una ola de bulos que han distornado el sentido de la medida.</p>
-      
-      <p>Desde el Ministerio de Asuntos Exteriores, Borja Morate Martín destacó que la estrategia España-África 2025-2028 refleja la importancia creciente que España concede a su política africana y, en particular, a África Occidental como región prioritaria. Morate Martín puso además el foco en Senegal como uno de los socios estratégicos más relevantes para España en África Occidental y destacó la reciente elevación de las relaciones bilaterales al nivel de asociación estratégica.</p>
-      
-      <p>Por parte de la OIM, Agustín Mussini recordó que en un país como España la migración “no es ni marginal ni excepcional”, sino “una dimensión estructural de la vida social, política, económica, laboral y demográfica del país. En sus palabras, una política migratoria madura “no se limita a gestionar entradas, ordena trayectorias, reduce vulnerabilidades y amplía oportunidades”.</p>
-      
-      <p>La mirada de seguridad la aportó Javier Albaladejo, quien recordó que la lucha contra las redes de crimen organizado que trafican con personas y explotan la trata sigue siendo una prioridad constante en la agenda europea. Defendió, más bien, que muchas veces la clave está en la persecución real de las estructuras financieras y organizativas detrás de las redes criminales.</p>
-      
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusiones</h3>
-      <p>En el cierre de la jornada, Beatriz de León Cobo quiso resumir el espíritu del acto en tres ideas. La primera, que la migración es un asunto extraordinariamente complejo, técnico y transversal, que debe tratarse con respeto y con ambición analítica. La segunda, que el debate migratorio no puede reducirse a una sola dimensión, sino que debe integrar seguridad, demografía, empleo, cohesión social, política exterior y conocimiento del terreno. Y la tercera, que las respuestas verdaderamente eficaces exigen tiempo, previsibilidad y visión estratégica, porque no es posible resolver en una sola legislatura problemas y dinámicas que se construyen a lo largo de décadas.</p>
-      
-      <p>Con este lanzamiento, el Instituto Español de Análisis Migratorio consolida una etapa inicial especialmente activa y se posiciona como un nuevo espacio de referencia para el análisis migratorio en España. Su apuesta pasa por tender puentes entre investigación, instituciones, terreno y sociedad civil, y por contribuir a una conversación pública más honesta, más informada y más útil sobre uno de los temas que más marcarán el futuro de Europa y África.</p>
-
-      <div class="my-8 p-6 bg-slate-50 border border-slate-200 rounded-lg">
-        <h4 class="font-bold mb-4">Documentación del evento</h4>
-        <div class="flex flex-wrap gap-4">
-          <a href="/docs/Communiqu_de_presse_-_ES.pdf" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[var(--color-navy-900)] text-white rounded hover:bg-[var(--color-accent-blue)] transition-colors">
-            <span>📄</span> Descargar Comunicado de Prensa (ES)
-          </a>
-        </div>
-      </div>
-
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Programa del evento</h3>
-      <div class="space-y-6 mt-4">
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45 | Presentación institucional del IEAM</p>
-          <p class="text-slate-600 mt-1">Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.</p>
-          <p class="text-slate-600"><strong>Beatriz de León Cobo</strong>, Directora ejecutiva del IEAM.</p>
-          <p class="text-slate-600"><strong>Javier Zarzalejos</strong>, eurodiputado.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:30 | Presentación de los trabajos del instituto</p>
-          <p class="text-slate-600 mt-1"><strong>Moderadora: Soraya Aybar</strong>, investigadora del IEAM y directora de África Mundi.</p>
-          <ul class="mt-2 space-y-2 text-slate-600">
-            <li>• <strong>Migraciones y migrantes.</strong> Valentina Benincasa.</li>
-            <li>• <strong>Movilidad entre Mali y Europa.</strong> Roméo Gbaguidi.</li>
-            <li>• <strong>Diplomacia migratoria UE–África.</strong> Ángel Losada.</li>
-          </ul>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20 | La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas</p>
-          <p class="text-slate-600 mt-1"><strong>Moderadora: Beatriz de León Cobo</strong>, directora ejecutiva del IEAM.</p>
-          <p class="text-slate-600">Francisco de Borja Morate Martín, Ana Hernández Rodríguez, Agustín Mussini, Javier Albaladejo.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:20 – 20:30 | Conclusión y clausura</p>
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:30 – 21:15 | Vino español</p>
-        </div>
-      </div>
+      <p>En relación con el proceso extraordinario de regularización, Hernández Rodríguez insistió en que se trata de una medida orientada a personas que ya están en España, no a nuevas llegadas. “No se está regalando dinero, se les está regalando la posibilidad de ser personas con derechos y obligaciones”, afirmó. Para la representante del Ministerio, el debate ha estado muy condicionado por la difusión de versiones incorrectas del texto y por una ola de bulos que han distorsionado el sentido de la medida. Desde el Ministerio de Asuntos Exteriores, Borja Morate Martín destacó que la estrategia España-África 2025-2028 refleja la importancia creciente que España concede a su política africana y, en particular, a África Occidental como región prioritaria. Morate Martín puso además el foco en Senegal como uno de los socios estratégicos más relevantes para España en África Occidental y destacó la reciente elevación de las relaciones bilaterales al nivel de asociación estratégica.</p>
+      <p>Por parte de la OIM, Agustín Mussini recordó que en un país como España la migración “no es ni marginal ni excepcional”, sino “una dimensión estructural de la vida social, política, económica, laboral y demográfica del país. En sus palabras, una política migratoria madura “no se limita a gestionar entradas, ordena trayectorias, reduce vulnerabilidades y amplía oportunidades”. La mirada de seguridad la aportó Javier Albaladejo, quien recordó que la lucha contra las redes de crimen organizado que trafican con personas y explotan la trata sigue siendo una prioridad constante en la agenda europea. Defendió, más bien, que muchas veces la clave está en la persecución real de las estructuras financieras y organizativas detrás de las redes criminales.</p>
+      <p>En el cierre de la jornada, Beatriz de León Cobo quiso resumir el espíritu del acto en tres ideas. La primera, que la migración es un asunto extraordinariamente complejo, técnico y transversal, que debe tratarse con respeto y con ambición analítica. La segunda, que el debate migratorio no puede reducirse a una sola dimensión, sino que debe integrar seguridad, demografía, empleo, cohesión social, política exterior y conocimiento del terreno. Y la tercera, que las respuestas verdaderamente eficaces exigen tiempo, previsibilidad y visión estratégica, porque no es posible resolver en una sola legislatura problemas y dinámicas que se construyen a lo largo de décadas. Con este lanzamiento, el Instituto Español de Análisis Migratorio consolida una etapa inicial especialmente activa y se posiciona como un nuevo espacio de referencia para el análisis migratorio en España. Su apuesta pasa por tender puentes entre investigación, instituciones, terreno y sociedad civil, y por contribuir a una conversación pública más honesta, más informada y más útil sobre uno de los temas que más marcarán el futuro de Europa y África.</p>
+      <p>&nbsp;</p>
+      <p>Programa del evento</p>
+      <p>18:30 – 18:45 | Presentación institucional del IEAM<br>
+      Palabras de bienvenida y presentación institucional del Instituto Español de Análisis Migratorio.<br>
+      Beatriz de León Cobo, Directora ejecutiva del IEAM.<br>
+      Javier Zarzalejos, eurodiputado.</p>
+      <p>18:45 – 19:30 | Presentación de los trabajos del instituto<br>
+      Moderadora: Soraya Aybar, investigadora del IEAM y directora de África Mundi, medio especializado en el continente africano y en las relaciones entre África y Europa.<br>
+      • Migraciones y migrantes. ¿Cómo estudiar la irregularidad en los procesos migratorios? España: un estudio de caso<br>
+      Valentina Benincasa, investigadora asociada del IEAM, docente en el Máster de Género, Migraciones y Derechos Humanos (Universidad Complutense de Madrid) y doctora en Antropología Social, especializada en humanitarismo y políticas de fronteras.<br>
+      • Repensar la movilidad entre Mali y Europa: movilidad legal y circular, reintegración con un enfoque comunitario y gobernanza regional<br>
+      • Reformar la gobernanza de la movilidad en África Occidental<br>
+      Roméo Gbaguidi, investigador asociado del IEAM y presidente del think tank LemAfriQ, especializado en migraciones entre África y Europa, así como en las diásporas africanas.<br>
+      • Diplomacia migratoria UE–África: de la gestión de los flujos a la coherencia estratégica<br>
+      • Enfoque por rutas: ¿reducir los flujos o las vulnerabilidades? Hacia una estrategia coherente de protección y lucha contra las economías criminales<br>
+      • Vías legales creíbles: entre promesa política y capacidad real - Estructurar la movilidad circular, el arraigo local y el papel de las diásporas<br>
+      Ángel Losada, diplomático español, embajador de España en Irán (2021–2024) y antiguo representante especial de la Unión Europea para el Sahel (2015–2021).</p>
+      <p>19:30 – 20:20 | La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas<br>
+      Moderadora: Beatriz de León Cobo, directora ejecutiva del IEAM.<br>
+      Francisco de Borja Morate Martín, subdirector general de la Subdirección General para África Occidental, Dirección General para África, Ministerio de Asuntos Exteriores, Unión Europea y Cooperación.<br>
+      Ana Hernández Rodríguez, asesora de gabinete del Ministerio de Inclusión, Seguridad Social y Migraciones de España.<br>
+      Agustín Mussini, oficial de política y enlace de la Oficina de la Organización Internacional para las Migraciones (OIM) en España.<br>
+      Javier Albaladejo, Comisario Principal de la Policía Nacional (r).</p>
+      <p>20:20 – 20:30 | Conclusión y clausura 20:30 – 21h15 | Vino español</p>
     `,
     content_en: `
-      <p class="lead text-lg mb-6">The Spanish Institute for Migration Analysis presents its first work in Madrid and calls for a more rigorous, strategic, and long-term debate on migration.</p>
-      
+      <p>The Spanish Institute for Migration Analysis presents its first work in Madrid and calls for a more rigorous, strategic, and long-term debate on migration.</p>
       <p>The IEAM launch event, held at the European Parliament Office in Madrid, brought together institutional representatives, experts, international organizations, as well as African and European partners to analyze the main migration challenges between Africa and Europe.</p>
-      
-      <p>Madrid, April 16, 2026. The Spanish Institute for Migration Analysis (IEAM) held its official launch event this Wednesday at the European Parliament Office in Madrid. The event served to present its first research findings, share its working methodology, and open a space for plural reflection on one of the major structural issues of our time: migration. Led by Beatriz de León Cobo, IEAM began its activities in September 2025 with the aim of providing rigorous analysis, proposing innovative policies, and creating dialogue spaces to anticipate and manage African migration in a sustainable, humane, and mutually beneficial way.</p>
-      
+      <p>Madrid, April 16, 2026. The Spanish Institute for Migration Analysis (IEAM) held its official launch event this Wednesday at the European Parliament Office in Madrid. The event served to present its first research findings, share its working methodology, and open a space for plural reflection on one of the major structural issues of our time: migration.</p>
+      <p>Led by Beatriz de León Cobo, IEAM began its activities in September 2025 with the aim of providing rigorous analysis, proposing innovative policies, and creating dialogue spaces to anticipate and manage African migration in a sustainable, humane, and mutually beneficial way.</p>
       <p>The event highlighted work that is already well advanced. In just six months, the Institute has produced technical reports, policy papers, infographics, and strategic dialogue activities across Europe and Africa, including workshops in Bamako, Dakar, and Rome. Its methodology combines strategic dialogue, research, and public influence, bringing together governments, researchers, civil society, diasporas, and the private sector to generate applied analysis and practical recommendations for decision-making.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <img src="/images/eventoieam1.webp" alt="IEAM Launch 1" class="rounded-lg shadow-md w-full h-64 object-cover" />
-        <img src="/images/eventoieam2.webp" alt="IEAM Launch 2" class="rounded-lg shadow-md w-full h-64 object-cover" />
-      </div>
-
       <p>The Institute’s Executive Director, Beatriz de León Cobo, recalled that IEAM was launched six months ago in a global context marked by rapid information flows, polarized debate, and the difficulty of building effective, humane, and long-term migration policies. She emphasized the Institute’s goal of creating spaces where diverse – even conflicting – views can be heard in order to improve public policy. She also highlighted West Africa and the Sahel as priority regions in this initial phase, due to their geopolitical importance and the need to incorporate African perspectives into the European debate.</p>
-      
       <p>The event opened with remarks by MEP Javier Zarzalejos, who advocated for a comprehensive approach to migration and warned against conflating integration issues with immigration-specific challenges. He called for a response combining effective management, cooperation, integration, and respect for democratic values. In his view, Europe is at a “turning point” in its migration strategy, with the new Pact on Migration and Asylum as a reference framework, while stressing the need to preserve rights and human dignity.</p>
-      
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Presentation of Results</h3>
       <p>The first panel, moderated by Soraya Aybar, Director of África Mundi, brought together Valentina Benincasa, professor at the Complutense University of Madrid; Roméo Gbaguidi, President and Research Director of LemAfriQ; and Ángel Losada, Spanish diplomat and former EU Special Representative for the Sahel. The discussion focused on three key areas: irregular migration in Spain, the governance of mobility in West Africa, and the European dimension of migration policies.</p>
-      
       <p>Key conclusions included the importance of transitions into irregular status and the situation of unaccompanied minors. Ángel Losada pointed to the lack of unity among EU member states as a major obstacle to an effective Sahel policy. He also referred to Iran to highlight the need to anticipate regional crises before they result in increased migration pressures on Europe, emphasizing that migration cannot be addressed solely through border control.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-        <img src="/images/eventoieam3.webp" alt="IEAM Launch 3" class="rounded-lg shadow-md w-full h-64 object-cover" />
-        <img src="/images/eventoieam4.webp" alt="IEAM Launch 4" class="rounded-lg shadow-md w-full h-64 object-cover" />
-      </div>
-
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Strategic Challenges and Shared Responses</h3>
       <p>The second panel, titled “Migration between Africa and Europe: strategic challenges and common responses,” brought together Ana Hernández Rodríguez, ministerial advisor; Francisco de Borja Morate Martín, Deputy Director-General for West Africa; Agustín Mussini, representative of the International Organization for Migration in Spain; and Javier Albaladejo, former senior commissioner of the Spanish National Police.</p>
-      
       <p>Regarding the extraordinary regularization process, Hernández Rodríguez emphasized that it targets people already in Spain, not new arrivals: “It is not about giving money, but about giving the possibility to be individuals with rights and obligations”. She also noted that the debate has been heavily influenced by the spread of incorrect versions of the text and by a wave of misinformation that has distorted the meaning of the measure.</p>
-      
       <p>From the Ministry of Foreign Affairs, Borja Morate Martín highlighted that the Spain–Africa Strategy 2025–2028 reflects the growing importance Spain attaches to its African policy and, in particular, to West Africa as a priority region. He also emphasized Senegal as one of the most relevant strategic partners for Spain in West Africa and highlighted the recent upgrading of bilateral relations to the level of a strategic partnership.</p>
-      
       <p>From the International Organization for Migration (IOM), Agustín Mussini recalled that in a country like Spain, migration is “neither marginal nor exceptional”, but a structural dimension of social, political, economic, labour, and demographic life. He added that a mature migration policy “does not merely manage entries; it organizes trajectories, reduces vulnerabilities, and expands opportunities”.</p>
-      
       <p>The security perspective was provided by Javier Albaladejo, who stressed that the fight against organized crime networks involved in human trafficking remains a constant priority on the European agenda. He underlined that the key often lies in effectively targeting the financial and organizational structures behind these networks.</p>
-      
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Conclusions</h3>
-      <p>In closing, Beatriz de León Cobo summarized the event in three ideas. First, that migration is an extraordinarily complex, technical, and cross-cutting issue that must be addressed with both respect and analytical ambition. Second, that the migration debate cannot be reduced to a single dimension, but must integrate security, demography, employment, social cohesion, foreign policy, and field-based knowledge. And third, that truly effective responses require time, predictability, and strategic vision, as it is not possible to resolve within a single legislative term problems and dynamics that have been built over decades.</p>
-      
-      <p>With this launch, the Spanish Institute for Migration Analysis consolidates a particularly active initial phase and positions itself as a new reference space for migration analysis in Spain. Its approach is based on building bridges between research, institutions, field realities, and civil society, and on contributing to a more honest, better-informed, and more useful public conversation on one of the issues that will most shape the future of Europe and Africa.</p>
-
-      <div class="my-8 p-6 bg-slate-50 border border-slate-200 rounded-lg">
-        <h4 class="font-bold mb-4">Event Documentation</h4>
-        <div class="flex flex-wrap gap-4">
-          <a href="/docs/Communiqu_de_presse_-_EN.pdf" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-[var(--color-navy-900)] text-white rounded hover:bg-[var(--color-accent-blue)] transition-colors">
-            <span>📄</span> Download Press Release (EN)
-          </a>
-        </div>
-      </div>
-
-      <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Event Program</h3>
-      <div class="space-y-6 mt-4">
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:30 – 18:45 | Institutional presentation of IEAM</p>
-          <p class="text-slate-600 mt-1">Welcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.</p>
-          <p class="text-slate-600"><strong>Beatriz de León Cobo</strong>, Executive Director of IEAM.</p>
-          <p class="text-slate-600"><strong>Javier Zarzalejos</strong>, MEP.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">18:45 – 19:30 | Presentation of the Institute’s Work</p>
-          <p class="text-slate-600 mt-1"><strong>Moderator: Soraya Aybar</strong>, IEAM Associate Researcher and Director of África Mundi.</p>
-          <ul class="mt-2 space-y-2 text-slate-600">
-            <li>• <strong>Migration and migrants.</strong> Valentina Benincasa.</li>
-            <li>• <strong>Mobility between Mali and Europe.</strong> Roméo Gbaguidi.</li>
-            <li>• <strong>EU–Africa migration diplomacy.</strong> Ángel Losada.</li>
-          </ul>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">19:30 – 20:20 | The migration issue between Africa and Europe: strategic challenges and shared responses</p>
-          <p class="text-slate-600 mt-1"><strong>Moderator: Beatriz de León Cobo</strong>, Executive Director of IEAM.</p>
-          <p class="text-slate-600">Francisco de Borja Morate Martín, Ana Hernández Rodríguez, Agustín Mussini, Javier Albaladejo.</p>
-        </div>
-
-        <div class="border-l-4 border-[var(--color-accent-blue)] pl-5">
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:20 – 20:30 | Conclusion and closing remarks</p>
-          <p class="text-sm font-semibold text-[var(--color-accent-blue)] uppercase tracking-wide">20:30 – 21:15 | Spanish wine reception</p>
-        </div>
-      </div>
+      <p>In closing, Beatriz de León Cobo summarized the event in three ideas. First, that migration is an extraordinarily complex, technical, and cross-cutting issue that must be addressed with both respect and analytical ambition. Second, that the migration debate cannot be reduced to a single dimension, but must integrate security, demography, employment, social cohesion, foreign policy, and field-based knowledge. And third, that truly effective responses require time, predictability, and strategic vision, as it is not possible to resolve within a single legislative term problems and dynamics that have been built over decades. With this launch, the Spanish Institute for Migration Analysis consolidates a particularly active initial phase and positions itself as a new reference space for migration analysis in Spain. Its approach is based on building bridges between research, institutions, field realities, and civil society, and on contributing to a more honest, better-informed, and more useful public conversation on one of the issues that will most shape the future of Europe and Africa.</p>
+      <p>Event Program</p>
+      <p>18:30 – 18:45 | Institutional presentation of IEAMWelcome remarks and institutional presentation of the Spanish Institute for Migration Analysis.<br>
+      Beatriz de León Cobo, Executive Director of IEAM.<br>
+      Javier Zarzalejos, MEP.</p>
+      <p>18:45 – 19:30 | Presentation of the Institute’s Work<br>
+      Moderator: Soraya Aybar, Associate Researcher at IEAM and Director of África Mundi, a media outlet specialized in the African continent and Africa–Europe relations.<br>
+      • Migration and migrants. How can we study irregularity in migration processes? Spain: a case study<br>
+      Valentina Benincasa, Associate Researcher at IEAM, lecturer in the Master’s program in Gender, Migration and Human Rights (Complutense University of Madrid), and PhD in Social Anthropology, specializing in humanitarianism and border policies.<br>
+      • Rethinking mobility between Mali and Europe: legal and circular mobility, reintegration with a community-based approach, and regional governance<br>
+      • Reforming mobility governance in West Africa<br>
+      Roméo Gbaguidi, Associate Researcher at IEAM and President of the think tank LemAfriQ, specializing in migration between Africa and Europe, as well as African diasporas.<br>
+      • EU–Africa migration diplomacy: from flow management to strategic coherence<br>
+      • Route-based approach: reducing flows or vulnerabilities? Towards a coherent strategy for protection and the fight against criminal economies<br>
+      • Credible legal pathways: between political promise and real capacity – structuring circular mobility, local rootedness, and the role of diaspers<br>
+      Ángel Losada, Spanish diplomat, Ambassador of Spain to Iran (2021–2024) and former EU Special Representative for the Sahel (2015–2021).</p>
+      <p>19:30 – 20:20 | The migration issue between Africa and Europe: strategic challenges and shared responsesModerator: Beatriz de León Cobo, Executive Director of IEAM.Francisco de Borja Morate Martín, Deputy Director-General for West Africa, Directorate-General for Africa, Ministry of Foreign Affairs, European Union and Cooperation.Ana Hernández Rodríguez, advisor in the office of the Ministry of Inclusion, Social Security and Migration of Spain.Agustín Mussini, Policy and Liaison Officer at the International Organization for Migration (IOM) Office in Spain.<br>
+      Javier Albaladejo, Chief Commissioner of the National Police (ret.).</p>
+      <p>20:20 – 20:30 | Conclusion and closing remarks 20:30 – 21:15 | Spanish wine reception</p>
     `,
     agenda: [
       { time: "18:30 – 18:45", title: "Presentación institucional del IEAM", title_en: "Institutional presentation of IEAM", speaker: "Beatriz de León Cobo · Javier Zarzalejos", speaker_en: "Beatriz de León Cobo · Javier Zarzalejos" },
