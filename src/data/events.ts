@@ -14,6 +14,12 @@ export interface EventSpeaker {
   group_en?: string;
 }
 
+export interface EventAttachment {
+  label: string;
+  label_en?: string;
+  url: string;
+}
+
 export interface EventItem {
   slug: string;
   title: string;
@@ -32,6 +38,8 @@ export interface EventItem {
   heroImage: string;
   heroImage_en?: string;
   highlightImage?: string;
+  gallery?: string[];
+  attachments?: EventAttachment[];
   summary: string;
   summary_en?: string;
   content?: string;
@@ -790,6 +798,20 @@ export const events: EventItem[] = [
       { time: "19:30 – 20:20", title: "La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas", title_en: "The migration issue between Africa and Europe: strategic challenges and shared responses", speaker: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini · Javier Albaladejo", speaker_en: "Beatriz de León Cobo · Francisco de Borja Morate Martín · Ana Hernández Rodríguez · Agustín Mussini · Javier Albaladejo" },
       { time: "20:20 – 20:30", title: "Conclusión y clausura", title_en: "Conclusion and closing remarks" },
       { time: "20:30 – 21:15", title: "Vino español", title_en: "Spanish wine reception" }
+    ],
+    gallery: [
+      "/images/eventoieam1.webp",
+      "/images/eventoieam2.webp",
+      "/images/eventoieam3.webp",
+      "/images/eventoieam4.webp"
+    ],
+    attachments: [
+      { label: "Diplomacia migratoria UE–África (ES)", label_en: "EU–Africa Migration Diplomacy (ES)", url: "/docs/IEAM-2026-002-ES_diplomacia-migratoria.pdf" },
+      { label: "EU–Africa Migration Diplomacy (EN)", label_en: "EU–Africa Migration Diplomacy (EN)", url: "/docs/IEAM-2026-002-EN_migration-diplomacy.pdf" },
+      { label: "Enfoque por rutas (ES)", label_en: "Route-based approach (ES)", url: "/docs/IEAM-2026-003-ES_enfoque-por-rutas.pdf" },
+      { label: "Route-based approach (EN)", label_en: "Route-based approach (EN)", url: "/docs/IEAM-2026-003-EN_route-based-approach.pdf" },
+      { label: "Vías legales creíbles (ES)", label_en: "Credible legal pathways (ES)", url: "/docs/IEAM-2026-004-ES_vas-legales-crebles.pdf" },
+      { label: "Credible legal pathways (EN)", label_en: "Credible legal pathways (EN)", url: "/docs/IEAM-2026-004-EN_credible-legal-pathways.pdf" }
     ],
     speakers: [
       { name: "Beatriz de León Cobo", role: "Directora Ejecutiva del IEAM", role_en: "Executive Director of IEAM" },
