@@ -708,7 +708,20 @@ export const events: EventItem[] = [
     title: "Evento de presentación del IEAM La cuestión migratoria entre África y Europa: desafíos estratégicos y respuestas compartidas",
     title_en: "IEAM Launch Event The migration issue between Africa and Europe: strategic challenges and shared responses",
     subtitle: "El Instituto Español de Análisis Migratorio presenta en Madrid sus primeros trabajos y reivindica un debate más riguroso, estratégico y de largo plazo sobre migración.",
-        <p>El Instituto Español de Análisis Migratorio presenta en Madrid sus primeros trabajos y reivindica un debate más riguroso, estratégico y de largo plazo sobre migración.</p>
+    subtitle_en: "The Spanish Institute for Migration Analysis presents its first work in Madrid and calls for a more rigorous, strategic, and long-term debate on migration.",
+    category: "Evento de Lanzamiento",
+    category_en: "Launch Event",
+    date: "16 Abr 2026",
+    location: "Madrid, España",
+    location_en: "Madrid, Spain",
+    format: "Presencial",
+    format_en: "In-person",
+    heroImage: "/images/lanzamiento-ieam-es.png",
+    heroImage_en: "/images/lanzamiento-ieam-en.png",
+    summary: "El IEAM celebró su acto de lanzamiento oficial en la Oficina del Parlamento Europeo en Madrid, reuniendo a expertos y representantes institucionales para analizar los retos migratorios.",
+    summary_en: "The IEAM held its official launch event at the European Parliament Office in Madrid, bringing together experts and institutional representatives to analyze migration challenges.",
+    content: `
+      <p>El Instituto Español de Análisis Migratorio presenta en Madrid sus primeros trabajos y reivindica un debate más riguroso, estratégico y de largo plazo sobre migración.</p>
       <p>El acto de lanzamiento del IEAM, celebrado en la Oficina del Parlamento Europeo en Madrid, reunió a representantes institucionales, expertos, organismos internacionales y socios africanos y europeos para analizar los principales retos migratorios entre África y Europa.</p>
       <p>Madrid, 16 de abril de 2026. El Instituto Español de Análisis Migratorio (IEAM) celebró este miércoles en la Oficina del Parlamento Europeo en Madrid su acto de lanzamiento oficial, una jornada que sirvió para presentar sus primeros resultados de investigación, compartir su metodología de trabajo y abrir un espacio de reflexión plural sobre uno de los grandes asuntos estructurales de nuestro tiempo: la migración. Dirigido por Beatriz de León Cobo, el IEAM arrancó su actividad en septiembre de 2025 con la vocación de ofrecer análisis riguroso, proponer políticas innovadoras y generar espacios de diálogo que permitan anticipar y gestionar la migración africana de manera sostenible, humana y útil para ambas regiones. La jornada permitió visibilizar un trabajo ya avanzado. En apenas seis meses, el Instituto ha elaborado informes técnicos, policy papers, infografías y actividades de diálogo estratégico en distintos puntos de Europa y África, con talleres celebrados en Bamako, Dakar y Roma. Su metodología combina diálogo estratégico, investigación e influencia pública, reuniendo a gobiernos, investigadores, sociedad civil, diásporas y sector privado para producir análisis aplicados y recomendaciones útiles para la toma de decisiones.</p>
       <p>La directora ejecutiva del Instituto, Beatriz de León Cobo, recordó que el IEAM es una iniciativa que se puso en marcha hace seis meses, en septiembre de 2025, en un contexto internacional marcado por la aceleración de la información, la polarización del debate y la dificultad de construir políticas migratorias eficaces, humanas y con una visión a largo plazo. En su intervención, explicó que el Instituto quiere generar espacios donde puedan escucharse opiniones diversas, incluso discrepantes, con el fin de mejorar la calidad de las políticas públicas. También subrayó que África Occidental y el Sahel ocupan un lugar prioritario en esta primera fase del Instituto, tanto por la relevancia geopolítica de la región como por la necesidad de integrar las perspectivas africanas en el debate europeo.</p>
