@@ -1603,8 +1603,6 @@ export const articles: Article[] = [
         content: `
             <p>Este análisis del Instituto Español de Análisis Migratorio (IEAM) examina las principales tendencias de la migración irregular hacia la Unión Europea en el primer trimestre de 2026, a partir de datos publicados por Frontex y el Ministerio del Interior de España. Pone de relieve la evolución continua de los cruces fronterizos irregulares, así como los cambios observados en las llegadas a España.</p>
 
-            <img src="/images/infografia_migracionirregularEU2026_ES.png" alt="Infografía: Tendencias de la migración irregular hacia la UE – T1 2026" class="w-full h-auto rounded-lg my-8 shadow-md" />
-
             <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Descenso de los cruces irregulares en las fronteras exteriores de la UE</h3>
             <p>En los tres primeros meses de 2026, las detecciones de cruces irregulares en las fronteras exteriores de la UE descendieron un <strong>39 %</strong> en comparación con el mismo periodo de 2025, con algo más de <strong>21.400 cruces detectados</strong>, según datos preliminares de Frontex.</p>
 
@@ -1623,8 +1621,6 @@ export const articles: Article[] = [
         `,
         content_en: `
             <p>This analysis by the Spanish Institute for Migration Analysis (IEAM) examines the main trends in irregular migration towards the European Union in the first quarter of 2026, based on data published by Frontex and the Spanish Ministry of the Interior. It highlights the continued evolution of irregular border crossings, as well as changes observed in arrivals to Spain.</p>
-
-            <img src="/images/infografia_migracionirregularEU2026_EN.png" alt="Infographic: Irregular Migration Trends Towards the EU – Q1 2026" class="w-full h-auto rounded-lg my-8 shadow-md" />
 
             <h3 class="text-xl font-serif font-bold text-[var(--color-text-primary)] mt-8 mb-3">Decline in irregular crossings at EU external borders</h3>
             <p>In the first three months of 2026, irregular border-crossing detections fell by <strong>39%</strong> compared with the same period in 2025, with just over <strong>21,400 crossings detected</strong>, according to preliminary data from Frontex.</p>
