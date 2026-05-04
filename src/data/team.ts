@@ -55,6 +55,15 @@ export const researchFellows: TeamMember[] = [
         bio_en: "Bamako (Mali). Bréma Ely Dicko holds a PhD in Sociology of Migration and Interethnic Relations from Paris 7 Denis Diderot University and is a professor at the University of Letters and Human Sciences of Bamako (ULSHB). He has served as a special advisor to two transitional prime ministers in Mali on issues related to internally displaced persons, refugees, migration, slavery, and state return in the central regions of the country. Additionally, he was part of the drafting team for the new Constitution and headed the Research Unit of the Truth, Justice and Reconciliation Commission (CVJR), co-authoring its final report. A Knight of the National Order of Mali, his research focuses on Malian migrations, interethnic relations, mobility governance, and violent extremism, fields in which he has published numerous books and academic articles."
     },
     {
+        img: "/team/member-5.jpg",
+        name: "Dolores López",
+        role: "Investigadora asociada",
+        role_en: "Associate Researcher",
+        linkedin: "https://www.linkedin.com/in/lopez-dolores-83761323/",
+        bio: "Doctora en Geografía e Historia. Experta en relaciones hispano-marroquíes y migraciones en el Mediterráneo occidental. Autora de numerosas publicaciones sobre integración y políticas migratorias.",
+        bio_en: "PhD in Geography and History. Expert in Spanish-Moroccan relations and migration in the Western Mediterranean. Author of numerous publications on integration and migration policies."
+    },
+    {
         img: "/team/martial_zongo.jpg",
         name: "Martial Zongo",
         role: "Investigador asociado",
